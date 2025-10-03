@@ -5,65 +5,58 @@ window.module4Content = {
         moduleTitle: "Module 4 : Choisir une structure juridique appropriée",
         content: `
             <h1>⚖️ Introduction aux structures juridiques</h1>
-            
-            <p>Le choix de la structure juridique est une décision fondamentale qui influencera tous les aspects de votre entreprise : fiscalité, responsabilité, gestion, et développement.</p>
-            
-            <div style="text-align: center; margin: 30px 0;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ntw8MVDkGv8" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-            </div>
-            
-            <h2>🎯 Pourquoi choisir une structure juridique ?</h2>
-            
-            <h3>1. Séparation patrimoniale</h3>
-            <p>La structure juridique détermine la séparation entre votre patrimoine personnel et celui de votre entreprise.</p>
-            
-            <h3>2. Régime fiscal</h3>
-            <p>Chaque structure a ses propres règles fiscales et ses avantages.</p>
-            
-            <h3>3. Responsabilité</h3>
-            <p>Elle définit l'étendue de votre responsabilité en cas de difficultés.</p>
-            
-            <h3>4. Gestion</h3>
-            <p>Elle influence les modalités de gestion et de prise de décision.</p>
-            
-            <h2>📊 Types de structures juridiques</h2>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 20px 0;">
-                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-                    <img src="assets/images/01_IMAGE_INTRODUCTIONSTRUCTURES.png" alt="Structures" style="max-width: 100%; height: auto; margin-bottom: 15px;">
-                    <h4>Introduction</h4>
-                    <p>Comprendre les bases</p>
-                </div>
-                
-                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-                    <img src="assets/images/01_IMAGE_ENTREPRISEINDIVIDUELLE.png" alt="Entreprise Individuelle" style="max-width: 100%; height: auto; margin-bottom: 15px;">
-                    <h4>Entreprise Individuelle</h4>
-                    <p>Structure simple</p>
-                </div>
-                
-                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-                    <img src="assets/images/01_IMAGE_SARL.png" alt="SARL" style="max-width: 100%; height: auto; margin-bottom: 15px;">
-                    <h4>SARL</h4>
-                    <p>Société à responsabilité limitée</p>
-                </div>
-                
-                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-                    <img src="assets/images/01_IMAGE_SAS.png" alt="SAS" style="max-width: 100%; height: auto; margin-bottom: 15px;">
-                    <h4>SAS</h4>
-                    <p>Société par actions simplifiée</p>
-                </div>
-                
-                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-                    <img src="assets/images/01_IMAGE_COMPARAISON.png" alt="Comparaison" style="max-width: 100%; height: auto; margin-bottom: 15px;">
-                    <h4>Comparaison</h4>
-                    <p>Avantages et inconvénients</p>
-                </div>
-                
-                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-                    <img src="assets/images/01_IMAGE_CHOISIR.png" alt="Choisir" style="max-width: 100%; height: auto; margin-bottom: 15px;">
-                    <h4>Choisir</h4>
-                    <p>Décision adaptée</p>
-                </div>
+        
+                        <p>Le choix de la structure juridique est une décision fondamentale qui influencera tous les aspects de votre entreprise : fiscalité, responsabilité, gestion, et développement.</p>
+
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ntw8MVDkGv8" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+        </div>
+                        
+        <h3>Introduction aux structures juridiques</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_INTRODUCTIONSTRUCTURES.png" alt="Introduction aux structures juridiques" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>Choisir une structure juridique appropriée est décisif pour la création d'une entreprise. Il existe plusieurs types de structures comme l'entreprise individuelle, la SARL, la SAS, etc. Chaque type de structure a ses propres avantages et inconvénients, affectant la responsabilité, la fiscalité et la gestion de l'entreprise.</p>
+		<p>Par exemple, une SARL offre une responsabilité limitée aux associés, ce qui signifie que leurs biens personnels sont protégés en cas de dettes de l'entreprise.</p>
+        
+        <h3>Entreprise Individuelle</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_ENTREPRISEINDIVIDUELLE.png" alt="Entreprise Individuelle" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>L'entreprise individuelle est l'un des choix les plus simples pour démarrer une entreprise. Elle ne nécessite pas de capital minimum pour sa création. Cependant, l'entrepreneur est entièrement responsable des dettes de l'entreprise sur ses biens personnels. C'est une option souvent choisie par les artisans et les professions libérales.</p>
+		<p>Par exemple, un plombier commençant à son compte pourrait choisir l'entreprise individuelle pour éviter les formalités administratives complexes.</p>
+        
+        <h3>Société à Responsabilité Limitée (SARL)</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_SARL.png" alt="Société à Responsabilité Limitée (SARL)" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>La SARL est une structure juridique populaire en France pour les petites et moyennes entreprises. Les associés y sont responsables uniquement à hauteur de leurs apports. Elle offre une protection du patrimoine personnel et permet de rassurer les partenaires commerciaux grâce à sa stabilité juridique.</p>
+		<p>Par exemple, deux amis voulant ouvrir une boutique de vêtements peuvent choisir de créer une SARL pour limiter leur responsabilité financière aux apports dans l'entreprise.</p>
+        
+        <h3>Société par Actions Simplifiée (SAS)</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_SAS.png" alt="Société par Actions Simplifiée (SAS)" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>L'une des principales caractéristiques de la SAS est sa grande flexibilité. Elle permet de personnaliser les statuts presque librement, ce qui est avantageux pour les entreprises ayant besoin d'une structure adaptée à des besoins spécifiques. Les actionnaires ont une responsabilité limitée à leurs apports, ce qui protège leur patrimoine personnel.</p>
+			<p>Par exemple, une start-up technologique pourrait opter pour la SAS pour bénéficier de la flexibilité dans l'organisation de la gestion et la répartition des pouvoirs.</p>
+        
+        
+<h3>Comparaison des structures juridiques</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_COMPARAISON.png" alt="Comparaison des structures juridiques" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>Comparer les structures juridiques est crucial pour faire le meilleur choix. Les critères incluent la responsabilité des dirigeants, le régime fiscal applicable, et les formalités administratives. Par exemple, la SARL et la SAS offrent une responsabilité limitée, mais la SAS est plus flexible dans la gestion. Il est donc important de bien comprendre les différences avant de se décider.</p>
+			<p>Par exemple, si un entrepreneur souhaite une gestion simplifiée avec peu de contraintes, il pourrait préférer une structure comme l'entreprise individuelle, bien que cela implique une responsabilité illimitée.</p>
+        
+<h3>Choisir selon son activité</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_CHOISIR.png" alt="Choisir selon son activité" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>Le choix de la structure juridique peut dépendre du secteur d'activité. Certaines structures conviennent mieux à des professions spécifiques. De plus, le nombre d'associés peut influencer le choix. Par exemple, un freelance pourrait préférer l'entreprise individuelle, tandis qu'un projet nécessitant plusieurs investisseurs sera mieux adapté à une SARL ou SAS.</p>
+			<p>Par exemple, un développeur web freelance optera probablement pour l'entreprise individuelle, alors qu'une agence web avec plusieurs associés choisira une SAS pour faciliter les investissements.</p>
+
+
             </div>
             
             <h2>🔍 Critères de choix</h2>

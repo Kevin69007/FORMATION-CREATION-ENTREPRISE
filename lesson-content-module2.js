@@ -5,52 +5,58 @@ window.module2Content = {
         moduleTitle: "Module 2 : Connaître son marché pour mieux vendre",
         content: `
             <h1>📊 Intro - Connaître son marché pour mieux vendre</h1>
-            
+        
             <p>L'analyse de marché est une étape fondamentale pour comprendre votre environnement concurrentiel et identifier les opportunités. Savoir qui sont vos clients, ce qu'ils veulent et comment vos concurrents répondent à leurs besoins est essentiel pour développer une stratégie commerciale efficace.</p>
-            
-            <div style="text-align: center; margin: 30px 0;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/kRiHQjF9ylM" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-            </div>
-            
-            <h2>🔍 Les piliers de l'analyse de marché</h2>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
-                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-                    <img src="assets/images/01_IMAGE_ETUDEDEMARCHE.png" alt="Étude de Marché" style="max-width: 100%; height: auto; margin-bottom: 15px;">
-                    <h4>Étude de Marché</h4>
-                    <p>L'étude de marché consiste à analyser systématiquement votre secteur d'activité pour comprendre sa taille, sa croissance, ses tendances et ses évolutions. C'est le fondement de toute stratégie commerciale réussie.</p>
-                </div>
-                
-                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-                    <img src="assets/images/01_IMAGE_ANALYSE.png" alt="Analyse" style="max-width: 100%; height: auto; margin-bottom: 15px;">
-                    <h4>Analyse</h4>
-                    <p>L'analyse approfondie des données et tendances du marché vous permet d'identifier les opportunités, de comprendre les besoins des clients et d'anticiper les évolutions futures de votre secteur.</p>
-                </div>
-                
-                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-                    <img src="assets/images/01_IMAGE_SWOT.png" alt="Analyse SWOT" style="max-width: 100%; height: auto; margin-bottom: 15px;">
-                    <h4>Analyse SWOT</h4>
-                    <p>L'analyse SWOT (Forces, Faiblesses, Opportunités et Menaces) est un outil puissant pour évaluer votre position concurrentielle et identifier les axes d'amélioration et de développement.</p>
-                </div>
-                
-                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-                    <img src="assets/images/01_IMAGE_CONCURRENCE.png" alt="Concurrence" style="max-width: 100%; height: auto; margin-bottom: 15px;">
-                    <h4>Concurrence</h4>
-                    <p>Identifier et analyser vos concurrents directs et indirects vous permet de comprendre leur positionnement, leurs stratégies et leurs points faibles pour mieux vous différencier.</p>
-                </div>
-                
-                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-                    <img src="assets/images/01_IMAGE_COMPORTEMENTS.png" alt="Comportements" style="max-width: 100%; height: auto; margin-bottom: 15px;">
-                    <h4>Comportements</h4>
-                    <p>Comprendre les habitudes d'achat, les motivations et les préférences de vos clients vous permet d'adapter votre offre et vos messages commerciaux pour maximiser votre impact.</p>
-                </div>
-                
-                <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-                    <img src="assets/images/01_IMAGE_ADAPTATIONOFFRE.png" alt="Adaptation de l'Offre" style="max-width: 100%; height: auto; margin-bottom: 15px;">
-                    <h4>Adaptation de l'Offre</h4>
-                    <p>Adapter votre produit ou service aux besoins spécifiques du marché et aux attentes de vos clients est la clé pour créer une proposition de valeur différenciante et attractive.</p>
-                </div>
-            </div>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kRiHQjF9ylM" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+        </div>
+                        
+        <h3>Analyse du Marché</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_ANALYSE.png" alt="Analyse du Marché" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>Analyser le marché consiste à comprendre les différents segments de consommateurs, identifier les cibles les plus rentables et positionner son offre de manière à capter la part de marché la plus élevée possible. Cette étape clé permet de définir des stratégies marketing efficaces et de mieux répondre aux attentes des clients potentiels.
+</p>
+		<p>Une entreprise de cosmétiques analyse le marché et découvre que ses produits anti-âge sont les plus populaires parmi les femmes âgées de 40-50 ans. Elle décide de cibler cette tranche d'âge spécifiquement avec des campagnes de marketing.</p>
+        
+        <h3>Étude de la Concurrence</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_CONCURRENCE.png" alt="Étude de la Concurrence" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>L'étude de la concurrence est essentielle pour comprendre le paysage compétitif et se différencier sur le marché. Elle implique l'identification des principaux concurrents, l'analyse de leurs forces et faiblesses, et l'évaluation de leurs stratégies commerciales. Cette démarche permet à l'entreprise de développer ses propres avantages concurrentiels.</p>
+		<p>Une start-up en électronique identifie ses principaux concurrents et réalise que l’un d'eux se distingue par des prix plus bas. Pour rester compétitive, la start-up décide d'axer sa stratégie sur une qualité supérieure et un service client exceptionnel.</p>
+        
+        <h3>Connaître le Comportement des Consommateurs</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_COMPORTEMENTS.png" alt="Connaître le Comportement des Consommateurs" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>Comprendre le comportement des consommateurs est crucial pour adapter son offre à leurs besoins. Cela inclut l'analyse des motivations d'achat, des habitudes de consommation, ainsi que des facteurs psychologiques et sociaux qui influencent leurs décisions. Cette connaissance approfondie permet de développer des produits et services qui répondent véritablement aux attentes des consommateurs.</p>
+		<p>Une entreprise de vêtements découvre que ses clients sont motivés par des tendances écologiques. Elle décide de lancer une nouvelle gamme de vêtements en matériaux recyclés pour mieux répondre à cette demande.</p>
+        
+        <h3>Étude de Marché</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_ETUDEDEMARCHE.png" alt="Étude de Marché" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>L'étude de marché est une méthode de collecte et d'analyse d'informations sur les consommateurs, les concurrents et l'environnement général. Elle utilise diverses techniques comme les enquêtes en ligne, les groupes de discussion, et l'analyse des données de vente pour obtenir des insights précieux. Ces informations permettent de prendre des décisions éclairées et de minimiser les risques.</p>
+			<p>Une chaîne de restaurants utilise une enquête en ligne pour recueillir des avis sur ses nouveaux plats et apporter des modifications basées sur les préférences des clients.</p>
+        
+        
+<h3>Analyse SWOT</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_SWOT.png" alt="Analyse SWOT" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>L’analyse SWOT (Strengths, Weaknesses, Opportunities, Threats) est un outil stratégique permettant d’identifier les forces et les faiblesses internes d'une entreprise ainsi que les opportunités et les menaces externes du marché. Elle aide à mettre en lumière des stratégies pour maximiser les opportunités et minimiser les risques.</p>
+			<p>Par exemple, un chef d'entreprise qui surveille régulièrement les performances financières de son entreprise et ajuste les budgets en conséquence peut prévenir des pertes et optimiser les profits.</p>
+        
+<h3>Adaptation de l'Offre</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_ADAPTATIONOFFRE.png" alt="Adaptation de l'Offre" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>Adapter son offre signifie ajuster ses produits ou services pour qu’ils correspondent mieux aux attentes du marché cible. Cela peut passer par la personnalisation, l'innovation continue, ou une mise en avant de la qualité. Cette flexibilité est essentielle pour rester compétitif et attirer davantage de clients.</p>
+			<p>Une marque de boissons analyse les préférences et lance une nouvelle gamme de saveurs personnalisables, permettant aux clients de créer leurs propres combinaisons de goûts.</p>
+
+
             
             <h2>📈 Méthodes d'analyse</h2>
             
