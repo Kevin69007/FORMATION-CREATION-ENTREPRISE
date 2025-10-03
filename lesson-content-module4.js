@@ -97,157 +97,70 @@ window.module4Content = {
         content: `
             <h1>📋 Présentation des différentes formes juridiques</h1>
             
-            <p>Chaque forme juridique a ses spécificités. Voici un aperçu des principales structures disponibles en France.</p>
-            
-            <h2>👤 Entreprise Individuelle</h2>
-            
-            <h3>Caractéristiques</h3>
-            <ul>
-                <li><strong>Statut :</strong> Entrepreneur individuel</li>
-                <li><strong>Capital :</strong> Aucun capital minimum</li>
-                <li><strong>Responsabilité :</strong> Illimitée</li>
-                <li><strong>Fiscalité :</strong> Impôt sur le revenu</li>
-            </ul>
-            
-            <h3>Avantages</h3>
-            <ul>
-                <li>Simplicité de création</li>
-                <li>Pas de capital minimum</li>
-                <li>Formalités réduites</li>
-                <li>Gestion simplifiée</li>
-            </ul>
-            
-            <h3>Inconvénients</h3>
-            <ul>
-                <li>Responsabilité illimitée</li>
-                <li>Patrimoine personnel engagé</li>
-                <li>Difficulté à lever des fonds</li>
-                <li>Limitation du développement</li>
-            </ul>
-            
-            <h2>🏢 SARL (Société à Responsabilité Limitée)</h2>
-            
-            <h3>Caractéristiques</h3>
-            <ul>
-                <li><strong>Statut :</strong> Société de personnes</li>
-                <li><strong>Capital :</strong> 1€ minimum</li>
-                <li><strong>Responsabilité :</strong> Limitée aux apports</li>
-                <li><strong>Fiscalité :</strong> Impôt sur les sociétés</li>
-            </ul>
-            
-            <h3>Avantages</h3>
-            <ul>
-                <li>Responsabilité limitée</li>
-                <li>Patrimoine personnel protégé</li>
-                <li>Facilité de gestion</li>
-                <li>Crédibilité auprès des partenaires</li>
-            </ul>
-            
-            <h3>Inconvénients</h3>
-            <ul>
-                <li>Formalités plus importantes</li>
-                <li>Coûts de création</li>
-                <li>Règles de gestion strictes</li>
-                <li>Difficulté de cession des parts</li>
-            </ul>
-            
-            <h2>🚀 SAS (Société par Actions Simplifiée)</h2>
-            
-            <h3>Caractéristiques</h3>
-            <ul>
-                <li><strong>Statut :</strong> Société de capitaux</li>
-                <li><strong>Capital :</strong> 1€ minimum</li>
-                <li><strong>Responsabilité :</strong> Limitée aux apports</li>
-                <li><strong>Fiscalité :</strong> Impôt sur les sociétés</li>
-            </ul>
-            
-            <h3>Avantages</h3>
-            <ul>
-                <li>Grande flexibilité</li>
-                <li>Facilité d'entrée/sortie</li>
-                <li>Attractivité pour les investisseurs</li>
-                <li>Gestion libre</li>
-            </ul>
-            
-            <h3>Inconvénients</h3>
-            <ul>
-                <li>Complexité juridique</li>
-                <li>Coûts de création élevés</li>
-                <li>Formalités importantes</li>
-                <li>Risque de conflits</li>
-            </ul>
-            
-            <h2>🔄 SASU (Société par Actions Simplifiée Unipersonnelle)</h2>
-            
-            <h3>Caractéristiques</h3>
-            <ul>
-                <li><strong>Statut :</strong> SAS avec un seul associé</li>
-                <li><strong>Capital :</strong> 1€ minimum</li>
-                <li><strong>Responsabilité :</strong> Limitée aux apports</li>
-                <li><strong>Fiscalité :</strong> Impôt sur les sociétés</li>
-            </ul>
-            
-            <h3>Avantages</h3>
-            <ul>
-                <li>Responsabilité limitée</li>
-                <li>Flexibilité de gestion</li>
-                <li>Facilité d'évolution</li>
-                <li>Crédibilité</li>
-            </ul>
-            
-            <h3>Inconvénients</h3>
-            <ul>
-                <li>Coûts de création</li>
-                <li>Formalités administratives</li>
-                <li>Complexité fiscale</li>
-                <li>Obligations comptables</li>
-            </ul>
-            
-            <h2>📊 Tableau comparatif</h2>
-            
-            <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-                <table style="width: 100%; border-collapse: collapse;">
-                    <tr style="background: #e9ecef;">
-                        <th style="padding: 10px; border: 1px solid #dee2e6;">Critère</th>
-                        <th style="padding: 10px; border: 1px solid #dee2e6;">EI</th>
-                        <th style="padding: 10px; border: 1px solid #dee2e6;">SARL</th>
-                        <th style="padding: 10px; border: 1px solid #dee2e6;">SAS</th>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #dee2e6;">Capital minimum</td>
-                        <td style="padding: 10px; border: 1px solid #dee2e6;">0€</td>
-                        <td style="padding: 10px; border: 1px solid #dee2e6;">1€</td>
-                        <td style="padding: 10px; border: 1px solid #dee2e6;">1€</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #dee2e6;">Responsabilité</td>
-                        <td style="padding: 10px; border: 1px solid #dee2e6;">Illimitée</td>
-                        <td style="padding: 10px; border: 1px solid #dee2e6;">Limitée</td>
-                        <td style="padding: 10px; border: 1px solid #dee2e6;">Limitée</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #dee2e6;">Fiscalité</td>
-                        <td style="padding: 10px; border: 1px solid #dee2e6;">IR</td>
-                        <td style="padding: 10px; border: 1px solid #dee2e6;">IS</td>
-                        <td style="padding: 10px; border: 1px solid #dee2e6;">IS</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #dee2e6;">Complexité</td>
-                        <td style="padding: 10px; border: 1px solid #dee2e6;">Faible</td>
-                        <td style="padding: 10px; border: 1px solid #dee2e6;">Moyenne</td>
-                        <td style="padding: 10px; border: 1px solid #dee2e6;">Élevée</td>
-                    </tr>
-                </table>
+            <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #2196f3;">
+                <h3>🌍🔍 Saviez-vous que... ?</h3>
+                <p>Une étude révèle que le choix de la forme juridique d'une entreprise peut avoir un impact significatif sur son succès à long terme, que ce soit en termes de responsabilités, de fiscalité ou de crédibilité. Découvrez comment les différentes formes juridiques peuvent transformer le destin d'une entreprise !</p>
             </div>
             
-            <div style="background: #d1ecf1; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #17a2b8;">
-                <h3>💡 Points clés à retenir</h3>
-                <ul>
-                    <li>L'EI convient aux petits projets avec peu de risques</li>
-                    <li>La SARL est idéale pour les projets familiaux</li>
-                    <li>La SAS est parfaite pour les projets de croissance</li>
-                    <li>La SASU combine les avantages de l'EI et de la SAS</li>
-                </ul>
+            <h2>👤⭐ Entreprise Individuelle (EI)</h2>
+            
+            <p>L'entreprise individuelle (EI) est l'une des formes les plus simples pour démarrer une affaire. Voici ses caractéristiques principales :</p>
+            
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                <h4>📝 Exemple concret</h4>
+                <p>Marie a ouvert une petite boutique de fleurs en tant qu'EI. Elle gère facilement ses affaires car les démarches administratives sont simples. Toutefois, si son entreprise rencontre des difficultés financières, son patrimoine personnel peut être mis en jeu.</p>
+            </div>
+            
+            <h2>👥🔗 Société en Nom Collectif (SNC)</h2>
+            
+            <p>La société en nom collectif (SNC) est une forme de partenariat où tous les associés sont solidairement responsables des dettes de l'entreprise.</p>
+            
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                <h4>📝 Exemple concret</h4>
+                <p>Luc et Paul décident de lancer une agence de marketing. En optant pour une SNC, ils partagent les responsabilités et les profits. Cependant, ils savent qu'ils devront répondre solidairement des dettes de l'entreprise, ce qui les incite à une gestion prudente.</p>
+            </div>
+            
+            <h2>🛡️⛑️ Société à Responsabilité Limitée (SARL)</h2>
+            
+            <p>La société à responsabilité limitée (SARL) combine une certaine simplicité de gestion avec une protection limitée des associés contre les dettes de l'entreprise.</p>
+            
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                <h4>📝 Exemple concret</h4>
+                <p>Sophie lance une start-up de développement web en choisissant la forme SARL. Grâce à cette structure, elle protège son patrimoine personnel tout en attirant plus d'investisseurs potentiels qui apprécient la responsabilité limitée.</p>
+            </div>
+            
+            <h2>🏢💼 Société Anonyme (SA)</h2>
+            
+            <p>La société anonyme (SA) est généralement utilisée pour les grandes entreprises nécessitant des capitaux importants.</p>
+            
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                <h4>📝 Exemple concret</h4>
+                <p>LVMH, géant de l'industrie du luxe, est structuré en SA. Cette forme permet d'attirer des investisseurs majeurs par l'intermédiaire de la bourse, tout en offrant une structure de gouvernance rigoureuse.</p>
+            </div>
+            
+            <h2>🔍🔑 Facteurs déterminants de choix</h2>
+            
+            <p>Il existe plusieurs facteurs à prendre en compte pour choisir la forme juridique de votre entreprise :</p>
+            
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                <h4>📝 Exemple concret</h4>
+                <p>Par exemple, une entreprise de conseil individuel peut préférer l'EI pour la simplicité alors qu'une start-up en technologie pourrait opter pour une SARL pour attirer des investissements.</p>
+            </div>
+            
+            <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
+                <h3>💡 Conclusion</h3>
+                <p>En conclusion, il n'y a pas de réponse universelle ; le choix dépend de votre projet et de votre vision. Rassurez-vous, avec une bonne réflexion et les bons conseils, vous trouverez la structure idéalement adaptée à vos besoins !</p>
+            </div>
+            
+            <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
+                <h3>📋 Assignment: Élaborer un plan de structure juridique pour un projet d'entreprise</h3>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Faites des recherches approfondies sur les différentes formes juridiques disponibles pour structurer une entreprise, y compris l'entreprise individuelle, la société de personnes, la société à responsabilité limitée et la société par actions.</li>
+                    <li>Examinez les facteurs de prise de décision pour choisir la structure la plus appropriée pour un projet d'entreprise spécifique.</li>
+                    <li>Élaborez un plan détaillé proposant la forme juridique la plus adaptée pour un projet d'entreprise choisi, en expliquant les raisons de votre choix en fonction des caractéristiques et des implications juridiques.</li>
+                </ol>
+                <p><strong>🍏The best solution, 10/10:</strong> La meilleure solution sera un plan bien structuré qui démontre une compréhension approfondie des différentes formes juridiques, une analyse exhaustive des facteurs décisionnels pertinents et une recommandation claire et étayée pour la structure la plus appropriée pour le projet d'entreprise choisi. Le plan devrait être bien argumenté, complet, et prendre en compte les particularités du projet.</p>
             </div>
         `
     },
@@ -257,14 +170,15 @@ window.module4Content = {
         content: `
             <h1>⚖️ Comparaison des avantages et limites des structures juridiques</h1>
             
-            <p>Pour faire le bon choix, il est essentiel de comparer précisément les avantages et inconvénients de chaque structure selon vos besoins spécifiques.</p>
+            <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #2196f3;">
+                <h3>🤔 Introduction</h3>
+                <p>Avez-vous déjà réfléchi à la structure juridique qui convient le mieux à votre entreprise? Saviez-vous que le choix de la forme juridique peut avoir un impact significatif sur votre façon de gérer et de développer votre activité? Découvrons ensemble les avantages et limites de plusieurs structures juridiques pour mieux comprendre leurs implications sur vos opérations commerciales.</p>
+            </div>
             
-            <h2>📊 Analyse comparative détaillée</h2>
-            
-            <h3>🏠 Entreprise Individuelle (EI)</h3>
+            <h2>🏠 Entreprise Individuelle (EI)</h2>
             
             <div style="background: #d4edda; padding: 15px; border-radius: 8px; margin: 15px 0;">
-                <h4>✅ Avantages</h4>
+                <h4>🔍 Avantages</h4>
                 <ul>
                     <li><strong>Simplicité :</strong> Création et gestion très simples</li>
                     <li><strong>Coût :</strong> Frais de création minimaux</li>
@@ -275,7 +189,7 @@ window.module4Content = {
             </div>
             
             <div style="background: #f8d7da; padding: 15px; border-radius: 8px; margin: 15px 0;">
-                <h4>❌ Inconvénients</h4>
+                <h4>⚖️ Limitations</h4>
                 <ul>
                     <li><strong>Responsabilité :</strong> Patrimoine personnel engagé</li>
                     <li><strong>Crédibilité :</strong> Image moins professionnelle</li>
@@ -285,10 +199,10 @@ window.module4Content = {
                 </ul>
             </div>
             
-            <h3>🏢 SARL (Société à Responsabilité Limitée)</h3>
+            <h2>🏢 Société à Responsabilité Limitée (SARL)</h2>
             
             <div style="background: #d4edda; padding: 15px; border-radius: 8px; margin: 15px 0;">
-                <h4>✅ Avantages</h4>
+                <h4>🔍 Avantages</h4>
                 <ul>
                     <li><strong>Sécurité :</strong> Responsabilité limitée aux apports</li>
                     <li><strong>Crédibilité :</strong> Image professionnelle</li>
@@ -299,7 +213,7 @@ window.module4Content = {
             </div>
             
             <div style="background: #f8d7da; padding: 15px; border-radius: 8px; margin: 15px 0;">
-                <h4>❌ Inconvénients</h4>
+                <h4>⚖️ Limitations</h4>
                 <ul>
                     <li><strong>Complexité :</strong> Formalités plus importantes</li>
                     <li><strong>Coût :</strong> Frais de création et de gestion</li>
@@ -309,89 +223,70 @@ window.module4Content = {
                 </ul>
             </div>
             
-            <h3>🚀 SAS (Société par Actions Simplifiée)</h3>
+            <h2>🏢 Société Anonyme (SA)</h2>
             
             <div style="background: #d4edda; padding: 15px; border-radius: 8px; margin: 15px 0;">
-                <h4>✅ Avantages</h4>
+                <h4>🔍 Avantages</h4>
                 <ul>
-                    <li><strong>Flexibilité :</strong> Liberté de gestion maximale</li>
-                    <li><strong>Investisseurs :</strong> Attractivité pour les fonds</li>
-                    <li><strong>Évolution :</strong> Facilité d'entrée/sortie</li>
-                    <li><strong>International :</strong> Reconnaissance internationale</li>
-                    <li><strong>Innovation :</strong> Adaptée aux startups</li>
+                    <li><strong>Capital :</strong> Facilité de levée de fonds</li>
+                    <li><strong>Crédibilité :</strong> Image très professionnelle</li>
+                    <li><strong>Gouvernance :</strong> Structure de gestion rigoureuse</li>
+                    <li><strong>Évolution :</strong> Possibilité de cotation en bourse</li>
+                    <li><strong>International :</strong> Reconnaissance mondiale</li>
                 </ul>
             </div>
             
             <div style="background: #f8d7da; padding: 15px; border-radius: 8px; margin: 15px 0;">
-                <h4>❌ Inconvénients</h4>
+                <h4>⚖️ Limitations</h4>
                 <ul>
-                    <li><strong>Complexité :</strong> Réglementation complexe</li>
-                    <li><strong>Coût :</strong> Frais élevés de création</li>
-                    <li><strong>Risque :</strong> Conflits entre associés</li>
-                    <li><strong>Formalités :</strong> Obligations importantes</li>
-                    <li><strong>Expertise :</strong> Nécessite des conseils</li>
+                    <li><strong>Complexité :</strong> Réglementation très stricte</li>
+                    <li><strong>Coût :</strong> Frais élevés de création et gestion</li>
+                    <li><strong>Rigidité :</strong> Règles de gouvernance strictes</li>
+                    <li><strong>Transparence :</strong> Obligations de publication</li>
+                    <li><strong>Expertise :</strong> Nécessite des conseils spécialisés</li>
                 </ul>
             </div>
             
-            <h2>🎯 Critères de choix par situation</h2>
+            <h2>🤝 Coopérative</h2>
             
-            <h3>Pour un projet personnel</h3>
-            <ul>
-                <li><strong>Petit budget :</strong> Entreprise Individuelle</li>
-                <li><strong>Protection patrimoine :</strong> SASU</li>
-                <li><strong>Crédibilité :</strong> SARL</li>
-            </ul>
-            
-            <h3>Pour un projet familial</h3>
-            <ul>
-                <li><strong>Équilibre :</strong> SARL</li>
-                <li><strong>Flexibilité :</strong> SAS</li>
-                <li><strong>Simplicité :</strong> Entreprise Individuelle</li>
-            </ul>
-            
-            <h3>Pour un projet de croissance</h3>
-            <ul>
-                <li><strong>Investisseurs :</strong> SAS</li>
-                <li><strong>Stabilité :</strong> SARL</li>
-                <li><strong>Innovation :</strong> SAS</li>
-            </ul>
-            
-            <h2>📈 Évolution possible</h2>
-            
-            <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-                <h3>Parcours d'évolution typique</h3>
-                <ol>
-                    <li><strong>Démarrage :</strong> Entreprise Individuelle</li>
-                    <li><strong>Développement :</strong> Passage en SASU</li>
-                    <li><strong>Croissance :</strong> Évolution vers SAS</li>
-                    <li><strong>Maturité :</strong> Possible passage en SA</li>
-                </ol>
+            <div style="background: #d4edda; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                <h4>🔍 Avantages</h4>
+                <ul>
+                    <li><strong>Participation :</strong> Démocratie et participation</li>
+                    <li><strong>Solidarité :</strong> Principe coopératif</li>
+                    <li><strong>Fiscalité :</strong> Avantages fiscaux spécifiques</li>
+                    <li><strong>Durabilité :</strong> Vision long terme</li>
+                    <li><strong>Communauté :</strong> Ancrage local</li>
+                </ul>
             </div>
             
-            <h2>💰 Impact financier</h2>
+            <div style="background: #f8d7da; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                <h4>⚖️ Limitations</h4>
+                <ul>
+                    <li><strong>Complexité :</strong> Gestion démocratique complexe</li>
+                    <li><strong>Lenteur :</strong> Prise de décision collective</li>
+                    <li><strong>Financement :</strong> Difficulté d'accès aux capitaux</li>
+                    <li><strong>Spécialisation :</strong> Secteurs d'activité limités</li>
+                    <li><strong>Expertise :</strong> Nécessite une culture coopérative</li>
+                </ul>
+            </div>
             
-            <h3>Coûts de création</h3>
-            <ul>
-                <li><strong>EI :</strong> 0€ à 200€</li>
-                <li><strong>SARL :</strong> 200€ à 500€</li>
-                <li><strong>SAS :</strong> 500€ à 1000€</li>
-            </ul>
-            
-            <h3>Coûts de gestion annuels</h3>
-            <ul>
-                <li><strong>EI :</strong> 0€ à 500€</li>
-                <li><strong>SARL :</strong> 500€ à 2000€</li>
-                <li><strong>SAS :</strong> 1000€ à 3000€</li>
-            </ul>
+            <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
+                <h3>💡 Conclusion</h3>
+                <p>Le choix de la structure juridique de votre entreprise doit se faire en prenant en compte plusieurs facteurs clés : la responsabilité, la fiscalité, la simplicité administrative, et la capacité de levée de fonds. L'examen attentif des avantages et limites de chaque structure vous permettra de décider celle qui est la mieux adaptée aux besoins spécifiques de votre projet entrepreneurial.</p>
+                <p>En gardant ces éléments en tête, quelle structure semble la plus alignée avec vos objectifs et votre vision d'entreprise?</p>
+            </div>
             
             <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
-                <h3>⚠️ Points d'attention</h3>
-                <ul>
-                    <li>Le choix n'est pas définitif</li>
-                    <li>Consultez un expert-comptable</li>
-                    <li>Anticipez l'évolution de votre projet</li>
-                    <li>Évaluez l'impact fiscal</li>
-                </ul>
+                <h3>📋 Devoir : Rapport de comparaison des structures juridiques</h3>
+                <h4>Instructions :</h4>
+                <ol>
+                    <li>Choisissez trois structures juridiques différentes, telles que l'entreprise individuelle, la société à responsabilité limitée et la société anonyme.</li>
+                    <li>Pour chacune des structures choisies, identifiez et comparez les avantages en termes de fiscalité, de responsabilité des associés ou actionnaires, de processus de prise de décision et de gouvernance.</li>
+                    <li>Analysez l'impact de chaque structure sur les opérations commerciales, le potentiel de croissance et la durabilité à long terme de l'entreprise.</li>
+                    <li>Présentez vos conclusions et recommandations en mettant en évidence la structure qui conviendrait le mieux à un scénario d'entreprise spécifique, en justifiant vos choix en fonction des critères évalués.</li>
+                </ol>
+                <p><strong>🍏La meilleure solution, 10/10 :</strong> Le rapport présente une analyse détaillée et comparative des avantages et des limitations des trois structures juridiques, en fournissant des exemples concrets et des recommandations pertinentes pour des scénarios d'entreprise spécifiques. Les conclusions sont étayées par une compréhension approfondie des implications associées à chaque option.</p>
             </div>
         `
     },
@@ -401,145 +296,76 @@ window.module4Content = {
         content: `
             <h1>🎯 Sélection de la structure juridique adaptée au projet</h1>
             
-            <p>Choisir la bonne structure juridique nécessite une analyse méthodique de votre projet, vos objectifs et vos contraintes.</p>
+            <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #2196f3;">
+                <h3>📊 Analyse des Besoins de l'Entreprise</h3>
+                <p>Saviez-vous que la structure juridique de Google a commencé par une simple société de type LLC avant de devenir une entreprise publique cotée en bourse? Cette évolution démontre à quel point il est crucial de bien choisir sa structure juridique dès le début.</p>
+            </div>
             
-            <h2>🔍 Méthode de sélection</h2>
+            <p>Cela dit, la première étape dans le choix de la structure juridique appropriée consiste à analyser les 🛠️ besoins de l'entreprise. Voici quelques éléments à considérer :</p>
             
-            <h3>Étape 1 : Analyser votre projet</h3>
-            <ul>
-                <li><strong>Nature de l'activité :</strong> Commerciale, artisanale, libérale</li>
-                <li><strong>Chiffre d'affaires prévu :</strong> Volume et évolution</li>
-                <li><strong>Investissement nécessaire :</strong> Montant et type</li>
-                <li><strong>Risques encourus :</strong> Niveau et nature</li>
-            </ul>
+            <h2>⚖️ Évaluation des Risques</h2>
             
-            <h3>Étape 2 : Définir vos objectifs</h3>
-            <ul>
-                <li><strong>Protection patrimoniale :</strong> Niveau souhaité</li>
-                <li><strong>Flexibilité de gestion :</strong> Liberté nécessaire</li>
-                <li><strong>Développement :</strong> Croissance prévue</li>
-                <li><strong>Transmission :</strong> Cession envisagée</li>
-            </ul>
+            <p>La risque est un facteur incontournable. Prenons l'exemple d'une entreprise de construction. Les risques y sont élevés, ce qui rend une structure limitant la responsabilité des propriétaires plus appropriée. Voici comment différentes structures gèrent le risque :</p>
             
-            <h3>Étape 3 : Identifier vos contraintes</h3>
-            <ul>
-                <li><strong>Budget :</strong> Moyens disponibles</li>
-                <li><strong>Expertise :</strong> Compétences juridiques</li>
-                <li><strong>Temps :</strong> Disponibilité pour la gestion</li>
-                <li><strong>Partenaire :</strong> Seul ou associé</li>
-            </ul>
-            
-            <h2>📊 Grille de décision</h2>
-            
-            <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-                <h3>Questions clés à se poser</h3>
-                
-                <h4>1. Votre situation personnelle</h4>
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                <h4>📝 Exemples de gestion des risques</h4>
                 <ul>
-                    <li>Êtes-vous seul ou avez-vous des associés ?</li>
-                    <li>Votre patrimoine personnel est-il important ?</li>
-                    <li>Acceptez-vous une responsabilité illimitée ?</li>
-                </ul>
-                
-                <h4>2. Votre projet</h4>
-                <ul>
-                    <li>Quel est votre chiffre d'affaires prévu ?</li>
-                    <li>Votre activité présente-t-elle des risques ?</li>
-                    <li>Prévoyez-vous de lever des fonds ?</li>
-                </ul>
-                
-                <h4>3. Vos objectifs</h4>
-                <ul>
-                    <li>Recherchez-vous la simplicité ?</li>
-                    <li>Souhaitez-vous une grande flexibilité ?</li>
-                    <li>Prévoyez-vous une forte croissance ?</li>
+                    <li><strong>EI :</strong> Responsabilité illimitée - patrimoine personnel engagé</li>
+                    <li><strong>SARL/SAS :</strong> Responsabilité limitée aux apports</li>
+                    <li><strong>SA :</strong> Responsabilité limitée avec gouvernance stricte</li>
                 </ul>
             </div>
             
-            <h2>🎯 Recommandations par profil</h2>
+            <h2>🚀 Plans de Croissance</h2>
             
-            <h3>👤 L'entrepreneur solo</h3>
-            <div style="background: #e2e3e5; padding: 15px; border-radius: 8px; margin: 15px 0;">
-                <h4>Profil :</h4>
-                <p>Vous lancez seul un projet avec un budget limité et souhaitez commencer simplement.</p>
-                
-                <h4>Recommandation :</h4>
-                <p><strong>Entreprise Individuelle</strong> ou <strong>SASU</strong> selon votre niveau de risque.</p>
-                
-                <h4>Critères :</h4>
+            <p>Si vous avez des 💡 projets d'expansion rapide, vous voudrez une structure qui facilite l'accès aux capitaux et aux partenariats. Une SA permet d'attirer facilement des investisseurs en émettant des actions, ce qui est souvent crucial pour les entreprises en phase de croissance rapide.</p>
+            
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                <h4>📝 Structures adaptées à la croissance</h4>
                 <ul>
-                    <li>CA prévu < 100k€ : EI</li>
-                    <li>CA prévu > 100k€ : SASU</li>
-                    <li>Activité à risque : SASU</li>
+                    <li><strong>Démarrage :</strong> EI ou SASU</li>
+                    <li><strong>Développement :</strong> SARL</li>
+                    <li><strong>Croissance rapide :</strong> SAS</li>
+                    <li><strong>Expansion majeure :</strong> SA</li>
                 </ul>
             </div>
             
-            <h3>👥 L'équipe familiale</h3>
-            <div style="background: #e2e3e5; padding: 15px; border-radius: 8px; margin: 15px 0;">
-                <h4>Profil :</h4>
-                <p>Vous créez une entreprise avec des membres de votre famille.</p>
-                
-                <h4>Recommandation :</h4>
-                <p><strong>SARL</strong> pour l'équilibre entre simplicité et protection.</p>
-                
-                <h4>Critères :</h4>
+            <h2>🌍 Considérations Juridiques et Fiscales</h2>
+            
+            <p>La situation fiscale de votre entreprise dépendra aussi largement de la structure choisie. Par exemple :</p>
+            
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                <h4>📝 Impact fiscal par structure</h4>
                 <ul>
-                    <li>Règles de gestion claires</li>
-                    <li>Protection patrimoniale</li>
-                    <li>Facilité de gestion</li>
+                    <li><strong>EI :</strong> Impôt sur le revenu, micro-fiscal possible</li>
+                    <li><strong>SARL/SAS :</strong> Impôt sur les sociétés, optimisation possible</li>
+                    <li><strong>SA :</strong> Impôt sur les sociétés, obligations de transparence</li>
                 </ul>
             </div>
             
-            <h3>🚀 Le startup</h3>
-            <div style="background: #e2e3e5; padding: 15px; border-radius: 8px; margin: 15px 0;">
-                <h4>Profil :</h4>
-                <p>Vous développez un projet innovant avec des perspectives de forte croissance.</p>
-                
-                <h4>Recommandation :</h4>
-                <p><strong>SAS</strong> pour la flexibilité et l'attractivité.</p>
-                
-                <h4>Critères :</h4>
-                <ul>
-                    <li>Flexibilité maximale</li>
-                    <li>Attractivité investisseurs</li>
-                    <li>Facilité d'évolution</li>
-                </ul>
-            </div>
-            
-            <h2>🔄 Processus de décision</h2>
-            
-            <h3>1. Auto-évaluation</h3>
-            <p>Répondez honnêtement aux questions de la grille de décision.</p>
-            
-            <h3>2. Consultation</h3>
-            <p>Consultez un expert-comptable ou un avocat spécialisé.</p>
-            
-            <h3>3. Simulation</h3>
-            <p>Simulez les coûts et la fiscalité de chaque option.</p>
-            
-            <h3>4. Décision</h3>
-            <p>Choisissez la structure qui correspond le mieux à votre profil.</p>
-            
-            <h3>5. Révision</h3>
-            <p>Prévoyez de réviser votre choix selon l'évolution de votre projet.</p>
-            
-            <h2>📋 Checklist de validation</h2>
+            <h2>🧩 Cas Pratique</h2>
             
             <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-                <h3>✅ Vérifications avant décision</h3>
-                <ul>
-                    <li>✓ Analyse complète de votre projet</li>
-                    <li>✓ Évaluation de vos besoins de protection</li>
-                    <li>✓ Calcul des coûts de création et de gestion</li>
-                    <li>✓ Simulation de l'impact fiscal</li>
-                    <li>✓ Consultation d'un professionnel</li>
-                    <li>✓ Anticipation de l'évolution possible</li>
-                </ul>
+                <h3>📝 Exemple : La Belle Pâtisserie</h3>
+                <p>Prenons l'exemple de La Belle Pâtisserie, une entreprise récemment créée par Marie, pâtissière passionnée. Après avoir évalué ses besoins (croissance modérée, peu de risques juridiques), ses risques (faible), et ses ressources financières limitées, Marie décide d'opter pour la structure SASU (Société par Actions Simplifiée Unipersonnelle). Ce choix lui offre une flexibilité de gestion tout en limitant sa responsabilité personnelle, et lui permet de lever des fonds si nécessaire.</p>
             </div>
             
-            <div style="background: #d1ecf1; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #17a2b8;">
-                <h3>💡 Conseil final</h3>
-                <p>Le choix de la structure juridique est important mais pas définitif. Vous pouvez toujours évoluer vers une autre structure selon le développement de votre entreprise. L'important est de faire un choix adapté à votre situation actuelle.</p>
+            <h2>🔍 Conclusion</h2>
+            
+            <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
+                <h3>💡 Synthèse</h3>
+                <p>Pour choisir la meilleure structure juridique, il est essentiel de considérer 👓 l'ensemble des besoins à long terme, ⚖️ les risques potentiels, 🚀 les objectifs de croissance, et 🌍 les implications fiscales. Que vous optiez pour une EI, une SARL, une SAS, ou une SA, votre choix doit aligner parfaitement avec la vison et les objectifs que vous vous êtes fixés pour votre projet.</p>
+                <p>En définitive, prendre le temps de bien choisir sa structure juridique est une 🛤️ étape cruciale qui peut déterminer le succès à long terme de l'entreprise. En s'inspirant des cas concrets et des structures éprouvées, vous serez mieux outillé pour faire un choix éclairé.</p>
+            </div>
+            
+            <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
+                <h3>📋 Devoir pratique : Sélection de la structure juridique adaptée au projet</h3>
+                <h4>Instructions :</h4>
+                <ol>
+                    <li>Après avoir utilisé les informations recueillies des étapes précédentes, choisissez un exemple de projet d'entreprise, comme une boulangerie artisanale, une agence de marketing numérique ou une start-up technologique.</li>
+                    <li>Identifiez les besoins spécifiques, les risques potentiels, les plans de croissance et les objectifs à long terme pour le projet choisi. Par exemple, pour une start-up technologique, les besoins pourraient inclure des investissements en capital, une croissance rapide et des potentiels litiges de propriété intellectuelle.</li>
+                </ol>
+                <p><strong>🍏La meilleure solution, 10/10:</strong> La meilleure solution prend en considération de manière détaillée les besoins spécifiques, les risques potentiels, les plans de croissance et les objectifs à long terme du projet sélectionné, tout en identifiant une structure juridique spécifique qui soutient de manière optimale la vision et les objectifs du projet. Par exemple, pour une boulangerie artisanale axée sur la distribution locale, la création d'une entreprise individuelle pourrait être la meilleure solution en raison de sa simplicité et de ses coûts réduits.</p>
             </div>
         `
     },
