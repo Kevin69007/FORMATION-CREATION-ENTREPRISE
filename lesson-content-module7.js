@@ -169,7 +169,123 @@ window.module7Content = {
             <li>Savoir utiliser leurs services</li>
         </ul>
         
-        <h2>🏛️ Organisation des CFE</h2>
+        <h2>🏛️ Qu'est-ce qu'un Centre de Formalités des Entreprises (CFE) ?</h2>
+        
+        <p>Le Centre de Formalités des Entreprises (CFE) est un guichet unique qui centralise les démarches administratives liées à la vie de l'entreprise. Il constitue l'interlocuteur privilégié pour toutes les formalités de création, modification et cessation d'activité.</p>
+        
+        <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h3>Définition légale</h3>
+            <p>Le CFE est défini par l'article R. 123-1 du Code de commerce comme "l'organisme chargé de recevoir les déclarations de création, modification et cessation d'activité des entreprises".</p>
+        </div>
+        
+        <h2>🏢 Les différents types de CFE</h2>
+        
+        <h3>1. Chambre de Commerce et d'Industrie (CCI)</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_CCI.png" alt="Chambre de Commerce et d'Industrie" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>La CCI est compétente pour les entreprises commerciales : commerçants, sociétés commerciales, agents commerciaux, etc. Elle gère les immatriculations au Registre du Commerce et des Sociétés (RCS).</p>
+        
+        <h4>Activités concernées :</h4>
+        <ul>
+            <li><strong>Commerce de détail :</strong> Boutiques, magasins</li>
+            <li><strong>Commerce de gros :</strong> Grossistes, distributeurs</li>
+            <li><strong>Services commerciaux :</strong> Agences, bureaux</li>
+            <li><strong>Sociétés commerciales :</strong> SARL, SAS, etc.</li>
+        </ul>
+        
+        <h3>2. Chambre des Métiers et de l'Artisanat (CMA)</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_CHAMBREMETIERS.png" alt="Chambre des Métiers" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>La CMA s'occupe des entreprises artisanales et des métiers. Elle gère les immatriculations au Répertoire des Métiers (RM).</p>
+        
+        <h4>Activités concernées :</h4>
+        <ul>
+            <li><strong>Artisanat :</strong> Bâtiment, réparation, services</li>
+            <li><strong>Métiers :</strong> Coiffure, esthétique, etc.</li>
+            <li><strong>Petites entreprises :</strong> Moins de 10 salariés</li>
+            <li><strong>Formation :</strong> Apprentissage, formation</li>
+        </ul>
+        
+        <h3>3. Greffe du Tribunal de Commerce</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_GREFFETRIBUNAL.png" alt="Greffe du Tribunal" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>Le greffe du tribunal de commerce gère les formalités pour certaines sociétés et les procédures collectives.</p>
+        
+        <h4>Compétences :</h4>
+        <ul>
+            <li><strong>Sociétés :</strong> Création, modification, dissolution</li>
+            <li><strong>Procédures :</strong> Redressement, liquidation</li>
+            <li><strong>Registres :</strong> RCS, BODACC</li>
+            <li><strong>Décisions :</strong> Jugements commerciaux</li>
+        </ul>
+        
+        <h2>🔄 Processus de déclaration</h2>
+        
+        <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h3>Étapes de la déclaration</h3>
+            <ol>
+                <li><strong>Choix du CFE :</strong> Selon l'activité</li>
+                <li><strong>Dépôt du dossier :</strong> Documents requis</li>
+                <li><strong>Instruction :</strong> Vérification des pièces</li>
+                <li><strong>Immatriculation :</strong> Attribution des numéros</li>
+                <li><strong>Notification :</strong> Envoi des documents</li>
+            </ol>
+        </div>
+        
+        <h2>📋 Documents requis</h2>
+        
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h3>Pièces à fournir</h3>
+            <ul>
+                <li><strong>Formulaire :</strong> Cerfa approprié</li>
+                <li><strong>Pièce d'identité :</strong> Carte nationale, passeport</li>
+                <li><strong>Justificatif de domicile :</strong> Facture, quittance</li>
+                <li><strong>Statuts :</strong> Pour les sociétés</li>
+                <li><strong>Attestation :</strong> Non condamnation</li>
+            </ul>
+        </div>
+        
+        <h2>⚠️ Points d'attention</h2>
+        <ul>
+            <li>Choisir le bon CFE selon l'activité</li>
+            <li>Préparer tous les documents requis</li>
+            <li>Respecter les délais de déclaration</li>
+            <li>Conserver les justificatifs</li>
+        </ul>
+        
+        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
+            <h3>💡 Conseil pratique</h3>
+            <p>Le choix du CFE dépend de votre activité principale. En cas de doute, contactez directement l'organisme compétent pour vérifier votre éligibilité.</p>
+        </div>
+        
+        <h2>🚀 Prochaines étapes</h2>
+        <p>Dans la leçon suivante, nous expliquerons les modalités de fonctionnement administratif des CFE et leurs procédures internes.</p>
+    `
+    },
+    3: {
+        title: "Explication des modalités de fonctionnement administratif",
+        moduleTitle: "Module 7 : Où s'adresser pour déclarer son entreprise",
+        content: `
+        <h1>📚 Explication des modalités de fonctionnement administratif</h1>
+        
+        <p>Cette leçon détaille les procédures administratives internes des centres de formalités des entreprises et leur fonctionnement opérationnel.</p>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/q4u7cIhcfbU" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+        </div>
+        
+        <h2>🎯 Objectifs de cette leçon</h2>
+        <ul>
+            <li>Comprendre les procédures internes des CFE</li>
+            <li>Connaître les circuits administratifs</li>
+            <li>Identifier les points de contrôle</li>
+            <li>Savoir suivre son dossier</li>
+        </ul>
+        
+        <h2>⚙️ Organisation administrative des CFE</h2>
         
         <h3>Structure générale</h3>
         <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
@@ -193,31 +309,7 @@ window.module7Content = {
             </ul>
         </div>
         
-        <h2>👥 Interlocuteurs clés</h2>
-        
-        <h3>Personnel d'accueil</h3>
-        <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Rôles du personnel</h4>
-            <ul>
-                <li><strong>Conseillers :</strong> Information et orientation</li>
-                <li><strong>Instructeurs :</strong> Traitement des dossiers</li>
-                <li><strong>Juristes :</strong> Conseil spécialisé</li>
-                <li><strong>Secrétaires :</strong> Gestion administrative</li>
-            </ul>
-        </div>
-        
-        <h3>Services spécialisés</h3>
-        <div style="background: #fff3e0; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Services disponibles</h4>
-            <ul>
-                <li><strong>Service création :</strong> Accompagnement création</li>
-                <li><strong>Service modification :</strong> Changements statutaires</li>
-                <li><strong>Service cessation :</strong> Arrêt d'activité</li>
-                <li><strong>Service formation :</strong> Sensibilisation</li>
-            </ul>
-        </div>
-        
-        <h2>📋 Processus de traitement</h2>
+        <h2>🔄 Circuit de traitement des dossiers</h2>
         
         <h3>Étapes d'instruction</h3>
         <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
@@ -231,9 +323,69 @@ window.module7Content = {
             </ol>
         </div>
         
-        <h3>Délais de traitement</h3>
+        <h3>Points de contrôle</h3>
+        <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h4>Vérifications effectuées</h4>
+            <ul>
+                <li><strong>Complétude :</strong> Tous les documents requis</li>
+                <li><strong>Cohérence :</strong> Informations concordantes</li>
+                <li><strong>Conformité :</strong> Respect des règles légales</li>
+                <li><strong>Éligibilité :</strong> Conditions remplies</li>
+            </ul>
+        </div>
+        
+        <h2>📊 Système d'information et outils</h2>
+        
+        <h3>Outils informatiques</h3>
+        <div style="background: #fff3e0; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h4>Logiciels utilisés</h4>
+            <ul>
+                <li><strong>Gestion :</strong> Suivi des dossiers</li>
+                <li><strong>Transmission :</strong> Envoi électronique</li>
+                <li><strong>Archivage :</strong> Conservation des documents</li>
+                <li><strong>Statistiques :</strong> Tableaux de bord</li>
+            </ul>
+        </div>
+        
+        <h3>Sécurité des données</h3>
+        <div style="background: #f8d7da; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h4>Protection des informations</h4>
+            <ul>
+                <li><strong>Chiffrement :</strong> Sécurisation des données</li>
+                <li><strong>Accès :</strong> Contrôle des utilisateurs</li>
+                <li><strong>Sauvegarde :</strong> Protection des données</li>
+                <li><strong>Audit :</strong> Traçabilité des actions</li>
+            </ul>
+        </div>
+        
+        <h2>👥 Personnel et services</h2>
+        
+        <h3>Personnel d'accueil</h3>
+        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h4>Rôles du personnel</h4>
+            <ul>
+                <li><strong>Conseillers :</strong> Information et orientation</li>
+                <li><strong>Instructeurs :</strong> Traitement des dossiers</li>
+                <li><strong>Juristes :</strong> Conseil spécialisé</li>
+                <li><strong>Secrétaires :</strong> Gestion administrative</li>
+            </ul>
+        </div>
+        
+        <h3>Services spécialisés</h3>
         <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Échéances</h4>
+            <h4>Services disponibles</h4>
+            <ul>
+                <li><strong>Service création :</strong> Accompagnement création</li>
+                <li><strong>Service modification :</strong> Changements statutaires</li>
+                <li><strong>Service cessation :</strong> Arrêt d'activité</li>
+                <li><strong>Service formation :</strong> Sensibilisation</li>
+            </ul>
+        </div>
+        
+        <h2>⏱️ Délais de traitement</h2>
+        
+        <div style="background: #f3e5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h3>Échéances</h3>
             <ul>
                 <li><strong>Création :</strong> 5 à 15 jours ouvrés</li>
                 <li><strong>Modification :</strong> 3 à 10 jours ouvrés</li>
@@ -292,140 +444,6 @@ window.module7Content = {
         </div>
         
         <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous expliquerons les modalités de fonctionnement administratif des CFE et leurs procédures internes.</p>
-    `
-    },
-    3: {
-        title: "Explication des modalités de fonctionnement administratif",
-        moduleTitle: "Module 7 : Où s'adresser pour déclarer son entreprise",
-        content: `
-        <h1>📚 Explication des modalités de fonctionnement administratif</h1>
-        
-        <p>Cette leçon détaille les procédures administratives internes des centres de formalités des entreprises et leur fonctionnement opérationnel.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/q4u7cIhcfbU" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Comprendre les procédures internes</li>
-            <li>Connaître les circuits administratifs</li>
-            <li>Identifier les points de contrôle</li>
-            <li>Savoir suivre son dossier</li>
-        </ul>
-        
-        <h2>⚙️ Procédures internes</h2>
-        
-        <h3>Circuit de traitement</h3>
-        <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Étapes administratives</h4>
-            <ol>
-                <li><strong>Enregistrement :</strong> Saisie informatique</li>
-                <li><strong>Contrôle :</strong> Vérification des pièces</li>
-                <li><strong>Validation :</strong> Approbation du dossier</li>
-                <li><strong>Transmission :</strong> Envoi aux organismes</li>
-                <li><strong>Suivi :</strong> Monitoring du traitement</li>
-            </ol>
-        </div>
-        
-        <h3>Points de contrôle</h3>
-        <div style="background: #f3e5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Vérifications effectuées</h4>
-            <ul>
-                <li><strong>Complétude :</strong> Tous les documents</li>
-                <li><strong>Cohérence :</strong> Informations concordantes</li>
-                <li><strong>Conformité :</strong> Respect des règles</li>
-                <li><strong>Éligibilité :</strong> Conditions remplies</li>
-            </ul>
-        </div>
-        
-        <h2>📊 Système d'information</h2>
-        
-        <h3>Outils informatiques</h3>
-        <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Logiciels utilisés</h4>
-            <ul>
-                <li><strong>Gestion :</strong> Suivi des dossiers</li>
-                <li><strong>Transmission :</strong> Envoi électronique</li>
-                <li><strong>Archivage :</strong> Conservation des documents</li>
-                <li><strong>Statistiques :</strong> Tableaux de bord</li>
-            </ul>
-        </div>
-        
-        <h3>Sécurité des données</h3>
-        <div style="background: #fff3e0; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Protection des informations</h4>
-            <ul>
-                <li><strong>Chiffrement :</strong> Sécurisation des données</li>
-                <li><strong>Accès :</strong> Contrôle des utilisateurs</li>
-                <li><strong>Sauvegarde :</strong> Protection des données</li>
-                <li><strong>Audit :</strong> Traçabilité des actions</li>
-            </ul>
-        </div>
-        
-        <h2>🔄 Flux de travail</h2>
-        
-        <h3>Organisation du travail</h3>
-        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Répartition des tâches</h4>
-            <ul>
-                <li><strong>Accueil :</strong> Réception et orientation</li>
-                <li><strong>Instruction :</strong> Traitement des dossiers</li>
-                <li><strong>Validation :</strong> Contrôle qualité</li>
-                <li><strong>Transmission :</strong> Envoi aux organismes</li>
-            </ul>
-        </div>
-        
-        <h3>Gestion des priorités</h3>
-        <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Classement des dossiers</h4>
-            <ul>
-                <li><strong>Urgent :</strong> Traitement prioritaire</li>
-                <li><strong>Normal :</strong> Délai standard</li>
-                <li><strong>Différé :</strong> Traitement reporté</li>
-                <li><strong>Rejeté :</strong> Dossier incomplet</li>
-            </ul>
-        </div>
-        
-        <h2>📈 Indicateurs de performance</h2>
-        
-        <h3>Métriques de suivi</h3>
-        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Tableaux de bord</h4>
-            <ul>
-                <li><strong>Délais :</strong> Temps de traitement</li>
-                <li><strong>Qualité :</strong> Taux de réussite</li>
-                <li><strong>Volume :</strong> Nombre de dossiers</li>
-                <li><strong>Satisfaction :</strong> Retours clients</li>
-            </ul>
-        </div>
-        
-        <h3>Amélioration continue</h3>
-        <div style="background: #f8d7da; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Optimisation des processus</h4>
-            <ul>
-                <li><strong>Analyse :</strong> Identification des dysfonctionnements</li>
-                <li><strong>Formation :</strong> Montée en compétences</li>
-                <li><strong>Outils :</strong> Amélioration des systèmes</li>
-                <li><strong>Procédures :</strong> Simplification des démarches</li>
-            </ul>
-        </div>
-        
-        <h2>⚠️ Points d'attention</h2>
-        <ul>
-            <li>Respecter les procédures établies</li>
-            <li>Maintenir la confidentialité</li>
-            <li>Assurer la traçabilité</li>
-            <li>Optimiser les délais</li>
-        </ul>
-        
-        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-            <h3>💡 Conseil pratique</h3>
-            <p>La compréhension des procédures administratives vous permet de mieux suivre votre dossier et d'anticiper les délais de traitement.</p>
-        </div>
-        
-        <h2>🚀 Prochaines étapes</h2>
         <p>Dans la leçon suivante, nous aborderons les conséquences administratives de l'immatriculation et leurs implications pratiques.</p>
     `
     },
@@ -449,16 +467,16 @@ window.module7Content = {
             <li>Anticiper les démarches à effectuer</li>
         </ul>
         
-        <h2>📋 Conséquences de l'immatriculation</h2>
+        <h2>📋 Conséquences immédiates de l'immatriculation</h2>
         
-        <h3>1. Attribution des numéros</h3>
+        <h3>1. Attribution des numéros d'identification</h3>
         <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Numéros attribués</h4>
+            <h4>Numéros attribués par l'INSEE</h4>
             <ul>
-                <li><strong>SIREN :</strong> Identifiant unique de l'entreprise</li>
-                <li><strong>SIRET :</strong> Identifiant de l'établissement</li>
-                <li><strong>Code APE :</strong> Activité principale exercée</li>
-                <li><strong>Numéro TVA :</strong> Si assujettissement</li>
+                <li><strong>SIREN :</strong> Identifiant unique de l'entreprise (9 chiffres)</li>
+                <li><strong>SIRET :</strong> Identifiant de l'établissement (14 chiffres)</li>
+                <li><strong>Code APE :</strong> Activité principale exercée (5 caractères)</li>
+                <li><strong>Numéro TVA :</strong> Si assujettissement à la TVA</li>
             </ul>
         </div>
         
@@ -466,8 +484,8 @@ window.module7Content = {
         <div style="background: #f3e5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h4>Déclarations obligatoires</h4>
             <ul>
-                <li><strong>Fiscalité :</strong> Déclarations fiscales</li>
-                <li><strong>Social :</strong> Déclarations sociales</li>
+                <li><strong>Fiscalité :</strong> Déclarations fiscales périodiques</li>
+                <li><strong>Social :</strong> Déclarations sociales (DSN)</li>
                 <li><strong>Comptabilité :</strong> Bilan et compte de résultat</li>
                 <li><strong>Statistiques :</strong> Enquêtes INSEE</li>
             </ul>
@@ -477,14 +495,14 @@ window.module7Content = {
         <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h4>Publications légales</h4>
             <ul>
-                <li><strong>BODACC :</strong> Bulletin officiel</li>
+                <li><strong>BODACC :</strong> Bulletin officiel des annonces civiles et commerciales</li>
                 <li><strong>JAL :</strong> Journal d'annonces légales</li>
                 <li><strong>Site web :</strong> Mentions obligatoires</li>
                 <li><strong>Documents :</strong> En-têtes et factures</li>
             </ul>
         </div>
         
-        <h2>🏛️ Organismes concernés</h2>
+        <h2>🏛️ Organismes concernés par l'immatriculation</h2>
         
         <h3>Administrations fiscales</h3>
         <div style="background: #fff3e0; padding: 20px; border-radius: 8px; margin: 20px 0;">
@@ -556,7 +574,7 @@ window.module7Content = {
             </ul>
         </div>
         
-        <h2>🛠️ Outils de gestion</h2>
+        <h2>🛠️ Outils de gestion des obligations</h2>
         
         <h3>Logiciels de gestion</h3>
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0;">
@@ -580,6 +598,18 @@ window.module7Content = {
             </ul>
         </div>
         
+        <h2>📊 Suivi et monitoring</h2>
+        
+        <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h3>Tableaux de bord recommandés</h3>
+            <ul>
+                <li><strong>Échéances :</strong> Calendrier des déclarations</li>
+                <li><strong>Paiements :</strong> Suivi des cotisations</li>
+                <li><strong>Documents :</strong> Archivage des justificatifs</li>
+                <li><strong>Contrôles :</strong> Préparation aux vérifications</li>
+            </ul>
+        </div>
+        
         <h2>⚠️ Points d'attention</h2>
         <ul>
             <li>Respecter toutes les échéances</li>
@@ -590,7 +620,7 @@ window.module7Content = {
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h3>💡 Conseil pratique</h3>
-            <p>L'immatriculation crée des obligations importantes. Organisez-vous dès le début pour respecter toutes les échéances et éviter les sanctions.</p>
+            <p>L'immatriculation crée des obligations importantes. Organisez-vous dès le début pour respecter toutes les échéances et éviter les sanctions. Utilisez des outils de gestion pour automatiser le suivi de vos obligations.</p>
         </div>
         
         <h2>🚀 Prochaines étapes</h2>
