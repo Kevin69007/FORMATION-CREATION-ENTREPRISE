@@ -134,130 +134,64 @@ window.module6Content = {
             <li>Comprendre les critères d'éligibilité</li>
         </ul>
         
-        <h2>🏛️ Aides nationales</h2>
-        
-        <h3>1. ARCE - Aide à la Reprise ou à la Création d'Entreprise</h3>
         <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Caractéristiques</h4>
+            <h3>💡 Saviez-vous que vous pourriez obtenir des fonds pour votre entreprise sans avoir à rembourser ?</h3>
+            <p>La création d'une entreprise peut nécessiter des ressources financières considérables. Heureusement, en France, il existe de nombreuses aides à la création d'entreprises à différents niveaux : national, régional et territorial. Ces aides peuvent prendre diverses formes, allant des subventions aux exonérations fiscales, en passant par les prêts à taux réduit.</p>
+        </div>
+        
+        <h2>🏛️ Aides Nationales</h2>
+        
+        <p>Le gouvernement français offre plusieurs <strong>aides nationales</strong> pour encourager l'entrepreneuriat. Voici quelques exemples :</p>
+        
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h4>Principales aides nationales</h4>
             <ul>
-                <li><strong>Montant :</strong> 45% des droits restants (plafond 2 000 €)</li>
-                <li><strong>Conditions :</strong> Demandeurs d'emploi indemnisés</li>
-                <li><strong>Organisme :</strong> Pôle Emploi</li>
-                <li><strong>Délai :</strong> Demande avant la création</li>
+                <li><strong>Le Fonds de Garantie à l'Initiative des Femmes (FGIF)</strong> : Destiné à soutenir les femmes entrepreneures, ce fonds garantit jusqu'à 70% d'un prêt bancaire, facilitant ainsi l'accès au financement.</li>
+                <li><strong>L'ACRE (Aide aux Créateurs et Repreneurs d'Entreprises)</strong> : Exonération partielle ou totale des charges sociales pendant une période déterminée pour les nouveaux entrepreneurs.</li>
+                <li><strong>Le Crédit Impôt Recherche (CIR)</strong> : Un crédit d'impôt qui encourage les entreprises à investir dans la recherche et le développement.</li>
             </ul>
         </div>
         
-        <h3>2. NACRE - Nouvel Accompagnement pour la Création d'Entreprise</h3>
-        <div style="background: #f3e5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Caractéristiques</h4>
-            <ul>
-                <li><strong>Montant :</strong> Prêt d'honneur jusqu'à 10 000 €</li>
-                <li><strong>Conditions :</strong> Projet viable et accompagné</li>
-                <li><strong>Organisme :</strong> BPI France</li>
-                <li><strong>Durée :</strong> 5 ans maximum</li>
-            </ul>
-        </div>
+        <p>Ces outils peuvent réduire considérablement les coûts initiaux de lancement d'une entreprise.</p>
         
-        <h3>3. Prêt d'honneur France Active</h3>
-        <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Caractéristiques</h4>
-            <ul>
-                <li><strong>Montant :</strong> 1 000 € à 50 000 €</li>
-                <li><strong>Conditions :</strong> Projet social et solidaire</li>
-                <li><strong>Organisme :</strong> France Active</li>
-                <li><strong>Taux :</strong> 0% d'intérêt</li>
-            </ul>
-        </div>
+        <h2>🌍 Aides Régionales</h2>
         
-        <h2>🗺️ Aides régionales</h2>
+        <p>Chaque région dispose de ses propres dispositifs pour encourager la création d'entreprises. Ces <strong>aides régionales</strong> sont souvent plus ciblées et répondent aux spécificités locales.</p>
         
         <div style="background: #fff3e0; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3>Exemples d'aides régionales</h3>
+            <h4>Exemples d'aides régionales</h4>
             <ul>
-                <li><strong>Île-de-France :</strong> Créa'Boost, Prêt d'honneur régional</li>
-                <li><strong>Auvergne-Rhône-Alpes :</strong> Aide à la création d'entreprise</li>
-                <li><strong>Provence-Alpes-Côte d'Azur :</strong> Prêt d'honneur PACA</li>
-                <li><strong>Nouvelle-Aquitaine :</strong> Aide régionale à la création</li>
-                <li><strong>Occitanie :</strong> Prêt d'honneur Occitanie</li>
+                <li><strong>L'Île-de-France</strong> propose des dispositifs comme le "PM'up". Ce programme fournit des subventions jusqu'à 250 000 € pour les PME innovantes.</li>
+                <li><strong>La Région Nouvelle-Aquitaine</strong> offre des aides à travers son dispositif "Projets Innovants de l'Économie Sociale et Solidaire (PIESS)" avec des subventions pouvant atteindre 50 000 €.</li>
+                <li><strong>En Occitanie</strong>, le dispositif "PASS Commerce et Artisanat" soutient les artisans et commerçants avec des subventions et des prêts à taux 0.</li>
             </ul>
         </div>
         
-        <h3>Caractéristiques communes des aides régionales</h3>
-        <ul>
-            <li>Montants variables selon les régions</li>
-            <li>Conditions d'éligibilité spécifiques</li>
-            <li>Priorité aux projets innovants</li>
-            <li>Accompagnement personnalisé</li>
-        </ul>
+        <p>Les entrepreneurs doivent contacter les <strong>hôtels de région</strong> ou consulter les sites web régionaux pour connaître les détails précis et les critères d'éligibilité.</p>
         
-        <h2>🏘️ Aides territoriales locales</h2>
+        <h2>🏙️ Aides Territoriales</h2>
         
-        <h3>1. Aides des communes</h3>
-        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Types d'aides communales</h4>
+        <p>À un niveau encore plus local, les <strong>aides territoriales</strong> peuvent être offertes par les <strong>communautés de communes</strong> ou les <strong>agglomérations</strong>. Ces aides sont souvent destinées à soutenir les petites entreprises et à développer le tissu économique local.</p>
+        
+        <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h4>Types d'aides territoriales</h4>
             <ul>
-                <li><strong>Subventions :</strong> Aide financière directe</li>
-                <li><strong>Exonérations :</strong> Taxe professionnelle, CFE</li>
-                <li><strong>Locaux :</strong> Mise à disposition de locaux</li>
-                <li><strong>Services :</strong> Accompagnement administratif</li>
+                <li>Les <strong>partenariats avec les Chambres de Commerce et d'Industrie (CCI)</strong> : Ces collaborations offrent des subventions, des conseils et des formations pour soutenir les entrepreneurs locaux.</li>
+                <li><strong>L'initiative locale</strong> : Dans certains territoires, des aides sont disponibles sous forme de micro-crédits ou de subventions pour des projets spécifiques. Par exemple, la <strong>Métropole de Lyon</strong> propose le programme "Je crée dans ma ville" qui aide les entrepreneurs à s'installer dans les quartiers prioritaires.</li>
             </ul>
         </div>
         
-        <h3>2. Aides des intercommunalités</h3>
-        <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Dispositifs intercommunaux</h4>
-            <ul>
-                <li><strong>Pépinières d'entreprises :</strong> Hébergement et accompagnement</li>
-                <li><strong>Parcs d'activités :</strong> Terrains et infrastructures</li>
-                <li><strong>Subventions :</strong> Aide à l'installation</li>
-                <li><strong>Services :</strong> Accompagnement collectif</li>
-            </ul>
-        </div>
+        <h2>📚 Exemples Pratiques</h2>
         
-        <h3>3. Aides des départements</h3>
         <div style="background: #f3e5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Actions départementales</h4>
-            <ul>
-                <li><strong>Prêts d'honneur :</strong> Financement départemental</li>
-                <li><strong>Garanties :</strong> Facilitation d'accès au crédit</li>
-                <li><strong>Formation :</strong> Modules de formation</li>
-                <li><strong>Réseau :</strong> Mise en relation</li>
-            </ul>
-        </div>
-        
-        <h2>🎯 Critères d'éligibilité</h2>
-        
-        <div style="overflow-x: auto; margin: 20px 0;">
-            <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
-                <thead>
-                    <tr style="background: #f8f9fa;">
-                        <th style="border: 1px solid #ddd; padding: 12px;">Critère</th>
-                        <th style="border: 1px solid #ddd; padding: 12px;">National</th>
-                        <th style="border: 1px solid #ddd; padding: 12px;">Régional</th>
-                        <th style="border: 1px solid #ddd; padding: 12px;">Local</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Statut</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Demandeur d'emploi</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Tous statuts</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Résident local</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Secteur</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Tous secteurs</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Priorité innovation</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Secteurs locaux</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Montant</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Plafond national</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Variable</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Modéré</td>
-                    </tr>
-                </tbody>
-            </table>
+            <h4>Le cas de Jean - Entrepreneur en recyclage en Bretagne</h4>
+            <p>Prenons l'exemple de Jean, un aspirant entrepreneur voulant lancer une entreprise de recyclage en Bretagne. Jean pourrait bénéficier de :</p>
+            <ol>
+                <li><strong>Fonds de transition écologique</strong> au niveau national pour des projets en lien avec l'environnement.</li>
+                <li><strong>Aides régionales</strong> de la Bretagne qui proposent des subventions pour les projets innovants dans le développement durable.</li>
+                <li><strong>Soutiens locaux</strong> comme les aides des collectivités territoriales bretonnes, souvent spécialisées dans les initiatives écologiques et le développement local.</li>
+            </ol>
+            <p>Ces aides cumulées permettent à Jean de lancer son entreprise avec des coûts considérablement réduits, augmentant ainsi ses chances de succès.</p>
         </div>
         
         <h2>🛠️ Comment identifier les aides</h2>
@@ -283,7 +217,8 @@ window.module6Content = {
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h3>💡 Conseil pratique</h3>
-            <p>Les aides territoriales sont souvent cumulables avec les aides nationales. N'hésitez pas à contacter directement les services économiques de votre territoire pour connaître tous les dispositifs disponibles.</p>
+            <p>Il est crucial pour les entrepreneurs de faire preuve de <strong>prospection minutieuse</strong>, de <strong>compréhension des critères d'éligibilité</strong> et de <strong>nouer des relations avec les organismes d'attribution</strong> des aides pour maximiser les opportunités offertes à chaque niveau.</p>
+            <p>En résumé, la clé du succès réside souvent dans la capacité à identifier et à exploiter ces aides existantes, qui sont autant de leviers puissants pour concrétiser son projet entrepreneurial. Bonne chance dans votre recherche et création !</p>
         </div>
         
         <h2>🚀 Prochaines étapes</h2>
@@ -310,88 +245,86 @@ window.module6Content = {
             <li>Anticiper les changements de statut</li>
         </ul>
         
-        <h2>👤 Aides selon le statut personnel</h2>
-        
-        <h3>1. Demandeur d'emploi</h3>
         <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Aides spécifiques</h4>
-            <ul>
-                <li><strong>ARCE :</strong> Aide à la Reprise ou Création d'Entreprise</li>
-                <li><strong>NACRE :</strong> Nouvel Accompagnement pour la Création</li>
-                <li><strong>Formation :</strong> Modules de formation entrepreneuriale</li>
-                <li><strong>Accompagnement :</strong> Suivi personnalisé Pôle Emploi</li>
-            </ul>
+            <h3>🤔 Savez-vous que certaines aides peuvent doubler en fonction de votre statut personnel ?</h3>
+            <p>Prenons l'exemple d'Isabelle, une jeune entrepreneuse qui souhaite lancer son entreprise dans le secteur de la mode éthique. En tant que 👩 femme entrepreneure, elle peut avoir accès à des aides spécifiques qui ne sont pas disponibles aux autres entrepreneurs. En comprenant comment appliquer ces aides selon son statut personnel, elle peut optimiser ses chances de succès.</p>
         </div>
         
-        <h4>Conditions ARCE</h4>
-        <ul>
-            <li>Être demandeur d'emploi indemnisé</li>
-            <li>Avoir des droits restants</li>
-            <li>Projet de création viable</li>
-            <li>Demande avant la création</li>
-        </ul>
+        <h2>✅ Comprendre les Critères d'Éligibilité</h2>
         
-        <h3>2. Salarié</h3>
-        <div style="background: #f3e5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Options disponibles</h4>
-            <ul>
-                <li><strong>Congé création :</strong> Congé sans solde</li>
-                <li><strong>Portage salarial :</strong> Test de l'activité</li>
-                <li><strong>Prêt d'honneur :</strong> Financement personnel</li>
-                <li><strong>Formation :</strong> CPF entrepreneuriat</li>
-            </ul>
-        </div>
+        <p>Chaque aide est assortie de critères spécifiques et il est crucial de les comprendre pour déterminer si vous y êtes admissible. Par exemple, regardons les aides pour 👩 femmes entrepreneures :</p>
         
-        <h4>Congé création d'entreprise</h4>
-        <ul>
-            <li>Durée : 1 an renouvelable</li>
-            <li>Conditions : Ancienneté 2 ans</li>
-            <li>Garantie : Retour au poste</li>
-            <li>Formalités : Accord employeur</li>
-        </ul>
-        
-        <h3>3. Étudiant</h3>
-        <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Aides étudiantes</h4>
-            <ul>
-                <li><strong>PEPITE :</strong> Pôle Étudiant pour l'Innovation</li>
-                <li><strong>Concours :</strong> Prix et bourses</li>
-                <li><strong>Incubateurs :</strong> Hébergement étudiant</li>
-                <li><strong>Formation :</strong> Modules entrepreneuriat</li>
-            </ul>
-        </div>
-        
-        <h4>Statut étudiant-entrepreneur</h4>
-        <ul>
-            <li>Conservation du statut étudiant</li>
-            <li>Accompagnement personnalisé</li>
-            <li>Accès aux incubateurs</li>
-            <li>Formation adaptée</li>
-        </ul>
-        
-        <h3>4. Retraité</h3>
-        <div style="background: #fff3e0; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Spécificités retraités</h4>
-            <ul>
-                <li><strong>Prêt d'honneur :</strong> Financement disponible</li>
-                <li><strong>Accompagnement :</strong> Conseil spécialisé</li>
-                <li><strong>Réseau :</strong> Entrepreneurs seniors</li>
-                <li><strong>Formation :</strong> Modules adaptés</li>
-            </ul>
-        </div>
-        
-        <h3>5. Fonctionnaire</h3>
         <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Options fonctionnaires</h4>
+            <h4>Aides spécifiques aux femmes entrepreneures</h4>
             <ul>
-                <li><strong>Détachement :</strong> Création d'entreprise</li>
-                <li><strong>Disponibilité :</strong> Congé sans traitement</li>
-                <li><strong>Démission :</strong> Retour possible</li>
-                <li><strong>Formation :</strong> CPF utilisable</li>
+                <li><strong>Le Fonds de Garantie à l'Initiative des Femmes (FGIF)</strong> : Garantie jusqu'à 70% d'un prêt bancaire</li>
+                <li><strong>Programmes d'accompagnement spécialisés</strong> : Mentorat et formation adaptés</li>
+                <li><strong>Réseaux d'entraide</strong> : Mise en relation avec d'autres femmes entrepreneures</li>
             </ul>
         </div>
         
-        <h2>📊 Tableau comparatif des aides</h2>
+        <p>Pour les 🚀 primo-entrepreneurs (entrepreneurs débutants) :</p>
+        
+        <div style="background: #fff3e0; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h4>Aides pour primo-entrepreneurs</h4>
+            <ul>
+                <li><strong>ACRE (Aide aux Créateurs et Repreneurs d'Entreprises)</strong> : Exonération partielle des charges sociales</li>
+                <li><strong>NACRE</strong> : Accompagnement personnalisé et prêt d'honneur</li>
+                <li><strong>Formations spécialisées</strong> : Modules de formation entrepreneuriale</li>
+            </ul>
+        </div>
+        
+        <h2>💭 Exemple Concret : L'Entreprise d'Isabelle</h2>
+        
+        <div style="background: #f3e5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h4>Le cas d'Isabelle - Femme entrepreneure et demandeuse d'emploi</h4>
+            <p>Imaginons qu'Isabelle soit non seulement une 👩 femme entrepreneure mais également 🗺 éligible à l'ARCE grâce à son statut de demandeuse d'emploi. En combinant ces deux aides :</p>
+            <ol>
+                <li><strong>FGIF</strong> : Isabelle peut obtenir un prêt bancaire de 50 000 euros pour sa startup, la garantie du FGIF réduisant les risques pour la banque, ce qui augmente ses chances d'obtenir le financement.</li>
+                <li><strong>ARCE</strong> : Admettons qu'elle ait droit à 10 000 euros d'allocations chômage. Grâce à l'ARCE, elle peut percevoir 5 000 euros immédiatement sous forme de capital, lui offrant ainsi une base solide de 55 000 euros pour démarrer son projet.</li>
+            </ol>
+        </div>
+        
+        <h2>🌍 Une Diversité de Secteurs</h2>
+        
+        <p>Les aides peuvent également varier considérablement selon le secteur d'activité. Prenons l'industrie technologique, par exemple. Pour les 🌿 entreprises vertes (éco-industries) :</p>
+        
+        <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h4>Aides sectorielles</h4>
+            <ul>
+                <li><strong>Fonds de transition écologique</strong> : Subventions pour projets environnementaux</li>
+                <li><strong>Crédit d'impôt recherche</strong> : Incitation à l'innovation verte</li>
+                <li><strong>Programmes régionaux</strong> : Aides spécifiques aux éco-industries</li>
+            </ul>
+        </div>
+        
+        <h2>📚 Cas Pratique : Le Parcours de Lucas, Minorité Ethnique</h2>
+        
+        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h4>Le cas de Lucas - Entrepreneur tech issu de minorité ethnique</h4>
+            <p>Lucas, un entrepreneur issue de 🔵 minorité ethnique, souhaite créer une startup tech spécialisée dans l'intelligence artificielle. Il peut bénéficier des programmes suivants :</p>
+            <ul>
+                <li><strong>Programmes d'inclusion</strong> : Aides spécifiques aux entrepreneurs issus de la diversité</li>
+                <li><strong>Incubateurs spécialisés</strong> : Accompagnement adapté aux projets tech</li>
+                <li><strong>Réseaux de mentors</strong> : Parrainage par des entrepreneurs expérimentés</li>
+                <li><strong>Subventions innovation</strong> : Financement des projets technologiques</li>
+            </ul>
+        </div>
+        
+        <h2>🔍 Comment Évaluer les Opportunités ?</h2>
+        
+        <p>Pour maximiser les opportunités offertes par ces aides, il est essentiel de :</p>
+        
+        <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h4>Stratégies d'évaluation</h4>
+            <ol>
+                <li><strong>🔎 Analyser votre profil</strong> : Comprendre votre statut personnel (primo-entrepreneur, femme, minorité, etc.).</li>
+                <li><strong>📝 Évaluer l'offre d'aides disponibles</strong> : Faire des recherches approfondies.</li>
+                <li><strong>🗂 Préparer un dossier solide</strong> : Mettre en avant les éléments qui montrent votre éligibilité et votre potentiel de réussite.</li>
+            </ol>
+        </div>
+        
+        <h2>📊 Tableau comparatif des aides par statut</h2>
         
         <div style="overflow-x: auto; margin: 20px 0;">
             <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
@@ -411,62 +344,38 @@ window.module6Content = {
                         <td style="border: 1px solid #ddd; padding: 12px;">Pôle Emploi</td>
                     </tr>
                     <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Salarié</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Prêt d'honneur</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">1 000 - 50 000 €</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">France Active</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Femme entrepreneure</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">FGIF</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Garantie 70%</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">BPI France</td>
                     </tr>
                     <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Étudiant</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">PEPITE</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Accompagnement</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Université</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Primo-entrepreneur</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">ACRE</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Exonération charges</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">URSSAF</td>
                     </tr>
                     <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Retraité</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Prêt d'honneur</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">1 000 - 10 000 €</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Réseau local</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Entreprise verte</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Fonds transition</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Variable</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">ADEME</td>
                     </tr>
                 </tbody>
             </table>
         </div>
         
-        <h2>🔄 Changements de statut</h2>
-        
-        <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3>Anticiper les changements</h3>
-            <ul>
-                <li><strong>Démission :</strong> Perte des droits ARCE</li>
-                <li><strong>Licenciement :</strong> Ouverture des droits ARCE</li>
-                <li><strong>Retraite :</strong> Changement d'organisme</li>
-                <li><strong>Études :</strong> Accès aux aides étudiantes</li>
-            </ul>
-        </div>
-        
-        <h2>🛠️ Optimisation des droits</h2>
-        
-        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3>Stratégies d'optimisation</h3>
-            <ul>
-                <li><strong>Timing :</strong> Choisir le bon moment</li>
-                <li><strong>Cumul :</strong> Combiner plusieurs aides</li>
-                <li><strong>Formation :</strong> Utiliser le CPF</li>
-                <li><strong>Réseau :</strong> S'appuyer sur les partenaires</li>
-            </ul>
-        </div>
-        
         <h2>⚠️ Points d'attention</h2>
         <ul>
-            <li>Vérifier les conditions d'éligibilité</li>
+            <li>Vérifier les conditions d'éligibilité spécifiques à votre statut</li>
             <li>Anticiper les changements de statut</li>
             <li>Respecter les délais de demande</li>
-            <li>Préparer les justificatifs</li>
+            <li>Préparer les justificatifs adaptés</li>
         </ul>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h3>💡 Conseil pratique</h3>
-            <p>Votre statut personnel détermine largement les aides auxquelles vous pouvez prétendre. N'hésitez pas à consulter un conseiller spécialisé pour optimiser vos droits selon votre situation.</p>
+            <p>Votre statut personnel détermine largement les aides auxquelles vous pouvez prétendre. N'hésitez pas à consulter un conseiller spécialisé pour optimiser vos droits selon votre situation et identifier toutes les opportunités disponibles.</p>
         </div>
         
         <h2>🚀 Prochaines étapes</h2>
@@ -493,47 +402,69 @@ window.module6Content = {
             <li>Éviter les erreurs de cumul</li>
         </ul>
         
-        <h2>💰 Stratégies d'optimisation financière</h2>
-        
-        <h3>1. Cumul des aides</h3>
         <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Règles de cumul</h4>
+            <h3>🌟 Saviez-vous que certaines entreprises réussissent à doubler leur rentabilité en exploitant judicieusement les aides disponibles? 🌟</h3>
+        </div>
+        
+        <h2>📋 Introduction à l'optimisation des aides majeures</h2>
+        
+        <p>Pour maximiser les avantages des aides publiques et privées, il est essentiel d'aborder ce processus de manière stratégique. Les aides se déclinent en diverses formes, allant des subventions aux incitations fiscales. Mis à part l'accès à ces aides, leur utilisation optimale peut transformer la trajectoire d'une entreprise en croissance, spécialement dans un contexte compétitif et économique en évolution rapide.</p>
+        
+        <h2>🎯 Objectifs et Rôles des Aides</h2>
+        
+        <p>Les aides sont conçues pour diverses raisons :</p>
+        
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h4>Objectifs des aides</h4>
+            <ol>
+                <li><strong>Promotion de l'innovation</strong> : Encourager la recherche et le développement</li>
+                <li><strong>Stimulation de l'économie locale</strong> : Développer le tissu économique régional</li>
+                <li><strong>Soutien à la création d'emplois</strong> : Faciliter l'embauche et la croissance</li>
+                <li><strong>Réduction des inégalités régionales</strong> : Équilibrer le développement territorial</li>
+            </ol>
+        </div>
+        
+        <p>Élaborer un plan détaillé pour maximiser ces aides implique de comprendre comment chacune peut spécifiquement bénéficier à l'entreprise.</p>
+        
+        <h2>🎓 Étape 1 : Analyser les Exigences pour l'Accès aux Aides</h2>
+        
+        <p>Chaque programme d'aide a ses propres critères d'éligibilité. Par exemple :</p>
+        
+        <div style="background: #fff3e0; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h4>Critères d'éligibilité courants</h4>
             <ul>
-                <li><strong>ARCE + NACRE :</strong> Cumul possible</li>
-                <li><strong>Prêt d'honneur + subvention :</strong> Compatible</li>
-                <li><strong>Formation + financement :</strong> Complémentaire</li>
-                <li><strong>Aides publiques + privées :</strong> Souvent possible</li>
+                <li><strong>Secteur d'activité</strong> : Certaines aides sont réservées à des secteurs spécifiques</li>
+                <li><strong>Taille de l'entreprise</strong> : PME, TPE, startups ont des critères différents</li>
+                <li><strong>Localisation géographique</strong> : Zones prioritaires ou régions spécifiques</li>
+                <li><strong>Statut du créateur</strong> : Demandeur d'emploi, primo-entrepreneur, etc.</li>
             </ul>
         </div>
         
-        <h4>Exemples de cumul optimisé</h4>
-        <ul>
-            <li><strong>Demandeur d'emploi :</strong> ARCE + NACRE + prêt d'honneur</li>
-            <li><strong>Salarié :</strong> Congé création + prêt d'honneur + formation</li>
-            <li><strong>Étudiant :</strong> PEPITE + concours + incubateur</li>
-            <li><strong>Retraité :</strong> Prêt d'honneur + accompagnement + réseau</li>
-        </ul>
+        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h4>💡 Astuce</h4>
+            <p>Maintenez un dossier de documentation à jour incluant les certifications, rapports financiers et autres preuves pouvant être exigées par les organismes de subvention.</p>
+        </div>
         
-        <h3>2. Timing optimal</h3>
+        <h2>📖 Exemple Réel : Le Cas de Tech Innov</h2>
+        
         <div style="background: #f3e5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Calendrier d'optimisation</h4>
-            <ul>
-                <li><strong>Phase 1 :</strong> Formation et accompagnement</li>
-                <li><strong>Phase 2 :</strong> Financement et subventions</li>
-                <li><strong>Phase 3 :</strong> Création et lancement</li>
-                <li><strong>Phase 4 :</strong> Suivi et développement</li>
-            </ul>
+            <h4>Succès d'optimisation des aides</h4>
+            <p>Une entreprise française, Tech Innov, a réussi à obtenir une subvention de recherche et développement de 400 000 euros. Ils ont intégré leur plan de R&D avec des partenariats académiques, obtenant ainsi l'aval nécessaire et doublant pratiquement leurs ressources disponibles sans diluer leur capital.</p>
+            <p><strong>Stratégie clé :</strong> Augmenter les liquidités disponibles en combinant subventions et partenariats stratégiques.</p>
         </div>
         
-        <h3>3. Montants optimaux</h3>
+        <h2>📈 Optimisation de l'Usage des Subventions et Subventions</h2>
+        
+        <p>Maximiser les bénéfices des subventions implique :</p>
+        
         <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Stratégies de montant</h4>
-            <ul>
-                <li><strong>ARCE :</strong> Demander le maximum (2 000 €)</li>
-                <li><strong>Prêt d'honneur :</strong> Adapter au besoin réel</li>
-                <li><strong>Subventions :</strong> Cibler les montants élevés</li>
-                <li><strong>Formation :</strong> Utiliser tout le CPF</li>
-            </ul>
+            <h4>Stratégies d'optimisation</h4>
+            <ol>
+                <li><strong>Planification financière rigoureuse</strong> : Utiliser les fonds pour des projets bien définis qui ont un potentiel de retour sur investissement élevé.</li>
+                <li><strong>Rapports transparents</strong> : Fournir des rapports clairs et détaillés sur l'utilisation des fonds pour garantir la continuité des subventions.</li>
+                <li><strong>Conformité réglementaire</strong> : Respecter scrupuleusement les conditions d'attribution pour éviter les pénalités.</li>
+                <li><strong>Mesure de l'impact</strong> : Documenter les résultats obtenus pour justifier l'efficacité de l'aide.</li>
+            </ol>
         </div>
         
         <h2>🔄 Processus d'optimisation</h2>
@@ -658,7 +589,7 @@ window.module6Content = {
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h3>💡 Conseil pratique</h3>
-            <p>L'optimisation des aides nécessite une approche méthodique et patiente. N'hésitez pas à faire appel à des conseillers spécialisés pour maximiser vos chances de succès.</p>
+            <p>L'optimisation des aides nécessite une approche méthodique et patiente. N'hésitez pas à faire appel à des conseillers spécialisés pour maximiser vos chances de succès et transformer ces aides en leviers puissants pour votre croissance.</p>
         </div>
         
         <h2>🚀 Prochaines étapes</h2>
