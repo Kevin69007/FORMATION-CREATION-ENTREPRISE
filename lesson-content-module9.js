@@ -100,78 +100,41 @@ window.module9Content = {
             <iframe width="560" height="315" src="https://www.youtube.com/embed/m-5cckUjB7c" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
         </div>
         
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Comprendre les mécanismes financiers de base</li>
-            <li>Maîtriser les principes de comptabilité</li>
-            <li>Identifier les flux financiers</li>
-            <li>Appliquer les bonnes pratiques de gestion</li>
-        </ul>
+        <h2>🎯 Introduction</h2>
+        <p>Trouvez-vous que l'⏳ argent à la fin du mois disparaît mystérieusement ? Cela pourrait signifier que vous n'avez pas une bonne compréhension des 📊 mécanismes financiers de base.</p>
+        <p>Pour un entrepreneur, maîtriser ces concepts est essentiel pour la survie et la prospérité de son entreprise.</p>
         
-        <h2>📋 Les mécanismes financiers essentiels</h2>
+        <h2>📈🧮 Revenus et Dépenses : la Balance de votre Entreprise</h2>
+        <p>Les 📉 revenus représentent l'argent que votre entreprise gagne grâce à la vente de produits ou de services.</p>
+        <p>Par exemple, imaginez que vous possédez une boulangerie. Le 📉 revenu est totalisé à partir de la vente des baguettes, croissants et autres produits de viennoiserie.</p>
+        <p>Les 📉 dépenses comprennent tous les coûts nécessaires pour maintenir votre entreprise en activité. Pour la même boulangerie, les 📉 dépenses incluent le coût de la farine, le sucre, les frais de location, et les salaires des employés.</p>
+        <p>Équilibrer entre combien vous gagnez et combien vous dépensez est crucial pour comprendre si votre entreprise est financièrement solide.</p>
         
-        <h3>1. Principes de comptabilité</h3>
-        <p>La comptabilité est le langage de l'entreprise. Elle permet de traduire les opérations économiques en informations financières exploitables. Les principes fondamentaux incluent la partie double, la continuité d'exploitation et la prudence.</p>
+        <h2>📊📋 Les États Financiers : Une Vue d'Ensemble</h2>
         
-        <h3>2. Flux de trésorerie</h3>
-        <p>La gestion de la trésorerie est cruciale pour la survie de l'entreprise. Il faut distinguer les encaissements des décaissements, anticiper les besoins de financement et optimiser la gestion des délais de paiement.</p>
+        <h3>📄 Bilan : L'état financier fondamental</h3>
+        <p>Un Bilan présente les 🏦 actifs (ce que l'entreprise possède), les 💰 passifs (ce que l'entreprise doit), et les 🔄 capitaux propres (la valeur nette de l'entreprise).</p>
+        <p>Prenons un exemple : Si votre boulangerie possède un four industriel d'une valeur de 10 000€, c'est un actif. Si vous avez contracté un prêt de 5 000€ pour acheter ce four, c'est un passif. Les capitaux propres représentent la valeur résiduelle après avoir soustrait les passifs des actifs - dans ce cas, ce serait 5 000€.</p>
         
-        <h3>3. Comptabilisation des revenus</h3>
-        <p>Les revenus doivent être comptabilisés selon le principe d'engagement, c'est-à-dire au moment de la livraison du bien ou de la prestation du service, et non au moment du paiement. Par exemple, si la boulangerie livre des pâtisseries en décembre mais ne reçoit le paiement qu'en janvier, les revenus sont comptabilisés en décembre.</p>
+        <h3>📊 Compte de Résultat : Savoir si vous êtes Rentable</h3>
+        <p>Le compte de résultat indique si votre entreprise a réalisé un 📉 bénéfice ou subi une 📉 perte pendant une période déterminée.</p>
+        <p>Prenons à nouveau la boulangerie. Si vos ventes totales pour le mois étaient de 20 000€ et vos dépenses totales de 15 000€, vous avez un 📉 bénéfice de 5 000€.</p>
         
-        <h3>4. Gestion des charges</h3>
-        <p>Les charges doivent être correctement identifiées et classées : charges d'exploitation, financières et exceptionnelles. Cette classification permet une analyse fine de la performance de l'entreprise.</p>
+        <h2>🔄⚖️ Flux de Trésorerie : La Survivante</h2>
+        <p>Le 🏦 flux de trésorerie représente la quantité d'argent entrant et sortant de votre entreprise. Il est vital car même une entreprise rentable peut échouer si elle ne parvient pas à gérer ses flux de trésorerie.</p>
+        <p>Imaginez que la boulangerie vende un grand nombre de commandes pour un mariage et attende le paiement après la réception. En attendant, elle doit tout de même payer les fournisseurs et les salaires, ce qui pourrait entraîner des problèmes de trésorerie si elle ne dispose pas de suffisamment de liquidités.</p>
         
-        <h2>🛠️ Outils de gestion financière</h2>
+        <h2>🏛📚 Principes Comptables : Les Règles du Jeu</h2>
         
-        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3>Outils essentiels</h3>
-            <ul>
-                <li><strong>Comptabilité générale :</strong> Enregistrement de toutes les opérations</li>
-                <li><strong>Comptabilité analytique :</strong> Analyse des coûts par activité</li>
-                <li><strong>Budget prévisionnel :</strong> Planification des ressources</li>
-                <li><strong>Tableau de bord :</strong> Suivi des indicateurs clés</li>
-            </ul>
-        </div>
+        <h3>🔠 Principe de Prudence</h3>
+        <p>Toujours enregistrer les dépenses et les pertes potentielles dès que possible, mais ne jamais enregistrer les revenus avant qu'ils ne soient réalisables ou réalisés.</p>
         
-        <h2>📊 Indicateurs financiers clés</h2>
+        <h3>📆 Rattachement des Charges et des Produits</h3>
+        <p>Les revenus et les dépenses doivent être rattachés à la période où ils sont réellement gagnés ou engagés, pas nécessairement quand l'argent change de main.</p>
+        <p>Par exemple, si la boulangerie livre des pâtisseries en décembre mais ne reçoit le paiement qu'en janvier, les revenus sont comptabilisés en décembre.</p>
         
-        <div style="overflow-x: auto; margin: 20px 0;">
-            <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
-                <thead>
-                    <tr style="background: #f8f9fa;">
-                        <th style="border: 1px solid #ddd; padding: 12px;">Indicateur</th>
-                        <th style="border: 1px solid #ddd; padding: 12px;">Définition</th>
-                        <th style="border: 1px solid #ddd; padding: 12px;">Utilité</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Chiffre d'affaires</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Montant des ventes</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Mesure l'activité</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Marge brute</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">CA - Coût des ventes</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Rentabilité des ventes</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Résultat net</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Bénéfice ou perte</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Performance globale</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-        <h2>⚠️ Points d'attention</h2>
-        <ul>
-            <li>Respecter les principes comptables</li>
-            <li>Surveiller la trésorerie en permanence</li>
-            <li>Anticiper les besoins de financement</li>
-            <li>Analyser régulièrement les performances</li>
-        </ul>
+        <h2>🌟 Conclusion</h2>
+        <p>Comprendre ces 📊 mécanismes financiers de base vous permet non seulement de mieux gérer votre entreprise, mais aussi de prendre des décisions éclairées. Ceci est la clé pour assurer la prospérité et la longévité de votre activité et éviter des situations financières difficiles.</p>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h3>💡 Conseil pratique</h3>
@@ -194,81 +157,61 @@ window.module9Content = {
             <iframe width="560" height="315" src="https://www.youtube.com/embed/m-5cckUjB7c" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
         </div>
         
-        <h2>🎯 Objectifs de cette leçon</h2>
+        <h2>📊 Introduction</h2>
+        <p>Quelle complexité une entreprise peut-elle éprouver sans une organisation administrative et comptable efficace ? Lorsqu'une entreprise néglige la mise en place d'une organisation administrative et comptable solide, elle s'expose à divers problèmes tels que la perte d'efficacité, des erreurs comptables, et des déficiences dans le suivi des obligations fiscales.</p>
+        <p>Cela peut mener à des pénalités financières et entacher la réputation de l'entreprise.</p>
+        
+        <h2>🎯 Processus de tenue de registres</h2>
+        <p>Une bonne tenue des 🎯 registres est cruciale pour tout organisme. Cela inclut l'enregistrement des transactions commerciales, le suivi des dépenses et des revenus, et le maintien des documents financiers tels que les factures, les reçus, et les relevés bancaires.</p>
+        
+        <h3>Exemple : Une PME dans le secteur du commerce</h3>
+        <p>Prenons l'exemple d'une petite et moyenne entreprise (PME) spécialisée dans la vente d'équipement sportif. Si elle adopte des procédures de tenue de registres rigoureuses, elle sera en mesure de :</p>
         <ul>
-            <li>Comprendre l'importance de l'organisation administrative</li>
-            <li>Maîtriser les processus comptables essentiels</li>
-            <li>Identifier les outils nécessaires</li>
-            <li>Mettre en place une structure efficace</li>
+            <li>Identifier et corriger les erreurs comptables avant qu'elles ne deviennent des problèmes majeurs</li>
+            <li>Avoir une vision claire de ses performances financières à tout moment</li>
+            <li>Préparer des déclarations fiscales précises et ponctuelles</li>
         </ul>
         
-        <h2>📋 Organisation administrative efficace</h2>
+        <h2>🗂 Gestion des tâches administratives</h2>
+        <p>La 🗂 gestion des tâches administratives implique de s'occuper de la correspondance, de la planification, du suivi des projets, et des tâches de gestion quotidienne. Ces tâches, bien que souvent négligées, jouent un rôle central dans la fluidité des opérations d'une entreprise.</p>
         
-        <h3>1. Structure organisationnelle</h3>
-        <p>Une organisation administrative efficace nécessite une structure claire avec des rôles et responsabilités bien définis. Cela inclut la répartition des tâches, la hiérarchie des décisions et les processus de validation.</p>
-        
-        <h3>2. Processus administratifs</h3>
-        <p>Les processus administratifs doivent être standardisés et documentés pour assurer la cohérence et la traçabilité. Cela concerne la gestion des documents, les procédures d'approbation et les circuits de validation.</p>
-        
-        <h3>3. Gestion documentaire</h3>
-        <p>La gestion documentaire est cruciale pour la conformité et l'efficacité. Elle inclut l'archivage, la classification, la conservation et la recherche de documents selon les obligations légales.</p>
-        
-        <h2>🛠️ Organisation comptable</h2>
-        
-        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3>Éléments essentiels</h3>
-            <ul>
-                <li><strong>Plan comptable :</strong> Classification des comptes</li>
-                <li><strong>Journal des opérations :</strong> Enregistrement chronologique</li>
-                <li><strong>Grand livre :</strong> Regroupement par compte</li>
-                <li><strong>Balance :</strong> Contrôle des équilibres</li>
-            </ul>
-        </div>
-        
-        <h3>1. Choix du logiciel de comptabilité</h3>
-        <p>Le choix du logiciel de comptabilité doit être adapté à la taille et aux besoins de l'entreprise. Les critères incluent la facilité d'utilisation, les fonctionnalités, la conformité réglementaire et le coût.</p>
-        
-        <h3>2. Mise en place des processus</h3>
-        <p>La mise en place des processus comptables nécessite une analyse des besoins, une formation du personnel et une phase de test avant la mise en production complète.</p>
-        
-        <h2>📊 Indicateurs de performance administrative</h2>
-        
-        <div style="overflow-x: auto; margin: 20px 0;">
-            <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
-                <thead>
-                    <tr style="background: #f8f9fa;">
-                        <th style="border: 1px solid #ddd; padding: 12px;">Processus</th>
-                        <th style="border: 1px solid #ddd; padding: 12px;">Indicateur</th>
-                        <th style="border: 1px solid #ddd; padding: 12px;">Objectif</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Facturation</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Délai moyen</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">< 48h</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Encaissement</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Délai moyen</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">< 30 jours</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Saisie comptable</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Délai moyen</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">< 7 jours</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-        <h2>⚠️ Points d'attention</h2>
+        <h3>Exemple : Utilisation des logiciels de gestion</h3>
+        <p>Les entreprises modernes peuvent bénéficier grandement des logiciels de gestion pour automatiser leurs tâches administratives. Des outils comme Trello ou Asana permettent de :</p>
         <ul>
-            <li>Respecter les obligations légales</li>
-            <li>Former le personnel aux nouveaux processus</li>
-            <li>Surveiller les performances</li>
-            <li>Adapter l'organisation à l'évolution de l'entreprise</li>
+            <li>Assigner et suivre les tâches au sein de l'équipe</li>
+            <li>Gérer les projets de façon collaborative et transparente</li>
         </ul>
+        
+        <h2>💰 Mise en place de pratiques comptables efficaces</h2>
+        <p>Les pratiques comptables ne consistent pas seulement à enregistrer les transactions mais également à interpréter et analyser les données financières pour éclairer les décisions stratégiques.</p>
+        
+        <h3>Story : Brève histoire d'une startup dans la tech</h3>
+        <p>Une startup tech en pleine expansion décide d'implémenter un système comptable efficace en mettant en place :</p>
+        <ol>
+            <li>Des politiques de contrôle interne pour minimiser les erreurs et prévenir la fraude</li>
+            <li>L'audit régulier des comptes pour assurer la conformité aux normes comptables</li>
+            <li>La formation continue des employés pour s'assurer qu'ils restent à jour avec les dernières régulations et pratiques comptables</li>
+        </ol>
+        <p>Grâce à cela, la startup a pu :</p>
+        <ul>
+            <li>Augmenter sa rentabilité en optimisant ses coûts</li>
+            <li>Attirer des investisseurs grâce à une transparence accrue de ses finances</li>
+            <li>Réduire les risques financiers grâce à des prévisions précises</li>
+        </ul>
+        
+        <h2>🖥 Sélection et mise en œuvre de logiciels comptables</h2>
+        <p>Le choix et la mise en application d'un 🖥 logiciel comptable sont des étapes cruciales pour sécuriser la fiabilité des opérations comptables. Les logiciels comme QuickBooks, Sage ou FreshBooks peuvent transformer la gestion financière d'une entreprise.</p>
+        
+        <h3>Fact : Étude de cas sur l'entreprise X</h3>
+        <p>L'entreprise X, une entreprise de services financiers, a choisi de mettre en œuvre QuickBooks pour sa gestion comptable. Les bénéfices observés étaient :</p>
+        <ul>
+            <li>Réduction de 40% du temps consacré aux tâches comptables</li>
+            <li>Amélioration de la précision des rapports financiers grâce à l'automatisation</li>
+            <li>Centralisation des données financières pour un accès facile et sécurisé par tous les membres autorisés</li>
+        </ul>
+        
+        <h2>🌟 Conclusion et recommandations</h2>
+        <p>Pour conclure, l'établissement d'une 🌟 organisation administrative et comptable efficace est un pilier fondamental pour la croissance et la prospérité d'une entreprise. Cela nécessite non seulement une analyse complète des processus actuels, mais aussi une structure organisationnelle clairement définie avec des améliorations tangibles.</p>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h3>💡 Conseil pratique</h3>
@@ -291,106 +234,53 @@ window.module9Content = {
             <iframe width="560" height="315" src="https://www.youtube.com/embed/m-5cckUjB7c" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
         </div>
         
-        <h2>🎯 Objectifs de cette leçon</h2>
+        <h2>🗓️ Saviez-vous que manquer une date limite pour une déclaration fiscale pourrait entraîner des pénalités coûteuses ?</h2>
+        
+        <h2>🕰️ Calendrier des Déclarations et des Télédéclarations</h2>
+        <p>Comprendre et respecter le 🗓️ calendrier des déclarations et des télédéclarations est essentiel pour éviter les sanctions et assurer la conformité légale de votre entreprise.</p>
+        <p>Dans cette leçon, nous explorerons les différents délais pour les diverses déclarations administratives et fiscales, ainsi que le processus de télédéclaration.</p>
+        
+        <h2>📅 Délais pour les Déclarations Fiscales</h2>
+        
+        <h3>1. Déclaration de TVA (Taxe sur la Valeur Ajoutée)</h3>
+        <p>Pour les entreprises soumises à la TVA, la déclaration doit généralement être effectuée mensuellement ou trimestriellement selon le régime fiscal de l'entreprise. Pour une entreprise au régime réel normal, c'est chaque mois.</p>
+        <p>Exemple concret : si une entreprise clôture son exercice fiscal au 30 juin, elle devra déposer sa déclaration de TVA au plus tard le 15 juillet.</p>
+        
+        <h3>2. Impôt sur les Sociétés (IS)</h3>
+        <p>L'impôt sur les sociétés se déclare annuellement. La date limite dépend de la date de clôture de l'exercice fiscal.</p>
+        <p>Pour un exercice fiscal clos au 31 décembre, la déclaration doit être déposée avant le 15 avril de l'année suivante.</p>
+        
+        <h3>3. Cotisations Sociales</h3>
+        <p>Les déclarations des cotisations sociales doivent souvent être effectuées sur une base mensuelle.</p>
+        <p>Par exemple, la DSN (Déclaration Sociale Nominative) pour les salaires de janvier doit être déposée avant le 5 ou le 15 février selon la taille de l'entreprise.</p>
+        
+        <h2>🖥️ Télédéclarations : Une Révolution Administrative</h2>
+        <p>Les télédéclarations ont simplifié la tâche de nombreux entrepreneurs. Plus besoin de se déplacer, tout se fait en ligne via des plateformes sécurisées.</p>
+        <p>Par exemple, le site des impôts propose un portail sécurisé où les entreprises peuvent soumettre leurs déclarations fiscales et payer leurs impôts directement.</p>
+        
+        <h3>Avantages de la Télédéclaration</h3>
         <ul>
-            <li>Comprendre l'importance du calendrier des déclarations</li>
-            <li>Maîtriser les échéances fiscales et sociales</li>
-            <li>Identifier les processus de télédéclaration</li>
-            <li>Éviter les sanctions et pénalités</li>
+            <li>🧾 Traçabilité et Sécurité</li>
+            <li>💼 Gain de Temps</li>
+            <li>🖨 Réduction de l'Utilisation du Papier</li>
         </ul>
         
-        <h2>📋 Le calendrier des déclarations</h2>
+        <h3>Processus de Télédéclaration</h3>
+        <ol>
+            <li>Création d'un Compte : Inscription sur le portail des impôts ou le site de l'organisme concerné</li>
+            <li>Préparation des Documents : Saisir les informations financières nécessaires</li>
+            <li>Soumission en Ligne : Téléverser les documents et valider la déclaration</li>
+            <li>Confirmation et Suivi : Recevoir une notification de confirmation et suivre le statut de la déclaration</li>
+        </ol>
         
-        <h3>1. Déclarations fiscales</h3>
-        <p>Les déclarations fiscales sont obligatoires et doivent être effectuées dans les délais impartis. Elles incluent la TVA, l'impôt sur les sociétés, la CFE et les autres taxes locales selon l'activité de l'entreprise.</p>
+        <h2>📚 Exemple : Une Petite Entreprise</h2>
+        <p>Prenons l'exemple de Sophie, qui gère une petite entreprise de design graphique. Elle réalise qu'en utilisant la télédéclaration pour sa TVA, elle économise 3 heures par mois. De plus, elle évite une amende qu'elle a dû payer l'année précédente à cause d'une déclaration tardive.</p>
         
-        <h3>2. Déclarations sociales</h3>
-        <p>Les déclarations sociales concernent les cotisations sociales, les déclarations d'embauche, les bulletins de paie et les déclarations annuelles. Leur respect est crucial pour éviter les sanctions de l'URSSAF.</p>
-        
-        <h3>3. Déclarations comptables</h3>
-        <p>Les déclarations comptables incluent le dépôt des comptes annuels, les déclarations de bénéfices et les obligations de publication selon la forme juridique de l'entreprise.</p>
-        
-        <h2>🗓️ Principales échéances</h2>
-        
-        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3>Échéances mensuelles</h3>
-            <ul>
-                <li><strong>TVA :</strong> Déclaration et paiement avant le 15 du mois suivant</li>
-                <li><strong>Cotisations sociales :</strong> Paiement avant le 15 du mois suivant</li>
-                <li><strong>Prélèvement à la source :</strong> Déclaration avant le 15 du mois suivant</li>
-            </ul>
-        </div>
-        
-        <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3>Échéances trimestrielles</h3>
-            <ul>
-                <li><strong>TVA :</strong> Déclaration et paiement avant le 15 du mois suivant le trimestre</li>
-                <li><strong>Acomptes IS :</strong> Paiement avant le 15 du mois suivant le trimestre</li>
-                <li><strong>CFE :</strong> Déclaration avant le 31 décembre</li>
-            </ul>
-        </div>
-        
-        <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3>Échéances annuelles</h3>
-            <ul>
-                <li><strong>Comptes annuels :</strong> Dépôt avant le 30 avril</li>
-                <li><strong>Déclaration de bénéfices :</strong> Avant le 2 mai</li>
-                <li><strong>Déclaration sociale nominative :</strong> Avant le 31 janvier</li>
-            </ul>
-        </div>
-        
-        <h2>💻 Processus de télédéclaration</h2>
-        
-        <h3>1. Plateformes de télédéclaration</h3>
-        <p>Les télédéclarations se font principalement via les plateformes officielles : impots.gouv.fr pour les déclarations fiscales, net-entreprises.fr pour les déclarations sociales, et les sites des organismes sociaux.</p>
-        
-        <h3>2. Procédure de télédéclaration</h3>
-        <p>La procédure inclut l'authentification, la saisie des données, la validation et la confirmation. Il est important de conserver les accusés de réception et les justificatifs de transmission.</p>
-        
-        <h3>3. Sécurité et conformité</h3>
-        <p>La sécurité des données est primordiale. Il faut utiliser des connexions sécurisées, des mots de passe robustes et respecter les bonnes pratiques de cybersécurité.</p>
-        
-        <h2>📊 Planification des déclarations</h2>
-        
-        <div style="overflow-x: auto; margin: 20px 0;">
-            <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
-                <thead>
-                    <tr style="background: #f8f9fa;">
-                        <th style="border: 1px solid #ddd; padding: 12px;">Période</th>
-                        <th style="border: 1px solid #ddd; padding: 12px;">Déclaration</th>
-                        <th style="border: 1px solid #ddd; padding: 12px;">Échéance</th>
-                        <th style="border: 1px solid #ddd; padding: 12px;">Sanction</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Mensuelle</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">TVA</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">15 du mois suivant</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">5% + 0,4%/mois</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Trimestrielle</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Acomptes IS</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">15 du mois suivant</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">5% + 0,4%/mois</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Annuelle</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Comptes annuels</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">30 avril</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">1500€ + 15€/jour</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-        <h2>⚠️ Points d'attention</h2>
+        <h2>Facteurs Clés à Retenir</h2>
         <ul>
-            <li>Respecter scrupuleusement les échéances</li>
-            <li>Mettre en place des rappels automatiques</li>
-            <li>Conserver tous les justificatifs</li>
-            <li>Anticiper les périodes de forte activité</li>
+            <li>📌 Respecter les Échéances : Noter toutes les dates importantes sur un agenda ou un logiciel de gestion</li>
+            <li>🔔 Notifications : Activer les rappels pour éviter les retards</li>
+            <li>📜 Organiser les Documents : Maintenir une organisation comptable rigoureuse pour faciliter les déclarations</li>
         </ul>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
