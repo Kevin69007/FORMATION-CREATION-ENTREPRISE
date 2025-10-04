@@ -66,6 +66,21 @@
             <div class="lesson-content" id="lessonContent">
                 <!-- Le contenu sera chargé dynamiquement -->
             </div>
+
+            <!-- Navigation de leçon (en bas) -->
+            <div class="lesson-nav">
+                <button class="nav-button prev" id="prevButtonBottom" onclick="previousLesson()">
+                    ← Précédent
+                </button>
+                
+                <button class="complete-button" id="completeButtonBottom" onclick="markAsCompleted()">
+                    Marquer comme terminé
+                </button>
+                
+                <button class="nav-button next" id="nextButtonBottom" onclick="nextLesson()">
+                    Suivant →
+                </button>
+            </div>
         </div>
     </div>
 
@@ -183,11 +198,16 @@
             updateProgress();
             generateNavigation();
             
-            // Changer le bouton
+            // Changer les boutons
             const completeButton = document.getElementById('completeButton');
+            const completeButtonBottom = document.getElementById('completeButtonBottom');
             completeButton.textContent = '✓ Terminé';
             completeButton.style.background = '#28a745';
             completeButton.disabled = true;
+            
+            completeButtonBottom.textContent = '✓ Terminé';
+            completeButtonBottom.style.background = '#28a745';
+            completeButtonBottom.disabled = true;
             
             // Notification
             showNotification('Leçon marquée comme terminée !');
@@ -220,20 +240,33 @@
             const nextButton = document.getElementById('nextButton');
             const completeButton = document.getElementById('completeButton');
             
+            // Boutons du bas
+            const prevButtonBottom = document.getElementById('prevButtonBottom');
+            const nextButtonBottom = document.getElementById('nextButtonBottom');
+            const completeButtonBottom = document.getElementById('completeButtonBottom');
+            
             // Vérifier si la leçon est déjà terminée
             const lessonKey = `module_${currentModule}_lesson_${currentLesson}`;
             const progress = JSON.parse(localStorage.getItem('lessonProgress') || '{}');
             const isCompleted = progress[lessonKey] && progress[lessonKey].completed;
             
-            // Réinitialiser le bouton
+            // Réinitialiser les boutons de complétion
             completeButton.textContent = 'Marquer comme terminé';
             completeButton.style.background = '#007bff';
             completeButton.disabled = false;
+            
+            completeButtonBottom.textContent = 'Marquer comme terminé';
+            completeButtonBottom.style.background = '#007bff';
+            completeButtonBottom.disabled = false;
             
             if (isCompleted) {
                 completeButton.textContent = '✓ Terminé';
                 completeButton.style.background = '#28a745';
                 completeButton.disabled = true;
+                
+                completeButtonBottom.textContent = '✓ Terminé';
+                completeButtonBottom.style.background = '#28a745';
+                completeButtonBottom.disabled = true;
             }
             
             // Gérer les boutons de navigation
@@ -243,17 +276,25 @@
             if (!prevLesson) {
                 prevButton.disabled = true;
                 prevButton.style.display = 'none';
+                prevButtonBottom.disabled = true;
+                prevButtonBottom.style.display = 'none';
             } else {
                 prevButton.disabled = false;
                 prevButton.style.display = 'block';
+                prevButtonBottom.disabled = false;
+                prevButtonBottom.style.display = 'block';
             }
             
             if (!nextLesson) {
                 nextButton.disabled = true;
                 nextButton.style.display = 'none';
+                nextButtonBottom.disabled = true;
+                nextButtonBottom.style.display = 'none';
             } else {
                 nextButton.disabled = false;
                 nextButton.style.display = 'block';
+                nextButtonBottom.disabled = false;
+                nextButtonBottom.style.display = 'block';
             }
         }
         
