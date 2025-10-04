@@ -4,9 +4,7 @@ window.module4Content = {
         title: "Introduction aux structures juridiques",
         moduleTitle: "Module 4 : Choisir une structure juridique appropriée",
         content: `
-            <h1>⚖️ Introduction aux structures juridiques</h1>
-        
-                        <p>Le choix de la structure juridique est une décision fondamentale qui influencera tous les aspects de votre entreprise : fiscalité, responsabilité, gestion, et développement.</p>
+            <p>Le choix de la structure juridique est une décision fondamentale qui influencera tous les aspects de votre entreprise : fiscalité, responsabilité, gestion, et développement.</p>
 
         
         <div style="text-align: center; margin: 30px 0;">
@@ -95,8 +93,6 @@ window.module4Content = {
         title: "Présentation des différentes formes juridiques",
         moduleTitle: "Module 4 : Choisir une structure juridique appropriée",
         content: `
-            <h1>📋 Présentation des différentes formes juridiques</h1>
-            
             <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #2196f3;">
                 <h3>🌍🔍 Saviez-vous que... ?</h3>
                 <p>Une étude révèle que le choix de la forme juridique d'une entreprise peut avoir un impact significatif sur son succès à long terme, que ce soit en termes de responsabilités, de fiscalité ou de crédibilité. Découvrez comment les différentes formes juridiques peuvent transformer le destin d'une entreprise !</p>
@@ -168,8 +164,6 @@ window.module4Content = {
         title: "Comparaison des avantages et limites des structures juridiques",
         moduleTitle: "Module 4 : Choisir une structure juridique appropriée",
         content: `
-            <h1>⚖️ Comparaison des avantages et limites des structures juridiques</h1>
-            
             <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #2196f3;">
                 <h3>🤔 Introduction</h3>
                 <p>Avez-vous déjà réfléchi à la structure juridique qui convient le mieux à votre entreprise? Saviez-vous que le choix de la forme juridique peut avoir un impact significatif sur votre façon de gérer et de développer votre activité? Découvrons ensemble les avantages et limites de plusieurs structures juridiques pour mieux comprendre leurs implications sur vos opérations commerciales.</p>
@@ -294,8 +288,6 @@ window.module4Content = {
         title: "Sélection de la structure juridique adaptée au projet",
         moduleTitle: "Module 4 : Choisir une structure juridique appropriée",
         content: `
-            <h1>🎯 Sélection de la structure juridique adaptée au projet</h1>
-            
             <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #2196f3;">
                 <h3>📊 Analyse des Besoins de l'Entreprise</h3>
                 <p>Saviez-vous que la structure juridique de Google a commencé par une simple société de type LLC avant de devenir une entreprise publique cotée en bourse? Cette évolution démontre à quel point il est crucial de bien choisir sa structure juridique dès le début.</p>
@@ -374,8 +366,6 @@ window.module4Content = {
         moduleTitle: "Module 4 : Choisir une structure juridique appropriée",
         type: "pdf",
         content: `
-            <h1>📄 Fiches Complémentaires - Module 4</h1>
-            
             <p>Voici les documents complémentaires pour approfondir le choix de votre structure juridique.</p>
             
             <div class="pdf-grid">

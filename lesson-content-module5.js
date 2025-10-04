@@ -4,8 +4,6 @@ window.module5Content = {
         title: "Les régimes fiscaux des entreprises",
         moduleTitle: "Module 5 : Comprendre les différents régimes fiscaux",
         content: `
-        <h1>📚 Les régimes fiscaux des entreprises</h1>
-        
         <p>Cette leçon fait partie du Module 5 : Comprendre les différents régimes fiscaux. Vous allez découvrir les différents régimes fiscaux applicables aux entreprises et leurs spécificités.</p>
         
         <div style="text-align: center; margin: 30px 0;">
@@ -79,7 +77,6 @@ window.module5Content = {
         title: "Présentation des divers régimes fiscaux",
         moduleTitle: "Module 5 : Comprendre les différents régimes fiscaux",
         content: `
-        <h1>📚 Présentation des divers régimes fiscaux</h1>
         
         <p>Cette leçon détaille les différents régimes fiscaux applicables aux entreprises en France, leurs caractéristiques et leurs modalités d'application. Comprendre ces régimes est essentiel pour optimiser votre fiscalité et respecter vos obligations.</p>
         
@@ -262,7 +259,6 @@ window.module5Content = {
         title: "Comparaison des avantages et limites des régimes fiscaux",
         moduleTitle: "Module 5 : Comprendre les différents régimes fiscaux",
         content: `
-        <h1>📚 Comparaison des avantages et limites des régimes fiscaux</h1>
         
         <p>Cette leçon compare les avantages et limites de chaque régime fiscal pour vous aider à faire le meilleur choix selon votre situation. Une analyse comparative approfondie vous permettra d'optimiser votre fiscalité.</p>
         
@@ -507,7 +503,6 @@ window.module5Content = {
         title: "Sélection du régime fiscal approprié à l'entreprise",
         moduleTitle: "Module 5 : Comprendre les différents régimes fiscaux",
         content: `
-        <h1>📚 Sélection du régime fiscal approprié à l'entreprise</h1>
         
         <p>Cette leçon vous guide dans la sélection du régime fiscal le plus adapté à votre projet d'entreprise en fonction de vos caractéristiques spécifiques. Une méthode structurée vous permettra de prendre la meilleure décision.</p>
         

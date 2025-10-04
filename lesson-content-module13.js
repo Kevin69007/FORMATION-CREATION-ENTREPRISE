@@ -4,8 +4,6 @@ window.module13Content = {
         title: "Études de Cas",
         moduleTitle: "Module 13 : Études de cas",
         content: `
-        <h1>📚 Études de Cas</h1>
-        
         <p>Cette leçon fait partie du Module 13 : Études de cas. Vous allez découvrir des études de cas pratiques pour consolider vos acquis et voir l'application concrète des concepts abordés.</p>
         
         <div style="text-align: center; margin: 30px 0;">

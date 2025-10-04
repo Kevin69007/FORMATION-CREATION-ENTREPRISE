@@ -5,8 +5,6 @@ window.module1Content = {
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         type: "video",
         content: `
-            <h1>🎯 À quoi vous attendre dans ce premier module</h1>
-            
             <p>Bienvenue dans ce premier module de formation ! Vous allez découvrir les fondations essentielles de l'entrepreneuriat.</p>
             
             <div style="text-align: center; margin: 30px 0;">
@@ -40,8 +38,6 @@ window.module1Content = {
         title: "Comment lancer son projet d'entreprise sans se louper",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         content: `
-            <h1>🚀 Comment lancer son projet d'entreprise sans se louper</h1>
-            
             <p>Lancer un projet d'entreprise est une aventure passionnante mais qui nécessite une approche méthodique pour éviter les pièges courants.</p>
             
             <div style="text-align: center; margin: 30px 0;">
@@ -89,8 +85,6 @@ window.module1Content = {
         title: "Présentation des compétences requises pour être un chef d'entreprise",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         content: `
-            <h1>🤔 Démarrez avec un fait intrigant !</h1>
-            
             <p>Saviez-vous que plus de 90 % des startups échouent dans leurs premières années d'existence ? Ce chiffre montre qu'être un chef d'entreprise demande bien plus que d'avoir une bonne idée : il faut des compétences diverses et bien développées.</p>
             
             <h2>🛠️ Compétences Requises pour l'Entrepreneuriat</h2>
@@ -191,8 +185,6 @@ window.module1Content = {
         title: "Comprendre l'importance des compétences entrepreneuriales",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         content: `
-            <h1>🎯 Comprendre l'importance des compétences entrepreneuriales</h1>
-            
             <p>Les compétences entrepreneuriales sont le fondement du succès en entreprise. Elles déterminent votre capacité à transformer une idée en réalité et à naviguer dans l'environnement complexe des affaires.</p>
             
             <h2>🔍 Pourquoi ces compétences sont-elles cruciales ?</h2>
@@ -242,8 +234,6 @@ window.module1Content = {
         title: "Analyse des compétences clés pour gérer une entreprise",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         content: `
-            <h1>🔍 Analyse des compétences clés pour gérer une entreprise</h1>
-            
             <p>Saviez-vous que plus de 60% des nouvelles entreprises échouent dans les trois premières années ? Ce chiffre alarmant met en évidence l'importance cruciale des compétences clés pour une gestion efficace d'une entreprise. Explorons ces compétences essentielles et voyons comment elles peuvent transformer une entreprise naissante en une success story durable.</p>
             
             <h2>💸 Littératie financière</h2>
@@ -319,8 +309,6 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
         title: "Synthèse",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         content: `
-            <h1>📋 Synthèse du Module 1</h1>
-        
             <p>Félicitations ! Vous avez terminé le premier module de votre formation en entrepreneuriat. Récapitulons les points clés que nous avons abordés.</p>
         
         <div style="text-align: center; margin: 30px 0;">
@@ -412,8 +400,6 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
         title: "SMART Goals",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         content: `
-            <h1>🎯 SMART Goals</h1>
-            
             <p>Les objectifs SMART sont un outil puissant pour définir et atteindre vos objectifs entrepreneuriaux de manière efficace et mesurable.</p>
             
             <div style="text-align: center; margin: 30px 0;">
@@ -502,8 +488,6 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         type: "pdf",
         content: `
-            <h1>📄 Fiches Complémentaires - Module 1</h1>
-            
             <p>Voici les documents complémentaires pour approfondir les concepts abordés dans ce module.</p>
             
             <div class="pdf-grid">

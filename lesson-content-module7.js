@@ -4,8 +4,6 @@ window.module7Content = {
         title: "Centre de Formalités des Entreprises (CFE)",
         moduleTitle: "Module 7 : Où s'adresser pour déclarer son entreprise",
         content: `
-        <h1>📚 Centre de Formalités des Entreprises (CFE)</h1>
-        
         <p>Cette leçon fait partie du Module 7 : Où s'adresser pour déclarer son entreprise. Vous allez découvrir les différents organismes compétents pour les formalités de création d'entreprise.</p>
         
         <div style="text-align: center; margin: 30px 0;">
@@ -153,7 +151,6 @@ window.module7Content = {
         title: "Présentation du centre de formalités des entreprises",
         moduleTitle: "Module 7 : Où s'adresser pour déclarer son entreprise",
         content: `
-        <h1>📚 Présentation du centre de formalités des entreprises</h1>
         
         <p>Cette leçon détaille le fonctionnement et l'organisation des centres de formalités des entreprises (CFE) pour vous aider à comprendre leur rôle dans le processus de création d'entreprise.</p>
         
@@ -269,7 +266,6 @@ window.module7Content = {
         title: "Explication des modalités de fonctionnement administratif",
         moduleTitle: "Module 7 : Où s'adresser pour déclarer son entreprise",
         content: `
-        <h1>📚 Explication des modalités de fonctionnement administratif</h1>
         
         <p>Cette leçon détaille les procédures administratives internes des centres de formalités des entreprises et leur fonctionnement opérationnel.</p>
         
@@ -451,7 +447,6 @@ window.module7Content = {
         title: "Connaissances des conséquences administratives de l'immatriculation",
         moduleTitle: "Module 7 : Où s'adresser pour déclarer son entreprise",
         content: `
-        <h1>📚 Connaissances des conséquences administratives de l'immatriculation</h1>
         
         <p>Cette leçon explique les conséquences et obligations qui découlent de l'immatriculation de votre entreprise auprès des différents organismes.</p>
         

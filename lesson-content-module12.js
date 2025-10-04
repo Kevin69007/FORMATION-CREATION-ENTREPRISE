@@ -4,8 +4,6 @@ window.module12Content = {
         title: "Comprendre ses Clients",
         moduleTitle: "Module 12 : Cibler les actions commerciales adaptées à ses clients",
         content: `
-        <h1>📚 Comprendre ses Clients</h1>
-        
         <p>Cette leçon fait partie du Module 12 : Cibler les actions commerciales adaptées à ses clients. Vous allez découvrir comment comprendre vos clients pour adapter vos actions commerciales.</p>
         
         <div style="text-align: center; margin: 30px 0;">
@@ -123,7 +121,6 @@ window.module12Content = {
         title: "Identification des meilleures actions commerciales adaptées",
         moduleTitle: "Module 12 : Cibler les actions commerciales adaptées à ses clients",
         content: `
-        <h1>📚 Identification des meilleures actions commerciales adaptées</h1>
         
         <p>Cette leçon fait partie du Module 12 : Cibler les actions commerciales adaptées à ses clients. Vous allez découvrir comment identifier et mettre en place les meilleures actions commerciales adaptées à vos clients.</p>
         
@@ -257,7 +254,6 @@ window.module12Content = {
         title: "Création de stratégies pour fidéliser la clientèle",
         moduleTitle: "Module 12 : Cibler les actions commerciales adaptées à ses clients",
         content: `
-        <h1>📚 Création de stratégies pour fidéliser la clientèle</h1>
         
         <p>Cette leçon fait partie du Module 12 : Cibler les actions commerciales adaptées à ses clients. Vous allez découvrir comment créer des stratégies efficaces pour fidéliser vos clients et développer leur valeur à long terme.</p>
         
@@ -397,7 +393,6 @@ window.module12Content = {
         title: "Élaboration d'un plan d'actions commerciales personnalisées",
         moduleTitle: "Module 12 : Cibler les actions commerciales adaptées à ses clients",
         content: `
-        <h1>📚 Élaboration d'un plan d'actions commerciales personnalisées</h1>
         
         <p>Cette leçon fait partie du Module 12 : Cibler les actions commerciales adaptées à ses clients. Vous allez découvrir comment élaborer un plan d'actions commerciales personnalisées, structuré et efficace.</p>
         
@@ -539,7 +534,6 @@ window.module12Content = {
         title: "Avant de vous lancer : erreurs classiques à éviter",
         moduleTitle: "Module 12 : Cibler les actions commerciales adaptées à ses clients",
         content: `
-        <h1>📚 Avant de vous lancer : erreurs classiques à éviter</h1>
         
         <p>Cette leçon fait partie du Module 12 : Cibler les actions commerciales adaptées à ses clients. Vous allez découvrir les erreurs classiques à éviter avant de vous lancer dans vos actions commerciales.</p>
         
