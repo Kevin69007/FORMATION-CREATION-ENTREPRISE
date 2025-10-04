@@ -125,7 +125,7 @@ window.module12Content = {
         content: `
         <h1>📚 Identification des meilleures actions commerciales adaptées</h1>
         
-        <p>Cette leçon fait partie du Module 12 : Cibler les actions commerciales adaptées à ses clients. Vous allez découvrir comment identifier et mettre en place les meilleures actions commerciales.</p>
+        <p>Cette leçon fait partie du Module 12 : Cibler les actions commerciales adaptées à ses clients. Vous allez découvrir comment identifier et mettre en place les meilleures actions commerciales adaptées à vos clients.</p>
         
         <div style="text-align: center; margin: 30px 0;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/xyo4JGMyvTA" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
@@ -133,35 +133,37 @@ window.module12Content = {
         
         <h2>🎯 Objectifs de cette leçon</h2>
         <ul>
-            <li>Identifier les actions commerciales efficaces</li>
-            <li>Adapter les actions aux segments clients</li>
+            <li>Identifier les actions commerciales les plus efficaces</li>
+            <li>Adapter les actions aux différents segments clients</li>
             <li>Optimiser le mix commercial</li>
             <li>Mesurer l'efficacité des actions</li>
+            <li>Personnaliser les approches commerciales</li>
         </ul>
         
         <h2>📋 Types d'actions commerciales</h2>
         
         <h3>1. Actions de prospection</h3>
-        <p>Les actions de prospection visent à identifier et contacter de nouveaux clients potentiels. Elles incluent le cold calling, l'email marketing, les réseaux sociaux et les événements.</p>
+        <p>Les actions de prospection visent à identifier et contacter de nouveaux clients potentiels. Elles incluent le cold calling, l'email marketing, les réseaux sociaux, les événements et le marketing de contenu.</p>
         
         <h3>2. Actions de conversion</h3>
-        <p>Les actions de conversion transforment les prospects en clients. Elles comprennent les démonstrations, les essais gratuits, les offres spéciales et les négociations.</p>
+        <p>Les actions de conversion transforment les prospects en clients. Elles comprennent les démonstrations, les essais gratuits, les offres spéciales, les négociations et les présentations personnalisées.</p>
         
         <h3>3. Actions de fidélisation</h3>
-        <p>Les actions de fidélisation maintiennent et développent la relation avec les clients existants. Elles incluent les programmes de fidélité, le service client et les offres personnalisées.</p>
+        <p>Les actions de fidélisation maintiennent et développent la relation avec les clients existants. Elles incluent les programmes de fidélité, le service client, les offres personnalisées et le suivi post-vente.</p>
         
         <h3>4. Actions de développement</h3>
-        <p>Les actions de développement augmentent la valeur des clients existants. Elles comprennent les ventes croisées, les ventes incitatives et les mises à niveau.</p>
+        <p>Les actions de développement augmentent la valeur des clients existants. Elles comprennent les ventes croisées, les ventes incitatives, les mises à niveau et les offres complémentaires.</p>
         
-        <h2>🛠️ Méthodes de sélection</h2>
+        <h2>🛠️ Méthodes de sélection des actions</h2>
         
         <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3>Critères de sélection</h3>
             <ul>
-                <li><strong>Efficacité :</strong> Capacité à atteindre les objectifs</li>
-                <li><strong>Coût :</strong> Rapport efficacité/coût</li>
-                <li><strong>Adaptabilité :</strong> Facilité d'adaptation aux segments</li>
+                <li><strong>Efficacité :</strong> Capacité à atteindre les objectifs fixés</li>
+                <li><strong>Coût :</strong> Rapport efficacité/coût optimal</li>
+                <li><strong>Adaptabilité :</strong> Facilité d'adaptation aux segments clients</li>
                 <li><strong>Mesurabilité :</strong> Possibilité de mesurer les résultats</li>
+                <li><strong>Scalabilité :</strong> Capacité à être reproduite et étendue</li>
             </ul>
         </div>
         
@@ -196,21 +198,55 @@ window.module12Content = {
                         <td style="border: 1px solid #ddd; padding: 12px;">Prospection</td>
                         <td style="border: 1px solid #ddd; padding: 12px;">Variable</td>
                     </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Réseaux sociaux</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Jeunes clients</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Engagement</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Élevé</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
         
+        <h2>🎯 Personnalisation des actions</h2>
+        
+        <h3>1. Segmentation client</h3>
+        <p>Divisez votre clientèle en segments homogènes basés sur des critères démographiques, comportementaux ou psychographiques pour adapter vos actions.</p>
+        
+        <h3>2. Messages personnalisés</h3>
+        <p>Adaptez vos messages selon les préférences, besoins et comportements de chaque segment client.</p>
+        
+        <h3>3. Canaux adaptés</h3>
+        <p>Choisissez les canaux de communication préférés de chaque segment (email, téléphone, réseaux sociaux, etc.).</p>
+        
+        <h3>4. Timing optimal</h3>
+        <p>Déterminez le moment le plus propice pour contacter chaque segment client.</p>
+        
+        <h2>📈 Mesure et optimisation</h2>
+        
+        <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h3>Indicateurs clés de performance</h3>
+            <ul>
+                <li><strong>Taux de conversion :</strong> Pourcentage de prospects convertis</li>
+                <li><strong>Coût d'acquisition client :</strong> Coût total pour acquérir un nouveau client</li>
+                <li><strong>Valeur vie client :</strong> Revenus générés sur la durée de vie</li>
+                <li><strong>Taux de rétention :</strong> Pourcentage de clients conservés</li>
+                <li><strong>ROI :</strong> Retour sur investissement des actions</li>
+            </ul>
+        </div>
+        
         <h2>⚠️ Points d'attention</h2>
         <ul>
-            <li>Éviter la sur-sollicitation</li>
-            <li>Respecter les préférences clients</li>
+            <li>Éviter la sur-sollicitation des clients</li>
+            <li>Respecter les préférences et contraintes clients</li>
             <li>Mesurer et ajuster continuellement</li>
             <li>Maintenir la cohérence du message</li>
+            <li>Respecter la réglementation (RGPD, etc.)</li>
         </ul>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h3>💡 Conseil pratique</h3>
-            <p>Les meilleures actions commerciales sont celles qui créent de la valeur pour vos clients tout en atteignant vos objectifs commerciaux. Testez différentes approches et mesurez leurs performances pour optimiser votre stratégie.</p>
+            <p>Les meilleures actions commerciales sont celles qui créent de la valeur pour vos clients tout en atteignant vos objectifs commerciaux. Testez différentes approches, mesurez leurs performances et ajustez continuellement votre stratégie pour optimiser les résultats.</p>
         </div>
         
         <h2>🚀 Prochaines étapes</h2>
@@ -223,7 +259,7 @@ window.module12Content = {
         content: `
         <h1>📚 Création de stratégies pour fidéliser la clientèle</h1>
         
-        <p>Cette leçon fait partie du Module 12 : Cibler les actions commerciales adaptées à ses clients. Vous allez découvrir comment créer des stratégies efficaces pour fidéliser vos clients.</p>
+        <p>Cette leçon fait partie du Module 12 : Cibler les actions commerciales adaptées à ses clients. Vous allez découvrir comment créer des stratégies efficaces pour fidéliser vos clients et développer leur valeur à long terme.</p>
         
         <div style="text-align: center; margin: 30px 0;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/xyo4JGMyvTA" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
@@ -231,36 +267,42 @@ window.module12Content = {
         
         <h2>🎯 Objectifs de cette leçon</h2>
         <ul>
-            <li>Comprendre l'importance de la fidélisation</li>
-            <li>Développer des stratégies de fidélisation</li>
-            <li>Créer des programmes de fidélité</li>
-            <li>Mesurer la satisfaction client</li>
+            <li>Comprendre l'importance de la fidélisation client</li>
+            <li>Développer des stratégies de fidélisation efficaces</li>
+            <li>Créer des programmes de fidélité adaptés</li>
+            <li>Mesurer la satisfaction et la fidélité client</li>
+            <li>Optimiser l'expérience client</li>
         </ul>
         
         <h2>📋 Stratégies de fidélisation</h2>
         
         <h3>1. Service client exceptionnel</h3>
-        <p>Un service client de qualité est la base de la fidélisation. Il faut être réactif, empathique et résoudre rapidement les problèmes pour créer une expérience positive.</p>
+        <p>Un service client de qualité est la base de la fidélisation. Il faut être réactif, empathique et résoudre rapidement les problèmes pour créer une expérience positive et mémorable.</p>
         
         <h3>2. Programmes de fidélité</h3>
-        <p>Les programmes de fidélité récompensent les clients réguliers avec des avantages exclusifs : points, réductions, services premium. Ils encouragent la répétition d'achat.</p>
+        <p>Les programmes de fidélité récompensent les clients réguliers avec des avantages exclusifs : points, réductions, services premium, accès anticipé. Ils encouragent la répétition d'achat et renforcent l'attachement à la marque.</p>
         
         <h3>3. Communication personnalisée</h3>
-        <p>La communication personnalisée montre que vous connaissez vos clients. Utilisez leurs données pour envoyer des messages pertinents et des offres adaptées.</p>
+        <p>La communication personnalisée montre que vous connaissez vos clients. Utilisez leurs données pour envoyer des messages pertinents, des offres adaptées et des contenus qui correspondent à leurs intérêts.</p>
         
         <h3>4. Expérience client optimisée</h3>
-        <p>L'expérience client doit être fluide et agréable à chaque interaction. Simplifiez les processus, réduisez les frictions et anticipez les besoins.</p>
+        <p>L'expérience client doit être fluide et agréable à chaque interaction. Simplifiez les processus, réduisez les frictions, anticipez les besoins et surprenez positivement vos clients.</p>
+        
+        <h3>5. Engagement communautaire</h3>
+        <p>Créez une communauté autour de votre marque en organisant des événements, en facilitant les échanges entre clients et en offrant des contenus exclusifs.</p>
         
         <h2>🛠️ Outils de fidélisation</h2>
         
         <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3>Méthodes de fidélisation</h3>
             <ul>
-                <li><strong>Programmes de points :</strong> Accumulation et échange</li>
-                <li><strong>Avantages exclusifs :</strong> Accès prioritaire</li>
-                <li><strong>Communication ciblée :</strong> Messages personnalisés</li>
-                <li><strong>Service premium :</strong> Support dédié</li>
-                <li><strong>Événements clients :</strong> Rencontres exclusives</li>
+                <li><strong>Programmes de points :</strong> Accumulation et échange de points</li>
+                <li><strong>Avantages exclusifs :</strong> Accès prioritaire, produits limités</li>
+                <li><strong>Communication ciblée :</strong> Messages personnalisés et pertinents</li>
+                <li><strong>Service premium :</strong> Support dédié et personnalisé</li>
+                <li><strong>Événements clients :</strong> Rencontres exclusives et networking</li>
+                <li><strong>Contenu exclusif :</strong> Guides, webinaires, formations</li>
+                <li><strong>Parrainage :</strong> Récompenses pour les recommandations</li>
             </ul>
         </div>
         
@@ -291,21 +333,60 @@ window.module12Content = {
                         <td style="border: 1px solid #ddd; padding: 12px;">Nombre d'achats/an</td>
                         <td style="border: 1px solid #ddd; padding: 12px;">En augmentation</td>
                     </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Valeur vie client</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Revenus totaux par client</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">En augmentation</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Taux de recommandation</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">% clients qui recommandent</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">> 70%</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
         
+        <h2>🎯 Segmentation pour la fidélisation</h2>
+        
+        <h3>1. Clients VIP</h3>
+        <p>Offrez des services premium, des avantages exclusifs et une attention personnalisée aux clients les plus précieux.</p>
+        
+        <h3>2. Clients réguliers</h3>
+        <p>Maintenez leur engagement avec des programmes de fidélité et des communications régulières.</p>
+        
+        <h3>3. Clients à risque</h3>
+        <p>Identifiez et réagissez rapidement aux signes de désengagement pour éviter la perte de clients.</p>
+        
+        <h3>4. Nouveaux clients</h3>
+        <p>Créez une expérience d'onboarding exceptionnelle pour établir une relation solide dès le début.</p>
+        
+        <h2>💡 Stratégies d'engagement</h2>
+        
+        <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h3>Techniques d'engagement</h3>
+            <ul>
+                <li><strong>Gamification :</strong> Défis, badges, niveaux</li>
+                <li><strong>Contenu personnalisé :</strong> Recommandations adaptées</li>
+                <li><strong>Feedback continu :</strong> Écoute et amélioration</li>
+                <li><strong>Surprise et délice :</strong> Gestes inattendus</li>
+                <li><strong>Transparence :</strong> Communication honnête</li>
+            </ul>
+        </div>
+        
         <h2>⚠️ Points d'attention</h2>
         <ul>
-            <li>Éviter la sur-sollicitation</li>
-            <li>Maintenir la valeur des avantages</li>
-            <li>Adapter aux préférences clients</li>
-            <li>Mesurer l'impact des actions</li>
+            <li>Éviter la sur-sollicitation des clients</li>
+            <li>Maintenir la valeur et l'exclusivité des avantages</li>
+            <li>Adapter aux préférences et contraintes clients</li>
+            <li>Mesurer l'impact des actions de fidélisation</li>
+            <li>Respecter la vie privée et les données personnelles</li>
+            <li>Éviter la complexité excessive des programmes</li>
         </ul>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h3>💡 Conseil pratique</h3>
-            <p>La fidélisation commence dès le premier contact. Chaque interaction doit renforcer la relation et créer de la valeur pour le client. Un client fidèle est plus rentable et devient un ambassadeur de votre marque.</p>
+            <p>La fidélisation commence dès le premier contact et se construit à chaque interaction. Chaque moment de contact doit renforcer la relation et créer de la valeur pour le client. Un client fidèle est non seulement plus rentable, mais devient également un ambassadeur de votre marque.</p>
         </div>
         
         <h2>🚀 Prochaines étapes</h2>
@@ -318,7 +399,7 @@ window.module12Content = {
         content: `
         <h1>📚 Élaboration d'un plan d'actions commerciales personnalisées</h1>
         
-        <p>Cette leçon fait partie du Module 12 : Cibler les actions commerciales adaptées à ses clients. Vous allez découvrir comment élaborer un plan d'actions commerciales personnalisées et efficace.</p>
+        <p>Cette leçon fait partie du Module 12 : Cibler les actions commerciales adaptées à ses clients. Vous allez découvrir comment élaborer un plan d'actions commerciales personnalisées, structuré et efficace.</p>
         
         <div style="text-align: center; margin: 30px 0;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/xyo4JGMyvTA" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
@@ -326,39 +407,44 @@ window.module12Content = {
         
         <h2>🎯 Objectifs de cette leçon</h2>
         <ul>
-            <li>Structurer un plan d'actions commerciales</li>
-            <li>Personnaliser les actions par segment</li>
+            <li>Structurer un plan d'actions commerciales cohérent</li>
+            <li>Personnaliser les actions par segment client</li>
             <li>Planifier les ressources nécessaires</li>
             <li>Définir les indicateurs de performance</li>
+            <li>Mettre en place un système de suivi et d'ajustement</li>
         </ul>
         
         <h2>📋 Structure du plan d'actions</h2>
         
         <h3>1. Analyse de la situation</h3>
-        <p>Commencez par analyser votre situation actuelle : segments clients, performances passées, ressources disponibles et contraintes. Cette analyse fonde votre plan d'actions.</p>
+        <p>Commencez par analyser votre situation actuelle : segments clients identifiés, performances passées, ressources disponibles, contraintes et opportunités. Cette analyse approfondie fonde votre plan d'actions.</p>
         
         <h3>2. Définition des objectifs</h3>
-        <p>Définissez des objectifs SMART (Spécifiques, Mesurables, Atteignables, Réalistes, Temporels) pour chaque segment client et chaque action commerciale.</p>
+        <p>Définissez des objectifs SMART (Spécifiques, Mesurables, Atteignables, Réalistes, Temporels) pour chaque segment client et chaque action commerciale. Alignez ces objectifs avec votre stratégie globale.</p>
         
         <h3>3. Sélection des actions</h3>
-        <p>Sélectionnez les actions commerciales les plus pertinentes pour chaque segment en fonction de leurs caractéristiques, préférences et comportements.</p>
+        <p>Sélectionnez les actions commerciales les plus pertinentes pour chaque segment en fonction de leurs caractéristiques, préférences, comportements et objectifs spécifiques.</p>
         
         <h3>4. Planification des ressources</h3>
-        <p>Planifiez les ressources nécessaires : budget, personnel, outils, temps. Assurez-vous que les ressources sont suffisantes pour exécuter le plan.</p>
+        <p>Planifiez les ressources nécessaires : budget, personnel, outils, temps, technologies. Assurez-vous que les ressources sont suffisantes et bien allouées pour exécuter le plan efficacement.</p>
         
         <h3>5. Calendrier d'exécution</h3>
-        <p>Établissez un calendrier détaillé avec les échéances, les responsabilités et les jalons. Prévoyez des marges pour les imprévus.</p>
+        <p>Établissez un calendrier détaillé avec les échéances, les responsabilités, les jalons et les dépendances. Prévoyez des marges pour les imprévus et les ajustements.</p>
+        
+        <h3>6. Système de suivi</h3>
+        <p>Mettez en place un système de suivi et de reporting pour mesurer les performances et identifier les ajustements nécessaires.</p>
         
         <h2>🛠️ Outils de planification</h2>
         
         <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3>Méthodes de planification</h3>
             <ul>
-                <li><strong>Matrice de priorisation :</strong> Classer les actions par importance</li>
-                <li><strong>Gantt :</strong> Planifier les tâches dans le temps</li>
-                <li><strong>RACI :</strong> Définir les responsabilités</li>
-                <li><strong>Budget :</strong> Allouer les ressources financières</li>
-                <li><strong>KPIs :</strong> Définir les indicateurs de suivi</li>
+                <li><strong>Matrice de priorisation :</strong> Classer les actions par importance et impact</li>
+                <li><strong>Diagramme de Gantt :</strong> Planifier les tâches dans le temps</li>
+                <li><strong>Matrice RACI :</strong> Définir les responsabilités (Responsable, Accountable, Consulté, Informé)</li>
+                <li><strong>Budget détaillé :</strong> Allouer les ressources financières</li>
+                <li><strong>Tableau de bord KPIs :</strong> Définir les indicateurs de suivi</li>
+                <li><strong>Analyse SWOT :</strong> Forces, Faiblesses, Opportunités, Menaces</li>
             </ul>
         </div>
         
@@ -393,25 +479,60 @@ window.module12Content = {
                         <td style="border: 1px solid #ddd; padding: 12px;">Direction</td>
                         <td style="border: 1px solid #ddd; padding: 12px;">Révision</td>
                     </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Satisfaction client</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Mensuel</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Service client</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Analyse</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
         
+        <h2>🎯 Personnalisation par segment</h2>
+        
+        <h3>1. Segmentation détaillée</h3>
+        <p>Créez des segments clients précis avec des caractéristiques, besoins et préférences spécifiques pour adapter vos actions.</p>
+        
+        <h3>2. Messages adaptés</h3>
+        <p>Développez des messages et contenus spécifiques pour chaque segment, en tenant compte de leur langage et de leurs préoccupations.</p>
+        
+        <h3>3. Canaux optimisés</h3>
+        <p>Sélectionnez les canaux de communication les plus efficaces pour chaque segment client.</p>
+        
+        <h3>4. Timing personnalisé</h3>
+        <p>Déterminez le moment optimal pour contacter chaque segment selon leurs habitudes et contraintes.</p>
+        
+        <h2>💡 Optimisation continue</h2>
+        
+        <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h3>Processus d'amélioration</h3>
+            <ul>
+                <li><strong>Test A/B :</strong> Comparer différentes approches</li>
+                <li><strong>Analyse des données :</strong> Identifier les tendances</li>
+                <li><strong>Feedback client :</strong> Recueillir les retours</li>
+                <li><strong>Benchmarking :</strong> Comparer avec la concurrence</li>
+                <li><strong>Formation équipe :</strong> Améliorer les compétences</li>
+            </ul>
+        </div>
+        
         <h2>⚠️ Points d'attention</h2>
         <ul>
-            <li>Maintenir la flexibilité du plan</li>
-            <li>Adapter selon les résultats</li>
-            <li>Communiquer les changements</li>
-            <li>Apprendre des échecs</li>
+            <li>Maintenir la flexibilité du plan pour s'adapter aux changements</li>
+            <li>Adapter rapidement selon les résultats obtenus</li>
+            <li>Communiquer clairement les changements à l'équipe</li>
+            <li>Apprendre des échecs et des succès</li>
+            <li>Respecter les contraintes budgétaires et temporelles</li>
+            <li>Maintenir la cohérence avec la stratégie globale</li>
         </ul>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h3>💡 Conseil pratique</h3>
-            <p>Un plan d'actions commerciales efficace est un plan vivant qui évolue avec les résultats et les changements du marché. La clé du succès réside dans l'exécution rigoureuse et l'ajustement continu.</p>
+            <p>Un plan d'actions commerciales efficace est un plan vivant qui évolue avec les résultats et les changements du marché. La clé du succès réside dans l'exécution rigoureuse, le suivi continu et l'ajustement rapide. N'hésitez pas à tester, mesurer et optimiser en permanence.</p>
         </div>
         
         <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous aborderons les erreurs classiques à éviter avant de vous lancer.</p>
+        <p>Dans la leçon suivante, nous aborderons les erreurs classiques à éviter avant de vous lancer dans vos actions commerciales.</p>
     `
     },
     5: {
