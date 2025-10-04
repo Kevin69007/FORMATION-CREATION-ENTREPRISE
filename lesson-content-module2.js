@@ -4,8 +4,6 @@ window.module2Content = {
         title: "Intro - Connaître son marché pour mieux vendre",
         moduleTitle: "Module 2 : Connaître son marché pour mieux vendre",
         content: `
-            <h1>📊 Intro - Connaître son marché pour mieux vendre</h1>
-        
             <p>L'analyse de marché est une étape fondamentale pour comprendre votre environnement concurrentiel et identifier les opportunités. Savoir qui sont vos clients, ce qu'ils veulent et comment vos concurrents répondent à leurs besoins est essentiel pour développer une stratégie commerciale efficace.</p>
         
         <div style="text-align: center; margin: 30px 0;">
@@ -128,8 +126,6 @@ window.module2Content = {
         title: "Analyse de la clientèle et de la concurrence",
         moduleTitle: "Module 2 : Connaître son marché pour mieux vendre",
         content: `
-            <h1>📊 Analyse de la clientèle et de la concurrence</h1>
-            
             <p>Comprendre vos clients et vos concurrents est essentiel pour développer une stratégie commerciale efficace. Une analyse approfondie de la clientèle et de la concurrence permet de formuler des stratégies efficaces pour capter et fidéliser la clientèle.</p>
             
             <h2>📊 Analyse de la clientèle : Un aperçu démographique et comportemental</h2>
@@ -199,8 +195,6 @@ window.module2Content = {
         title: "Mise en place de stratégies basées sur la connaissance du marché",
         moduleTitle: "Module 2 : Connaître son marché pour mieux vendre",
         content: `
-            <h1>🎯 Mise en place de stratégies basées sur la connaissance du marché</h1>
-            
             <h2>💡 Quel est le secret des entreprises qui réussissent ?</h2>
             <p>Souvent, c'est leur capacité à comprendre parfaitement le marché et à développer des stratégies efficaces basées sur cette connaissance. Plongeons dans l'art de transformer les données du marché en actions concrètes qui mènent au succès.</p>
             
@@ -238,8 +232,6 @@ window.module2Content = {
         title: "Utilisation des documents commerciaux pour mieux vendre",
         moduleTitle: "Module 2 : Connaître son marché pour mieux vendre",
         content: `
-            <h1>📄 Utilisation des documents commerciaux pour mieux vendre</h1>
-            
             <h2>📄📊 Pourquoi les documents commerciaux sont essentiels ?</h2>
             <p>Saviez-vous qu'environ 80% des ventes majeures sont conclues grâce à une documentation commerciale bien rédigée ? Ce chiffre montre clairement l'importance d'utiliser correctement ces outils pour améliorer vos ventes. Que vous vendiez des biens ou des services, les documents commerciaux tels que les <strong>📝 propositions de vente</strong>, les <strong>📜 contrats</strong> et les <strong>🧾 factures</strong> jouent un rôle crucial dans la communication et la négociation avec vos clients. Regardons de plus près comment ces documents peuvent être utilisés pour maximiser vos chances de succès.</p>
             
@@ -298,8 +290,6 @@ window.module2Content = {
         title: "Customer Journey Mapping",
         moduleTitle: "Module 2 : Connaître son marché pour mieux vendre",
         content: `
-            <h1>🗺️ Customer Journey Mapping</h1>
-            
             <p>Le Customer Journey Mapping vous permet de comprendre et d'optimiser l'expérience client à chaque étape de son parcours.</p>
             
             <h2>🖼️ Visualisation du Customer Journey</h2>
@@ -442,8 +432,6 @@ window.module2Content = {
         moduleTitle: "Module 2 : Connaître son marché pour mieux vendre",
         type: "pdf",
         content: `
-            <h1>📄 Fiches Complémentaires - Module 2</h1>
-            
             <p>Voici les documents complémentaires pour approfondir l'analyse de marché et les stratégies commerciales.</p>
             
             <div class="pdf-grid">

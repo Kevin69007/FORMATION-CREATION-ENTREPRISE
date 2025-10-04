@@ -4,8 +4,6 @@ window.module11Content = {
         title: "Comprendre la Valeur de son Offre",
         moduleTitle: "Module 11 : Valoriser son offre et choisir son circuit de distribution",
         content: `
-        <h1>📚 Comprendre la Valeur de son Offre</h1>
-        
         <p>Cette leçon fait partie du Module 11 : Valoriser son offre et choisir son circuit de distribution. Vous allez découvrir comment comprendre et valoriser efficacement votre offre commerciale.</p>
         
         <div style="text-align: center; margin: 30px 0;">
@@ -132,7 +130,6 @@ window.module11Content = {
         title: "Prospection et valorisation de l'offre commerciale",
         moduleTitle: "Module 11 : Valoriser son offre et choisir son circuit de distribution",
         content: `
-        <h1>📚 Prospection et valorisation de l'offre commerciale</h1>
         
         <p>Cette leçon fait partie du Module 11 : Valoriser son offre et choisir son circuit de distribution. Vous allez découvrir les techniques de prospection et de valorisation commerciale.</p>
         
@@ -232,7 +229,6 @@ window.module11Content = {
         title: "Création d'outils de communication adaptés à l'entreprise",
         moduleTitle: "Module 11 : Valoriser son offre et choisir son circuit de distribution",
         content: `
-        <h1>📚 Création d'outils de communication adaptés à l'entreprise</h1>
         
         <p>Cette leçon fait partie du Module 11 : Valoriser son offre et choisir son circuit de distribution. Vous allez découvrir comment créer des outils de communication efficaces pour votre entreprise.</p>
         
@@ -361,7 +357,6 @@ window.module11Content = {
         title: "Détermination du juste prix et du coût de revient",
         moduleTitle: "Module 11 : Valoriser son offre et choisir son circuit de distribution",
         content: `
-        <h1>📚 Détermination du juste prix et du coût de revient</h1>
         
         <p>Cette leçon fait partie du Module 11 : Valoriser son offre et choisir son circuit de distribution. Vous allez découvrir comment déterminer le juste prix et calculer le coût de revient.</p>
         

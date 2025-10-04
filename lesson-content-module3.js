@@ -4,9 +4,7 @@ window.module3Content = {
         title: "Définir les besoins et la rentabilité du projet",
         moduleTitle: "Module 3 : Définir les besoins et la rentabilité du projet",
         content: `
-            <h1>💰 Définir les besoins et la rentabilité du projet</h1>
-        
-                        <p>Avant de lancer votre projet, il est essentiel d'identifier précisément vos besoins et d'évaluer sa rentabilité potentielle.</p>
+            <p>Avant de lancer votre projet, il est essentiel d'identifier précisément vos besoins et d'évaluer sa rentabilité potentielle.</p>
 
         
         <div style="text-align: center; margin: 30px 0;">
@@ -76,9 +74,7 @@ window.module3Content = {
         title: "Comprendre et structurer son projet avec le Business Model Canvas",
         moduleTitle: "Module 3 : Définir les besoins et la rentabilité du projet",
         content: `
-            <h1>🎨 Comprendre et structurer son projet avec le Business Model Canvas</h1>
-                    
-                <div style="text-align: center; margin: 30px 0;">
+            <div style="text-align: center; margin: 30px 0;">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/S9GAk_2de2g" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
                 </div>
             <p>Le Business Model Canvas est un outil visuel puissant pour structurer et présenter votre modèle économique de manière claire et synthétique.</p>
@@ -150,8 +146,6 @@ window.module3Content = {
         title: "Élaboration d'un compte de résultat",
         moduleTitle: "Module 3 : Définir les besoins et la rentabilité du projet",
         content: `
-            <h1>📊 Élaboration d'un compte de résultat</h1>
-            
             <p>🧐 Saviez-vous que chaque entreprise, peu importe sa taille, doit créer un <strong>💼 compte de résultat</strong> pour évaluer sa <strong>🔍 performance financière</strong>?</p>
             
             <p>Etablir un compte de résultat est indispensable pour tout entrepreneur désireux de comprendre la <strong>🏆 rentabilité</strong> de son entreprise. Cette déclaration vous permet d'avoir une vision claire de vos <strong>📈 revenus</strong>, <strong>📉 dépenses</strong> et <strong>🔁 profits</strong> ou <strong>❌ pertes</strong> sur une période donnée. Voici comment élaborer un compte de résultat de manière efficace :</p>
@@ -249,8 +243,6 @@ window.module3Content = {
         title: "Création d'un plan de financement",
         moduleTitle: "Module 3 : Définir les besoins et la rentabilité du projet",
         content: `
-            <h1>💳 Création d'un plan de financement</h1>
-            
             <p><strong>🌟 Un début intrigant : Saviez-vous que...</strong></p>
             
             <p>Saviez-vous que plus de 50% des startups échouent au cours de leurs cinq premières années, principalement en raison d'un manque de financement adéquat ? La création d'un <strong>🔑plan de financement</strong> est cruciale pour éviter ce piège et assurer la pérennité d'une entreprise. Voyons comment mettre en place un plan de financement efficace !</p>
@@ -354,8 +346,6 @@ window.module3Content = {
         title: "Présentation des outils de financement en partenariat avec un banquier",
         moduleTitle: "Module 3 : Définir les besoins et la rentabilité du projet",
         content: `
-            <h1>🏦 Présentation des outils de financement en partenariat avec un banquier</h1>
-            
             <p><strong>💡 Facteur Clé: Saviez-vous que 82% des entreprises qui échouent le font à cause de problèmes de trésorerie? Cela souligne l'importance cruciale de bien sélectionner les outils de financement pour un entrepreneur.</strong></p>
             
             <p><strong>Présentation des Outils de Financement en Partenariat avec un Banquier</strong></p>
@@ -453,8 +443,6 @@ window.module3Content = {
         title: "Plan Financier & Lean Canvas",
         moduleTitle: "Module 3 : Définir les besoins et la rentabilité du projet",
         content: `
-            <h1>📈 Plan Financier & Lean Canvas</h1>
-            
             <p>Le Lean Canvas est une version simplifiée du Business Model Canvas, spécialement conçue pour les startups et projets innovants.</p>
             
             <h2>🎨 Le Lean Canvas</h2>
@@ -563,8 +551,6 @@ window.module3Content = {
         moduleTitle: "Module 3 : Définir les besoins et la rentabilité du projet",
         type: "pdf",
         content: `
-            <h1>📄 Fiches Complémentaires - Module 3</h1>
-            
             <p>Voici les documents complémentaires pour approfondir la gestion financière et la structuration de votre projet.</p>
             
             <div class="pdf-grid">

@@ -4,8 +4,6 @@ window.module8Content = {
         title: "Moins de risques que la création",
         moduleTitle: "Module 8 : Atouts de la reprise d'entreprise",
         content: `
-        <h1>📚 Moins de risques que la création</h1>
-        
         <p>Cette leçon fait partie du Module 8 : Atouts de la reprise d'entreprise. Vous allez découvrir pourquoi la reprise d'entreprise présente généralement moins de risques que la création pure.</p>
         
         <div style="text-align: center; margin: 30px 0;">
@@ -149,7 +147,6 @@ window.module8Content = {
         title: "Spécificités de la reprise d'entreprise",
         moduleTitle: "Module 8 : Atouts de la reprise d'entreprise",
         content: `
-        <h1>📚 Spécificités de la reprise d'entreprise</h1>
         
         <p><strong>🕵️‍♂️ Avez-vous déjà pensé à reprendre une entreprise et non à en créer une de toutes pièces ?</strong></p>
         
@@ -215,7 +212,6 @@ window.module8Content = {
         title: "Outils disponibles pour trouver une entreprise à reprendre",
         moduleTitle: "Module 8 : Atouts de la reprise d'entreprise",
         content: `
-        <h1>📚 Outils disponibles pour trouver une entreprise à reprendre</h1>
         
         <p><strong>🧐 Connaissiez-vous ces outils pour trouver une entreprise à reprendre ?</strong></p>
         
@@ -294,7 +290,6 @@ window.module8Content = {
         title: "Évaluation des avantages de la reprise par rapport à la création",
         moduleTitle: "Module 8 : Atouts de la reprise d'entreprise",
         content: `
-        <h1>📚 Évaluation des avantages de la reprise par rapport à la création</h1>
         
         <p><strong>Pourquoi créer une entreprise quand on peut en reprendre une existante ?</strong></p>
         

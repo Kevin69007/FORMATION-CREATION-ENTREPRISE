@@ -4,8 +4,6 @@ window.module6Content = {
         title: "Introduction aux aides à la création d'entreprise",
         moduleTitle: "Module 6 : Connaître les principales aides à la création d'entreprise",
         content: `
-        <h1>📚 Introduction aux aides à la création d'entreprise</h1>
-        
         <p>Cette leçon fait partie du Module 6 : Connaître les principales aides à la création d'entreprise. Vous allez découvrir les différents types d'aides disponibles pour vous accompagner dans votre projet entrepreneurial.</p>
         
         <div style="text-align: center; margin: 30px 0;">
@@ -118,7 +116,6 @@ window.module6Content = {
         title: "Identification des aides à la création nationales, régionales, territoriales",
         moduleTitle: "Module 6 : Connaître les principales aides à la création d'entreprise",
         content: `
-        <h1>📚 Identification des aides à la création nationales, régionales, territoriales</h1>
         
         <p>Cette leçon détaille les aides disponibles selon les différents niveaux territoriaux : national, régional et local. Chaque niveau propose des dispositifs spécifiques adaptés aux enjeux de son territoire.</p>
         
@@ -229,7 +226,6 @@ window.module6Content = {
         title: "Application des aides en fonction du statut personnel",
         moduleTitle: "Module 6 : Connaître les principales aides à la création d'entreprise",
         content: `
-        <h1>📚 Application des aides en fonction du statut personnel</h1>
         
         <p>Cette leçon détaille les aides spécifiques selon votre statut personnel : demandeur d'emploi, salarié, étudiant, retraité, etc. Chaque statut ouvre droit à des dispositifs particuliers.</p>
         
@@ -386,7 +382,6 @@ window.module6Content = {
         title: "Maximisation des avantages des principales aides",
         moduleTitle: "Module 6 : Connaître les principales aides à la création d'entreprise",
         content: `
-        <h1>📚 Maximisation des avantages des principales aides</h1>
         
         <p>Cette leçon vous apprend à optimiser l'utilisation des aides disponibles, à les combiner efficacement et à maximiser leurs bénéfices pour votre projet de création d'entreprise.</p>
         
@@ -601,7 +596,6 @@ window.module6Content = {
         moduleTitle: "Module 6 : Connaître les principales aides à la création d'entreprise",
         type: "pdf",
         content: `
-        <h1>📚 Fiches Complémentaires</h1>
         
         <p>Cette leçon complète le module 6 avec des ressources supplémentaires et des fiches pratiques pour approfondir vos connaissances sur les aides à la création d'entreprise.</p>
         

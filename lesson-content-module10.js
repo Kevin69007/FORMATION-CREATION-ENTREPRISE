@@ -4,8 +4,6 @@ window.module10Content = {
         title: "Identifier votre marché cible",
         moduleTitle: "Module 10 : Trouver ses clients en étudiant son marché",
         content: `
-        <h1>📚 Identifier votre marché cible</h1>
-        
         <p>Cette leçon fait partie du Module 10 : Trouver ses clients en étudiant son marché. Vous allez découvrir comment identifier et analyser votre marché cible pour développer votre activité.</p>
         
         <div style="text-align: center; margin: 30px 0;">
@@ -128,7 +126,6 @@ window.module10Content = {
         title: "Étude approfondie du marché cible",
         moduleTitle: "Module 10 : Trouver ses clients en étudiant son marché",
         content: `
-        <h1>📚 Étude approfondie du marché cible</h1>
         
         <p>Cette leçon fait partie du Module 10 : Trouver ses clients en étudiant son marché. Vous allez approfondir votre compréhension du marché cible avec des méthodes d'analyse plus avancées.</p>
         
@@ -240,7 +237,6 @@ window.module10Content = {
         title: "Stratégies pour se démarquer des concurrents",
         moduleTitle: "Module 10 : Trouver ses clients en étudiant son marché",
         content: `
-        <h1>📚 Stratégies pour se démarquer des concurrents</h1>
         
         <p>Cette leçon fait partie du Module 10 : Trouver ses clients en étudiant son marché. Vous allez découvrir comment développer des stratégies efficaces pour vous différencier de la concurrence.</p>
         
@@ -355,7 +351,6 @@ window.module10Content = {
         title: "Création d'une identité commerciale distinctive",
         moduleTitle: "Module 10 : Trouver ses clients en étudiant son marché",
         content: `
-        <h1>📚 Création d'une identité commerciale distinctive</h1>
         
         <p>Cette leçon fait partie du Module 10 : Trouver ses clients en étudiant son marché. Vous allez découvrir comment créer une identité commerciale forte et distinctive pour votre entreprise.</p>
         
@@ -455,7 +450,6 @@ window.module10Content = {
         title: "Comprendre les attentes clients avec le Value Proposition Canvas",
         moduleTitle: "Module 10 : Trouver ses clients en étudiant son marché",
         content: `
-        <h1>📚 Comprendre les attentes clients avec le Value Proposition Canvas</h1>
         
         <p>Cette leçon fait partie du Module 10 : Trouver ses clients en étudiant son marché. Vous allez découvrir comment utiliser le Value Proposition Canvas pour comprendre et répondre aux attentes de vos clients.</p>
         

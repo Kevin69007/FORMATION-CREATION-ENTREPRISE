@@ -4,8 +4,6 @@ window.module9Content = {
         title: "Comprendre les statuts juridiques",
         moduleTitle: "Module 9 : Obtenir les premières informations sur les structures juridiques",
         content: `
-        <h1>📚 Comprendre les statuts juridiques</h1>
-        
         <p>Cette leçon fait partie du Module 9 : Obtenir les premières informations sur les structures juridiques. Vous allez découvrir les différents statuts juridiques disponibles pour créer votre entreprise et leurs spécificités.</p>
         
         <div style="text-align: center; margin: 30px 0;">
@@ -92,7 +90,6 @@ window.module9Content = {
         title: "Compréhension des mécanismes financiers de base",
         moduleTitle: "Module 9 : Obtenir les premières informations sur les structures juridiques",
         content: `
-        <h1>📚 Compréhension des mécanismes financiers de base</h1>
         
         <p>Cette leçon fait partie du Module 9 : Obtenir les premières informations sur les structures juridiques. Vous allez découvrir les mécanismes financiers fondamentaux nécessaires à la gestion de votre entreprise.</p>
         
@@ -149,7 +146,6 @@ window.module9Content = {
         title: "Mise en place d'une organisation administrative et comptable efficace",
         moduleTitle: "Module 9 : Obtenir les premières informations sur les structures juridiques",
         content: `
-        <h1>📚 Mise en place d'une organisation administrative et comptable efficace</h1>
         
         <p>Cette leçon fait partie du Module 9 : Obtenir les premières informations sur les structures juridiques. Vous allez découvrir comment organiser efficacement l'administration et la comptabilité de votre entreprise.</p>
         
@@ -226,7 +222,6 @@ window.module9Content = {
         title: "Connaissance du calendrier des déclarations et des télédéclarations",
         moduleTitle: "Module 9 : Obtenir les premières informations sur les structures juridiques",
         content: `
-        <h1>📚 Connaissance du calendrier des déclarations et des télédéclarations</h1>
         
         <p>Cette leçon fait partie du Module 9 : Obtenir les premières informations sur les structures juridiques. Vous allez découvrir l'importance du calendrier des déclarations et des télédéclarations pour votre entreprise.</p>
         
