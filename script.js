@@ -10,8 +10,8 @@ const formationData = {
                 { id: 3, title: "Présentation des compétences requises pour être un chef d'entreprise", type: "lesson" },
                 { id: 4, title: "Comprendre l'importance des compétences entrepreneuriales", type: "lesson" },
                 { id: 5, title: "Analyse des compétences clés pour gérer une entreprise", type: "lesson" },
-                { id: 6, title: "Synthèse", type: "lesson" },
-                { id: 7, title: "SMART Goals", type: "lesson" },
+                { id: 6, title: "SMART Goals", type: "lesson" },
+                { id: 7, title: "Synthèse", type: "lesson" },
                 { id: 8, title: "Fiches Complémentaires", type: "pdf" }
             ]
         },

@@ -311,7 +311,95 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
             </div>
         `
     },
-    6: {
+        6: {
+        title: "SMART Goals",
+        moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
+        content: `
+            <p>👉 Les objectifs SMART sont un outil puissant pour définir et atteindre vos objectifs entrepreneuriaux de manière efficace et mesurable.</p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <img src="assets/images/07_IMAGE_SMARTGOALS.png" alt="SMART Goals" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            </div>
+            
+            <h2>📝 Qu'est-ce que SMART ?</h2>
+            
+            <p>SMART est un acronyme qui signifie :</p>
+            
+            <h3>🔤 S - Spécifique</h3>
+            <p>Votre objectif doit être clair et précis. Évitez les formulations vagues comme "augmenter les ventes". Préférez "augmenter les ventes de 20% sur le trimestre prochain".</p>
+            
+            <h3>📊 M - Mesurable</h3>
+            <p>Vous devez pouvoir quantifier votre objectif. Utilisez des chiffres, des pourcentages, des montants pour pouvoir suivre vos progrès.</p>
+            
+            <h3>✅ A - Atteignable</h3>
+            <p>Votre objectif doit être réaliste compte tenu de vos ressources, de votre temps et de vos capacités actuelles.</p>
+            
+            <h3>🎯 R - Pertinent (Relevant)</h3>
+            <p>L'objectif doit être aligné avec votre vision d'entreprise et contribuer à vos objectifs à long terme.</p>
+            
+            <h3>⏰ T - Temporel</h3>
+            <p>Définissez une échéance claire pour atteindre votre objectif. Cela crée de l'urgence et facilite la planification.</p>
+            
+            <h2>💡 Exemples d'objectifs SMART</h2>
+            
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                <h4>✅ Bon exemple :</h4>
+                <p><strong>"Augmenter le chiffre d'affaires de mon entreprise de 30% d'ici la fin de l'année en développant 3 nouveaux produits et en ciblant 2 nouveaux segments de marché."</strong></p>
+                <ul>
+                    <li><strong>Spécifique :</strong> Augmenter le CA, développer des produits, cibler des segments</li>
+                    <li><strong>Mesurable :</strong> 30% d'augmentation</li>
+                    <li><strong>Atteignable :</strong> Dépend de vos ressources actuelles</li>
+                    <li><strong>Pertinent :</strong> Contribue à la croissance de l'entreprise</li>
+                    <li><strong>Temporel :</strong> Fin de l'année</li>
+                </ul>
+            </div>
+            
+            <div style="background: #f8d7da; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                <h4>❌ Mauvais exemple :</h4>
+                <p><strong>"Devenir plus riche"</strong></p>
+                <ul>
+                    <li>Pas spécifique</li>
+                    <li>Pas mesurable</li>
+                    <li>Pas d'échéance</li>
+                </ul>
+            </div>
+            
+            <h2>🛠️ Comment appliquer SMART à votre projet</h2>
+            
+            <h3>Étape 1 : Définir votre vision</h3>
+            <p>Commencez par clarifier ce que vous voulez accomplir à long terme.</p>
+            
+            <h3>Étape 2 : Décomposer en objectifs SMART</h3>
+            <p>Divisez votre vision en objectifs plus petits et plus gérables.</p>
+            
+            <h3>Étape 3 : Planifier les actions</h3>
+            <p>Pour chaque objectif SMART, définissez les actions concrètes à entreprendre.</p>
+            
+            <h3>Étape 4 : Suivre et ajuster</h3>
+            <p>Surveillez régulièrement vos progrès et ajustez si nécessaire.</p>
+            
+            <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
+                <h3>💪 Avantages des objectifs SMART</h3>
+                <ul>
+                    <li>Clarté et focus</li>
+                    <li>Motivation accrue</li>
+                    <li>Meilleure planification</li>
+                    <li>Suivi facilité</li>
+                    <li>Probabilité de succès plus élevée</li>
+                </ul>
+            </div>
+            <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
+            <h2>📋 Exercice pratique</h2>
+            <p>Prenez maintenant le temps de définir 3 objectifs SMART pour votre projet entrepreneurial :</p>
+            <ol>
+                <li>Un objectif à court terme (1-3 mois)</li>
+                <li>Un objectif à moyen terme (6-12 mois)</li>
+                <li>Un objectif à long terme (1-2 ans)</li>
+            </ol>
+            </div>
+        `
+    },
+    7: {
         title: "Synthèse",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         content: `
@@ -399,94 +487,6 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
             <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
                 <h3>🎯 Objectif du module suivant</h3>
                 <p>Le module 2 vous permettra d'appliquer ces compétences dans l'analyse de votre marché et la compréhension de vos clients, créant ainsi un pont entre vos compétences personnelles et les besoins du marché.</p>
-            </div>
-        `
-    },
-    7: {
-        title: "SMART Goals",
-        moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
-        content: `
-            <p>Les objectifs SMART sont un outil puissant pour définir et atteindre vos objectifs entrepreneuriaux de manière efficace et mesurable.</p>
-            
-            <div style="text-align: center; margin: 30px 0;">
-                <img src="assets/images/07_IMAGE_SMARTGOALS.png" alt="SMART Goals" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-            </div>
-            
-            <h2>📝 Qu'est-ce que SMART ?</h2>
-            
-            <p>SMART est un acronyme qui signifie :</p>
-            
-            <h3>🔤 S - Spécifique</h3>
-            <p>Votre objectif doit être clair et précis. Évitez les formulations vagues comme "augmenter les ventes". Préférez "augmenter les ventes de 20% sur le trimestre prochain".</p>
-            
-            <h3>📊 M - Mesurable</h3>
-            <p>Vous devez pouvoir quantifier votre objectif. Utilisez des chiffres, des pourcentages, des montants pour pouvoir suivre vos progrès.</p>
-            
-            <h3>✅ A - Atteignable</h3>
-            <p>Votre objectif doit être réaliste compte tenu de vos ressources, de votre temps et de vos capacités actuelles.</p>
-            
-            <h3>🎯 R - Pertinent (Relevant)</h3>
-            <p>L'objectif doit être aligné avec votre vision d'entreprise et contribuer à vos objectifs à long terme.</p>
-            
-            <h3>⏰ T - Temporel</h3>
-            <p>Définissez une échéance claire pour atteindre votre objectif. Cela crée de l'urgence et facilite la planification.</p>
-            
-            <h2>💡 Exemples d'objectifs SMART</h2>
-            
-            <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;">
-                <h4>✅ Bon exemple :</h4>
-                <p><strong>"Augmenter le chiffre d'affaires de mon entreprise de 30% d'ici la fin de l'année en développant 3 nouveaux produits et en ciblant 2 nouveaux segments de marché."</strong></p>
-                <ul>
-                    <li><strong>Spécifique :</strong> Augmenter le CA, développer des produits, cibler des segments</li>
-                    <li><strong>Mesurable :</strong> 30% d'augmentation</li>
-                    <li><strong>Atteignable :</strong> Dépend de vos ressources actuelles</li>
-                    <li><strong>Pertinent :</strong> Contribue à la croissance de l'entreprise</li>
-                    <li><strong>Temporel :</strong> Fin de l'année</li>
-                </ul>
-            </div>
-            
-            <div style="background: #f8d7da; padding: 15px; border-radius: 8px; margin: 15px 0;">
-                <h4>❌ Mauvais exemple :</h4>
-                <p><strong>"Devenir plus riche"</strong></p>
-                <ul>
-                    <li>Pas spécifique</li>
-                    <li>Pas mesurable</li>
-                    <li>Pas d'échéance</li>
-                </ul>
-            </div>
-            
-            <h2>🛠️ Comment appliquer SMART à votre projet</h2>
-            
-            <h3>Étape 1 : Définir votre vision</h3>
-            <p>Commencez par clarifier ce que vous voulez accomplir à long terme.</p>
-            
-            <h3>Étape 2 : Décomposer en objectifs SMART</h3>
-            <p>Divisez votre vision en objectifs plus petits et plus gérables.</p>
-            
-            <h3>Étape 3 : Planifier les actions</h3>
-            <p>Pour chaque objectif SMART, définissez les actions concrètes à entreprendre.</p>
-            
-            <h3>Étape 4 : Suivre et ajuster</h3>
-            <p>Surveillez régulièrement vos progrès et ajustez si nécessaire.</p>
-            
-            <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-                <h3>💪 Avantages des objectifs SMART</h3>
-                <ul>
-                    <li>Clarté et focus</li>
-                    <li>Motivation accrue</li>
-                    <li>Meilleure planification</li>
-                    <li>Suivi facilité</li>
-                    <li>Probabilité de succès plus élevée</li>
-                </ul>
-            </div>
-            <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
-            <h2>📋 Exercice pratique</h2>
-            <p>Prenez maintenant le temps de définir 3 objectifs SMART pour votre projet entrepreneurial :</p>
-            <ol>
-                <li>Un objectif à court terme (1-3 mois)</li>
-                <li>Un objectif à moyen terme (6-12 mois)</li>
-                <li>Un objectif à long terme (1-2 ans)</li>
-            </ol>
             </div>
         `
     },
