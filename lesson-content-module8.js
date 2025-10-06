@@ -167,12 +167,14 @@ window.module8Content = {
         
         <p>La transmission n'est pas une simple vente; elle englobe la <strong>transmission des connaissances et du savoir-faire</strong>. Par exemple, lorsque M. Dupont reprend une entreprise de fabrication de bijoux, il doit non seulement comprendre les finances et les opérations mais aussi les secrets artisanaux qui ont fait le succès de l'entreprise. C'est pourquoi, souvent, l'ancien propriétaire reste quelque temps pour assurer une transition en douceur.</p>
         
+        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
         <h2>🏐 Conclusion : Les atouts de la reprise d'entreprise</h2>
         
         <p>La reprise d'une <strong>entreprise existante</strong> présente de nombreux avantages par rapport à la création ex nihilo : une <strong>infrastructure en place</strong>, une <strong>clientèle établie</strong>, et parfois même des <strong>bénéfices immédiats</strong>. Cependant, elle implique également de surmonter des défis législatifs, juridiques, fiscaux et de gestion.</p>
         
         <p>En comprenant bien ces aspects spécifiques, vous serez mieux préparé à naviguer dans le processus de reprise d'entreprise avec succès. Alors, prêt à reprendre où quelqu'un a laissé ?</p>
-        
+        </div>
+
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h3>💡 Conseil pratique</h3>
             <p>La reprise d'entreprise nécessite une approche méthodique et une analyse approfondie. N'hésitez pas à vous faire accompagner par des professionnels spécialisés.</p>
@@ -192,6 +194,26 @@ window.module8Content = {
             <h3>🎯 Action concrète</h3>
             <p>Avant de vous lancer dans une reprise d'entreprise, réalisez une liste des aspects spécifiques à vérifier : législation applicable, contrats en cours, santé financière, et modalités de transmission du savoir-faire.</p>
         </div>
+
+                    <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
+                <h3>📋 Devoir : Réaliser une analyse des spécificités liées à la reprise d'entreprise.</h3>
+                <h4>Instructions :</h4>
+                <ol>
+                    <li><strong>Législation entourant la reprise d'entreprise :</strong>Recherchez et rédigez un résumé des lois et
+réglementations qui encadrent le processus de reprise d'entreprise en France. Incluez des exemples
+concrets pour illustrer l'impact de la législation sur ce processus.</li>
+                    <li><strong>Aspects juridiques et fiscaux spécifiques :</strong>Identifiez et expliquez en détail les principaux aspects
+juridiques et fiscaux à prendre en compte lors de la reprise d'une entreprise. Présentez un cas
+pratique et élaborez sur les implications de ces aspects sur la viabilité financière de la reprise.</li>
+                    <li><strong>Particularités liées à la transmission d'entreprise existante :</strong>Réalisez une étude de cas sur la
+transmission d'une entreprise existante en mettant en évidence les défis et opportunités rencontrés.
+Proposez des solutions et recommandations pour réussir une transmission d'entreprise de manière
+efficace.</li>    
+                </ol>
+                <p><strong>🍏La meilleure solution, 10/10:</strong> La meilleure solution présentera une analyse complète des spécificités entourant la reprise d'entreprise, en fournissant des informations détaillées, des exemples pertinents, et des recommandations basées sur une analyse approfondie. Par exemple, elle inclura une synthèse claire de la législation, des explications précises sur les aspects juridiques et fiscaux avec des cas concrets, ainsi que des stratégies concrètes pour une transmission d'entreprise réussie.</p>
+            </div>
+
+
             `
     },
     3: {
@@ -243,10 +265,12 @@ window.module8Content = {
         
         <p>Certaines grandes écoles et universités mettent en place des 🧑‍🏫 programmes dédiés à la reprise d'entreprise. Par exemple, 👩‍🎓 HEC Paris organise des 🎓 Masters Class et des 🔶 Ateliers spécialisés permettant de rencontrer d'anciens élèves devenus cédants ou experts du secteur.</p>
         
+        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
         <h2>🎯 Conclusion</h2>
         
         <p>Débusquer la bonne entreprise à reprendre relève à la fois de la 🔍 recherche ciblée et de la 🤝 mise en réseau efficace. Utiliser les bons outils et connaitre les bonnes ressources, comme les 🌐 plateformes en ligne, les 📇 réseaux d'intermédiaires et les ✨ événements de networking, constituent des étapes cruciales. Ne sous-estimez jamais le pouvoir du 📚 réseautage et des occasions de ❔ dialogue en direct, éléments clés pour trouver l'opportunité parfaite qui correspond à vos aspirations entrepreneuriales.</p>
-        
+        </div>
+
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h3>💡 Conseil pratique</h3>
             <p>La recherche d'entreprise à reprendre nécessite patience et méthode. Utilisez plusieurs sources et n'hésitez pas à vous faire accompagner par des professionnels.</p>
@@ -267,6 +291,19 @@ window.module8Content = {
             <h3>🎯 Stratégie de recherche efficace</h3>
             <p>Créez un profil de recherche détaillé avec vos critères (secteur, taille, localisation, budget) et activez les alertes sur les plateformes. Participez régulièrement aux événements de networking pour développer votre réseau et découvrir des opportunités non publiées.</p>
         </div>
+
+                            <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
+                <h3>📋 Devoir : Recherche d'Entreprise à Reprendre</h3>
+                <h4>Instructions :</h4>
+                <ol>
+                    <li><strong>Exploration des Outils en Ligne :</strong><br>- Utilisez Google pour rechercher des plateformes en ligne spécialisées dans la vente d'entreprises. Choisissez deux plateformes et notez les critères de recherche qu'elles offrent, ainsi que les entreprises disponibles à la reprise.
+<br>- Consultez les sites web d'intermédiaires spécialisés dans la transmission d'entreprises. Identifiez leurs services et le processus pour accéder aux entreprises à vendre.</li>
+                    <li><strong>Networking :</strong>Recherchez des événements de networking dédiés à la reprise d'entreprise dans votre région. Sélectionnez un événement et notez les informations pertinentes telles que la date, le lieu et les entreprises participantes.</li>
+                    <li><strong>Rapport :</strong>Rédigez un rapport décrivant les outils et ressources explorés, en mettant en évidence les avantages et les inconvénients de chaque méthode de recherche. Proposez une liste de trois entreprises potentielles à reprendre, en mentionnant leur secteur d'activité et leur localisation.</li>    
+                </ol>
+                <p><strong>🍏La meilleure solution, 10/10:</strong> Une recherche complète des outils en ligne et des événements de networking a été effectuée, démontrant une compréhension approfondie des ressources disponibles pour trouver une entreprise à reprendre. Le rapport fournit des informations détaillées sur les plateformes en ligne, les intermédiaires spécialisés et les événements de networking, ainsi qu'une sélection pertinente de trois entreprises potentielles à reprendre, étayée par des critères précis tels que le secteur d'activité et la localisation.</p>
+            </div>
+
         
     `
     },
@@ -301,12 +338,14 @@ window.module8Content = {
         
         <p>Prenons l'exemple d'un succès local. Pierre, passionné de littérature, décide de reprendre une librairie à Lille plutôt que de créer la sienne. Avec une clientèle fidèle, une marque reconnue et une situation financière saine, il a réussi à redynamiser l'espace en organisant des rencontres avec des auteurs et des événements culturels. En moins de deux ans, il a non seulement maintenu la clientèle existante, mais a également doublé le chiffre d'affaires en diversifiant les services proposés.</p>
         
+        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
         <h2>📈 Conclusion: Une Stratégie Mûrement Réfléchie</h2>
         
         <p>Reprendre une entreprise peut offrir une base solide pour un entrepreneur souhaitant se lancer plus rapidement et avec moins de risques. Toutefois, cela nécessite une analyse minutieuse et une compréhension claire des défis potentiels pour garantir une transition réussie et le maintien de la continuité des affaires.</p>
         
         <p>En résumé, la reprise d'entreprise peut s'avérer une stratégie gagnante pour ceux qui sont prêts à s'investir dans la compréhension des mécanismes internes d'une entreprise déjà en fonctionnement et à faire preuve de sensibilité envers l'équipe et les valeurs existantes.</p>
-        
+                </div>
+
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h3>💡 Conseil pratique</h3>
             <p>Le choix entre reprise et création dépend de votre profil et de vos objectifs. Prenez le temps de bien analyser les deux options avant de vous décider.</p>
@@ -350,6 +389,25 @@ window.module8Content = {
             </ul>
             <p><strong>Score élevé (20-25) :</strong> Création recommandée | <strong>Score moyen (10-19) :</strong> Les deux options sont possibles | <strong>Score faible (5-9) :</strong> Reprise recommandée</p>
         </div>
+
+                                    <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
+                <h3>📋 Devoir : Étude de cas sur les avantages de la reprise par rapport à la création d'entreprise</h3>
+                <h4>Instructions :</h4>
+                <ol>
+                    <li><strong></strong>Choisissez une entreprise existante ou créez une entreprise fictive dans un secteur d'activité donné.
+Par exemple, vous pourriez choisir une boulangerie existante ou créer une entreprise fictive dans le
+domaine de la restauration rapide.</li>
+                    <li><strong></strong> Identifiez et évaluez spécifiquement les avantages offerts par la reprise d'entreprise par rapport à la
+création d'une entreprise ex nihilo, en vous basant sur l'exemple choisi. Par exemple, si vous avez
+choisi une boulangerie existante, analysez en détail les avantages tels que la clientèle établie, la
+réputation de la marque, les processus opérationnels en place, ainsi que l'historique financier.</li>
+                    <li><strong></strong>Présentez votre analyse sous forme d'un rapport ou d'une présentation, mettant en avant les
+avantages spécifiques de la reprise par rapport à la création d'entreprise, en utilisant des données
+quantitatives et qualitatives pour étayer vos conclusions.</li>    
+                </ol>
+                <p><strong>🍏La meilleure solution, 10/10:</strong> La meilleure solution inclurait une étude détaillée de l'entreprise choisie, mettant en évidence de manière claire et argumentée les avantages spécifiques de la reprise par rapport à la création d'entreprise. Des données concrètes, des exemples pertinents et une analyse approfondie seraient inclus pour offrir une vision complète des avantages de la reprise d'entreprise.</p>
+            </div>
+
             `
     }
 };
