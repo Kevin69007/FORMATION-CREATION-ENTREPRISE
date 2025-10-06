@@ -5,7 +5,7 @@ window.module1Content = {
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         type: "video",
         content: `
-            <p>Bienvenue dans ce premier module de formation ! Vous allez découvrir les fondations essentielles de l'entrepreneuriat.</p>
+            <p>👉 Bienvenue dans ce premier module de formation ! Vous allez découvrir les fondations essentielles de l'entrepreneuriat.</p>
             
             <div style="text-align: center; margin: 30px 0;">
                 <iframe width="560" height="315" autoplay controls src="https://www.youtube.com/embed/H57Mfi9aWCo" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
@@ -38,7 +38,7 @@ window.module1Content = {
         title: "Comment lancer son projet d'entreprise sans se louper",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         content: `
-            <p>Lancer un projet d'entreprise est une aventure passionnante mais qui nécessite une approche méthodique pour éviter les pièges courants.</p>
+            <p>👉 Lancer un projet d'entreprise est une aventure passionnante mais qui nécessite une approche méthodique pour éviter les pièges courants.</p>
             
             <div style="text-align: center; margin: 30px 0;">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/_YR0Mf47J9k" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
@@ -85,7 +85,8 @@ window.module1Content = {
         title: "Présentation des compétences requises pour être un chef d'entreprise",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         content: `
-            <p>Saviez-vous que plus de 90 % des startups échouent dans leurs premières années d'existence ? Ce chiffre montre qu'être un chef d'entreprise demande bien plus que d'avoir une bonne idée : il faut des compétences diverses et bien développées.</p>
+            <h2>🤔 Démarrez avec un fait intrigant !</h2>
+            <p>👉 Saviez-vous que plus de 90 % des startups échouent dans leurs premières années d'existence ? Ce chiffre montre qu'être un chef d'entreprise demande bien plus que d'avoir une bonne idée : il faut des compétences diverses et bien développées.</p>
             
             <h2>🛠️ Compétences Requises pour l'Entrepreneuriat</h2>
             
@@ -185,7 +186,7 @@ window.module1Content = {
         title: "Comprendre l'importance des compétences entrepreneuriales",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         content: `
-            <p>Les compétences entrepreneuriales sont le fondement du succès en entreprise. Elles déterminent votre capacité à transformer une idée en réalité et à naviguer dans l'environnement complexe des affaires.</p>
+            <p>👉 Les compétences entrepreneuriales sont le fondement du succès en entreprise. Elles déterminent votre capacité à transformer une idée en réalité et à naviguer dans l'environnement complexe des affaires.</p>
             
             <h2>🔍 Pourquoi ces compétences sont-elles cruciales ?</h2>
             
@@ -222,8 +223,13 @@ window.module1Content = {
             <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
                 <h3>📝 Devoir: Analyse de l'impact de l'entrepreneuriat</h3>
                 <p><strong>Instructions :</strong></p>
+                 <p><strong>Analyse des compétences entrepreneuriales :</strong> Décrivez en détail les compétences clés nécessaires pour être un entrepreneur performant, en mettant l'accent sur l'identification des opportunités, la gestion efficiente des ressources et la capacité à relever les défis commerciaux.
+
+Donnez des exemples concrets de chaque compétence et expliquez comment elles contribuent à la performance et à la durabilité des entreprises.</p>
+
                 <p><strong>Impact de l'entrepreneuriat sur le développement économique :</strong> En utilisant des données et des recherches approfondies, analysez et expliquez l'impact de l'entrepreneuriat sur le développement économique d'un pays ou d'une région spécifique.</p>
                 
+                <p>Présentez des exemples de réussites entrepreneuriales qui ont eu un impact significatif sur la création d'emplois et la croissance économique.</p>
                 <p><strong>Plan d'action entrepreneurial :</strong> Créez un plan détaillé pour une entreprise hypothétique ou pour votre projet en mettant l'accent sur la manière dont les compétences entrepreneuriales peuvent être mises en pratique pour assurer la performance et la pérennité de l'entreprise.</p>
                 <p>Présentez des stratégies spécifiques pour identifier les opportunités, gérer les ressources et surmonter les défis potentiels.</p>
                 <p><strong>🍏La meilleure solution, 10/10 :</strong> La meilleure solution sera un plan d'action entrepreneurial complet qui démontre une compréhension approfondie des compétences entrepreneuriales, de leur impact sur le développement économique et de leur application pratique dans la création et la gestion d'une entreprise. Le plan devra être accompagné d'exemples concrets, de données pertinentes et de stratégies innovantes pour assurer le succès de l'entreprise.</p>
@@ -234,7 +240,7 @@ window.module1Content = {
         title: "Analyse des compétences clés pour gérer une entreprise",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         content: `
-            <p>Saviez-vous que plus de 60% des nouvelles entreprises échouent dans les trois premières années ? Ce chiffre alarmant met en évidence l'importance cruciale des compétences clés pour une gestion efficace d'une entreprise. Explorons ces compétences essentielles et voyons comment elles peuvent transformer une entreprise naissante en une success story durable.</p>
+            <p>👉 Saviez-vous que plus de 60% des nouvelles entreprises échouent dans les trois premières années ? Ce chiffre alarmant met en évidence l'importance cruciale des compétences clés pour une gestion efficace d'une entreprise. Explorons ces compétences essentielles et voyons comment elles peuvent transformer une entreprise naissante en une success story durable.</p>
             
             <h2>💸 Littératie financière</h2>
             <p>La <strong>💡littératie financière</strong> est la capacité à comprendre et à gérer les finances d'une entreprise de manière éclairée. Imaginez un chef d'entreprise qui ne comprend pas les états financiers : il serait impossible pour lui de savoir si son entreprise est rentable ou non. Par exemple, Steve Jobs était connu pour sa maîtrise des chiffres, ce qui lui a permis de prendre des décisions stratégiques pour Apple.</p>
@@ -306,6 +312,97 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
         `
     },
     6: {
+        title: "Synthèse",
+        moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
+        content: `
+            <p>👉 Félicitations ! Vous avez terminé le premier module de votre formation en entrepreneuriat. Récapitulons les points clés que nous avons abordés.</p>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Le9fJIXCALQ" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+        </div>
+        
+        <h2>🎯 Les compétences entrepreneuriales essentielles</h2>
+                
+        <h3>Synthèse</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/06_IMAGE_SYNTHESE.png" alt="Synthèse" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>Un chef d'entreprise doit avoir une vision claire et stratégique à long terme pour guider l'entreprise vers ses objectifs. Cela inclut la capacité à anticiper les tendances du marché, prévoir les défis potentiels, et planifier des actions pour exploiter les opportunités tout en minimisant les risques.</p>
+        
+        <h3>Leadership</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/06_IMAGE_LEADERSHIP.png" alt="Leadership" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>Le leadership est essentiel pour un chef d'entreprise. Il doit être capable d'inspirer et de diriger son équipe vers la réussite. Cela implique de motiver les employés, de donner un sens et une direction claire à leurs efforts, et de créer un environnement de travail positif qui favorise la productivité et l'innovation.</p>
+        <p>Par exemple, un chef d'entreprise qui crée des objectifs inspirants et reconnaît les réalisations des employés peut augmenter leur motivation et leur engagement.</p>
+        
+        <h3>Compétences de Gestion</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/06_IMAGE_GESTION.png" alt="Compétences de Gestion" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>Les compétences de gestion sont cruciales pour un chef d'entreprise. Cela comprend la gestion efficace du temps, la gestion des ressources humaines et financières, et l'organisation des opérations quotidiennes. Il faut s'assurer que toutes les parties de l'entreprise fonctionnent harmonieusement pour atteindre les objectifs fixés.</p>
+        <p>Par exemple, un chef d'entreprise qui optimise l'emploi du temps de son équipe et alloue les ressources de manière efficiente garantit le bon fonctionnement de l'organisation.</p>
+        
+        <h3>Communication</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/06_IMAGE_COMMUNICATION.png" alt="Communication" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>Une communication efficace est vitale pour un chef d'entreprise. La clarté dans les échanges, la capacité d'écouter activement les contributions des employés, et de fournir un feedback constructif sont des éléments essentiels pour maintenir une bonne dynamique au sein de l'équipe et assurer la transmission des informations importantes dans l'entreprise.</p>
+            <p>Par exemple, un chef d'entreprise qui organise régulièrement des réunions pour écouter les préoccupations des employés et leur fournir des retours peut améliorer la cohésion et la performance de l'équipe</p>
+        
+        
+<h3>Compétences Financières</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/06_IMAGE_FINANCIERE.png" alt="Compétences Financières" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>La maîtrise des compétences financières est indispensable pour toute personne à la tête d'une entreprise. Cela inclut la capacité à établir et gérer un budget, analyser les états financiers pour prendre des décisions éclairées, et maîtriser les coûts pour assurer la rentabilité et la viabilité à long terme de l'entreprise.</p>
+            <p>Par exemple, un chef d'entreprise qui surveille régulièrement les performances financières de son entreprise et ajuste les budgets en conséquence peut prévenir des pertes et optimiser les profits.</p>
+        
+<h3>Compétences en Résolution de Problèmes</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/06_IMAGE_RESOLUTION.png" alt="Compétences en Résolution de Problèmes" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>Un chef d'entreprise doit être doué pour résoudre les problèmes. Cela nécessite une aptitude à analyser les situations complexes, à innover pour trouver des solutions créatives, et à prendre des décisions rapides et efficaces. L'habileté à gérer les crises et à surmonter les obstacles est essentielle pour maintenir la stabilité et la croissance de l'entreprise.</p>
+            <p>Par exemple, lorsque confronté à une baisse soudaine de la demande, un chef d'entreprise innovant peut pivoter son modèle d'affaires pour s'adapter aux nouvelles conditions du marché et trouver des débouchés alternatifs.</p>
+
+
+                </div>
+            </div>
+            
+            <h2>🔗 Interconnexion des compétences</h2>
+            <p>Ces compétences ne fonctionnent pas de manière isolée mais s'interconnectent pour créer un écosystème entrepreneurial efficace :</p>
+            <ul>
+                <li><strong>Communication + Leadership :</strong> Pour inspirer et motiver votre équipe</li>
+                <li><strong>Gestion + Compétences Financières :</strong> Pour optimiser les ressources et la rentabilité</li>
+                <li><strong>Résolution de Problèmes + Communication :</strong> Pour naviguer dans les défis</li>
+                <li><strong>Toutes les compétences + Synthèse :</strong> Pour une approche intégrée et cohérente</li>
+            </ul>
+            
+            <h2>📈 Développement continu</h2>
+            <p>Ces compétences ne sont pas innées mais peuvent être développées par :</p>
+            <ul>
+                <li><strong>Formation continue :</strong> Cours, lectures, webinaires</li>
+                <li><strong>Expérience pratique :</strong> Mise en application dans des projets réels</li>
+                <li><strong>Apprentissage par l'erreur :</strong> Analyser les échecs pour progresser</li>
+                <li><strong>Mentorat :</strong> Apprendre des expériences d'autres entrepreneurs</li>
+                <li><strong>Réseautage :</strong> Échanger avec d'autres professionnels</li>
+            </ul>
+            
+            <h2>🚀 Prochaines étapes</h2>
+            <p>Dans le module suivant, nous aborderons l'analyse de marché et la connaissance de vos clients. Ces compétences vous permettront de mieux comprendre votre environnement concurrentiel et d'adapter votre offre aux besoins réels du marché.</p>
+            
+            <div style="background: #d1ecf1; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #17a2b8;">
+                <h3>💡 Action recommandée</h3>
+                <p>Prenez le temps de réfléchir à vos propres compétences actuelles et identifiez les domaines que vous souhaitez développer en priorité. Cette réflexion vous aidera à tirer le meilleur parti des modules suivants.</p>
+            </div>
+            
+            <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
+                <h3>🎯 Objectif du module suivant</h3>
+                <p>Le module 2 vous permettra d'appliquer ces compétences dans l'analyse de votre marché et la compréhension de vos clients, créant ainsi un pont entre vos compétences personnelles et les besoins du marché.</p>
+            </div>
+        `
+    },
+    7: {
         title: "SMART Goals",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         content: `
@@ -382,7 +479,7 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
                     <li>Probabilité de succès plus élevée</li>
                 </ul>
             </div>
-            
+            <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
             <h2>📋 Exercice pratique</h2>
             <p>Prenez maintenant le temps de définir 3 objectifs SMART pour votre projet entrepreneurial :</p>
             <ol>
@@ -390,96 +487,6 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
                 <li>Un objectif à moyen terme (6-12 mois)</li>
                 <li>Un objectif à long terme (1-2 ans)</li>
             </ol>
-        `
-    },
-    7: {
-        title: "Synthèse",
-        moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
-        content: `
-            <p>Félicitations ! Vous avez terminé le premier module de votre formation en entrepreneuriat. Récapitulons les points clés que nous avons abordés.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Le9fJIXCALQ" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
-        <h2>🎯 Les compétences entrepreneuriales essentielles</h2>
-                
-        <h3>Synthèse</h3>
-        <div style="text-align: center; margin: 20px 0;">
-            <img src="assets/images/06_IMAGE_SYNTHESE.png" alt="Synthèse" style="max-width: 100%; height: auto; border-radius: 8px;">
-        </div>
-        <p>Un chef d'entreprise doit avoir une vision claire et stratégique à long terme pour guider l'entreprise vers ses objectifs. Cela inclut la capacité à anticiper les tendances du marché, prévoir les défis potentiels, et planifier des actions pour exploiter les opportunités tout en minimisant les risques.</p>
-        
-        <h3>Leadership</h3>
-        <div style="text-align: center; margin: 20px 0;">
-            <img src="assets/images/06_IMAGE_LEADERSHIP.png" alt="Leadership" style="max-width: 100%; height: auto; border-radius: 8px;">
-        </div>
-        <p>Le leadership est essentiel pour un chef d'entreprise. Il doit être capable d'inspirer et de diriger son équipe vers la réussite. Cela implique de motiver les employés, de donner un sens et une direction claire à leurs efforts, et de créer un environnement de travail positif qui favorise la productivité et l'innovation.</p>
-		<p>Par exemple, un chef d'entreprise qui crée des objectifs inspirants et reconnaît les réalisations des employés peut augmenter leur motivation et leur engagement.</p>
-        
-        <h3>Compétences de Gestion</h3>
-        <div style="text-align: center; margin: 20px 0;">
-            <img src="assets/images/06_IMAGE_GESTION.png" alt="Compétences de Gestion" style="max-width: 100%; height: auto; border-radius: 8px;">
-        </div>
-        <p>Les compétences de gestion sont cruciales pour un chef d'entreprise. Cela comprend la gestion efficace du temps, la gestion des ressources humaines et financières, et l'organisation des opérations quotidiennes. Il faut s'assurer que toutes les parties de l'entreprise fonctionnent harmonieusement pour atteindre les objectifs fixés.</p>
-		<p>Par exemple, un chef d'entreprise qui optimise l'emploi du temps de son équipe et alloue les ressources de manière efficiente garantit le bon fonctionnement de l'organisation.</p>
-        
-        <h3>Communication</h3>
-        <div style="text-align: center; margin: 20px 0;">
-            <img src="assets/images/06_IMAGE_COMMUNICATION.png" alt="Communication" style="max-width: 100%; height: auto; border-radius: 8px;">
-        </div>
-        <p>Une communication efficace est vitale pour un chef d'entreprise. La clarté dans les échanges, la capacité d'écouter activement les contributions des employés, et de fournir un feedback constructif sont des éléments essentiels pour maintenir une bonne dynamique au sein de l'équipe et assurer la transmission des informations importantes dans l'entreprise.</p>
-			<p>Par exemple, un chef d'entreprise qui organise régulièrement des réunions pour écouter les préoccupations des employés et leur fournir des retours peut améliorer la cohésion et la performance de l'équipe</p>
-        
-        
-<h3>Compétences Financières</h3>
-        <div style="text-align: center; margin: 20px 0;">
-            <img src="assets/images/06_IMAGE_FINANCIERE.png" alt="Compétences Financières" style="max-width: 100%; height: auto; border-radius: 8px;">
-        </div>
-        <p>La maîtrise des compétences financières est indispensable pour toute personne à la tête d'une entreprise. Cela inclut la capacité à établir et gérer un budget, analyser les états financiers pour prendre des décisions éclairées, et maîtriser les coûts pour assurer la rentabilité et la viabilité à long terme de l'entreprise.</p>
-			<p>Par exemple, un chef d'entreprise qui surveille régulièrement les performances financières de son entreprise et ajuste les budgets en conséquence peut prévenir des pertes et optimiser les profits.</p>
-        
-<h3>Compétences en Résolution de Problèmes</h3>
-        <div style="text-align: center; margin: 20px 0;">
-            <img src="assets/images/06_IMAGE_RESOLUTION.png" alt="Compétences en Résolution de Problèmes" style="max-width: 100%; height: auto; border-radius: 8px;">
-        </div>
-        <p>Un chef d'entreprise doit être doué pour résoudre les problèmes. Cela nécessite une aptitude à analyser les situations complexes, à innover pour trouver des solutions créatives, et à prendre des décisions rapides et efficaces. L'habileté à gérer les crises et à surmonter les obstacles est essentielle pour maintenir la stabilité et la croissance de l'entreprise.</p>
-			<p>Par exemple, lorsque confronté à une baisse soudaine de la demande, un chef d'entreprise innovant peut pivoter son modèle d'affaires pour s'adapter aux nouvelles conditions du marché et trouver des débouchés alternatifs.</p>
-
-
-                </div>
-            </div>
-            
-            <h2>🔗 Interconnexion des compétences</h2>
-            <p>Ces compétences ne fonctionnent pas de manière isolée mais s'interconnectent pour créer un écosystème entrepreneurial efficace :</p>
-            <ul>
-                <li><strong>Communication + Leadership :</strong> Pour inspirer et motiver votre équipe</li>
-                <li><strong>Gestion + Compétences Financières :</strong> Pour optimiser les ressources et la rentabilité</li>
-                <li><strong>Résolution de Problèmes + Communication :</strong> Pour naviguer dans les défis</li>
-                <li><strong>Toutes les compétences + Synthèse :</strong> Pour une approche intégrée et cohérente</li>
-            </ul>
-            
-            <h2>📈 Développement continu</h2>
-            <p>Ces compétences ne sont pas innées mais peuvent être développées par :</p>
-            <ul>
-                <li><strong>Formation continue :</strong> Cours, lectures, webinaires</li>
-                <li><strong>Expérience pratique :</strong> Mise en application dans des projets réels</li>
-                <li><strong>Apprentissage par l'erreur :</strong> Analyser les échecs pour progresser</li>
-                <li><strong>Mentorat :</strong> Apprendre des expériences d'autres entrepreneurs</li>
-                <li><strong>Réseautage :</strong> Échanger avec d'autres professionnels</li>
-            </ul>
-            
-            <h2>🚀 Prochaines étapes</h2>
-            <p>Dans le module suivant, nous aborderons l'analyse de marché et la connaissance de vos clients. Ces compétences vous permettront de mieux comprendre votre environnement concurrentiel et d'adapter votre offre aux besoins réels du marché.</p>
-            
-            <div style="background: #d1ecf1; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #17a2b8;">
-                <h3>💡 Action recommandée</h3>
-                <p>Prenez le temps de réfléchir à vos propres compétences actuelles et identifiez les domaines que vous souhaitez développer en priorité. Cette réflexion vous aidera à tirer le meilleur parti des modules suivants.</p>
-            </div>
-            
-            <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-                <h3>🎯 Objectif du module suivant</h3>
-                <p>Le module 2 vous permettra d'appliquer ces compétences dans l'analyse de votre marché et la compréhension de vos clients, créant ainsi un pont entre vos compétences personnelles et les besoins du marché.</p>
             </div>
         `
     },
