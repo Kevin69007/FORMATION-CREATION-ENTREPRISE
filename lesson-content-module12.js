@@ -3,20 +3,10 @@ window.module12Content = {
     1: {
         title: "Comprendre ses Clients",
         moduleTitle: "Module 12 : Cibler les actions commerciales adaptées à ses clients",
-        content: `
-        <p>Cette leçon fait partie du Module 12 : Cibler les actions commerciales adaptées à ses clients. Vous allez découvrir comment comprendre vos clients pour adapter vos actions commerciales.</p>
-        
+        content: `        
         <div style="text-align: center; margin: 30px 0;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/xyo4JGMyvTA" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
         </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Comprendre les besoins et motivations clients</li>
-            <li>Identifier les segments clients</li>
-            <li>Développer des personnages clients</li>
-            <li>Adapter la communication au profil client</li>
-        </ul>
         
         <h2>📋 Comprendre ses clients</h2>
         
@@ -112,31 +102,13 @@ window.module12Content = {
             <h3>💡 Conseil pratique</h3>
             <p>La compréhension approfondie de vos clients est la base d'actions commerciales efficaces. Plus vous connaissez vos clients, plus vous pouvez personnaliser votre approche et maximiser vos résultats.</p>
         </div>
-        
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous identifierons les meilleures actions commerciales adaptées à vos clients.</p>
-    `
+            `
     },
     2: {
         title: "Identification des meilleures actions commerciales adaptées",
         moduleTitle: "Module 12 : Cibler les actions commerciales adaptées à ses clients",
         content: `
-        
-        <p>Cette leçon fait partie du Module 12 : Cibler les actions commerciales adaptées à ses clients. Vous allez découvrir comment identifier et mettre en place les meilleures actions commerciales adaptées à vos clients.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/xyo4JGMyvTA" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Identifier les actions commerciales les plus efficaces</li>
-            <li>Adapter les actions aux différents segments clients</li>
-            <li>Optimiser le mix commercial</li>
-            <li>Mesurer l'efficacité des actions</li>
-            <li>Personnaliser les approches commerciales</li>
-        </ul>
-        
+                
         <h2>📋 Types d'actions commerciales</h2>
         
         <h3>1. Actions de prospection</h3>
@@ -245,30 +217,13 @@ window.module12Content = {
             <h3>💡 Conseil pratique</h3>
             <p>Les meilleures actions commerciales sont celles qui créent de la valeur pour vos clients tout en atteignant vos objectifs commerciaux. Testez différentes approches, mesurez leurs performances et ajustez continuellement votre stratégie pour optimiser les résultats.</p>
         </div>
-        
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous aborderons la création de stratégies pour fidéliser la clientèle.</p>
-    `
+            `
     },
     3: {
         title: "Création de stratégies pour fidéliser la clientèle",
         moduleTitle: "Module 12 : Cibler les actions commerciales adaptées à ses clients",
         content: `
         
-        <p>Cette leçon fait partie du Module 12 : Cibler les actions commerciales adaptées à ses clients. Vous allez découvrir comment créer des stratégies efficaces pour fidéliser vos clients et développer leur valeur à long terme.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/xyo4JGMyvTA" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Comprendre l'importance de la fidélisation client</li>
-            <li>Développer des stratégies de fidélisation efficaces</li>
-            <li>Créer des programmes de fidélité adaptés</li>
-            <li>Mesurer la satisfaction et la fidélité client</li>
-            <li>Optimiser l'expérience client</li>
-        </ul>
         
         <h2>📋 Stratégies de fidélisation</h2>
         
@@ -384,31 +339,13 @@ window.module12Content = {
             <h3>💡 Conseil pratique</h3>
             <p>La fidélisation commence dès le premier contact et se construit à chaque interaction. Chaque moment de contact doit renforcer la relation et créer de la valeur pour le client. Un client fidèle est non seulement plus rentable, mais devient également un ambassadeur de votre marque.</p>
         </div>
-        
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous élaborerons un plan d'actions commerciales personnalisées.</p>
-    `
+            `
     },
     4: {
         title: "Élaboration d'un plan d'actions commerciales personnalisées",
         moduleTitle: "Module 12 : Cibler les actions commerciales adaptées à ses clients",
         content: `
-        
-        <p>Cette leçon fait partie du Module 12 : Cibler les actions commerciales adaptées à ses clients. Vous allez découvrir comment élaborer un plan d'actions commerciales personnalisées, structuré et efficace.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/xyo4JGMyvTA" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Structurer un plan d'actions commerciales cohérent</li>
-            <li>Personnaliser les actions par segment client</li>
-            <li>Planifier les ressources nécessaires</li>
-            <li>Définir les indicateurs de performance</li>
-            <li>Mettre en place un système de suivi et d'ajustement</li>
-        </ul>
-        
+                
         <h2>📋 Structure du plan d'actions</h2>
         
         <h3>1. Analyse de la situation</h3>
@@ -526,29 +463,13 @@ window.module12Content = {
             <p>Un plan d'actions commerciales efficace est un plan vivant qui évolue avec les résultats et les changements du marché. La clé du succès réside dans l'exécution rigoureuse, le suivi continu et l'ajustement rapide. N'hésitez pas à tester, mesurer et optimiser en permanence.</p>
         </div>
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous aborderons les erreurs classiques à éviter avant de vous lancer dans vos actions commerciales.</p>
     `
     },
     5: {
         title: "Avant de vous lancer : erreurs classiques à éviter",
         moduleTitle: "Module 12 : Cibler les actions commerciales adaptées à ses clients",
         content: `
-        
-        <p>Cette leçon fait partie du Module 12 : Cibler les actions commerciales adaptées à ses clients. Vous allez découvrir les erreurs classiques à éviter avant de vous lancer dans vos actions commerciales.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/A2U5pHPwSR0" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Identifier les erreurs courantes</li>
-            <li>Comprendre leurs conséquences</li>
-            <li>Apprendre à les éviter</li>
-            <li>Développer de bonnes pratiques</li>
-        </ul>
-        
+                
         <h2>📋 Erreurs classiques à éviter</h2>
         
         <h3>1. Ne pas connaître ses clients</h3>
@@ -632,8 +553,6 @@ window.module12Content = {
             <p>Les erreurs sont inévitables, mais elles peuvent être minimisées par une préparation rigoureuse et une approche méthodique. L'important est d'apprendre de ses erreurs et de s'améliorer continuellement.</p>
         </div>
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Vous avez maintenant toutes les clés pour cibler efficacement vos actions commerciales. Dans le module suivant, nous aborderons les études de cas pour consolider vos acquis.</p>
     `
     },
 };
