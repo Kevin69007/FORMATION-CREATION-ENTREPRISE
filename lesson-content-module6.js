@@ -3,20 +3,11 @@ window.module6Content = {
     1: {
         title: "Introduction aux aides à la création d'entreprise",
         moduleTitle: "Module 6 : Connaître les principales aides à la création d'entreprise",
-        content: `
-        <p>Cette leçon fait partie du Module 6 : Connaître les principales aides à la création d'entreprise. Vous allez découvrir les différents types d'aides disponibles pour vous accompagner dans votre projet entrepreneurial.</p>
-        
+        content: `        
         <div style="text-align: center; margin: 30px 0;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/F7MvS6Ga1js" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
         </div>
         
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Comprendre l'écosystème des aides à la création</li>
-            <li>Identifier les différents types d'aides disponibles</li>
-            <li>Connaître les conditions d'éligibilité</li>
-            <li>Savoir où s'adresser pour obtenir des aides</li>
-        </ul>
         
         <h2>📋 Panorama des aides à la création</h2>
         
@@ -108,8 +99,6 @@ window.module6Content = {
             <p>Les aides à la création d'entreprise sont nombreuses mais souvent méconnues. Prenez le temps de bien identifier toutes les aides auxquelles vous pourriez prétendre selon votre situation personnelle et votre projet.</p>
         </div>
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous détaillerons les aides nationales, régionales et territoriales disponibles selon votre situation géographique.</p>
     `
     },
     2: {
@@ -117,19 +106,6 @@ window.module6Content = {
         moduleTitle: "Module 6 : Connaître les principales aides à la création d'entreprise",
         content: `
         
-        <p>Cette leçon détaille les aides disponibles selon les différents niveaux territoriaux : national, régional et local. Chaque niveau propose des dispositifs spécifiques adaptés aux enjeux de son territoire.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/F7MvS6Ga1js" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Identifier les aides nationales disponibles</li>
-            <li>Connaître les dispositifs régionaux</li>
-            <li>Découvrir les aides territoriales locales</li>
-            <li>Comprendre les critères d'éligibilité</li>
-        </ul>
         
         <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3>💡 Saviez-vous que vous pourriez obtenir des fonds pour votre entreprise sans avoir à rembourser ?</h3>
@@ -217,30 +193,13 @@ window.module6Content = {
             <p>Il est crucial pour les entrepreneurs de faire preuve de <strong>prospection minutieuse</strong>, de <strong>compréhension des critères d'éligibilité</strong> et de <strong>nouer des relations avec les organismes d'attribution</strong> des aides pour maximiser les opportunités offertes à chaque niveau.</p>
             <p>En résumé, la clé du succès réside souvent dans la capacité à identifier et à exploiter ces aides existantes, qui sont autant de leviers puissants pour concrétiser son projet entrepreneurial. Bonne chance dans votre recherche et création !</p>
         </div>
-        
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous verrons comment adapter les aides selon votre statut personnel (demandeur d'emploi, salarié, étudiant, etc.).</p>
-    `
+            `
     },
     3: {
         title: "Application des aides en fonction du statut personnel",
         moduleTitle: "Module 6 : Connaître les principales aides à la création d'entreprise",
         content: `
-        
-        <p>Cette leçon détaille les aides spécifiques selon votre statut personnel : demandeur d'emploi, salarié, étudiant, retraité, etc. Chaque statut ouvre droit à des dispositifs particuliers.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/F7MvS6Ga1js" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Identifier les aides selon votre statut</li>
-            <li>Comprendre les conditions spécifiques</li>
-            <li>Optimiser vos droits aux aides</li>
-            <li>Anticiper les changements de statut</li>
-        </ul>
-        
+                
         <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3>🤔 Savez-vous que certaines aides peuvent doubler en fonction de votre statut personnel ?</h3>
             <p>Prenons l'exemple d'Isabelle, une jeune entrepreneuse qui souhaite lancer son entreprise dans le secteur de la mode éthique. En tant que 👩 femme entrepreneure, elle peut avoir accès à des aides spécifiques qui ne sont pas disponibles aux autres entrepreneurs. En comprenant comment appliquer ces aides selon son statut personnel, elle peut optimiser ses chances de succès.</p>
@@ -373,30 +332,13 @@ window.module6Content = {
             <h3>💡 Conseil pratique</h3>
             <p>Votre statut personnel détermine largement les aides auxquelles vous pouvez prétendre. N'hésitez pas à consulter un conseiller spécialisé pour optimiser vos droits selon votre situation et identifier toutes les opportunités disponibles.</p>
         </div>
-        
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous verrons comment maximiser les avantages des principales aides et optimiser votre stratégie de financement.</p>
-    `
+            `
     },
     4: {
         title: "Maximisation des avantages des principales aides",
         moduleTitle: "Module 6 : Connaître les principales aides à la création d'entreprise",
         content: `
-        
-        <p>Cette leçon vous apprend à optimiser l'utilisation des aides disponibles, à les combiner efficacement et à maximiser leurs bénéfices pour votre projet de création d'entreprise.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/F7MvS6Ga1js" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Optimiser l'utilisation des aides</li>
-            <li>Combiner efficacement les dispositifs</li>
-            <li>Maximiser les bénéfices financiers</li>
-            <li>Éviter les erreurs de cumul</li>
-        </ul>
-        
+                
         <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3>🌟 Saviez-vous que certaines entreprises réussissent à doubler leur rentabilité en exploitant judicieusement les aides disponibles? 🌟</h3>
         </div>
@@ -587,8 +529,6 @@ window.module6Content = {
             <p>L'optimisation des aides nécessite une approche méthodique et patiente. N'hésitez pas à faire appel à des conseillers spécialisés pour maximiser vos chances de succès et transformer ces aides en leviers puissants pour votre croissance.</p>
         </div>
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous aborderons les fiches complémentaires et les ressources supplémentaires pour approfondir vos connaissances.</p>
     `
     },
     5: {

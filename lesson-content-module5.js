@@ -4,19 +4,11 @@ window.module5Content = {
         title: "Les régimes fiscaux des entreprises",
         moduleTitle: "Module 5 : Comprendre les différents régimes fiscaux",
         content: `
-        <p>👉 Cette leçon fait partie du Module 5 : Comprendre les différents régimes fiscaux. Vous allez découvrir les différents régimes fiscaux applicables aux entreprises et leurs spécificités.</p>
         
         <div style="text-align: center; margin: 30px 0;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Le9fJIXCALQ" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
         </div>
         
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Comprendre les différents régimes fiscaux applicables aux entreprises</li>
-            <li>Identifier les caractéristiques de chaque régime</li>
-            <li>Savoir choisir le régime adapté à votre activité</li>
-            <li>Comprendre les obligations comptables et fiscales</li>
-        </ul>
         
         <h2>📋 Les principaux régimes fiscaux</h2>
         
@@ -75,9 +67,7 @@ window.module5Content = {
         title: "Présentation des divers régimes fiscaux",
         moduleTitle: "Module 5 : Comprendre les différents régimes fiscaux",
         content: `
-        
-        <p>👉 Cette leçon détaille les différents régimes fiscaux applicables aux entreprises en France, leurs caractéristiques et leurs modalités d'application. Comprendre ces régimes est essentiel pour optimiser votre fiscalité et respecter vos obligations.</p>
-        
+                
         <h2>📊 Introduction avec une Question Intrigante</h2>
         <p>👉 Saviez-vous que le choix du régime fiscal peut influencer non seulement la trésorerie d'une entreprise mais aussi sa croissance à long terme? Plongeons dans les options fiscales disponibles pour les entreprises en France pour comprendre ces enjeux cruciaux.</p>
 
@@ -256,9 +246,7 @@ window.module5Content = {
         title: "Comparaison des avantages et limites des régimes fiscaux",
         moduleTitle: "Module 5 : Comprendre les différents régimes fiscaux",
         content: `
-        
-        <p>👉 Cette leçon compare les avantages et limites de chaque régime fiscal pour vous aider à faire le meilleur choix selon votre situation. Une analyse comparative approfondie vous permettra d'optimiser votre fiscalité.</p>
-                
+                        
         <h4>👉 𝗣𝗼𝘂𝗿𝗾𝘂𝗼𝗶 𝗹'𝗜𝗡𝗖 𝘀𝗼𝘂𝗹𝗶𝗴𝗻𝗲-𝘁-𝗶𝗹 𝗹'𝗶𝗺𝗽𝗼𝗿𝘁𝗮𝗻𝗰𝗲 𝗱𝗲 𝗯𝗶𝗲𝗻 𝗰𝗵𝗼𝗶𝘀𝗶𝗿 𝘀𝗼𝗻 𝗿𝗲́𝗴𝗶𝗺𝗲 𝗳𝗶𝘀𝗰𝗮𝗹 ? L’INSEE rapporte qu'une mauvaise gestion fiscale peut mener à des défaillances d’entreprises. Analysons de plus près les avantages et limites de divers régimes fiscaux.</h4>
 
         <h2>📊 Analyse comparative des régimes</h2>
@@ -499,9 +487,7 @@ window.module5Content = {
         title: "Sélection du régime fiscal approprié à l'entreprise",
         moduleTitle: "Module 5 : Comprendre les différents régimes fiscaux",
         content: `
-        
-        <p>👉 Cette leçon vous guide dans la sélection du régime fiscal le plus adapté à votre projet d'entreprise en fonction de vos caractéristiques spécifiques. Une méthode structurée vous permettra de prendre la meilleure décision.</p>
-        <h2>Pourquoi est-il crucial de choisir le bon régime fiscal? 🤔</h2>
+                <h2>Pourquoi est-il crucial de choisir le bon régime fiscal? 🤔</h2>
         <p>👉 Saviez-vous que la méconnaissance ou la mauvaise sélection d'un régime fiscal 🏛 peut coûter à une entreprise des milliers d'euros en surimposition et pénalités? Identifier et choisir le régime fiscal le plus adapté à votre entreprise n'est pas simplement une formalité administrative, c'est une décision stratégique qui peut avoir des répercussions significatives sur vos finances 💼.</p>
 
         <h2>🔍 Méthode de sélection du régime fiscal</h2>
