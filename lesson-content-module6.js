@@ -248,14 +248,12 @@ window.module6Content = {
         
         <h2>✅ Comprendre les Critères d'Éligibilité</h2>
         
-        <p>Chaque aide est assortie de critères spécifiques et il est crucial de les comprendre pour déterminer si vous y êtes admissible. Par exemple, regardons les aides pour 👩 femmes entrepreneures :</p>
+        <p>Chaque aide est assortie de <em>critères spécifiques</em> et il est crucial de les comprendre pour déterminer si vous y êtes admissible. Par exemple, regardons les aides pour 👩 femmes entrepreneures :</p>
         
         <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h4>Aides spécifiques aux femmes entrepreneures</h4>
             <ul>
-                <li><strong>Le Fonds de Garantie à l'Initiative des Femmes (FGIF)</strong> : Garantie jusqu'à 70% d'un prêt bancaire</li>
-                <li><strong>Programmes d'accompagnement spécialisés</strong> : Mentorat et formation adaptés</li>
-                <li><strong>Réseaux d'entraide</strong> : Mise en relation avec d'autres femmes entrepreneures</li>
+                <li><strong>Fonds de garantie à l'initiative des femmes (FGIF)</strong> : Cette aide est destinée à faciliter l'accès au crédit bancaire pour les femmes créant ou reprenant une entreprise. Elle offre une garantie sur le prêt bancaire pouvant aller jusqu'à 70% du montant emprunté.</li>
             </ul>
         </div>
         
@@ -264,9 +262,7 @@ window.module6Content = {
         <div style="background: #fff3e0; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h4>Aides pour primo-entrepreneurs</h4>
             <ul>
-                <li><strong>ACRE (Aide aux Créateurs et Repreneurs d'Entreprises)</strong> : Exonération partielle des charges sociales</li>
-                <li><strong>NACRE</strong> : Accompagnement personnalisé et prêt d'honneur</li>
-                <li><strong>Formations spécialisées</strong> : Modules de formation entrepreneuriale</li>
+                <li><strong>Aide à la Reprise ou à la Création d'Entreprise (ARCE)</strong> : Cette aide permet de percevoir sous forme de capital une partie des allocations chômage restantes, ce qui peut être extrêmement précieux pour financer les premiers pas de l'entreprise.</li>
             </ul>
         </div>
         
@@ -275,10 +271,8 @@ window.module6Content = {
         <div style="background: #f3e5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h4>Le cas d'Isabelle - Femme entrepreneure et demandeuse d'emploi</h4>
             <p>Imaginons qu'Isabelle soit non seulement une 👩 femme entrepreneure mais également 🗺 éligible à l'ARCE grâce à son statut de demandeuse d'emploi. En combinant ces deux aides :</p>
-            <ol>
-                <li><strong>FGIF</strong> : Isabelle peut obtenir un prêt bancaire de 50 000 euros pour sa startup, la garantie du FGIF réduisant les risques pour la banque, ce qui augmente ses chances d'obtenir le financement.</li>
-                <li><strong>ARCE</strong> : Admettons qu'elle ait droit à 10 000 euros d'allocations chômage. Grâce à l'ARCE, elle peut percevoir 5 000 euros immédiatement sous forme de capital, lui offrant ainsi une base solide de 55 000 euros pour démarrer son projet.</li>
-            </ol>
+            <p><strong>1. FGIF</strong> : Isabelle peut obtenir un prêt bancaire de 50 000 euros pour sa startup, la garantie du FGIF réduisant les risques pour la banque, ce qui augmente ses chances d'obtenir le financement.</p>
+            <p><strong>2. ARCE</strong> : Admettons qu'elle ait droit à 10 000 euros d'allocations chômage. Grâce à l'ARCE, elle peut percevoir 5 000 euros immédiatement sous forme de capital, lui offrant ainsi une base solide de 55 000 euros pour démarrer son projet.</p>
         </div>
         
         <h2>🌍 Une Diversité de Secteurs</h2>
@@ -288,9 +282,7 @@ window.module6Content = {
         <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h4>Aides sectorielles</h4>
             <ul>
-                <li><strong>Fonds de transition écologique</strong> : Subventions pour projets environnementaux</li>
-                <li><strong>Crédit d'impôt recherche</strong> : Incitation à l'innovation verte</li>
-                <li><strong>Programmes régionaux</strong> : Aides spécifiques aux éco-industries</li>
+                <li><strong>Crédit d'Impôt pour la Transition Énergétique (CITE)</strong> : Un avantage fiscal pour inciter les entreprises à investir dans des projets écologiques.</li>
             </ul>
         </div>
         
@@ -300,10 +292,8 @@ window.module6Content = {
             <h4>Le cas de Lucas - Entrepreneur tech issu de minorité ethnique</h4>
             <p>Lucas, un entrepreneur issue de 🔵 minorité ethnique, souhaite créer une startup tech spécialisée dans l'intelligence artificielle. Il peut bénéficier des programmes suivants :</p>
             <ul>
-                <li><strong>Programmes d'inclusion</strong> : Aides spécifiques aux entrepreneurs issus de la diversité</li>
-                <li><strong>Incubateurs spécialisés</strong> : Accompagnement adapté aux projets tech</li>
-                <li><strong>Réseaux de mentors</strong> : Parrainage par des entrepreneurs expérimentés</li>
-                <li><strong>Subventions innovation</strong> : Financement des projets technologiques</li>
+                <li><strong>Initiative France</strong> : Offrant des microcrédits et du mentorat pour les entrepreneurs de minorités.</li>
+                <li><strong>Bourse French Tech Diversité</strong> : Un programme soutenant les startups portées par des entrepreneurs issus de la diversité, avec des financements pouvant aller jusqu'à 45 000 euros.</li>
             </ul>
         </div>
         
@@ -313,11 +303,9 @@ window.module6Content = {
         
         <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h4>Stratégies d'évaluation</h4>
-            <ol>
-                <li><strong>🔎 Analyser votre profil</strong> : Comprendre votre statut personnel (primo-entrepreneur, femme, minorité, etc.).</li>
-                <li><strong>📝 Évaluer l'offre d'aides disponibles</strong> : Faire des recherches approfondies.</li>
-                <li><strong>🗂 Préparer un dossier solide</strong> : Mettre en avant les éléments qui montrent votre éligibilité et votre potentiel de réussite.</li>
-            </ol>
+            <p><strong>1. 🔎 Analyser votre profil</strong> : Comprendre votre statut personnel (primo-entrepreneur, femme, minorité, etc.).</p>
+            <p><strong>2. 📝 Évaluer l'offre d'aides disponibles</strong> : Faire des recherches approfondies.</p>
+            <p><strong>3. 🗂 Préparer un dossier solide</strong> : Mettre en avant les éléments qui montrent votre éligibilité et votre potentiel de réussite.</p>
         </div>
         
         <h2>📊 Tableau comparatif des aides par statut</h2>
