@@ -4,20 +4,11 @@ window.module10Content = {
         title: "Identifier votre marché cible",
         moduleTitle: "Module 10 : Trouver ses clients en étudiant son marché",
         content: `
-        <p>Cette leçon fait partie du Module 10 : Trouver ses clients en étudiant son marché. Vous allez découvrir comment identifier et analyser votre marché cible pour développer votre activité.</p>
         
         <div style="text-align: center; margin: 30px 0;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/O3KzFs4OOuc" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
         </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Identifier votre marché cible précisément</li>
-            <li>Comprendre les besoins de vos clients</li>
-            <li>Analyser la concurrence</li>
-            <li>Développer une stratégie de marché</li>
-        </ul>
-        
+                
         <h2>📋 Identification du marché cible</h2>
         
         <h3>1. Identifier votre marché cible</h3>
@@ -118,21 +109,13 @@ window.module10Content = {
             <p>Une étude complète et approfondie du marché cible, comprenant des données quantitatives et qualitatives détaillées, des analyses comparatives des concurrents, des prévisions précises de la taille du marché et des recommandations claires pour lancer ou adapter le produit ou service choisi.</p>
         </div>
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous approfondirons l'étude de votre marché cible avec des méthodes plus avancées.</p>
     `
     },
     2: {
         title: "Étude approfondie du marché cible",
         moduleTitle: "Module 10 : Trouver ses clients en étudiant son marché",
         content: `
-        
-        <p>Cette leçon fait partie du Module 10 : Trouver ses clients en étudiant son marché. Vous allez approfondir votre compréhension du marché cible avec des méthodes d'analyse plus avancées.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/O3KzFs4OOuc" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
+                
         <h2>🧩 Comprendre les Besoins, les Comportements et les Préférences du Marché Cible</h2>
         
         <p>Imaginez que vous êtes dans un bazar bondé, où chaque étal vend le même produit de base, mais de différentes manières. Comment feriez-vous pour attirer l'attention des clients dans cette mer de choix ? La réponse réside dans la compréhension approfondie de votre marché cible.</p>
@@ -229,21 +212,13 @@ window.module10Content = {
             <p>En conclusion, une étude approfondie du marché cible permet de mieux comprendre vos consommateurs, d'analyser la concurrence, de rester à l'affût des tendances et de saisir des opportunités de croissance. C'est une démarche essentielle pour toute entreprise souhaitant prospérer dans un environnement compétitif.</p>
         </div>
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous aborderons les stratégies pour se démarquer de la concurrence.</p>
     `
     },
     3: {
         title: "Stratégies pour se démarquer des concurrents",
         moduleTitle: "Module 10 : Trouver ses clients en étudiant son marché",
         content: `
-        
-        <p>Cette leçon fait partie du Module 10 : Trouver ses clients en étudiant son marché. Vous allez découvrir comment développer des stratégies efficaces pour vous différencier de la concurrence.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/O3KzFs4OOuc" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
+                
         <h2>🚀 Se Démarquer dans un Marché Concurrentiel : Exemples et Stratégies</h2>
         
         <p>Saviez-vous qu'Apple et Samsung dominent le marché des smartphones en capitalisant sur leurs avantages concurrentiels uniques? Apple mise sur l'innovation produit et un écosystème technologique intégré, tandis que Samsung se distingue par la diversité de ses produits et des prix compétitifs. Cela montre qu'il existe plusieurs manières de se démarquer dans un marché concurrentiel.</p>
@@ -343,21 +318,13 @@ window.module10Content = {
             <p>En résumé, se démarquer des concurrents demande une stratégie bien pensée, du savoir-faire et une exécution impeccable. En intégrant ces techniques, une entreprise peut non seulement survivre mais prospérer dans un marché saturé.</p>
         </div>
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous aborderons la création d'une identité commerciale distinctive.</p>
     `
     },
     4: {
         title: "Création d'une identité commerciale distinctive",
         moduleTitle: "Module 10 : Trouver ses clients en étudiant son marché",
         content: `
-        
-        <p>Cette leçon fait partie du Module 10 : Trouver ses clients en étudiant son marché. Vous allez découvrir comment créer une identité commerciale forte et distinctive pour votre entreprise.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/O3KzFs4OOuc" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
+                
         <h2>🤔 Savez-vous pourquoi certaines marques restent gravées dans notre mémoire alors que d'autres disparaissent rapidement ?</h2>
         
         <h2>🚀 Vision, Mission et Valeurs</h2>
@@ -442,28 +409,17 @@ window.module10Content = {
             <p>Être un chef d'entreprise requiert une combinaison unique de compétences. Du leadership à la gestion financière, en passant par la prise de décision, la planification stratégique, et les capacités d'adaptabilité et d'innovation, chaque aspect contribue à créer et à maintenir une entreprise prospère.</p>
         </div>
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous aborderons le Value Proposition Canvas pour comprendre les attentes clients.</p>
     `
     },
     5: {
         title: "Comprendre les attentes clients avec le Value Proposition Canvas",
         moduleTitle: "Module 10 : Trouver ses clients en étudiant son marché",
         content: `
-        
-        <p>Cette leçon fait partie du Module 10 : Trouver ses clients en étudiant son marché. Vous allez découvrir comment utiliser le Value Proposition Canvas pour comprendre et répondre aux attentes de vos clients.</p>
-        
+                
         <div style="text-align: center; margin: 30px 0;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/4xai1fdf8KU" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
         </div>
         
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Comprendre le Value Proposition Canvas</li>
-            <li>Identifier les jobs, pains et gains clients</li>
-            <li>Développer une proposition de valeur alignée</li>
-            <li>Valider l'adéquation produit-marché</li>
-        </ul>
         
         <h2>📋 Le Value Proposition Canvas</h2>
         
@@ -542,8 +498,6 @@ window.module10Content = {
             <p>Le Value Proposition Canvas est un outil vivant qui doit évoluer avec votre compréhension des clients. Utilisez-le régulièrement pour valider et améliorer votre proposition de valeur.</p>
         </div>
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Vous avez maintenant toutes les clés pour comprendre votre marché et vos clients. Dans le module suivant, nous aborderons la valorisation de votre offre et le choix des circuits de distribution.</p>
     `
     },
 };
