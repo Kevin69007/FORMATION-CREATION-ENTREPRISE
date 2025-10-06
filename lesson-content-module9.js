@@ -113,13 +113,40 @@ window.module9Content = {
         <p>Les revenus et les dépenses doivent être rattachés à la période où ils sont réellement gagnés ou engagés, pas nécessairement quand l'argent change de main.</p>
         <p>Par exemple, si la boulangerie livre des pâtisseries en décembre mais ne reçoit le paiement qu'en janvier, les revenus sont comptabilisés en décembre.</p>
         
+        
+        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
         <h2>🌟 Conclusion</h2>
         <p>Comprendre ces 📊 mécanismes financiers de base vous permet non seulement de mieux gérer votre entreprise, mais aussi de prendre des décisions éclairées. Ceci est la clé pour assurer la prospérité et la longévité de votre activité et éviter des situations financières difficiles.</p>
-        
+        </div>
+
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h3>💡 Conseil pratique</h3>
             <p>Comprendre ces mécanismes financiers de base est essentiel pour prendre des décisions éclairées et assurer la pérennité de votre entreprise. Une bonne maîtrise de ces concepts vous permettra d'optimiser votre gestion et d'anticiper les difficultés.</p>
         </div>
+
+                <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
+                        <h3>📋 Devoir : Analyse financière de base</h3>
+                <h4>Instructions :</h4>
+                <ol>
+                    <li><strong>Analyse de l'état financier :</strong><br>- Étudiez un état financier d'une entreprise de votre choix.
+<br>- Identifiez les éléments tels que le chiffre d'affaires, les dépenses, le bénéfice net et la trésorerie.
+<br>- Préparez un rapport décrivant ces éléments et offrant une analyse de la santé financière de
+l'entreprise.</li>
+                    <li><strong>Principes comptables fondamentaux :</strong> <br>- Choisissez une transaction commerciale hypothétique.
+<br>- Appliquez les concepts de débit et de crédit pour enregistrer cette transaction conformément aux
+principes comptables.
+<br>- Présentez les entrées de journal pour cette transaction et expliquez le processus utilisé.</li>
+                    <li><strong>Planification financière :</strong><br>- Créez un plan financier mensuel pour une entreprise fictive.
+<br>- Incluez les prévisions de revenus, les dépenses et le flux de trésorerie.
+<br>- Préparez une explication des étapes prises pour assurer une gestion financière efficace.</li>    
+                </ol>
+                <p><strong>🍏La meilleure solution, 10/10:</strong> 
+    <br>- Le rapport d'analyse de l'état financier est complet, démontrant une compréhension précise de tous les éléments financiers.
+    <br>- Les entrées de journal démontrent une application cohérente des principes comptables, sans erreurs.
+    <br>- Le plan financier est détaillé et bien justifié, montrant une vision claire de la gestion financière mensuelle.
+</p>
+            </div>
+
         
     `
     },
@@ -180,14 +207,37 @@ window.module9Content = {
             <li>Amélioration de la précision des rapports financiers grâce à l'automatisation</li>
             <li>Centralisation des données financières pour un accès facile et sécurisé par tous les membres autorisés</li>
         </ul>
-        
+
+        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
         <h2>🌟 Conclusion et recommandations</h2>
         <p>Pour conclure, l'établissement d'une 🌟 organisation administrative et comptable efficace est un pilier fondamental pour la croissance et la prospérité d'une entreprise. Cela nécessite non seulement une analyse complète des processus actuels, mais aussi une structure organisationnelle clairement définie avec des améliorations tangibles.</p>
-        
+        </div>
+
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h3>💡 Conseil pratique</h3>
             <p>L'établissement d'une organisation administrative et comptable efficace est un pilier fondamental pour la croissance et la prospérité d'une entreprise. Cela nécessite non seulement une analyse complète des processus actuels, mais aussi une structure organisationnelle clairement définie avec des améliorations tangibles.</p>
         </div>
+
+
+        <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
+                                <h3>📋 Devoir : Mise en place d'une organisation administrative et comptable efficace</h3>
+                <h4>Instructions :</h4>
+                <ol>
+                    <li><strong>Examen de la situation actuelle :</strong>- Identifiez les flux et processus actuels de gestion administrative et comptable.
+<br>- Analysez les lacunes et les inefficacités dans le système actuel.</li>
+                    <li><strong>Planification d'une nouvelle structure :</strong> 
+    <br>- Proposez une nouvelle structure organisationnelle pour la gestion administrative et comptable,
+incluant des processus améliorés et des tâches clés.
+    <br>- Identifiez les logiciels ou systèmes de comptabilité potentiels qui pourraient améliorer l'efficacité.</li>
+                    <li><strong>Sélection et mise en place du logiciel de comptabilité :</strong><br>
+                    - Comparez au moins trois logiciels de comptabilité et justifiez votre choix.
+<br>- Présentez les étapes spécifiques pour la mise en place du logiciel choisi, y compris la formation du personnel.</li>    
+                </ol>
+                <p><strong>🍏La meilleure solution, 10/10:</strong> 
+    La meilleure solution présentera une analyse complète des processus actuels, une structure organisationnelle proposée clairement définie avec des améliorations tangibles, un choix de logiciel de comptabilité bien justifié et un plan détaillé de mise en place. De plus, une justification claire de la sélection du logiciel et une stratégie de transition efficace seront des éléments clés pour obtenir la meilleure note.
+</p>
+            </div>
+
         
     `
     },
@@ -246,10 +296,29 @@ window.module9Content = {
         </ul>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-            <h3>💡 Conseil pratique</h3>
+            <h3>💡 Conclusion</h3>
             <p>Maîtriser le calendrier des déclarations et des télédéclarations est non seulement une exigence légale, mais aussi un levier crucial pour la sérénité administrative et financière de votre entreprise. En vous assurant de connaître et de respecter ces dates, vous éviterez des pénalités importantes et optimiserez vos processus d'administration fiscale.</p>
         </div>
         
+                <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
+                                <h3>📋 Devoir : Planification des déclarations et des télédéclarations</h3>
+                <h4>Instructions :</h4>
+                <ol>
+                    <li><strong></strong>Choisissez un calendrier fiscal ou administratif pertinent pour votre entreprise ou pour un cas d'étude donné.
+
+    <br>- Par exemple, sélectionnez le calendrier de déclaration des revenus des sociétés pour une entreprise de services.</li>
+                    <li><strong></strong>Identifiez les différentes échéances de déclaration et de télédéclaration pour les impôts et les déclarations administratives.
+
+    <br>- Par exemple, repérez la date limite de déclaration de TVA et la date limite de télédéclaration des impôts sur les bénéfices.</li>    
+    <li><strong></strong>Créez un plan détaillé pour le processus de télédéclaration électronique, en incluant les étapes spécifiques et les documents requis.
+
+    <br>- Par exemple, énumérez les étapes pour soumettre une déclaration de revenus électronique, y compris la création d'un compte en ligne, la saisie des informations fiscales et la validation du formulaire.</li>    
+                </ol>
+                <p><strong>🍏La meilleure solution, 10/10:</strong> 
+    Une solution parfaite comprend une analyse approfondie des échéances de déclaration, une planification précise du processus de télédéclaration électronique et une identification claire des exigences documentaires spécifiques à chaque déclaration. Par exemple, le plan détaillé devrait inclure des dates précises, des rappels d'échéances et une liste exhaustive des documents requis pour chaque type de déclaration.
+</p>
+            </div>
+
     `
     },
 };
