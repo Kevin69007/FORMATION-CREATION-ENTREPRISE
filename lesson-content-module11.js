@@ -3,21 +3,11 @@ window.module11Content = {
     1: {
         title: "Comprendre la Valeur de son Offre",
         moduleTitle: "Module 11 : Valoriser son offre et choisir son circuit de distribution",
-        content: `
-        <p>Cette leçon fait partie du Module 11 : Valoriser son offre et choisir son circuit de distribution. Vous allez découvrir comment comprendre et valoriser efficacement votre offre commerciale.</p>
-        
+        content: `        
         <div style="text-align: center; margin: 30px 0;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/SORRiGVEf7Y" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
         </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Comprendre la valeur de votre offre</li>
-            <li>Identifier les éléments de valeur</li>
-            <li>Développer une proposition de valeur</li>
-            <li>Communiquer efficacement la valeur</li>
-        </ul>
-        
+                
         <h2>📋 Comprendre la valeur de votre offre</h2>
         
         <h3>1. Comprendre la valeur</h3>
@@ -121,22 +111,13 @@ window.module11Content = {
             <h3>💡 Conseil pratique</h3>
             <p>La valeur de votre offre doit être clairement communiquée et facilement compréhensible par vos clients. Un circuit de distribution efficace maximise cette valeur tout en minimisant les coûts et les frictions.</p>
         </div>
-        
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous aborderons la prospection et la valorisation de l'offre commerciale.</p>
-    `
+            `
     },
     2: {
         title: "Prospection et valorisation de l'offre commerciale",
         moduleTitle: "Module 11 : Valoriser son offre et choisir son circuit de distribution",
         content: `
-        
-        <p>Cette leçon fait partie du Module 11 : Valoriser son offre et choisir son circuit de distribution. Vous allez découvrir les techniques de prospection et de valorisation commerciale.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/SORRiGVEf7Y" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
+                
         <h2>🎯 Identification des besoins du marché et des clients potentiels 🚀</h2>
         
         <p>Saviez-vous que 90% des produits échouent dans les 18 mois suivant leur lancement? Ce chiffre alarmant souligne l'importance cruciale de l'identification des besoins du marché et des clients potentiels. L'écoute attentive et l'analyse détaillée des attentes des consommateurs peuvent transformer cette statistique en votre avantage compétitif.</p>
@@ -220,22 +201,13 @@ window.module11Content = {
             <h3>🍏 La meilleure solution, 10/10 :</h3>
             <p>La meilleure solution comprendra une analyse approfondie de chaque étape, étayée par des données concrètes et des suggestions réalistes pour valoriser l'offre commerciale en fonction des tendances et besoins du marché étudiés. Par exemple, une proposition de nouveaux produits ou services innovants en adéquation avec les attentes du marché, appuyée par des études de cas ou des retours clients, serait une solution excellente.</p>
         </div>
-        
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous aborderons la création d'outils de communication adaptés à l'entreprise.</p>
-    `
+            `
     },
     3: {
         title: "Création d'outils de communication adaptés à l'entreprise",
         moduleTitle: "Module 11 : Valoriser son offre et choisir son circuit de distribution",
         content: `
-        
-        <p>Cette leçon fait partie du Module 11 : Valoriser son offre et choisir son circuit de distribution. Vous allez découvrir comment créer des outils de communication efficaces pour votre entreprise.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/SORRiGVEf7Y" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
+                
         <h2>🤔 Saviez-vous que la première impression visuelle d'une entreprise se forme en seulement 7 secondes ?</h2>
         
         <h2>👤 Définition de l'identité visuelle de l'entreprise</h2>
@@ -349,21 +321,13 @@ window.module11Content = {
             <p>La meilleure solution sera une stratégie de communication complète et cohérente, comprenant une identité visuelle attractive, des actions ciblées envers le public visé, l'utilisation efficace des supports adaptés et des contenus pertinents mettant en valeur l'offre commerciale de l'entreprise. Par exemple, une entreprise de cosmétiques choisit une identité visuelle élégante et féminine, cible les réseaux sociaux pour toucher sa clientèle principale, et crée du contenu mettant en avant les bienfaits de ses produits de manière convaincante et esthétique.</p>
         </div>
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous aborderons la détermination du juste prix et du coût de revient.</p>
     `
     },
     4: {
         title: "Détermination du juste prix et du coût de revient",
         moduleTitle: "Module 11 : Valoriser son offre et choisir son circuit de distribution",
         content: `
-        
-        <p>Cette leçon fait partie du Module 11 : Valoriser son offre et choisir son circuit de distribution. Vous allez découvrir comment déterminer le juste prix et calculer le coût de revient.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/SORRiGVEf7Y" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
+                
         <h2>🔍 Analyse des coûts de production et des charges liées à l'activité</h2>
         
         <p>Saviez-vous que beaucoup d'entreprises échouent à cause d'une mauvaise gestion de leurs coûts de production? Un bon exemple est celui de l'entreprise X, qui s'est retrouvée en faillite après avoir ignoré les coûts cachés liés à la production de ses produits innovants.</p>
@@ -441,10 +405,7 @@ window.module11Content = {
             <h3>🍏 La meilleure solution, 10/10 :</h3>
             <p>Toutes les étapes ont été clairement suivies avec une analyse approfondie des coûts, des prix pratiqués par la concurrence, une compréhension du seuil de rentabilité et une stratégie tarifaire bien justifiée en adéquation avec la valeur perçue par le marché.</p>
         </div>
-        
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Vous avez maintenant toutes les clés pour valoriser votre offre et choisir votre circuit de distribution. Dans le module suivant, nous aborderons les actions commerciales adaptées à vos clients.</p>
-    `
+            `
     },
 };
 
