@@ -147,9 +147,10 @@ window.module1Content = {
                 <li><strong>Assurances :</strong> Utiliser les assurances pour protéger l'entreprise contre les risques imprévisibles.</li>
             </ul>
             
+            <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h3>🔍 Conclusion</h3>
             <p>Être un chef d'entreprise requiert une combinaison unique de compétences. Du leadership à la gestion financière, en passant par la prise de décision, la planification stratégique, et les capacités d'adaptabilité et d'innovation, chaque aspect contribue à créer et à maintenir une entreprise prospère. En comprenant et en développant ces compétences, les entrepreneurs peuvent non seulement survivre mais aussi prospérer dans le monde compétitif des affaires.</p>
-            
+            </div>
             <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
                 <h3>📝 Devoir: Création d'un plan d'action pour devenir un chef d'entreprise</h3>
                 <p><strong>Instructions:</strong></p>
@@ -212,9 +213,10 @@ window.module1Content = {
                 <li>Créent plus d'emplois dans leur communauté</li>
             </ul>
             
+            <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h2>🎯 Conclusion</h2>
             <p>En conclusion, comprendre et développer des compétences entrepreneuriales est crucial non seulement pour le succès à long terme d'une entreprise, mais aussi pour le bien-être économique généralisé. En cultivant un état d'esprit entrepreneurial, une efficacité dans la gestion des ressources, une résilience face aux défis, et en reconnaissant l'impact économique plus large de l'entrepreneuriat, on peut véritablement transformer des idées en réalités prospères et durables.</p>
-            
+            </div>
             <div style="background: #e2e3e5; padding: 20px; border-radius: 8px; margin: 30px 0;">
                 <h3>📈 Retour sur investissement</h3>
                 <p>Investir dans le développement de vos compétences entrepreneuriales est l'un des meilleurs investissements que vous puissiez faire pour votre entreprise et pour l'économie dans son ensemble.</p>
@@ -288,8 +290,10 @@ Donnez des exemples concrets de chaque compétence et expliquez comment elles co
                 <li><strong>Gestion des conflits</strong> : Apprenez à résoudre les différends de manière constructive.</li>
             </ul>
             
+            <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h2>🎯 Conclusion</h2>
             <p>Ces compétences clés ne sont pas isolées mais s'interconnectent pour créer un écosystème de gestion efficace. En développant chacune de ces compétences, vous construisez les fondations solides nécessaires pour transformer votre vision entrepreneuriale en une entreprise prospère et durable.</p>
+            </div>
             
             <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
                 <h3>💪 Action recommandée</h3>
