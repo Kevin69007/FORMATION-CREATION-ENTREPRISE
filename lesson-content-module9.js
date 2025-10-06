@@ -4,20 +4,11 @@ window.module9Content = {
         title: "Comprendre les statuts juridiques",
         moduleTitle: "Module 9 : Obtenir les premières informations sur les structures juridiques",
         content: `
-        <p>Cette leçon fait partie du Module 9 : Obtenir les premières informations sur les structures juridiques. Vous allez découvrir les différents statuts juridiques disponibles pour créer votre entreprise et leurs spécificités.</p>
         
         <div style="text-align: center; margin: 30px 0;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/m-5cckUjB7c" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
         </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Comprendre les différents statuts juridiques disponibles</li>
-            <li>Identifier les caractéristiques de chaque statut</li>
-            <li>Savoir choisir le statut adapté à votre projet</li>
-            <li>Comprendre les implications juridiques et fiscales</li>
-        </ul>
-        
+                
         <h2>📋 Les principaux statuts juridiques</h2>
         
         <h3>1. Le choix du statut juridique adapté</h3>
@@ -82,21 +73,13 @@ window.module9Content = {
             <p>Exemple : Un consultant qui devient auto-entrepreneur ne paie des charges sociales qu'au prorata de son chiffre d'affaires, tout en bénéficiant de démarches administratives simplifiées. Un entrepreneur souhaitant protéger son patrimoine personnel et visant une croissance rapide pourrait opter pour une SAS pour bénéficier de sa flexibilité.</p>
         </div>
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous aborderons la compréhension des mécanismes financiers de base nécessaires à la gestion de votre entreprise.</p>
     `
     },
     2: {
         title: "Compréhension des mécanismes financiers de base",
         moduleTitle: "Module 9 : Obtenir les premières informations sur les structures juridiques",
         content: `
-        
-        <p>Cette leçon fait partie du Module 9 : Obtenir les premières informations sur les structures juridiques. Vous allez découvrir les mécanismes financiers fondamentaux nécessaires à la gestion de votre entreprise.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/m-5cckUjB7c" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
+                
         <h2>🎯 Introduction</h2>
         <p>Trouvez-vous que l'⏳ argent à la fin du mois disparaît mystérieusement ? Cela pourrait signifier que vous n'avez pas une bonne compréhension des 📊 mécanismes financiers de base.</p>
         <p>Pour un entrepreneur, maîtriser ces concepts est essentiel pour la survie et la prospérité de son entreprise.</p>
@@ -138,21 +121,13 @@ window.module9Content = {
             <p>Comprendre ces mécanismes financiers de base est essentiel pour prendre des décisions éclairées et assurer la pérennité de votre entreprise. Une bonne maîtrise de ces concepts vous permettra d'optimiser votre gestion et d'anticiper les difficultés.</p>
         </div>
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous aborderons la mise en place d'une organisation administrative et comptable efficace.</p>
     `
     },
     3: {
         title: "Mise en place d'une organisation administrative et comptable efficace",
         moduleTitle: "Module 9 : Obtenir les premières informations sur les structures juridiques",
         content: `
-        
-        <p>Cette leçon fait partie du Module 9 : Obtenir les premières informations sur les structures juridiques. Vous allez découvrir comment organiser efficacement l'administration et la comptabilité de votre entreprise.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/m-5cckUjB7c" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
+                
         <h2>📊 Introduction</h2>
         <p>Quelle complexité une entreprise peut-elle éprouver sans une organisation administrative et comptable efficace ? Lorsqu'une entreprise néglige la mise en place d'une organisation administrative et comptable solide, elle s'expose à divers problèmes tels que la perte d'efficacité, des erreurs comptables, et des déficiences dans le suivi des obligations fiscales.</p>
         <p>Cela peut mener à des pénalités financières et entacher la réputation de l'entreprise.</p>
@@ -214,21 +189,13 @@ window.module9Content = {
             <p>L'établissement d'une organisation administrative et comptable efficace est un pilier fondamental pour la croissance et la prospérité d'une entreprise. Cela nécessite non seulement une analyse complète des processus actuels, mais aussi une structure organisationnelle clairement définie avec des améliorations tangibles.</p>
         </div>
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous aborderons la connaissance du calendrier des déclarations et des télédéclarations.</p>
     `
     },
     4: {
         title: "Connaissance du calendrier des déclarations et des télédéclarations",
         moduleTitle: "Module 9 : Obtenir les premières informations sur les structures juridiques",
         content: `
-        
-        <p>Cette leçon fait partie du Module 9 : Obtenir les premières informations sur les structures juridiques. Vous allez découvrir l'importance du calendrier des déclarations et des télédéclarations pour votre entreprise.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/m-5cckUjB7c" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
+                
         <h2>🗓️ Saviez-vous que manquer une date limite pour une déclaration fiscale pourrait entraîner des pénalités coûteuses ?</h2>
         
         <h2>🕰️ Calendrier des Déclarations et des Télédéclarations</h2>
@@ -283,8 +250,6 @@ window.module9Content = {
             <p>Maîtriser le calendrier des déclarations et des télédéclarations est non seulement une exigence légale, mais aussi un levier crucial pour la sérénité administrative et financière de votre entreprise. En vous assurant de connaître et de respecter ces dates, vous éviterez des pénalités importantes et optimiserez vos processus d'administration fiscale.</p>
         </div>
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Vous avez maintenant toutes les bases nécessaires pour comprendre les structures juridiques. Dans le module suivant, nous aborderons la recherche de clients et l'étude de marché.</p>
     `
     },
 };

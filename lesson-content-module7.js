@@ -4,7 +4,6 @@ window.module7Content = {
         title: "Centre de Formalités des Entreprises (CFE)",
         moduleTitle: "Module 7 : Où s'adresser pour déclarer son entreprise",
         content: `
-        <p>👉 Cette leçon fait partie du Module 7 : Où s'adresser pour déclarer son entreprise. Vous allez découvrir les différents organismes compétents pour les formalités de création d'entreprise.</p>
         
         <div style="text-align: center; margin: 30px 0;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/q4u7cIhcfbU" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>

@@ -4,20 +4,11 @@ window.module8Content = {
         title: "Moins de risques que la création",
         moduleTitle: "Module 8 : Atouts de la reprise d'entreprise",
         content: `
-        <p>Cette leçon fait partie du Module 8 : Atouts de la reprise d'entreprise. Vous allez découvrir pourquoi la reprise d'entreprise présente généralement moins de risques que la création pure.</p>
         
         <div style="text-align: center; margin: 30px 0;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Udt1nWEh0VI" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
         </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Comprendre les avantages de la reprise</li>
-            <li>Identifier les risques réduits</li>
-            <li>Comparer avec la création pure</li>
-            <li>Évaluer les opportunités</li>
-        </ul>
-        
+                
         <h2>🛡️ Réduction des risques</h2>
         
         <h3>1. Continuité de l'activité</h3>
@@ -139,8 +130,6 @@ window.module8Content = {
             <p>La reprise d'entreprise réduit les risques mais nécessite une analyse approfondie. Prenez le temps d'étudier tous les aspects avant de vous engager.</p>
         </div>
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous détaillerons les spécificités de la reprise d'entreprise et ses particularités par rapport à la création.</p>
     `
     },
     2: {
@@ -203,10 +192,7 @@ window.module8Content = {
             <h3>🎯 Action concrète</h3>
             <p>Avant de vous lancer dans une reprise d'entreprise, réalisez une liste des aspects spécifiques à vérifier : législation applicable, contrats en cours, santé financière, et modalités de transmission du savoir-faire.</p>
         </div>
-        
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous présenterons les outils disponibles pour trouver une entreprise à reprendre et identifier les opportunités.</p>
-    `
+            `
     },
     3: {
         title: "Outils disponibles pour trouver une entreprise à reprendre",
@@ -282,8 +268,6 @@ window.module8Content = {
             <p>Créez un profil de recherche détaillé avec vos critères (secteur, taille, localisation, budget) et activez les alertes sur les plateformes. Participez régulièrement aux événements de networking pour développer votre réseau et découvrir des opportunités non publiées.</p>
         </div>
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous évaluerons les avantages de la reprise par rapport à la création et vous aiderons à faire le bon choix.</p>
     `
     },
     4: {
@@ -291,7 +275,7 @@ window.module8Content = {
         moduleTitle: "Module 8 : Atouts de la reprise d'entreprise",
         content: `
         
-        <p><strong>Pourquoi créer une entreprise quand on peut en reprendre une existante ?</strong></p>
+        <p><strong>👉 Pourquoi créer une entreprise quand on peut en reprendre une existante ?</strong></p>
         
         <h2>🎯 L'Attrait de la Clientèle Établie</h2>
         
@@ -366,10 +350,7 @@ window.module8Content = {
             </ul>
             <p><strong>Score élevé (20-25) :</strong> Création recommandée | <strong>Score moyen (10-19) :</strong> Les deux options sont possibles | <strong>Score faible (5-9) :</strong> Reprise recommandée</p>
         </div>
-        
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Vous avez maintenant une vision complète des atouts de la reprise d'entreprise. Le module suivant vous présentera les structures juridiques disponibles pour votre projet.</p>
-    `
+            `
     }
 };
 
