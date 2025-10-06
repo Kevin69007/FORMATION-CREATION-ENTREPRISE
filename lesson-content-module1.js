@@ -5,7 +5,7 @@ window.module1Content = {
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         type: "video",
         content: `
-            <p>Bienvenue dans ce premier module de formation ! Vous allez découvrir les fondations essentielles de l'entrepreneuriat.</p>
+            <p>👉 Bienvenue dans ce premier module de formation ! Vous allez découvrir les fondations essentielles de l'entrepreneuriat.</p>
             
             <div style="text-align: center; margin: 30px 0;">
                 <iframe width="560" height="315" autoplay controls src="https://www.youtube.com/embed/H57Mfi9aWCo" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
@@ -38,7 +38,7 @@ window.module1Content = {
         title: "Comment lancer son projet d'entreprise sans se louper",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         content: `
-            <p>Lancer un projet d'entreprise est une aventure passionnante mais qui nécessite une approche méthodique pour éviter les pièges courants.</p>
+            <p>👉 Lancer un projet d'entreprise est une aventure passionnante mais qui nécessite une approche méthodique pour éviter les pièges courants.</p>
             
             <div style="text-align: center; margin: 30px 0;">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/_YR0Mf47J9k" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
@@ -85,7 +85,8 @@ window.module1Content = {
         title: "Présentation des compétences requises pour être un chef d'entreprise",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         content: `
-            <p>Saviez-vous que plus de 90 % des startups échouent dans leurs premières années d'existence ? Ce chiffre montre qu'être un chef d'entreprise demande bien plus que d'avoir une bonne idée : il faut des compétences diverses et bien développées.</p>
+            <h2>🤔 Démarrez avec un fait intrigant !</h2>
+            <p>👉 Saviez-vous que plus de 90 % des startups échouent dans leurs premières années d'existence ? Ce chiffre montre qu'être un chef d'entreprise demande bien plus que d'avoir une bonne idée : il faut des compétences diverses et bien développées.</p>
             
             <h2>🛠️ Compétences Requises pour l'Entrepreneuriat</h2>
             
@@ -185,7 +186,7 @@ window.module1Content = {
         title: "Comprendre l'importance des compétences entrepreneuriales",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         content: `
-            <p>Les compétences entrepreneuriales sont le fondement du succès en entreprise. Elles déterminent votre capacité à transformer une idée en réalité et à naviguer dans l'environnement complexe des affaires.</p>
+            <p>👉 Les compétences entrepreneuriales sont le fondement du succès en entreprise. Elles déterminent votre capacité à transformer une idée en réalité et à naviguer dans l'environnement complexe des affaires.</p>
             
             <h2>🔍 Pourquoi ces compétences sont-elles cruciales ?</h2>
             
@@ -222,8 +223,13 @@ window.module1Content = {
             <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
                 <h3>📝 Devoir: Analyse de l'impact de l'entrepreneuriat</h3>
                 <p><strong>Instructions :</strong></p>
+                 <p><strong>Analyse des compétences entrepreneuriales :</strong> Décrivez en détail les compétences clés nécessaires pour être un entrepreneur performant, en mettant l'accent sur l'identification des opportunités, la gestion efficiente des ressources et la capacité à relever les défis commerciaux.
+
+Donnez des exemples concrets de chaque compétence et expliquez comment elles contribuent à la performance et à la durabilité des entreprises.</p>
+
                 <p><strong>Impact de l'entrepreneuriat sur le développement économique :</strong> En utilisant des données et des recherches approfondies, analysez et expliquez l'impact de l'entrepreneuriat sur le développement économique d'un pays ou d'une région spécifique.</p>
                 
+                <p>Présentez des exemples de réussites entrepreneuriales qui ont eu un impact significatif sur la création d'emplois et la croissance économique.</p>
                 <p><strong>Plan d'action entrepreneurial :</strong> Créez un plan détaillé pour une entreprise hypothétique ou pour votre projet en mettant l'accent sur la manière dont les compétences entrepreneuriales peuvent être mises en pratique pour assurer la performance et la pérennité de l'entreprise.</p>
                 <p>Présentez des stratégies spécifiques pour identifier les opportunités, gérer les ressources et surmonter les défis potentiels.</p>
                 <p><strong>🍏La meilleure solution, 10/10 :</strong> La meilleure solution sera un plan d'action entrepreneurial complet qui démontre une compréhension approfondie des compétences entrepreneuriales, de leur impact sur le développement économique et de leur application pratique dans la création et la gestion d'une entreprise. Le plan devra être accompagné d'exemples concrets, de données pertinentes et de stratégies innovantes pour assurer le succès de l'entreprise.</p>
@@ -234,7 +240,7 @@ window.module1Content = {
         title: "Analyse des compétences clés pour gérer une entreprise",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         content: `
-            <p>Saviez-vous que plus de 60% des nouvelles entreprises échouent dans les trois premières années ? Ce chiffre alarmant met en évidence l'importance cruciale des compétences clés pour une gestion efficace d'une entreprise. Explorons ces compétences essentielles et voyons comment elles peuvent transformer une entreprise naissante en une success story durable.</p>
+            <p>👉 Saviez-vous que plus de 60% des nouvelles entreprises échouent dans les trois premières années ? Ce chiffre alarmant met en évidence l'importance cruciale des compétences clés pour une gestion efficace d'une entreprise. Explorons ces compétences essentielles et voyons comment elles peuvent transformer une entreprise naissante en une success story durable.</p>
             
             <h2>💸 Littératie financière</h2>
             <p>La <strong>💡littératie financière</strong> est la capacité à comprendre et à gérer les finances d'une entreprise de manière éclairée. Imaginez un chef d'entreprise qui ne comprend pas les états financiers : il serait impossible pour lui de savoir si son entreprise est rentable ou non. Par exemple, Steve Jobs était connu pour sa maîtrise des chiffres, ce qui lui a permis de prendre des décisions stratégiques pour Apple.</p>
@@ -309,7 +315,7 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
         title: "Synthèse",
         moduleTitle: "Module 1 : Mettre ses compétences au service de son projet",
         content: `
-            <p>Félicitations ! Vous avez terminé le premier module de votre formation en entrepreneuriat. Récapitulons les points clés que nous avons abordés.</p>
+            <p>👉 Félicitations ! Vous avez terminé le premier module de votre formation en entrepreneuriat. Récapitulons les points clés que nous avons abordés.</p>
         
         <div style="text-align: center; margin: 30px 0;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Le9fJIXCALQ" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
@@ -473,7 +479,7 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
                     <li>Probabilité de succès plus élevée</li>
                 </ul>
             </div>
-            
+            <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
             <h2>📋 Exercice pratique</h2>
             <p>Prenez maintenant le temps de définir 3 objectifs SMART pour votre projet entrepreneurial :</p>
             <ol>
@@ -481,6 +487,7 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
                 <li>Un objectif à moyen terme (6-12 mois)</li>
                 <li>Un objectif à long terme (1-2 ans)</li>
             </ol>
+            </div>
         `
     },
     8: {
