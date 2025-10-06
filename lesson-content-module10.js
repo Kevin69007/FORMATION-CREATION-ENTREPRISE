@@ -187,11 +187,10 @@ window.module10Content = {
             <h3>💡 Exemple de Réussite</h3>
             <p>Les entreprises qui réussissent sont celles qui comprennent parfaitement leur marché avant de lancer leurs produits ou services.</p>
         </div>
-        
+                        
+        <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
         <h2>📋 Devoir: Étude de marché cible</h2>
-        
-        <div style="background: #d1ecf1; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3>Instructions:</h3>
+                    <h3>Instructions:</h3>
             <ol>
                 <li><strong>Analyser les besoins du marché cible:</strong> Choisissez un produit ou service spécifique et menez une enquête auprès de la population cible pour comprendre ses besoins et attentes par rapport à ce produit ou service. Utilisez des questionnaires, des entretiens ou des groupes de discussion pour recueillir des données quantitatives et qualitatives.</li>
                 
@@ -204,6 +203,8 @@ window.module10Content = {
                 <li><strong>Identification des segments de marché les plus rentables:</strong> Utilisez les données recueillies pour identifier les segments de marché les plus rentables pour le produit ou service choisi, en tenant compte de la taille du segment, du pouvoir d'achat et du potentiel de croissance.</li>
                 
                 <li><strong>Évaluation de la taille du marché et la réceptivité aux nouveaux produits ou services:</strong> Utilisez des techniques de modélisation ou d'extrapolation pour estimer la taille du marché pour le produit ou service choisi.</li>
+            
+                <p><strong>🍏La meilleure solution, 10/10:</strong>Une étude complète et approfondie du marché cible, comprenant des données quantitatives et qualitatives détaillées, des analyses comparatives des concurrents, des prévisions précises de la taille du marché et des recommandations claires pour lancer ou adapter le produit ou service choisi.</p>
             </ol>
         </div>
         
@@ -293,9 +294,10 @@ window.module10Content = {
             </ul>
         </div>
         
+        <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
+
         <h2>📋 Devoir pratique : Développer une stratégie de différenciation dans un marché concurrentiel</h2>
         
-        <div style="background: #d1ecf1; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3>Instructions :</h3>
             <ol>
                 <li><strong>Analyse de la concurrence :</strong> Sélectionnez une entreprise ou un produit existant dans un environnement concurrentiel et identifiez ses principaux concurrents. Étudiez leurs points forts et leurs points faibles par rapport à votre sélection.</li>
@@ -306,14 +308,12 @@ window.module10Content = {
                 
                 <li><strong>Rapport écrit :</strong> Rédigez un rapport détaillé décrivant votre analyse de la concurrence, les stratégies de différenciation proposées et les tactiques pour capitaliser sur les points faibles des concurrents. Assurez-vous de fournir des exemples concrets et des données pertinentes pour soutenir vos propositions.</li>
             </ol>
-        </div>
         
-        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h3>🍏 La meilleure solution, 10/10 :</h3>
             <p>Une solution exemplaire inclurait une analyse approfondie des concurrents, des stratégies de différenciation clairement élaborées, un positionnement convaincant sur le marché et un rapport bien structuré et étayé par des preuves tangibles. Par exemple, le rapport pourrait fournir des analyses SWOT détaillées, des études de marché, des études de cas de stratégies réussies et des recommandations concrètes pour l'implémentation.</p>
         </div>
         
-        <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
+        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h3>💡 Conseil pratique</h3>
             <p>En résumé, se démarquer des concurrents demande une stratégie bien pensée, du savoir-faire et une exécution impeccable. En intégrant ces techniques, une entreprise peut non seulement survivre mais prospérer dans un marché saturé.</p>
         </div>
@@ -400,14 +400,46 @@ window.module10Content = {
         </div>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-            <h3>💡 Conseil pratique</h3>
+            <h3>💡 Conclusion</h3>
             <p>En conclusion, la création d'une identité commerciale distinctive nécessite une compréhension approfondie des valeurs de votre entreprise et de votre marché cible, un positionnement clair, une communication efficace des avantages et une utilisation astucieuse du branding et du storytelling. En y parvenant, comme le montrent les exemples d'entreprises de différents secteurs, vous créez une marque mémorable et émotionnellement connectée à vos clients.</p>
         </div>
         
-        <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
+        <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3>🎯 Point clé</h3>
             <p>Être un chef d'entreprise requiert une combinaison unique de compétences. Du leadership à la gestion financière, en passant par la prise de décision, la planification stratégique, et les capacités d'adaptabilité et d'innovation, chaque aspect contribue à créer et à maintenir une entreprise prospère.</p>
         </div>
+
+                <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
+
+        <h2>📋 Devoir pratique : Plan de développement d'identité commerciale distinctive</h2>
+        
+            <h3>Instructions :</h3>
+            <ol>
+                <li><strong>Analyse de la vision, de la mission et des valeurs de l'entreprise :</strong>
+
+    <br>- Examinez en détail la vision, la mission et les valeurs fondamentales de l'entreprise.
+    <br>- Identifiez comment ces éléments peuvent être alignés avec les besoins et les valeurs du marché cible.</li>
+                
+                <li><strong>Création d'un positionnement clair et mémorable :</strong> <br>- Développez un positionnement qui met en avant les avantages clés de l'entreprise dans l'esprit des clients cibles.
+<br>- Créez une déclaration de positionnement concrète et mémorable qui différencie l'entreprise de ses concurrents.</li>
+                
+                <li><strong>Conception d'un branding et d'un storytelling :</strong> <br>- Concevez un branding visuel qui reflète l'identité de l'entreprise et qui attire les clients cibles.
+<br>- Créez un storytelling engageant qui communique de manière efficace la proposition de valeur unique de l'entreprise.</li>
+                
+                <li><strong>Renforcement de la connexion émotionnelle avec la marque</strong>
+                <br>- Proposez des stratégies pour renforcer la connexion émotionnelle des clients avec la marque à travers le branding et le storytelling.
+<br>- Identifiez des outils ou des actions spécifiques pour renforcer cette connexion émotionnelle.</li>
+            </ol>
+        
+            <h3>🍏 La meilleure solution, 10/10 :</h3>
+            <p>Un plan détaillé démontrant une analyse approfondie de l'alignement entre la vision, la mission et les valeurs de l'entreprise avec les besoins et valeurs du marché cible, accompagné d'une proposition de positionnement claire et d'un branding créatif et engageant, démontrant une compréhension approfondie de l'impact émotionnel sur les clients cibles.</p>
+        </div>
+        
+        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
+            <h3>💡 Conseil pratique</h3>
+            <p>En résumé, se démarquer des concurrents demande une stratégie bien pensée, du savoir-faire et une exécution impeccable. En intégrant ces techniques, une entreprise peut non seulement survivre mais prospérer dans un marché saturé.</p>
+        </div>
+
         
     `
     },
