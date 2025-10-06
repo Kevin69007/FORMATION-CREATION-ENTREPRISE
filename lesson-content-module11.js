@@ -158,15 +158,36 @@ window.module11Content = {
         <h3>📱 Utilisation des réseaux sociaux</h3>
         <p>Les réseaux sociaux offrent une plateforme idéale pour mettre en valeur vos produits ou services. Publiez des témoignages clients, des démonstrations de produits, et engagez des influenceurs pour élargir votre portée et bâtir la crédibilité de votre marque.</p>
         
-        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-            <h3>💡 Conclusion</h3>
+            <h3>En Conclusion</h3>
             <p>Une prospection et valorisation efficace nécessitent une compréhension profonde du marché, une analyse fine de la concurrence, une mise en avant de vos avantages compétitifs, et une mise en valeur de votre offre en adéquation avec les attentes du marché. Adoptez ces stratégies et transformez vos incertitudes en succès commerciaux concrets.</p>
-        </div>
-        
+            <p>L'entrepreneur est le moteur de la croissance et du succès de son entreprise. Il doit non seulement gérer quotidiennement les opérations, mais aussi être visionnaire et innovant. Elon Musk est un exemple typique d'entrepreneur multidimensionnel, naviguant entre ses diverses entreprises comme SpaceX et Tesla, tout en inspirant un changement global.</p>
+
+        <h3>🌟 Adaptabilité et Innovation</h3>
+        <p>Dans un monde des affaires en constante évolution, les qualités d'adaptabilité et d'innovation sont cruciales. La pandémie de COVID-19 a par exemple montré combien il était essentiel pour des entreprises de pouvoir s'adapter rapidement à des conditions changeantes.</p>
+                        <li><strong>Études de cas :</strong>
+                    <ul>
+                        <li><strong>Zoom :</strong> Avant la pandémie, Zoom n’était qu'une autre application de visioconférence. Son équipe dirigeante a su saisir l'opportunité en répondant rapidement à la demande croissante, démontrant ainsi une grande adaptabilité.></li>
+                        <li><strong>Blockbuster vs. Netflix :</strong> L'histoire de Blockbuster, qui n'a pas su s'adapter aux nouvelles tendances de consommation et a fait faillite, comparée à Netflix, qui a su tirer parti des technologies numériques pour transformer son modèle économique.</li>
+                    </ul>
+                </li>
+
+        <h3>🚀 Gestion des Risques</h3>
+        <p>Chaque entreprise est confrontée à des incertitudes. Richard Branson, fondateur du groupe Virgin, est renommé pour sa gestion des risques efficace, qu'il qualifie de “calculés”. Sa philosophie repose sur l'expérimentation avec des filets de sécurité, minimisant l'impact des échecs potentiels.</p>
+        <li><strong>Approches :</strong>
+                    <ul>
+                        <li><strong>Diversification :</strong> Ne pas placer tous les œufs dans le même panier.></li>
+                        <li><strong>Assurances :</strong> Utiliser les assurances pour protéger l’entreprise contre les risques imprévisibles.</li>
+                    </ul>
+                </li>
+
+                    <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
+            <h3>🔍 Conclusion</h3>
+            <p>Être un chef d’entreprise requiert une combinaison unique de compétences. Du leadership à la gestion financière, en passant par la prise de décision, la planification stratégique, et les capacités d’adaptabilité et d’innovation, chaque aspect contribue à créer et à maintenir une entreprise prospère. En comprenant et en développant ces compétences, les entrepreneurs peuvent non seulement survivre mais aussi prospérer dans le monde compétitif des affaires.</p>
+            </div>
+
+                <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
         <h2>📋 Devoir pratique : Analyse et mise en valeur de l'offre commerciale</h2>
-        
-        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3>Instructions :</h3>
+                    <h3>Instructions :</h3>
             <ol>
                 <li><strong>Identification des besoins du marché et des clients potentiels</strong>
                     <ul>
@@ -195,10 +216,7 @@ window.module11Content = {
                     </ul>
                 </li>
             </ol>
-        </div>
-        
-        <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
-            <h3>🍏 La meilleure solution, 10/10 :</h3>
+                    <h3>🍏 La meilleure solution, 10/10 :</h3>
             <p>La meilleure solution comprendra une analyse approfondie de chaque étape, étayée par des données concrètes et des suggestions réalistes pour valoriser l'offre commerciale en fonction des tendances et besoins du marché étudiés. Par exemple, une proposition de nouveaux produits ou services innovants en adéquation avec les attentes du marché, appuyée par des études de cas ou des retours clients, serait une solution excellente.</p>
         </div>
             `
@@ -282,9 +300,9 @@ window.module11Content = {
             <p>La création d'outils de communication adaptés à l'entreprise repose sur une identité visuelle forte, une stratégie de communication bien pensée, le choix judicieux des supports et la production de contenus pertinents. Suivez ces principes et vous sécuriserez une présence mémorable et efficace sur votre marché.</p>
         </div>
         
+                <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
         <h2>📋 Devoir pratique : Création d'une stratégie de communication pour une entreprise</h2>
         
-        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3>Instructions :</h3>
             <ol>
                 <li><strong>Définition de l'identité visuelle de l'entreprise :</strong>
@@ -314,9 +332,7 @@ window.module11Content = {
                     </ul>
                 </li>
             </ol>
-        </div>
         
-        <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
             <h3>🍏 La meilleure solution, 10/10 :</h3>
             <p>La meilleure solution sera une stratégie de communication complète et cohérente, comprenant une identité visuelle attractive, des actions ciblées envers le public visé, l'utilisation efficace des supports adaptés et des contenus pertinents mettant en valeur l'offre commerciale de l'entreprise. Par exemple, une entreprise de cosmétiques choisit une identité visuelle élégante et féminine, cible les réseaux sociaux pour toucher sa clientèle principale, et crée du contenu mettant en avant les bienfaits de ses produits de manière convaincante et esthétique.</p>
         </div>
@@ -367,9 +383,10 @@ window.module11Content = {
             <p>La fixation du prix juste et du coût de revient nécessite une analyse minutieuse des coûts de production, une évaluation continue des prix de la concurrence, un calcul précis du seuil de rentabilité et une stratégie tarifaire bien pensée. En maitrisant ces éléments, une entreprise peut maximiser sa profitabilité et sécuriser son avenir financier.</p>
         </div>
         
+
+                <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
         <h2>📋 Devoir : Détermination du juste prix et du coût de revient</h2>
         
-        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3>Instructions :</h3>
             <ol>
                 <li><strong>Analyse des coûts de production et des charges liées à l'activité</strong>
@@ -399,9 +416,7 @@ window.module11Content = {
                     </ul>
                 </li>
             </ol>
-        </div>
         
-        <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
             <h3>🍏 La meilleure solution, 10/10 :</h3>
             <p>Toutes les étapes ont été clairement suivies avec une analyse approfondie des coûts, des prix pratiqués par la concurrence, une compréhension du seuil de rentabilité et une stratégie tarifaire bien justifiée en adéquation avec la valeur perçue par le marché.</p>
         </div>
