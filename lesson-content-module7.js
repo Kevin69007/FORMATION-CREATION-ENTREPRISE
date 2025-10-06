@@ -4,20 +4,12 @@ window.module7Content = {
         title: "Centre de Formalités des Entreprises (CFE)",
         moduleTitle: "Module 7 : Où s'adresser pour déclarer son entreprise",
         content: `
-        <p>Cette leçon fait partie du Module 7 : Où s'adresser pour déclarer son entreprise. Vous allez découvrir les différents organismes compétents pour les formalités de création d'entreprise.</p>
+        <p>👉 Cette leçon fait partie du Module 7 : Où s'adresser pour déclarer son entreprise. Vous allez découvrir les différents organismes compétents pour les formalités de création d'entreprise.</p>
         
         <div style="text-align: center; margin: 30px 0;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/q4u7cIhcfbU" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
         </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Identifier les différents CFE</li>
-            <li>Comprendre leurs rôles spécifiques</li>
-            <li>Savoir où s'adresser selon votre activité</li>
-            <li>Connaître les démarches à effectuer</li>
-        </ul>
-        
+                
         <h2>🏢 Les différents Centres de Formalités des Entreprises</h2>
         
         <h3>1. Chambre de Commerce et d'Industrie (CCI)</h3>
@@ -142,29 +134,12 @@ window.module7Content = {
             <h3>💡 Conseil pratique</h3>
             <p>Le choix du CFE dépend de votre activité principale. En cas de doute, contactez directement l'organisme compétent pour vérifier votre éligibilité.</p>
         </div>
-        
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous détaillerons le fonctionnement du centre de formalités des entreprises et ses modalités d'intervention.</p>
-    `
+            `
     },
     2: {
         title: "Présentation du centre de formalités des entreprises",
         moduleTitle: "Module 7 : Où s'adresser pour déclarer son entreprise",
         content: `
-        
-        <p>Cette leçon détaille le fonctionnement et l'organisation des centres de formalités des entreprises (CFE) pour vous aider à comprendre leur rôle dans le processus de création d'entreprise.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/q4u7cIhcfbU" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Comprendre l'organisation des CFE</li>
-            <li>Connaître leurs missions principales</li>
-            <li>Identifier les interlocuteurs clés</li>
-            <li>Savoir utiliser leurs services</li>
-        </ul>
         
         <h2>🏛️ Qu'est-ce qu'un Centre de Formalités des Entreprises (CFE) ?</h2>
         
@@ -257,30 +232,13 @@ window.module7Content = {
             <h3>💡 Conseil pratique</h3>
             <p>Le choix du CFE dépend de votre activité principale. En cas de doute, contactez directement l'organisme compétent pour vérifier votre éligibilité.</p>
         </div>
-        
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous expliquerons les modalités de fonctionnement administratif des CFE et leurs procédures internes.</p>
-    `
+            `
     },
     3: {
         title: "Explication des modalités de fonctionnement administratif",
         moduleTitle: "Module 7 : Où s'adresser pour déclarer son entreprise",
         content: `
-        
-        <p>Cette leçon détaille les procédures administratives internes des centres de formalités des entreprises et leur fonctionnement opérationnel.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/q4u7cIhcfbU" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Comprendre les procédures internes des CFE</li>
-            <li>Connaître les circuits administratifs</li>
-            <li>Identifier les points de contrôle</li>
-            <li>Savoir suivre son dossier</li>
-        </ul>
-        
+                
         <h2>⚙️ Organisation administrative des CFE</h2>
         
         <h3>Structure générale</h3>
@@ -438,30 +396,13 @@ window.module7Content = {
             <h3>💡 Conseil pratique</h3>
             <p>Les CFE sont vos interlocuteurs privilégiés pour toutes les formalités d'entreprise. N'hésitez pas à les solliciter pour obtenir des conseils et de l'aide dans vos démarches.</p>
         </div>
-        
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous aborderons les conséquences administratives de l'immatriculation et leurs implications pratiques.</p>
     `
     },
     4: {
         title: "Connaissances des conséquences administratives de l'immatriculation",
         moduleTitle: "Module 7 : Où s'adresser pour déclarer son entreprise",
         content: `
-        
-        <p>Cette leçon explique les conséquences et obligations qui découlent de l'immatriculation de votre entreprise auprès des différents organismes.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/q4u7cIhcfbU" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Comprendre les conséquences de l'immatriculation</li>
-            <li>Connaître les obligations qui en découlent</li>
-            <li>Identifier les organismes concernés</li>
-            <li>Anticiper les démarches à effectuer</li>
-        </ul>
-        
+                
         <h2>📋 Conséquences immédiates de l'immatriculation</h2>
         
         <h3>1. Attribution des numéros d'identification</h3>
@@ -617,10 +558,7 @@ window.module7Content = {
             <h3>💡 Conseil pratique</h3>
             <p>L'immatriculation crée des obligations importantes. Organisez-vous dès le début pour respecter toutes les échéances et éviter les sanctions. Utilisez des outils de gestion pour automatiser le suivi de vos obligations.</p>
         </div>
-        
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Vous avez maintenant une vision complète des formalités de déclaration d'entreprise. Le module suivant vous présentera les atouts de la reprise d'entreprise.</p>
-    `
+            `
     }
 };
 
