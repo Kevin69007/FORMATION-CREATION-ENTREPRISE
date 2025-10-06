@@ -69,8 +69,6 @@ window.module5Content = {
             <p>Exemple : Une petite société de conseil dépassant le plafond de la micro-entreprise adopte le régime simplifié, payant des acomptes trimestriels en fonction de ses bénéfices prévisionnels et procédant à une régularisation en fin d'année.</p>
         </div>
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous détaillerons chaque régime fiscal et leurs modalités d'application.</p>
     `
     },
     2: {
@@ -80,19 +78,9 @@ window.module5Content = {
         
         <p>👉 Cette leçon détaille les différents régimes fiscaux applicables aux entreprises en France, leurs caractéristiques et leurs modalités d'application. Comprendre ces régimes est essentiel pour optimiser votre fiscalité et respecter vos obligations.</p>
         
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Le9fJIXCALQ" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Maîtriser les spécificités de chaque régime fiscal</li>
-            <li>Comprendre les seuils et critères d'application</li>
-            <li>Identifier les obligations comptables et fiscales</li>
-            <li>Savoir calculer les charges fiscales</li>
-            <li>Connaître les modalités de déclaration</li>
-        </ul>
-        
+        <h2>📊 Introduction avec une Question Intrigante</h2>
+        <p>👉 Saviez-vous que le choix du régime fiscal peut influencer non seulement la trésorerie d'une entreprise mais aussi sa croissance à long terme? Plongeons dans les options fiscales disponibles pour les entreprises en France pour comprendre ces enjeux cruciaux.</p>
+
         <h2>📋 Détail des régimes fiscaux</h2>
         
         <h3>1. Régime micro-entreprise - Caractéristiques</h3>
@@ -250,10 +238,19 @@ window.module5Content = {
             <h3>💡 Conseil pratique</h3>
             <p>Le choix du régime fiscal doit être anticipé dès la création de l'entreprise. Il est possible de changer de régime en cours d'exercice sous certaines conditions, mais cela peut avoir des conséquences fiscales importantes. Consultez un expert-comptable pour optimiser votre choix.</p>
         </div>
-        
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous comparerons les avantages et limites de chaque régime fiscal pour vous aider à faire le meilleur choix selon votre situation spécifique.</p>
-    `
+            
+                <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
+            <h2>📋 Devoir : Présentation des différents régimes fiscaux</h2>
+            <p><strong>Instructions :</strong></p>
+            <p><strong>1.Étude de cas:</strong> Sélectionnez une entreprise existante ou concevez une entreprise fictive. Décrivez le type d'activité, le chiffre d'affaires prévu, et la structure juridique de l'entreprise.</p>
+            <p><strong>2.Analyse des régimes:</strong> Présentez de manière détaillée, à l'aide de tableaux ou de schémas, les différents régimes fiscaux disponibles pour l'entreprise sélectionnée, y compris le régime du micro-entrepreneur, le régime simplifié réel et le régime réel normal. Incluez les seuils de chiffre d'affaires, les taux d'imposition applicables, les obligations comptables et déclaratives, ainsi que les avantages et inconvénients de chaque régime.</p>
+            <p><strong>3.Comparaison des options:</strong> Comparez les implications de chaque régime sur la gestion comptable et les déclarations fiscales de l'entreprise. Mettez en évidence les avantages et les inconvénients pour chaque option, en tenant compte des spécificités de l'entreprise choisie.</p>
+            <p><strong>4.Recommandations:</strong> Proposez le régime fiscal le plus approprié pour l'entreprise, en justifiant votre choix en fonction de sa situation spécifique et de ses objectifs financiers.</p>
+            <p><strong>🍏La meilleure solution, 10/10:</strong> La meilleure solution montrera une compréhension approfondie de chaque régime fiscal, une analyse détaillée en relation avec l'entreprise choisie, et des recommandations claires et bien fondées basées sur les besoins spécifiques de l'entreprise. Par exemple, la meilleure solution identifiera clairement pourquoi le régime du micro-entrepreneur ou le régime simplifié réel pourrait être plus avantageux pour une petite entreprise en démarrage, tandis que le régime réel normal pourrait être plus adapté pour une entreprise plus établie avec des perspectives de croissance importante.</p>
+
+            </div>
+
+        `
     },
     3: {
         title: "Comparaison des avantages et limites des régimes fiscaux",
@@ -261,20 +258,9 @@ window.module5Content = {
         content: `
         
         <p>👉 Cette leçon compare les avantages et limites de chaque régime fiscal pour vous aider à faire le meilleur choix selon votre situation. Une analyse comparative approfondie vous permettra d'optimiser votre fiscalité.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Le9fJIXCALQ" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Comparer les avantages et inconvénients de chaque régime</li>
-            <li>Identifier les situations optimales pour chaque régime</li>
-            <li>Comprendre les implications financières</li>
-            <li>Savoir anticiper les changements de régime</li>
-            <li>Évaluer les coûts et bénéfices de chaque option</li>
-        </ul>
-        
+                
+        <h4>👉 𝗣𝗼𝘂𝗿𝗾𝘂𝗼𝗶 𝗹'𝗜𝗡𝗖 𝘀𝗼𝘂𝗹𝗶𝗴𝗻𝗲-𝘁-𝗶𝗹 𝗹'𝗶𝗺𝗽𝗼𝗿𝘁𝗮𝗻𝗰𝗲 𝗱𝗲 𝗯𝗶𝗲𝗻 𝗰𝗵𝗼𝗶𝘀𝗶𝗿 𝘀𝗼𝗻 𝗿𝗲́𝗴𝗶𝗺𝗲 𝗳𝗶𝘀𝗰𝗮𝗹 ? L’INSEE rapporte qu'une mauvaise gestion fiscale peut mener à des défaillances d’entreprises. Analysons de plus près les avantages et limites de divers régimes fiscaux.</h4>
+
         <h2>📊 Analyse comparative des régimes</h2>
         
         <h3>1. Régime micro-entreprise</h3>
@@ -494,9 +480,19 @@ window.module5Content = {
             <h3>💡 Conseil pratique</h3>
             <p>Le choix du régime fiscal doit être réévalué régulièrement selon l'évolution de votre activité. Un changement de régime peut être bénéfique même en cours d'exercice dans certains cas. Faites une simulation financière avant de prendre votre décision.</p>
         </div>
+
+                        <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
+            <h2>📋 Devoir : Présentation des différents régimes fiscaux</h2>
+            <p><strong>Instructions :</strong></p>
+            <p><strong>1.Étude de cas:</strong> Choisissez deux régimes fiscaux distincts, tels que le régime réel et le régime simplifié, et expliquez brièvement les caractéristiques de chacun, y compris les critères d'éligibilité.</p>
+            <p><strong>2.Avantages fiscaux :</strong> Identifiez et expliquez en détail les avantages fiscaux de chaque régime, en mettant l'accent sur la réduction potentielle de la responsabilité fiscale, la déductibilité des dépenses et les possibilités de report de pertes.</p>
+            <p><strong>3.Limites et contraintes :</strong> Analysez les limites et les contraintes de chaque régime, en particulier en ce qui concerne les obligations administratives, les exigences en matière de tenue de registres et la flexibilité dans la gestion des profits.</p>
+            <p><strong>4.Impact sur la situation financière :</strong> Élaborez un exemple concret pour illustrer l'impact financier de chaque régime fiscal sur une entreprise en fonction de son chiffre d'affaires et de ses dépenses.</p>
+            <p><strong>🍏La meilleure solution, 10/10:</strong> La meilleure solution comportera une comparaison approfondie des avantages et des limites de chaque régime fiscal, en illustrant clairement les implications de ces choix sur la situation financière d'une entreprise, et en fournissant des recommandations adaptées aux besoins spécifiques de l'entreprise.</p>
+
+            </div>
+
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Dans la leçon suivante, nous vous guiderons dans la sélection du régime fiscal le plus adapté à votre projet d'entreprise avec une méthode pratique et des cas concrets.</p>
     `
     },
     4: {
@@ -505,20 +501,9 @@ window.module5Content = {
         content: `
         
         <p>👉 Cette leçon vous guide dans la sélection du régime fiscal le plus adapté à votre projet d'entreprise en fonction de vos caractéristiques spécifiques. Une méthode structurée vous permettra de prendre la meilleure décision.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Le9fJIXCALQ" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Appliquer une méthode de sélection du régime fiscal</li>
-            <li>Analyser votre situation spécifique</li>
-            <li>Prendre une décision éclairée</li>
-            <li>Anticiper les évolutions futures</li>
-            <li>Utiliser des outils d'aide à la décision</li>
-        </ul>
-        
+        <h2>Pourquoi est-il crucial de choisir le bon régime fiscal? 🤔</h2>
+        <p>👉 Saviez-vous que la méconnaissance ou la mauvaise sélection d'un régime fiscal 🏛 peut coûter à une entreprise des milliers d'euros en surimposition et pénalités? Identifier et choisir le régime fiscal le plus adapté à votre entreprise n'est pas simplement une formalité administrative, c'est une décision stratégique qui peut avoir des répercussions significatives sur vos finances 💼.</p>
+
         <h2>🔍 Méthode de sélection du régime fiscal</h2>
         
         <h3>Étape 1 : Analyse de votre situation</h3>
@@ -702,9 +687,16 @@ window.module5Content = {
             <p>Les seuils de chiffre d'affaires sont révisés chaque année. Vérifiez les seuils applicables pour l'année en cours avant de faire votre choix. Un dépassement de seuil peut entraîner un changement de régime obligatoire.</p>
         </div>
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Vous avez maintenant toutes les clés pour choisir le régime fiscal adapté à votre projet. Dans le module suivant, nous aborderons les aides à la création d'entreprise pour compléter votre stratégie de lancement.</p>
-    `
+                        <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
+            <h2>📋 Devoir : Présentation des différents régimes fiscaux</h2>
+            <p><strong>Instructions :</strong></p>
+            <p><strong>1.Étude de cas:</strong> Évaluation de la nature de l'entreprise Examinez le type d'activité de l'entreprise, par exemple, s'il s'agit d'une entreprise de services, de production, ou de commerce. Décrivez comment cette nature d'entreprise pourrait influencer le choix du régime fiscal.</p>
+            <p><strong>2.Avantages fiscaux :</strong> Projection des revenus Estimez les revenus prévus de l'entreprise pour les prochaines années. Utilisez des exemples chiffrés pour illustrer comment les différentes tranches de revenus pourraient être impactées par les différents régimes fiscaux.</p>
+            <p><strong>3.Limites et contraintes :</strong> Objectifs à long terme de l'entrepreneur Analysez les objectifs à long terme de l'entrepreneur, tels que la croissance de l'entreprise, la distribution des bénéfices, ou la planification de la retraite. Expliquez comment ces objectifs pourraient influencer le choix du régime fiscal.</p>
+            <p><strong>4.Impact sur la situation financière :</strong> Discussion sur le processus de transition Décrivez les étapes nécessaires pour passer d'un régime fiscal à un autre, si cela s'avérait nécessaire. Donnez un exemple concret de transition entre deux régimes fiscaux en expliquant les implications financières et administratives.</p>
+            <p><strong>🍏La meilleure solution, 10/10:</strong> Fournissez une analyse approfondie qui tient compte de la nature de l'entreprise, des projections de revenus, des objectifs à long terme de l'entrepreneur, et du processus de transition entre les régimes fiscaux. Proposez une recommandation claire pour le régime fiscal le plus approprié pour l'entreprise, étayée par des arguments solides et des exemples pertinents.</p>
+
+            </div>    `
     },
 };
 
