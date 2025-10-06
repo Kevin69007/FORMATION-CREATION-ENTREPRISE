@@ -4,7 +4,7 @@ window.module3Content = {
         title: "Définir les besoins et la rentabilité du projet",
         moduleTitle: "Module 3 : Définir les besoins et la rentabilité du projet",
         content: `
-            <p>Avant de lancer votre projet, il est essentiel d'identifier précisément vos besoins et d'évaluer sa rentabilité potentielle.</p>
+            <p>👉 Avant de lancer votre projet, il est essentiel d'identifier précisément vos besoins et d'évaluer sa rentabilité potentielle.</p>
 
         
         <div style="text-align: center; margin: 30px 0;">
@@ -77,7 +77,7 @@ window.module3Content = {
             <div style="text-align: center; margin: 30px 0;">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/S9GAk_2de2g" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
                 </div>
-            <p>Le Business Model Canvas est un outil visuel puissant pour structurer et présenter votre modèle économique de manière claire et synthétique.</p>
+            <p>👉 Le Business Model Canvas est un outil visuel puissant pour structurer et présenter votre modèle économique de manière claire et synthétique.</p>
             
             <div style="text-align: center; margin: 30px 0;">
                 <img src="assets/images/02_IMAGE_BusinessModelCanvas.png" alt="Business Model Canvas" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
@@ -148,7 +148,7 @@ window.module3Content = {
         content: `
             <p>🧐 Saviez-vous que chaque entreprise, peu importe sa taille, doit créer un <strong>💼 compte de résultat</strong> pour évaluer sa <strong>🔍 performance financière</strong>?</p>
             
-            <p>Etablir un compte de résultat est indispensable pour tout entrepreneur désireux de comprendre la <strong>🏆 rentabilité</strong> de son entreprise. Cette déclaration vous permet d'avoir une vision claire de vos <strong>📈 revenus</strong>, <strong>📉 dépenses</strong> et <strong>🔁 profits</strong> ou <strong>❌ pertes</strong> sur une période donnée. Voici comment élaborer un compte de résultat de manière efficace :</p>
+            <p>👉 Etablir un compte de résultat est indispensable pour tout entrepreneur désireux de comprendre la <strong>🏆 rentabilité</strong> de son entreprise. Cette déclaration vous permet d'avoir une vision claire de vos <strong>📈 revenus</strong>, <strong>📉 dépenses</strong> et <strong>🔁 profits</strong> ou <strong>❌ pertes</strong> sur une période donnée. Voici comment élaborer un compte de résultat de manière efficace :</p>
             
             <h2>🌀 1. Identifier les Revenus Totaux</h2>
             
@@ -219,18 +219,26 @@ window.module3Content = {
             
             <h2>📋 Exercice pratique</h2>
             
-            <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
                 <h3><strong>Devoir : Élaboration d'un compte de résultat</strong></h3>
                 
                 <p><strong>Instructions :</strong></p>
                 
-                <p><strong>1.</strong> Utilisez les données financières de votre entreprise ou créez des données fictives pour une période donnée, telle qu'un mois ou un trimestre. Par exemple : Si votre entreprise a généré un chiffre d'affaires de 50 000 € et a encouru des dépenses de 30 000 € au cours du dernier mois, utilisez ces chiffres pour cet exercice.</p>
+                <p><strong>1.</strong> Utilisez les données financières de votre entreprise ou créez des données fictives pour une période donnée, telle qu'un mois ou un trimestre. Par exemple : Si votre entreprise a généré un chiffre d'affaires de 50 000 € et a encouru des dépenses de 30 000 € au cours du dernier mois, utilisez ces chiffres pour cet exercice.
+
+
+</p>
                 
                 <p><strong>2.</strong> Créez un tableau ou un document Excel pour commencer à élaborer votre compte de résultat. Par exemple : Sur la première ligne, inscrivez "Chiffre d'affaires" avec le montant correspondant, puis sur la ligne suivante, inscrivez "Coûts des biens vendus" avec le montant approprié, et ainsi de suite pour identifier toutes les dépenses.</p>
                 
                 <p><strong>3.</strong> Calculez le bénéfice brut en soustrayant le coût des biens vendus du chiffre d'affaires. Par exemple : Bénéfice brut = Chiffre d'affaires - Coûts des biens vendus</p>
                 
                 <p><strong>4.</strong> Incluez toutes les autres dépenses telles que les frais généraux, les charges d'intérêts, les impôts, etc., pour calculer le bénéfice net. Par exemple : Bénéfice net = Bénéfice brut - Frais généraux - Intérêts - Impôts</p>
+            
+                <p><strong>5.</strong> Présentez votre compte de résultat de manière claire et organisée, en stipulant le total des revenus, des dépenses et en finissant par afficher le bénéfice net ou la perte nette.</p>
+
+                <p><strong>🍏La meilleure solution, 10/10 :</strong> La meilleure solution fournira un compte de résultat précis et détaillé pour une période spécifique (par exemple, un mois ou un trimestre) avec des calculs corrects, une présentation professionnelle, et des explications claires pour chaque élément financier.</p>
+
             </div>
             
             <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
@@ -245,7 +253,7 @@ window.module3Content = {
         content: `
             <p><strong>🌟 Un début intrigant : Saviez-vous que...</strong></p>
             
-            <p>Saviez-vous que plus de 50% des startups échouent au cours de leurs cinq premières années, principalement en raison d'un manque de financement adéquat ? La création d'un <strong>🔑plan de financement</strong> est cruciale pour éviter ce piège et assurer la pérennité d'une entreprise. Voyons comment mettre en place un plan de financement efficace !</p>
+            <p>👉 Saviez-vous que plus de 50% des startups échouent au cours de leurs cinq premières années, principalement en raison d'un manque de financement adéquat ? La création d'un <strong>🔑plan de financement</strong> est cruciale pour éviter ce piège et assurer la pérennité d'une entreprise. Voyons comment mettre en place un plan de financement efficace !</p>
             
             <h2>🌱 Les Fondements : Comprendre les sources de financement</h2>
             
@@ -306,15 +314,18 @@ window.module3Content = {
             <ul>
                 <li><strong>Exemple précis :</strong> Une jeune entreprise de mode pourrait projeter ses flux de trésorerie en tenant compte des ventes saisonnières ainsi que des fluctuations possibles des coûts des matières premières.</li>
             </ul>
-            
+                                    <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
+
             <h2>🎓 Conclusion</h2>
             
             <p>Le <strong>plan de financement</strong> parfait est une combinaison astucieuse de <strong>capitaux propres</strong> et de <strong>dettes</strong>, soigneusement alignée sur les besoins spécifiques et les prévisions de l'entreprise. En prenant le temps d'élaborer un plan de financement détaillé, une entreprise accroît ses chances de succès et de croissance durable.</p>
             
+            </div>
+            
             <h2>📋 Exercice pratique</h2>
             
-            <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-                <h3><strong>Travail Pratique : Création d'un Plan de Financement</strong></h3>
+            <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
+                <h3><strong>Devoir : Création d'un Plan de Financement</strong></h3>
                 
                 <p><strong>Instructions :</strong></p>
                 
@@ -329,8 +340,13 @@ window.module3Content = {
                 <p><strong>5.</strong> Présentez clairement les avantages et les inconvénients de chaque source de financement et justifiez vos choix pour la structure de capital.</p>
                 
                 <p><strong>6.</strong> Fournissez des recommandations sur la manière dont l'entreprise pourrait optimiser sa structure de capital et diversifier ses sources de financement.</p>
+
+                <p><strong>🍏La meilleure solution, 10/10 : </strong> La meilleure solution sera un plan de financement détaillé pour l'entreprise choisie, comprenant une analyse approfondie des différentes sources de financement disponibles, une justification claire de la structure de capital optimale, des prévisions financières solides, ainsi que des recommandations pertinentes pour l'optimisation de la structure de financement. Par exemple, un plan de financement complet pour une nouvelle entreprise de technologie, comprenant une analyse des investissements en capital-risque, des projections de trésorerie et des recommandations pour minimiser le recours à l'endettement.</p>
+
             </div>
             
+
+
             <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
                 <h3>💡 Conseils pratiques</h3>
                 <ul>
@@ -348,7 +364,7 @@ window.module3Content = {
         content: `
             <p><strong>💡 Facteur Clé: Saviez-vous que 82% des entreprises qui échouent le font à cause de problèmes de trésorerie? Cela souligne l'importance cruciale de bien sélectionner les outils de financement pour un entrepreneur.</strong></p>
             
-            <p><strong>Présentation des Outils de Financement en Partenariat avec un Banquier</strong></p>
+            <p><strong>👉 Présentation des Outils de Financement en Partenariat avec un Banquier</strong></p>
             
             <h2>🪙 Investissement en Capital</h2>
             
@@ -387,13 +403,17 @@ window.module3Content = {
             
             <p><strong>Récit Édifiant💡:</strong> Julien, un restaurateur ambitieux, a travaillé de près avec son banquier pour évaluer les options de financement nécessaires à l'ouverture de trois nouveaux emplacements. Grâce aux conseils de son banquier, il a obtenu un mix de prêt bancaire et de ligne de crédit, permettant de financer les rénovations et de gérer la trésorerie initiale de chaque nouveau restaurant. Résultat : une expansion fulgurante sans étouffer son business.</p>
             
+            <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
+
             <h2>🎓 Conclusion</h2>
             
             <p>En collaboration avec un banquier, un entrepreneur peut naviguer à travers les multiples options de financement disponibles, sélectionner le plus pertinent pour son entreprise, et élaborer une stratégie de financement solide. Ceci est crucial pour assurer non seulement la croissance mais aussi la durabilité à long terme de l'entreprise.</p>
             
+            </div>
+
             <h2>📋 Exercice pratique</h2>
             
-            <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
                 <h3><strong>Devoir : Présentation des outils de financement en partenariat avec un banquier</strong></h3>
                 
                 <p><strong>Instructions :</strong></p>
@@ -426,6 +446,10 @@ window.module3Content = {
                     <li>Démontre la viabilité financière du projet</li>
                     <li>Anticipe les questions potentielles d'un banquier ou investisseur</li>
                 </ul>
+
+                <p><strong>🍏La meilleure solution, 10/10 :</strong></p>
+                <p>La meilleure solution présentera une analyse approfondie de chaque outil de financement, avec des recommandations claires basées sur des critères financiers solides et une compréhension détaillée des besoins de l'entreprise. Par exemple, la recommandation devrait mettre en évidence pourquoi un prêt à long terme est plus approprié pour une entreprise en phase d'expansion par rapport à un investissement en capital, en tenant compte des implications financières à long terme.</p>
+
             </div>
             
             <div style="background: #d1ecf1; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #17a2b8;">
@@ -443,7 +467,7 @@ window.module3Content = {
         title: "Plan Financier & Lean Canvas",
         moduleTitle: "Module 3 : Définir les besoins et la rentabilité du projet",
         content: `
-            <p>Le Lean Canvas est une version simplifiée du Business Model Canvas, spécialement conçue pour les startups et projets innovants.</p>
+            <p>👉 Le Lean Canvas est une version simplifiée du Business Model Canvas, spécialement conçue pour les startups et projets innovants.</p>
             
             <h2>🎨 Le Lean Canvas</h2>
             

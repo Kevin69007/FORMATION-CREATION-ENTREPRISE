@@ -4,7 +4,7 @@ window.module4Content = {
         title: "Introduction aux structures juridiques",
         moduleTitle: "Module 4 : Choisir une structure juridique appropriée",
         content: `
-            <p>Le choix de la structure juridique est une décision fondamentale qui influencera tous les aspects de votre entreprise : fiscalité, responsabilité, gestion, et développement.</p>
+            <p>👉 Le choix de la structure juridique est une décision fondamentale qui influencera tous les aspects de votre entreprise : fiscalité, responsabilité, gestion, et développement.</p>
 
         
         <div style="text-align: center; margin: 30px 0;">
@@ -95,7 +95,7 @@ window.module4Content = {
         content: `
             <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #2196f3;">
                 <h3>🌍🔍 Saviez-vous que... ?</h3>
-                <p>Une étude révèle que le choix de la forme juridique d'une entreprise peut avoir un impact significatif sur son succès à long terme, que ce soit en termes de responsabilités, de fiscalité ou de crédibilité. Découvrez comment les différentes formes juridiques peuvent transformer le destin d'une entreprise !</p>
+                <p>👉 Une étude révèle que le choix de la forme juridique d'une entreprise peut avoir un impact significatif sur son succès à long terme, que ce soit en termes de responsabilités, de fiscalité ou de crédibilité. Découvrez comment les différentes formes juridiques peuvent transformer le destin d'une entreprise !</p>
             </div>
             
             <h2>👤⭐ Entreprise Individuelle (EI)</h2>
@@ -166,7 +166,7 @@ window.module4Content = {
         content: `
             <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #2196f3;">
                 <h3>🤔 Introduction</h3>
-                <p>Avez-vous déjà réfléchi à la structure juridique qui convient le mieux à votre entreprise? Saviez-vous que le choix de la forme juridique peut avoir un impact significatif sur votre façon de gérer et de développer votre activité? Découvrons ensemble les avantages et limites de plusieurs structures juridiques pour mieux comprendre leurs implications sur vos opérations commerciales.</p>
+                <p>👉 Avez-vous déjà réfléchi à la structure juridique qui convient le mieux à votre entreprise? Saviez-vous que le choix de la forme juridique peut avoir un impact significatif sur votre façon de gérer et de développer votre activité? Découvrons ensemble les avantages et limites de plusieurs structures juridiques pour mieux comprendre leurs implications sur vos opérations commerciales.</p>
             </div>
             
             <h2>🏠 Entreprise Individuelle (EI)</h2>
@@ -290,7 +290,7 @@ window.module4Content = {
         content: `
             <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #2196f3;">
                 <h3>📊 Analyse des Besoins de l'Entreprise</h3>
-                <p>Saviez-vous que la structure juridique de Google a commencé par une simple société de type LLC avant de devenir une entreprise publique cotée en bourse? Cette évolution démontre à quel point il est crucial de bien choisir sa structure juridique dès le début.</p>
+                <p>👉 Saviez-vous que la structure juridique de Google a commencé par une simple société de type LLC avant de devenir une entreprise publique cotée en bourse? Cette évolution démontre à quel point il est crucial de bien choisir sa structure juridique dès le début.</p>
             </div>
             
             <p>Cela dit, la première étape dans le choix de la structure juridique appropriée consiste à analyser les 🛠️ besoins de l'entreprise. Voici quelques éléments à considérer :</p>
