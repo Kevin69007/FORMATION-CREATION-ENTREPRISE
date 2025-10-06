@@ -216,9 +216,7 @@ window.module3Content = {
             </ul>
             
             <p>L'élaboration d'un compte de résultat rigoureux et détaillé peut transformer la gestion d'une entreprise et jouer un rôle déterminant dans sa réussite à long terme.</p>
-            
-            <h2>📋 Exercice pratique</h2>
-            
+                        
             <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
                 <h3><strong>Devoir : Élaboration d'un compte de résultat</strong></h3>
                 
@@ -321,9 +319,7 @@ window.module3Content = {
             <p>Le <strong>plan de financement</strong> parfait est une combinaison astucieuse de <strong>capitaux propres</strong> et de <strong>dettes</strong>, soigneusement alignée sur les besoins spécifiques et les prévisions de l'entreprise. En prenant le temps d'élaborer un plan de financement détaillé, une entreprise accroît ses chances de succès et de croissance durable.</p>
             
             </div>
-            
-            <h2>📋 Exercice pratique</h2>
-            
+                        
             <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
                 <h3><strong>Devoir : Création d'un Plan de Financement</strong></h3>
                 
@@ -410,8 +406,6 @@ window.module3Content = {
             <p>En collaboration avec un banquier, un entrepreneur peut naviguer à travers les multiples options de financement disponibles, sélectionner le plus pertinent pour son entreprise, et élaborer une stratégie de financement solide. Ceci est crucial pour assurer non seulement la croissance mais aussi la durabilité à long terme de l'entreprise.</p>
             
             </div>
-
-            <h2>📋 Exercice pratique</h2>
             
             <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
                 <h3><strong>Devoir : Présentation des outils de financement en partenariat avec un banquier</strong></h3>

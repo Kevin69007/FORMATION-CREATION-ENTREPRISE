@@ -4,7 +4,7 @@ window.module5Content = {
         title: "Les régimes fiscaux des entreprises",
         moduleTitle: "Module 5 : Comprendre les différents régimes fiscaux",
         content: `
-        <p>Cette leçon fait partie du Module 5 : Comprendre les différents régimes fiscaux. Vous allez découvrir les différents régimes fiscaux applicables aux entreprises et leurs spécificités.</p>
+        <p>👉 Cette leçon fait partie du Module 5 : Comprendre les différents régimes fiscaux. Vous allez découvrir les différents régimes fiscaux applicables aux entreprises et leurs spécificités.</p>
         
         <div style="text-align: center; margin: 30px 0;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Le9fJIXCALQ" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
@@ -78,7 +78,7 @@ window.module5Content = {
         moduleTitle: "Module 5 : Comprendre les différents régimes fiscaux",
         content: `
         
-        <p>Cette leçon détaille les différents régimes fiscaux applicables aux entreprises en France, leurs caractéristiques et leurs modalités d'application. Comprendre ces régimes est essentiel pour optimiser votre fiscalité et respecter vos obligations.</p>
+        <p>👉 Cette leçon détaille les différents régimes fiscaux applicables aux entreprises en France, leurs caractéristiques et leurs modalités d'application. Comprendre ces régimes est essentiel pour optimiser votre fiscalité et respecter vos obligations.</p>
         
         <div style="text-align: center; margin: 30px 0;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Le9fJIXCALQ" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
@@ -260,7 +260,7 @@ window.module5Content = {
         moduleTitle: "Module 5 : Comprendre les différents régimes fiscaux",
         content: `
         
-        <p>Cette leçon compare les avantages et limites de chaque régime fiscal pour vous aider à faire le meilleur choix selon votre situation. Une analyse comparative approfondie vous permettra d'optimiser votre fiscalité.</p>
+        <p>👉 Cette leçon compare les avantages et limites de chaque régime fiscal pour vous aider à faire le meilleur choix selon votre situation. Une analyse comparative approfondie vous permettra d'optimiser votre fiscalité.</p>
         
         <div style="text-align: center; margin: 30px 0;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Le9fJIXCALQ" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
@@ -504,7 +504,7 @@ window.module5Content = {
         moduleTitle: "Module 5 : Comprendre les différents régimes fiscaux",
         content: `
         
-        <p>Cette leçon vous guide dans la sélection du régime fiscal le plus adapté à votre projet d'entreprise en fonction de vos caractéristiques spécifiques. Une méthode structurée vous permettra de prendre la meilleure décision.</p>
+        <p>👉 Cette leçon vous guide dans la sélection du régime fiscal le plus adapté à votre projet d'entreprise en fonction de vos caractéristiques spécifiques. Une méthode structurée vous permettra de prendre la meilleure décision.</p>
         
         <div style="text-align: center; margin: 30px 0;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Le9fJIXCALQ" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>

@@ -149,14 +149,14 @@ window.module4Content = {
             </div>
             
             <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
-                <h3>📋 Assignment: Élaborer un plan de structure juridique pour un projet d'entreprise</h3>
+                <h3>📋 Devoir: Élaborer un plan de structure juridique pour un projet d'entreprise</h3>
                 <h4>Instructions:</h4>
                 <ol>
                     <li>Faites des recherches approfondies sur les différentes formes juridiques disponibles pour structurer une entreprise, y compris l'entreprise individuelle, la société de personnes, la société à responsabilité limitée et la société par actions.</li>
                     <li>Examinez les facteurs de prise de décision pour choisir la structure la plus appropriée pour un projet d'entreprise spécifique.</li>
                     <li>Élaborez un plan détaillé proposant la forme juridique la plus adaptée pour un projet d'entreprise choisi, en expliquant les raisons de votre choix en fonction des caractéristiques et des implications juridiques.</li>
                 </ol>
-                <p><strong>🍏The best solution, 10/10:</strong> La meilleure solution sera un plan bien structuré qui démontre une compréhension approfondie des différentes formes juridiques, une analyse exhaustive des facteurs décisionnels pertinents et une recommandation claire et étayée pour la structure la plus appropriée pour le projet d'entreprise choisi. Le plan devrait être bien argumenté, complet, et prendre en compte les particularités du projet.</p>
+                <p><strong>🍏La meilleure solution, 10/10:</strong> La meilleure solution sera un plan bien structuré qui démontre une compréhension approfondie des différentes formes juridiques, une analyse exhaustive des facteurs décisionnels pertinents et une recommandation claire et étayée pour la structure la plus appropriée pour le projet d'entreprise choisi. Le plan devrait être bien argumenté, complet, et prendre en compte les particularités du projet.</p>
             </div>
         `
     },
@@ -341,21 +341,20 @@ window.module4Content = {
                 <h3>📝 Exemple : La Belle Pâtisserie</h3>
                 <p>Prenons l'exemple de La Belle Pâtisserie, une entreprise récemment créée par Marie, pâtissière passionnée. Après avoir évalué ses besoins (croissance modérée, peu de risques juridiques), ses risques (faible), et ses ressources financières limitées, Marie décide d'opter pour la structure SASU (Société par Actions Simplifiée Unipersonnelle). Ce choix lui offre une flexibilité de gestion tout en limitant sa responsabilité personnelle, et lui permet de lever des fonds si nécessaire.</p>
             </div>
-            
-            <h2>🔍 Conclusion</h2>
-            
+                        
             <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-                <h3>💡 Synthèse</h3>
+                <h3>💡 Conclusion</h3>
                 <p>Pour choisir la meilleure structure juridique, il est essentiel de considérer 👓 l'ensemble des besoins à long terme, ⚖️ les risques potentiels, 🚀 les objectifs de croissance, et 🌍 les implications fiscales. Que vous optiez pour une EI, une SARL, une SAS, ou une SA, votre choix doit aligner parfaitement avec la vison et les objectifs que vous vous êtes fixés pour votre projet.</p>
                 <p>En définitive, prendre le temps de bien choisir sa structure juridique est une 🛤️ étape cruciale qui peut déterminer le succès à long terme de l'entreprise. En s'inspirant des cas concrets et des structures éprouvées, vous serez mieux outillé pour faire un choix éclairé.</p>
             </div>
             
             <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
-                <h3>📋 Devoir pratique : Sélection de la structure juridique adaptée au projet</h3>
+                <h3>📋 Devoir : Sélection de la structure juridique adaptée au projet</h3>
                 <h4>Instructions :</h4>
                 <ol>
                     <li>Après avoir utilisé les informations recueillies des étapes précédentes, choisissez un exemple de projet d'entreprise, comme une boulangerie artisanale, une agence de marketing numérique ou une start-up technologique.</li>
                     <li>Identifiez les besoins spécifiques, les risques potentiels, les plans de croissance et les objectifs à long terme pour le projet choisi. Par exemple, pour une start-up technologique, les besoins pourraient inclure des investissements en capital, une croissance rapide et des potentiels litiges de propriété intellectuelle.</li>
+                    <li>En utilisant les informations recueillies, évaluez et déterminez la structure juridique optimale pour aligner avec la vision et les objectifs du projet. Par exemple, pour une agence de marketing numérique avec des prévisions de croissance rapide, une structure juridique flexible comme la SARL peut convenir.</li>    
                 </ol>
                 <p><strong>🍏La meilleure solution, 10/10:</strong> La meilleure solution prend en considération de manière détaillée les besoins spécifiques, les risques potentiels, les plans de croissance et les objectifs à long terme du projet sélectionné, tout en identifiant une structure juridique spécifique qui soutient de manière optimale la vision et les objectifs du projet. Par exemple, pour une boulangerie artisanale axée sur la distribution locale, la création d'une entreprise individuelle pourrait être la meilleure solution en raison de sa simplicité et de ses coûts réduits.</p>
             </div>
