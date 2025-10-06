@@ -189,7 +189,7 @@ window.module6Content = {
         </ul>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-            <h3>💡 Conseil pratique</h3>
+            <h3>💡 Conclusion</h3>
             <p>Il est crucial pour les entrepreneurs de faire preuve de <strong>prospection minutieuse</strong>, de <strong>compréhension des critères d'éligibilité</strong> et de <strong>nouer des relations avec les organismes d'attribution</strong> des aides pour maximiser les opportunités offertes à chaque niveau.</p>
             <p>En résumé, la clé du succès réside souvent dans la capacité à identifier et à exploiter ces aides existantes, qui sont autant de leviers puissants pour concrétiser son projet entrepreneurial. Bonne chance dans votre recherche et création !</p>
         </div>
@@ -317,7 +317,7 @@ window.module6Content = {
         </ul>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-            <h3>💡 Conseil pratique</h3>
+            <h3>💡 Conclusion</h3>
             <p>Votre statut personnel détermine largement les aides auxquelles vous pouvez prétendre. N'hésitez pas à consulter un conseiller spécialisé pour optimiser vos droits selon votre situation et identifier toutes les opportunités disponibles.</p>
         </div>
             `
@@ -513,7 +513,7 @@ window.module6Content = {
         </ul>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-            <h3>💡 Conseil pratique</h3>
+            <h3>💡 Conclusion</h3>
             <p>L'optimisation des aides nécessite une approche méthodique et patiente. N'hésitez pas à faire appel à des conseillers spécialisés pour maximiser vos chances de succès et transformer ces aides en leviers puissants pour votre croissance.</p>
         </div>
         

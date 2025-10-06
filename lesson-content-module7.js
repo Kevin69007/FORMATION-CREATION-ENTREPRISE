@@ -268,9 +268,6 @@ coût dépend du nombre de lignes de l'annonce et du journal choisi.</li>
         </div>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-            <h3>💡 Conseil pratique</h3>
-            <p>Les CFE sont vos interlocuteurs privilégiés pour toutes les formalités d'entreprise. N'hésitez pas à les solliciter pour obtenir des conseils et de l'aide dans vos démarches.</p>
-        </div>
 
                         <h3>🏁 Conclusion</h3>
                 <p>Bien comprendre et anticiper les démarches d’immatriculation permet de gagner du temps et d’éviter des retards qui peuvent affecter le lancement de votre activité. L'accompagnement par des professionnels (avocats, CFE, experts-comptables) peut grandement faciliter ce processus complexe.
@@ -356,7 +353,7 @@ En résumé, déclarer une entreprise, c'est suivre une séquence d'étapes pré
         </ul>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-            <h3>💡 Conseil pratique</h3>
+            <h3>💡 Conclusion</h3>
             <p>L'immatriculation crée des obligations importantes. Organisez-vous dès le début pour respecter toutes les échéances et éviter les sanctions. Utilisez des outils de gestion pour automatiser le suivi de vos obligations.</p>
         </div>
 

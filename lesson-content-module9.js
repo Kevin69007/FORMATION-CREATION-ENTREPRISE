@@ -119,10 +119,6 @@ window.module9Content = {
         <p>Comprendre ces 📊 mécanismes financiers de base vous permet non seulement de mieux gérer votre entreprise, mais aussi de prendre des décisions éclairées. Ceci est la clé pour assurer la prospérité et la longévité de votre activité et éviter des situations financières difficiles.</p>
         </div>
 
-        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-            <h3>💡 Conseil pratique</h3>
-            <p>Comprendre ces mécanismes financiers de base est essentiel pour prendre des décisions éclairées et assurer la pérennité de votre entreprise. Une bonne maîtrise de ces concepts vous permettra d'optimiser votre gestion et d'anticiper les difficultés.</p>
-        </div>
 
                 <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
                         <h3>📋 Devoir : Analyse financière de base</h3>

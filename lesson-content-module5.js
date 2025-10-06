@@ -225,7 +225,7 @@ window.module5Content = {
         </ul>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-            <h3>💡 Conseil pratique</h3>
+            <h3>💡 Conclusion</h3>
             <p>Le choix du régime fiscal doit être anticipé dès la création de l'entreprise. Il est possible de changer de régime en cours d'exercice sous certaines conditions, mais cela peut avoir des conséquences fiscales importantes. Consultez un expert-comptable pour optimiser votre choix.</p>
         </div>
             
@@ -465,7 +465,7 @@ window.module5Content = {
         </ul>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-            <h3>💡 Conseil pratique</h3>
+            <h3>💡 Conclusion</h3>
             <p>Le choix du régime fiscal doit être réévalué régulièrement selon l'évolution de votre activité. Un changement de régime peut être bénéfique même en cours d'exercice dans certains cas. Faites une simulation financière avant de prendre votre décision.</p>
         </div>
 
@@ -664,7 +664,7 @@ window.module5Content = {
         </ul>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-            <h3>💡 Conseil pratique</h3>
+            <h3>💡 Conclusion</h3>
             <p>Le choix du régime fiscal n'est pas définitif. Vous pouvez changer de régime en cours d'exercice sous certaines conditions. L'important est de faire le bon choix au départ et d'anticiper les évolutions. Faites toujours une simulation financière avant de prendre votre décision.</p>
         </div>
         
