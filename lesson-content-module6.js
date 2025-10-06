@@ -106,7 +106,6 @@ window.module6Content = {
         moduleTitle: "Module 6 : Connaître les principales aides à la création d'entreprise",
         content: `
         
-        
         <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3>💡 Saviez-vous que vous pourriez obtenir des fonds pour votre entreprise sans avoir à rembourser ?</h3>
             <p>La création d'une entreprise peut nécessiter des ressources financières considérables. Heureusement, en France, il existe de nombreuses aides à la création d'entreprises à différents niveaux : national, régional et territorial. Ces aides peuvent prendre diverses formes, allant des subventions aux exonérations fiscales, en passant par les prêts à taux réduit.</p>
@@ -167,31 +166,13 @@ window.module6Content = {
             <p>Ces aides cumulées permettent à Jean de lancer son entreprise avec des coûts considérablement réduits, augmentant ainsi ses chances de succès.</p>
         </div>
         
-        <h2>🛠️ Comment identifier les aides</h2>
+        <p>Il est crucial pour les entrepreneurs de faire preuve de <strong>prospection minutieuse</strong>, de <strong>compréhension des critères d'éligibilité</strong> et de <strong>nouer des relations avec les organismes d'attribution</strong> des aides pour maximiser les opportunités offertes à chaque niveau.</p>
         
-        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3>Sources d'information</h3>
-            <ul>
-                <li><strong>Sites officiels :</strong> Portails gouvernementaux</li>
-                <li><strong>CCI :</strong> Chambres de commerce</li>
-                <li><strong>BGE :</strong> Boutiques de gestion</li>
-                <li><strong>Collectivités :</strong> Services économiques</li>
-                <li><strong>Réseaux :</strong> Entrepreneurs locaux</li>
-            </ul>
-        </div>
-        
-        <h2>⚠️ Points d'attention</h2>
-        <ul>
-            <li>Vérifier les conditions d'éligibilité</li>
-            <li>Respecter les délais de dépôt</li>
-            <li>Préparer un dossier complet</li>
-            <li>Anticiper les délais d'instruction</li>
-        </ul>
+        <p>En résumé, la clé du succès réside souvent dans la capacité à identifier et à exploiter ces aides existantes, qui sont autant de leviers puissants pour concrétiser son projet entrepreneurial. Bonne chance dans votre recherche et création !</p>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-            <h3>💡 Conclusion</h3>
-            <p>Il est crucial pour les entrepreneurs de faire preuve de <strong>prospection minutieuse</strong>, de <strong>compréhension des critères d'éligibilité</strong> et de <strong>nouer des relations avec les organismes d'attribution</strong> des aides pour maximiser les opportunités offertes à chaque niveau.</p>
-            <p>En résumé, la clé du succès réside souvent dans la capacité à identifier et à exploiter ces aides existantes, qui sont autant de leviers puissants pour concrétiser son projet entrepreneurial. Bonne chance dans votre recherche et création !</p>
+            <h3>💡 Conseil pratique</h3>
+            <p>Les aides à la création d'entreprise sont nombreuses mais souvent méconnues. Prenez le temps de bien identifier toutes les aides auxquelles vous pourriez prétendre selon votre situation personnelle et votre projet.</p>
         </div>
             `
     },
@@ -202,12 +183,12 @@ window.module6Content = {
                 
         <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3>🤔 Savez-vous que certaines aides peuvent doubler en fonction de votre statut personnel ?</h3>
-            <p>Prenons l'exemple d'Isabelle, une jeune entrepreneuse qui souhaite lancer son entreprise dans le secteur de la mode éthique. En tant que 👩 femme entrepreneure, elle peut avoir accès à des aides spécifiques qui ne sont pas disponibles aux autres entrepreneurs. En comprenant comment appliquer ces aides selon son statut personnel, elle peut optimiser ses chances de succès.</p>
+            <p>Prenons l'exemple d'Isabelle, une jeune entrepreneuse qui souhaite lancer son entreprise dans le secteur de la mode éthique. En tant que <strong>👩 femme entrepreneure</strong>, elle peut avoir accès à des aides spécifiques qui ne sont pas disponibles aux autres entrepreneurs. En comprenant comment appliquer ces aides selon son statut personnel, elle peut optimiser ses chances de succès.</p>
         </div>
         
         <h2>✅ Comprendre les Critères d'Éligibilité</h2>
         
-        <p>Chaque aide est assortie de <em>critères spécifiques</em> et il est crucial de les comprendre pour déterminer si vous y êtes admissible. Par exemple, regardons les aides pour 👩 femmes entrepreneures :</p>
+        <p>Chaque aide est assortie de <em>critères spécifiques</em> et il est crucial de les comprendre pour déterminer si vous y êtes admissible. Par exemple, regardons les aides pour <strong>👩 femmes entrepreneures</strong> :</p>
         
         <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h4>Aides spécifiques aux femmes entrepreneures</h4>
@@ -216,7 +197,7 @@ window.module6Content = {
             </ul>
         </div>
         
-        <p>Pour les 🚀 primo-entrepreneurs (entrepreneurs débutants) :</p>
+        <p>Pour les <strong>🚀 primo-entrepreneurs</strong> (entrepreneurs débutants) :</p>
         
         <div style="background: #fff3e0; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h4>Aides pour primo-entrepreneurs</h4>
@@ -229,14 +210,14 @@ window.module6Content = {
         
         <div style="background: #f3e5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h4>Le cas d'Isabelle - Femme entrepreneure et demandeuse d'emploi</h4>
-            <p>Imaginons qu'Isabelle soit non seulement une 👩 femme entrepreneure mais également 🗺 éligible à l'ARCE grâce à son statut de demandeuse d'emploi. En combinant ces deux aides :</p>
+            <p>Imaginons qu'Isabelle soit non seulement une <strong>👩 femme entrepreneure</strong> mais également <strong>🗺 éligible à l'ARCE</strong> grâce à son statut de demandeuse d'emploi. En combinant ces deux aides :</p>
             <p><strong>1. FGIF</strong> : Isabelle peut obtenir un prêt bancaire de 50 000 euros pour sa startup, la garantie du FGIF réduisant les risques pour la banque, ce qui augmente ses chances d'obtenir le financement.</p>
             <p><strong>2. ARCE</strong> : Admettons qu'elle ait droit à 10 000 euros d'allocations chômage. Grâce à l'ARCE, elle peut percevoir 5 000 euros immédiatement sous forme de capital, lui offrant ainsi une base solide de 55 000 euros pour démarrer son projet.</p>
         </div>
         
         <h2>🌍 Une Diversité de Secteurs</h2>
         
-        <p>Les aides peuvent également varier considérablement selon le secteur d'activité. Prenons l'industrie technologique, par exemple. Pour les 🌿 entreprises vertes (éco-industries) :</p>
+        <p>Les aides peuvent également varier considérablement selon le secteur d'activité. Prenons l'industrie technologique, par exemple. Pour les <strong>🌿 entreprises vertes</strong> (éco-industries) :</p>
         
         <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h4>Aides sectorielles</h4>
@@ -249,7 +230,7 @@ window.module6Content = {
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h4>Le cas de Lucas - Entrepreneur tech issu de minorité ethnique</h4>
-            <p>Lucas, un entrepreneur issue de 🔵 minorité ethnique, souhaite créer une startup tech spécialisée dans l'intelligence artificielle. Il peut bénéficier des programmes suivants :</p>
+            <p>Lucas, un entrepreneur issue de <strong>🔵 minorité ethnique</strong>, souhaite créer une startup tech spécialisée dans l'intelligence artificielle. Il peut bénéficier des programmes suivants :</p>
             <ul>
                 <li><strong>Initiative France</strong> : Offrant des microcrédits et du mentorat pour les entrepreneurs de minorités.</li>
                 <li><strong>Bourse French Tech Diversité</strong> : Un programme soutenant les startups portées par des entrepreneurs issus de la diversité, avec des financements pouvant aller jusqu'à 45 000 euros.</li>
@@ -333,187 +314,64 @@ window.module6Content = {
         
         <h2>📋 Introduction à l'optimisation des aides majeures</h2>
         
-        <p>Pour maximiser les avantages des aides publiques et privées, il est essentiel d'aborder ce processus de manière stratégique. Les aides se déclinent en diverses formes, allant des subventions aux incitations fiscales. Mis à part l'accès à ces aides, leur utilisation optimale peut transformer la trajectoire d'une entreprise en croissance, spécialement dans un contexte compétitif et économique en évolution rapide.</p>
+        <p>Pour maximiser les avantages des <strong>aides publiques</strong> et privées, il est essentiel d'aborder ce processus de manière stratégique. Les aides se déclinent en diverses formes, allant des <strong>subventions</strong> aux <strong>incitations fiscales</strong>. Mis à part l'accès à ces aides, leur utilisation optimale peut transformer la trajectoire d'une entreprise en croissance, spécialement dans un contexte compétitif et économique en évolution rapide.</p>
         
         <h2>🎯 Objectifs et Rôles des Aides</h2>
         
         <p>Les aides sont conçues pour diverses raisons :</p>
-        
-        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Objectifs des aides</h4>
-            <ol>
-                <li><strong>Promotion de l'innovation</strong> : Encourager la recherche et le développement</li>
-                <li><strong>Stimulation de l'économie locale</strong> : Développer le tissu économique régional</li>
-                <li><strong>Soutien à la création d'emplois</strong> : Faciliter l'embauche et la croissance</li>
-                <li><strong>Réduction des inégalités régionales</strong> : Équilibrer le développement territorial</li>
-            </ol>
-        </div>
+        <p><strong>1. Promotion de l'innovation</strong></p>
+        <p><strong>2. Stimulation de l'économie locale</strong></p>
+        <p><strong>3. Soutien à la création d'emplois</strong></p>
+        <p><strong>4. Réduction des inégalités régionales</strong></p>
         
         <p>Élaborer un plan détaillé pour maximiser ces aides implique de comprendre comment chacune peut spécifiquement bénéficier à l'entreprise.</p>
         
         <h2>🎓 Étape 1 : Analyser les Exigences pour l'Accès aux Aides</h2>
         
         <p>Chaque programme d'aide a ses propres critères d'éligibilité. Par exemple :</p>
+        <ul>
+            <li><strong>Les subventions pour l'innovation</strong> peuvent exiger que l'entreprise mène des activités de R&D et collabore avec des institutions académiques.</li>
+            <li><strong>Les réductions fiscales pour les startups</strong> peuvent être conditionnées par la création d'un certain nombre d'emplois locaux ou par le respect d'un seuil minimal de revenus.</li>
+        </ul>
         
-        <div style="background: #fff3e0; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Critères d'éligibilité courants</h4>
-            <ul>
-                <li><strong>Secteur d'activité</strong> : Certaines aides sont réservées à des secteurs spécifiques</li>
-                <li><strong>Taille de l'entreprise</strong> : PME, TPE, startups ont des critères différents</li>
-                <li><strong>Localisation géographique</strong> : Zones prioritaires ou régions spécifiques</li>
-                <li><strong>Statut du créateur</strong> : Demandeur d'emploi, primo-entrepreneur, etc.</li>
-            </ul>
-        </div>
-        
-        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>💡 Astuce</h4>
-            <p>Maintenez un dossier de documentation à jour incluant les certifications, rapports financiers et autres preuves pouvant être exigées par les organismes de subvention.</p>
-        </div>
+        <p><strong>Astuce :</strong> Maintenez un dossier de documentation à jour incluant les certifications, rapports financiers et autres preuves pouvant être exigées par les organismes de subvention.</p>
         
         <h2>📖 Exemple Réel : Le Cas de Tech Innov</h2>
         
-        <div style="background: #f3e5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Succès d'optimisation des aides</h4>
-            <p>Une entreprise française, Tech Innov, a réussi à obtenir une subvention de recherche et développement de 400 000 euros. Ils ont intégré leur plan de R&D avec des partenariats académiques, obtenant ainsi l'aval nécessaire et doublant pratiquement leurs ressources disponibles sans diluer leur capital.</p>
-            <p><strong>Stratégie clé :</strong> Augmenter les liquidités disponibles en combinant subventions et partenariats stratégiques.</p>
-        </div>
+        <p><strong>Augmenter les liquidités disponibles :</strong> Une entreprise française, Tech Innov, a réussi à obtenir une <strong>subvention de recherche et développement</strong> de 400 000 euros. Ils ont intégré leur plan de R&D avec des partenariats académiques, obtenant ainsi l'aval nécessaire et doublant pratiquement leurs ressources disponibles sans diluer leur capital.</p>
         
-        <h2>📈 Optimisation de l'Usage des Subventions et Subventions</h2>
+        <h2>📈 Optimisation de l'Usage des Subventions</h2>
         
-        <p>Maximiser les bénéfices des subventions implique :</p>
+        <p>Maximiser les bénéfices des <strong>subventions</strong> implique :</p>
+        <p><strong>1. Planification financière rigoureuse :</strong> Utiliser les fonds pour des projets bien définis qui ont un potentiel de retour sur investissement élevé.</p>
+        <p><strong>2. Rapports transparents :</strong> Fournir des rapports clairs et détaillés sur l'utilisation des fonds pour garantir la continuité des subventions.</p>
         
-        <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Stratégies d'optimisation</h4>
-            <ol>
-                <li><strong>Planification financière rigoureuse</strong> : Utiliser les fonds pour des projets bien définis qui ont un potentiel de retour sur investissement élevé.</li>
-                <li><strong>Rapports transparents</strong> : Fournir des rapports clairs et détaillés sur l'utilisation des fonds pour garantir la continuité des subventions.</li>
-                <li><strong>Conformité réglementaire</strong> : Respecter scrupuleusement les conditions d'attribution pour éviter les pénalités.</li>
-                <li><strong>Mesure de l'impact</strong> : Documenter les résultats obtenus pour justifier l'efficacité de l'aide.</li>
-            </ol>
-        </div>
+        <p><strong>Astuce :</strong> Constituez un tableau de bord financier où chaque centime de subvention est tracé avec précision.</p>
         
-        <h2>🔄 Processus d'optimisation</h2>
+        <h2>📖 Exemple Réel : Agriculture Verte</h2>
         
-        <h3>Étape 1 : Audit des droits</h3>
-        <div style="background: #fff3e0; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Checklist d'audit</h4>
-            <ul>
-                <li>✓ Vérifier tous les statuts possibles</li>
-                <li>✓ Identifier les aides éligibles</li>
-                <li>✓ Calculer les montants potentiels</li>
-                <li>✓ Vérifier les conditions de cumul</li>
-            </ul>
-        </div>
+        <p>Agriculture Verte, spécialisée dans les techniques d'agriculture durable, a utilisé une subvention régionale pour développer de nouvelles variétés de cultures résistantes à la sécheresse. Ils ont planifié chaque étape du projet avec des objectifs mesurables, assurant ainsi un impact vérifiable et gagnant la confiance des bailleurs de fonds pour financer des phases futures.</p>
         
-        <h3>Étape 2 : Planification stratégique</h3>
-        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Éléments de planification</h4>
-            <ul>
-                <li><strong>Priorités :</strong> Classer les aides par importance</li>
-                <li><strong>Délais :</strong> Respecter les échéances</li>
-                <li><strong>Documents :</strong> Préparer les dossiers</li>
-                <li><strong>Contacts :</strong> Identifier les interlocuteurs</li>
-            </ul>
-        </div>
+        <h2>💰 Optimisation des Incitations Fiscales</h2>
         
-        <h3>Étape 3 : Mise en œuvre</h3>
-        <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Actions concrètes</h4>
-            <ul>
-                <li><strong>Dépôt :</strong> Soumettre les demandes</li>
-                <li><strong>Suivi :</strong> Maintenir le contact</li>
-                <li><strong>Négociation :</strong> Optimiser les conditions</li>
-                <li><strong>Validation :</strong> Confirmer les attributions</li>
-            </ul>
-        </div>
+        <p>Les <strong>incitations fiscales</strong> sont souvent sous-utilisées. Elles permettent de :</p>
+        <p><strong>1. Réduire les charges fiscales :</strong> Par le biais de crédits d'impôt pour la recherche (CIR) ou pour l'embauche de certains profils.</p>
+        <p><strong>2. Augmenter les liquidités disponibles :</strong> En réinvestissant les économies fiscales dans l'expansion ou l'innovation.</p>
         
-        <h2>📊 Tableau de maximisation</h2>
+        <p><strong>Astuce :</strong> Collaborez avec des experts-comptables ou des consultants en fiscalité pour identifier et maximiser toutes les incitations possibles.</p>
         
-        <div style="overflow-x: auto; margin: 20px 0;">
-            <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
-                <thead>
-                    <tr style="background: #f8f9fa;">
-                        <th style="border: 1px solid #ddd; padding: 12px;">Aide</th>
-                        <th style="border: 1px solid #ddd; padding: 12px;">Montant max</th>
-                        <th style="border: 1px solid #ddd; padding: 12px;">Cumul possible</th>
-                        <th style="border: 1px solid #ddd; padding: 12px;">Stratégie</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">ARCE</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">2 000 €</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Oui</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Demander le maximum</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">NACRE</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Accompagnement</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Oui</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Utiliser l'accompagnement</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Prêt d'honneur</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">50 000 €</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Oui</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Adapter au besoin</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Subvention</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Variable</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Souvent</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Cibler les montants élevés</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <h2>📖 Exemple Réel : StartUp FinTech</h2>
         
-        <h2>⚠️ Pièges à éviter</h2>
+        <p>StartUp FinTech, une entreprise dans le domaine des services financiers numériques, a utilisé des <strong>crédits d'impôt</strong> pour financer partiellement le développement de nouvelles applications innovantes, ce qui a entraîné une diminution significative de leur fardeau fiscal annuel et une accélération de leur développement de produits.</p>
         
-        <div style="background: #f8d7da; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #dc3545;">
-            <h3>Erreurs courantes</h3>
-            <ul>
-                <li><strong>Cumul impossible :</strong> Vérifier les règles</li>
-                <li><strong>Délais dépassés :</strong> Respecter les échéances</li>
-                <li><strong>Dossier incomplet :</strong> Préparer tous les documents</li>
-                <li><strong>Montant sous-évalué :</strong> Demander le maximum</li>
-            </ul>
-        </div>
+        <h2>🔄 Conclusion et Prochaines Étapes</h2>
         
-        <h2>🛠️ Outils d'optimisation</h2>
+        <p>Maximiser les avantages des principales aides nécessite une compréhension approfondie des critères et des meilleures pratiques pour leur utilisation. Des <strong>exemples réussis</strong> montrent que la planification et la gestion rigoureuse peuvent transformer les aides en leviers puissants pour la croissance des entreprises. Intégrez ces principes dans votre stratégie et surveillez constamment les nouvelles opportunités d'aides pour rester compétitif.</p>
         
-        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3>Ressources utiles</h3>
-            <ul>
-                <li><strong>Simulateurs :</strong> Calculer vos droits</li>
-                <li><strong>Conseillers :</strong> Accompagnement spécialisé</li>
-                <li><strong>Réseaux :</strong> Partager les expériences</li>
-                <li><strong>Formations :</strong> Développer vos compétences</li>
-            </ul>
-        </div>
-        
-        <h2>📈 Mesure de l'optimisation</h2>
-        
-        <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3>Indicateurs de succès</h3>
-            <ul>
-                <li><strong>Montant total :</strong> Somme des aides obtenues</li>
-                <li><strong>Taux de réussite :</strong> Pourcentage de demandes acceptées</li>
-                <li><strong>Délai moyen :</strong> Temps d'obtention</li>
-                <li><strong>Satisfaction :</strong> Qualité de l'accompagnement</li>
-            </ul>
-        </div>
-        
-        <h2>⚠️ Points d'attention</h2>
-        <ul>
-            <li>Respecter les règles de cumul</li>
-            <li>Anticiper les délais de traitement</li>
-            <li>Préparer des dossiers complets</li>
-            <li>Maintenir le contact avec les organismes</li>
-        </ul>
+        <p>En exploitant ces techniques et stratégies, les entrepreneurs peuvent véritablement transformer ces <strong>avantages financiers</strong> en solides fondations pour un développement durable et fructueux.</p>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-            <h3>💡 Conclusion</h3>
+            <h3>💡 Conseil pratique</h3>
             <p>L'optimisation des aides nécessite une approche méthodique et patiente. N'hésitez pas à faire appel à des conseillers spécialisés pour maximiser vos chances de succès et transformer ces aides en leviers puissants pour votre croissance.</p>
         </div>
         
