@@ -325,10 +325,24 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
                 <img src="assets/images/07_IMAGE_SMARTGOALS.png" alt="SMART Goals" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
             </div>
 
-            <div class="pdf-info">
-                        <h3 class="pdf-title">Template Objectifs SMART</h3>
-                        <p class="pdf-description">Modèle pour définir vos objectifs selon la méthode SMART</p>
-                        <a href="assets/pdfs/template-smart.pdf" download class="download-button">Télécharger</a>
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 12px; margin: 30px 0; color: white; text-align: center; box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);">
+                <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                    <div style="background: rgba(255,255,255,0.2); padding: 12px; border-radius: 50%; margin-right: 15px; font-size: 24px;">📋</div>
+                    <h3 style="margin: 0; font-size: 24px; font-weight: 600;">Template Objectifs SMART</h3>
+                </div>
+                <p style="margin: 10px 0 20px 0; font-size: 16px; opacity: 0.9;">Modèle pratique pour définir vos objectifs selon la méthode SMART</p>
+                <a href="assets/pdfs/template-smart.pdf" download style="background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">📥 Télécharger le Template</a>
+            </div>
+            
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #667eea;">
+                <h3 style="color: #667eea; margin-top: 0;">💡 Comment utiliser ce template ?</h3>
+                <p>Le template que vous venez de télécharger vous guidera étape par étape pour créer des objectifs SMART efficaces. Utilisez-le pour :</p>
+                <ul style="margin: 10px 0;">
+                    <li>Structurer vos objectifs selon les 5 critères SMART</li>
+                    <li>Éviter les objectifs vagues et imprécis</li>
+                    <li>Planifier vos actions concrètes</li>
+                    <li>Suivre vos progrès régulièrement</li>
+                </ul>
             </div>
             
             <h2>📝 Qu'est-ce que SMART ?</h2>
@@ -406,6 +420,11 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
                 <li>Un objectif à moyen terme (6-12 mois)</li>
                 <li>Un objectif à long terme (1-2 ans)</li>
             </ol>
+            
+            <div style="background: #e8f4fd; padding: 15px; border-radius: 6px; margin: 15px 0; border: 1px solid #bee5eb;">
+                <p style="margin: 0; font-weight: 600; color: #0c5460;">💡 Conseil pratique :</p>
+                <p style="margin: 5px 0 0 0;">Utilisez le <strong>Template Objectifs SMART</strong> téléchargé plus haut pour structurer vos réponses et vous assurer que chaque objectif respecte bien les 5 critères SMART.</p>
+            </div>
             </div>
         `
     },
