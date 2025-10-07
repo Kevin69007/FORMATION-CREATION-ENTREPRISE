@@ -10,10 +10,11 @@ window.module6Content = {
         
         
         <h2>📋 Panorama des aides à la création</h2>
-        
+        <p>Les aides à la création d'entreprise sont des dispositifs mis en place pour soutenir les entrepreneurs dans leurs démarches de création d'entreprise. Elles peuvent se présenter sous différentes formes, notamment des aides financières directes, l'accompagnement par des experts, ou encore des subventions. Ces aides visent à réduire les obstacles financiers et à offrir des ressources et conseils pratiques.</p<
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_INTROAIDES.png" alt="Introduction aux aides" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
+        <p>Un entrepreneur peut bénéficier d'une aide financière sous forme de prêt à taux zéro, ainsi que d'un accompagnement personnalisé par un conseiller de la Chambre de Commerce. Cela permet de lancer son activité avec plus de sécurité.</p>
         
         <h3>1. Aides financières</h3>
         <div style="text-align: center; margin: 20px 0;">

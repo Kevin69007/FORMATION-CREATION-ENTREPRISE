@@ -20,8 +20,9 @@ window.module7Content = {
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_CCI.png" alt="Chambre de Commerce et d'Industrie" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
-        <p>La CCI est compétente pour les entreprises commerciales : commerçants, sociétés commerciales, agents commerciaux, etc. Elle gère les immatriculations au Registre du Commerce et des Sociétés (RCS).</p>
-        
+        <p>La Chambre de Commerce et d'Industrie (CCI) est l'organisme auquel doivent s'adresser les commerçants pour enregistrer leur entreprise. La CCI fournit un soutien et des conseils précieux pour les entrepreneurs, de la création d'entreprise à la gestion quotidienne. Elle facilite également le réseautage et l'accès à des ressources et des opportunités de marché.</p>
+        <p>Un commerçant qui souhaite ouvrir une boutique de vêtements peut s'inscrire à la CCI pour bénéficier de conseils sur les démarches à suivre, obtenir les autorisations nécessaires et accéder à des événements de réseautage.</p>
+
         <h4>Activités concernées :</h4>
         <ul>
             <li><strong>Commerce de détail :</strong> Boutiques, magasins</li>
@@ -34,7 +35,8 @@ window.module7Content = {
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_CHAMBREMETIERS.png" alt="Chambre des Métiers" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
-        <p>La CMA s'occupe des entreprises artisanales et des métiers. Elle gère les immatriculations au Répertoire des Métiers (RM).</p>
+        <p>Pour les artisans, il est nécessaire de s'immatriculer auprès de la Chambre des Métiers et de l'Artisanat (CMA). La CMA propose non seulement l'enregistrement des entreprises artisanales, mais aussi des formations spécifiques et des services d'accompagnement pour aider les artisans à bien démarrer et à développer leur activité. Cette étape est essentielle pour être légalement reconnu en tant qu'artisan.</p>
+        <p>Si vous êtes plombier, par exemple, vous devrez vous inscrire à la CMA pour obtenir votre carte d'identification d'artisan (CMA), qui prouve votre statut professionnel et vous permet de bénéficier de formations continues.</p>
         
         <h4>Activités concernées :</h4>
         <ul>
@@ -48,7 +50,8 @@ window.module7Content = {
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_GREFFETRIBUNAL.png" alt="Greffe du Tribunal" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
-        <p>Le greffe du tribunal de commerce gère les formalités pour certaines sociétés et les procédures collectives.</p>
+        <p>Le Greffe du Tribunal de Commerce est chargé de l'enregistrement des entreprises commerciales. C'est ici que vous déposez les statuts de l'entreprise et obtenez l'immatriculation de votre société. Après cette étape, votre entreprise recevra un numéro SIREN et un extrait Kbis, document officiel attestant de l'existence juridique de votre entreprise.</p>
+        <p>Imaginons que vous créez une SARL, vous devrez déposer vos statuts au Greffe du Tribunal de Commerce pour obtenir votre extrait Kbis, indispensable pour ouvrir un compte bancaire professionnel.</p>
         
         <h4>Compétences :</h4>
         <ul>
@@ -62,7 +65,8 @@ window.module7Content = {
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_INSEE.png" alt="INSEE" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
-        <p>L'INSEE attribue le numéro SIREN et gère le répertoire SIRENE des entreprises.</p>
+        <p>L'INSEE (Institut National de la Statistique et des Études Économiques) attribue le numéro SIRET et le code APE à votre entreprise. Le numéro SIRET est un identifiant unique pour votre établissement, tandis que le code APE correspond à l'activité principale que vous exercez. Ces informations sont essentielles pour la gestion statistique et économique de vos activités.</p>
+        <p>Par exemple, une fois votre entreprise enregistrée, l'INSEE vous attribuera un numéro SIRET que vous devrez indiquer sur toutes vos factures et documents officiels.</p>
         
         <h4>Rôle de l'INSEE :</h4>
         <ul>
@@ -76,7 +80,8 @@ window.module7Content = {
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_URSSAFF.png" alt="URSSAF" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
-        <p>L'URSSAF gère les cotisations sociales et l'immatriculation des employeurs.</p>
+        <p>L’URSSAF s'occupe de la déclaration et du prélèvement des cotisations sociales des travailleurs indépendants et des employeurs. Lorsque vous créez votre entreprise, vous devez vous enregistrer auprès de l’URSSAF pour obtenir votre numéro d'employeur et commencer à payer les cotisations sociales correspondantes. Cette démarche est aussi nécessaire si vous embauchez des salariés.</p>
+        <p>Si vous êtes un entrepreneur individuel, vous devez signaler votre activité à l’URSSAF pour gérer vos cotisations sociales, par exemple via le site www.autoentrepreneur.urssaf.fr.</p>
         
         <h4>Compétences URSSAF :</h4>
         <ul>

@@ -11,41 +11,47 @@ window.module9Content = {
                 
         <h2>📋 Les principaux statuts juridiques</h2>
         
-        <h3>1. Le choix du statut juridique adapté</h3>
-        <div style="text-align: center; margin: 20px 0;">
-            <img src="assets/images/01_IMAGE_CHOIXSTATUT.png" alt="Le choix du statut juridique adapté" style="max-width: 100%; height: auto; border-radius: 8px;">
-        </div>
-        <p>Le choix du statut juridique est une décision fondamentale qui influence tous les aspects de votre entreprise : responsabilité, fiscalité, social, gestion. Il doit être adapté à votre projet, vos objectifs et votre situation personnelle.</p>
-        
-        <h3>2. Comprendre les statuts juridiques</h3>
+        <h3>1. Comprendre les statuts juridiques</h3>
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_COMPRENDRESTATUTS.png" alt="Comprendre les statuts juridiques" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
-        <p>Les statuts juridiques se divisent en deux grandes catégories : l'entreprise individuelle et la société. Chaque statut a ses propres règles, avantages et contraintes qu'il faut bien comprendre avant de choisir.</p>
-        
+        <p>Les statuts juridiques déterminent le cadre légal dans lequel une entreprise va opérer. Chaque statut juridique, qu'il s'agisse de la société à responsabilité limitée (SARL) ou de la société par actions simplifiée (SAS), présente des différences en termes de responsabilités des dirigeants et des associés, ainsi que des impacts fiscaux. Il est crucial de bien comprendre ces distinctions pour choisir le statut adapté à ses besoins.</p>
+        <p>Exemple : Une SARL limite la responsabilité des associés au montant de leurs apports, tandis qu'une entreprise individuelle engage le patrimoine personnel du dirigeant.</p>
+
+        <h3>2. Le choix du statut juridique adapté</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_CHOIXSTATUT.png" alt="Le choix du statut juridique adapté" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>Pour choisir le bon statut juridique, il est primordial d’analyser la situation personnelle et professionnelle de l'entrepreneur, les objectifs de l'entreprise, et les perspectives de croissance à moyen et long terme. Chaque statut présente des avantages et des inconvénients selon les besoins spécifiques de chaque projet. Une bonne évaluation permettra d'optimiser la structure et les performances de l'entreprise dès ses débuts.</p>
+        <p>Exemple : Un entrepreneur souhaitant protéger son patrimoine personnel et visant une croissance rapide pourrait opter pour une SAS pour bénéficier de sa flexibilité et de la limitation de responsabilité.</p>
+                
         <h3>3. Entreprise Individuelle (EI)</h3>
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_EI.png" alt="Entreprise Individuelle" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
-        <p>L'Entreprise Individuelle est la forme la plus simple. L'entrepreneur et l'entreprise ne font qu'un : pas de personnalité morale distincte, responsabilité illimitée, mais simplicité de gestion et fiscalité transparente.</p>
+        <p>L'entreprise individuelle est une forme juridique simple et rapide à créer. Elle ne nécessite pas de capital social et engage entièrement le patrimoine personnel de l'entrepreneur. Cette structure est idéale pour les activités de petite envergure avec peu de risques financiers. Cependant, la responsabilité financière de l'entrepreneur est totale, ce qui peut devenir un frein en cas de difficultés économiques.</p>
+        <p>Exemple : Un artisan créant son entreprise individuelle n'a pas à formuler un capital social, mais il est responsable de toutes les dettes sur son patrimoine personnel.</p>
         
         <h3>4. Micro-entreprise</h3>
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_MICROENTREPRISE.png" alt="Micro-entreprise" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
-        <p>La micro-entreprise est un régime fiscal et social simplifié de l'entreprise individuelle. Elle offre des démarches ultra-simplifiées, un versement libératoire des cotisations sociales et de l'impôt, mais avec des plafonds de chiffre d'affaires.</p>
+        <p>Le statut d'auto-entrepreneur, ou micro-entrepreneur, est adapté pour les entrepreneurs individuels cherchant à tester leur activité avec une structure simplifiée. Il offre des avantages comme un régime fiscal et social allégé. Cependant, il existe des seuils de chiffre d'affaires à ne pas dépasser. En cas de dépassement régulier, il faudra passer à un autre statut juridique plus adapté pour la croissance de l'activité.</p>
+        <p>Exemple : Un consultant qui devient auto-entrepreneur ne paie des charges sociales qu'au prorata de son chiffre d'affaires, tout en bénéficiant de démarches administratives simplifiées.</p>
         
         <h3>5. SARL (Société à Responsabilité Limitée)</h3>
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_SARL.png" alt="SARL" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
-        <p>La SARL est une société de personnes qui limite la responsabilité des associés au montant de leurs apports. Elle nécessite au moins 2 associés (ou 1 pour l'EURL), un capital minimum de 1€, et offre une protection du patrimoine personnel.</p>
+        <p>La SARL est l'une des formes juridiques les plus courantes pour les petites et moyennes entreprises. Les associés voient leur responsabilité limitée à leurs apports. Le nombre d'associés peut varier de 2 à 100. Le capital social minimal est librement fixé par les statuts, ce qui permet une certaine souplesse. La gestion est assurée par un ou plusieurs gérants, qui peuvent être associés ou non.</p>
+        <p>Exemple : Une SARL peut être créée avec un capital social de 1 euro symbolique, permettant ainsi à de nombreux entrepreneurs de lancer leur activité sans gros apports initiaux.</p>
         
         <h3>6. SAS (Société par Actions Simplifiée)</h3>
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_SAS.png" alt="SAS" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
-        <p>La SAS est une société de capitaux très flexible, idéale pour les projets de croissance. Elle permet une grande liberté dans l'organisation des pouvoirs, facilite l'entrée d'investisseurs et offre une image moderne de l'entreprise.</p>
+        <p>La SAS est appréciée pour sa grande flexibilité. Elle permet d'organiser librement la répartition des pouvoirs entre ses dirigeants. Le capital social peut être librement fixé, ce qui donne une large marge de manœuvre aux fondateurs. La responsabilité des associés est limitée à leurs apports, similaire à la SARL. La SAS est adaptée aux projets de grande envergure ou nécessitant une structure de gouvernance plus complexe.</p>
+        <p>Exemple : Une entreprise en SAS peut prévoir un capital social de 10 000 euros et répartir les postes de direction entre plusieurs associés en définissant clairement leurs rôles dans les statuts.</p>
         
         <h2>🛠️ Critères de choix du statut</h2>
         

@@ -10,12 +10,15 @@ window.module8Content = {
         </div>
                 
         <h2>🛡️ Réduction des risques</h2>
-        
+        <p>Reprendre une entreprise existante offre bien moins de risques que d'en créer une nouvelle. Vous bénéficiez déjà d'une base de clients et de revenus, ce qui permet de mieux anticiper les résultats financiers et de sécuriser vos investissements. Vous pouvez aussi vous appuyer sur l'expérience et le savoir-faire existants de l'entreprise. </p>
+        <p>Un entrepreneur qui reprend une boulangerie bien établie n'aura pas à se soucier de construire une clientèle fidèle, contrairement à quelqu'un qui ouvre une boulangerie de zéro.</p>
+
         <h3>1. Continuité de l'activité</h3>
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_CONTINUITEAFFAIRES.png" alt="Continuité des affaires" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
-        <p>La reprise permet de bénéficier d'une activité déjà établie avec des clients, des fournisseurs et des processus opérationnels en place.</p>
+        <p>La reprise d'une entreprise suppose la continuité des affaires sans rupture majeure. Cela permet de maintenir les opérations existantes et d’assurer une transition en douceur pour les employés, les clients et les partenaires. C'est crucial pour conserver la confiance des parties prenantes et éviter les perturbations qui pourraient affecter la rentabilité.</p>
+        <p>En reprenant une entreprise de logistique, un nouvel acquéreur peut assurer la continuité des livraisons et des services pour les clients sans interruptions notables.</p>
         
         <h4>Avantages de la continuité :</h4>
         <ul>
@@ -29,7 +32,8 @@ window.module8Content = {
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_ACCESRESSOURCES.png" alt="Accès aux ressources" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
-        <p>L'entreprise reprise dispose déjà d'équipements, de locaux, de personnel et de systèmes informatiques fonctionnels.</p>
+        <p>Reprendre une entreprise permet de bénéficier d'une infrastructure déjà en place, de l'expertise des employés existants qui connaissent les processus et d'un réseau de fournisseurs et de partenaires établis. Cela facilite grandement la gestion opérationnelle et stratégiquement l'élargissement des activités.</p>
+        <p>Un industriel reprenant une usine en fonctionnement peut tirer parti immédiatement des équipements et des compétences techniques du personnel en place.</p>
         
         <h4>Ressources disponibles :</h4>
         <ul>
@@ -44,6 +48,7 @@ window.module8Content = {
             <img src="assets/images/01_IMAGE_ACCESMARQUES.png" alt="Accès aux marques" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
         <p>La reprise donne accès à des marques, brevets, licences et autres actifs immatériels précieux.</p>
+        <p>Reprendre une entreprise permet de bénéficier instantanément de la notoriété de la marque. La clientèle est déjà familiarisée avec les produits ou services proposés, ce qui peut réduire les coûts de marketing et faciliter la reconversion des clients en acheteurs récurrents. La notoriété est un avantage compétitif significatif.</p>
         
         <h4>Actifs immatériels :</h4>
         <ul>
@@ -57,7 +62,8 @@ window.module8Content = {
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_PRISEPOSITION.png" alt="Prise de position" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
-        <p>La reprise permet une entrée immédiate sur le marché sans période de développement et de test.</p>
+        <p>En reprenant une entreprise, vous gagnez du temps par rapport à une création d'entreprise. Vous vous placez rapidement sur le marché avec un avantage concurrentiel immédiat grâce à la clientèle existante et une chaîne de production opérationnelle. Cela permet de devancer les nouveaux entrants qui mettent plus de temps à se positionner.</p>
+        <p>Reprendre une entreprise informatique qui a déjà une clientèle solide permet une accélération immédiate des ventes et une pénétration rapide du marché sans les étapes de démarrage prolongées.</p>
         
         <h4>Avantages de la rapidité :</h4>
         <ul>
@@ -71,7 +77,8 @@ window.module8Content = {
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_ACCESPLUSFACILE.png" alt="Accès plus facile" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
-        <p>Les banques et investisseurs sont généralement plus favorables à la reprise qu'à la création pure.</p>
+        <p>Les banques et autres investisseurs sont souvent plus enclins à financer une reprise d'entreprise plutôt qu'une création d'entreprise. La crédibilité des bilans financiers et l'historique de l'activité rendent l'investissement moins risqué. Ainsi, obtenir des prêts et des capitaux devient plus aisé pour le repreneur.</p>
+        <p>Un entrepreneur cherchant un prêt pour reprendre une société de services ayant des bilans financiers stables obtiendra probablement plus de soutien des banques qu'un créateur de start-up.</p>
         
         <h4>Facilités de financement :</h4>
         <ul>
