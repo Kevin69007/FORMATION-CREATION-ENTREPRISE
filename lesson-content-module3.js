@@ -16,28 +16,28 @@ window.module3Content = {
             <img src="assets/images/01_IMAGE_IDENTIFIEROBJECTIFS.png" alt="Identifier les objectifs du projet" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
         <p>Pour commencer, il est essentiel de définir clairement les objectifs du projet. Les objectifs à court terme peuvent inclure des éléments tels que l'augmentation des ventes ou l'amélioration de la satisfaction client. Les objectifs à long terme peuvent être plus stratégiques, touchant par exemple l'expansion du marché ou l'innovation produit. Ces objectifs doivent s'aligner avec la stratégie globale de l'entreprise pour garantir la cohérence et maximiser l'impact.</p>
-		<p>Example: Un projet visant à développer une nouvelle application mobile pourrait avoir comme objectif à court terme d'atteindre 10 000 téléchargements en trois mois, et comme objectif à long terme de capturer 15% du marché cible dans l'année.</p>
+		<p>Exemple: Un projet visant à développer une nouvelle application mobile pourrait avoir comme objectif à court terme d'atteindre 10 000 téléchargements en trois mois, et comme objectif à long terme de capturer 15% du marché cible dans l'année.</p>
         
         <h3>Identifier les parties prenantes</h3>
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_IDENTIFIERPARTIES.png" alt="Identifier les parties prenantes" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
         <p>Il est crucial de recenser toutes les parties prenantes impliquées dans le projet ou affectées par celui-ci. Les parties prenantes internes peuvent inclure les membres de l'équipe projet, les dirigeants et autres départements, tandis que les parties prenantes externes peuvent être les clients, fournisseurs, ou partenaires. Un engagement actif des parties prenantes peut favoriser l'adhésion au projet et sa réussite. La compréhension des besoins et des attentes de chaque partie prenante est également importante pour garantir leur satisfaction.</p>
-		<p>Example: Dans un projet de développement d'un logiciel, les parties prenantes internes incluraient les développeurs et les chefs de produit, tandis que les parties prenantes externes incluraient les clients qui utiliseront le logiciel et les partenaires de distribution.</p>
+		<p>Exemple: Dans un projet de développement d'un logiciel, les parties prenantes internes incluraient les développeurs et les chefs de produit, tandis que les parties prenantes externes incluraient les clients qui utiliseront le logiciel et les partenaires de distribution.</p>
         
         <h3>Évaluer les ressources nécessaires</h3>
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_EVALUERRESSOURCES.png" alt="Évaluer les ressources nécessaires" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
         <p>Une évaluation détaillée des ressources nécessaires est indispensable pour un projet réussi. Les ressources humaines concernent les compétences et le temps requis par les membres de l'équipe. Les ressources financières incluent le budget alloué au projet, couvrant les coûts éventuels et les investissements requis. Les ressources matérielles peuvent englober les équipements, infrastructures, et outils nécessaires pour mener à bien le projet. Planifier convenablement ces ressources permet d'éviter les surcoûts et les retards.</p>
-		<p>Example: Un projet de lancement d'un produit nécessiterait l'évaluation du nombre de développeurs et de designers nécessaires, l'estimation d'un budget pour le développement, le marketing et la distribution, ainsi que la liste des outils logiciels et matériels requis.</p>
+		<p>Exemple: Un projet de lancement d'un produit nécessiterait l'évaluation du nombre de développeurs et de designers nécessaires, l'estimation d'un budget pour le développement, le marketing et la distribution, ainsi que la liste des outils logiciels et matériels requis.</p>
         
         <h3>Analyser les risques et les contraintes</h3>
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_ANALYSERRISQUES.png" alt="Analyser les risques et les contraintes" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
         <p>Analyser les risques et les contraintes potentielles du projet est une étape cruciale pour sécuriser sa réussite. L'identification des risques implique de recenser les éventuels obstacles ou incertitudes pouvant affecter le projet. Ensuite, chaque risque doit être évalué en termes d'impact et de probabilité, ce qui permet de hiérarchiser les risques et de planifier des mesures d'atténuation. Les contraintes comprennent les facteurs limitant comme les délais, les budgets, ou les réglementations, et doivent être gérées avec une attention particulière.</p>
-			<p>Example: Un projet innovant dans un secteur réglementé pourrait identifier des risques liés à la conformité légale. Une mesure d'atténuation pourrait inclure la consultation régulière d'experts juridiques pour garantir la conformité dès le début du projet.</p>
+			<p>Exemple: Un projet innovant dans un secteur réglementé pourrait identifier des risques liés à la conformité légale. Une mesure d'atténuation pourrait inclure la consultation régulière d'experts juridiques pour garantir la conformité dès le début du projet.</p>
         
         
 <h3>Estimation des bénéfices</h3>
@@ -45,14 +45,14 @@ window.module3Content = {
             <img src="assets/images/01_IMAGE_ESTIMATION.png" alt="Estimation des bénéfices" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
         <p>L'estimation des bénéfices envisagés est essentielle pour jauger la rentabilité d'un projet. Les bénéfices financiers incluent l'augmentation des revenus, la réduction des coûts et autres gains monétaires. Les bénéfices non financiers peuvent comprendre la satisfaction client, l'amélioration de la réputation de la marque, ou l'efficacité opérationnelle accrue. Enfin, le retour sur investissement (ROI) mesure la rentabilité du projet en comparant les gains attendus aux coûts engagés, fournissant une indicateur clé pour la prise de décision.</p>
-			<p>Example: Un projet de transformation digitale pourrait estimer des bénéfices financiers via des économies réalisées sur les coûts administratifs, et des bénéfices non financiers par une meilleure satisfaction client grâce à des processus plus efficients.</p>
+			<p>Exemple: Un projet de transformation digitale pourrait estimer des bénéfices financiers via des économies réalisées sur les coûts administratifs, et des bénéfices non financiers par une meilleure satisfaction client grâce à des processus plus efficients.</p>
         
 <h3>Mesurer la rentabilité du projet</h3>
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_MESURER.png" alt="Mesurer la rentabilité du projet" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
         <p>Mesurer la rentabilité du projet implique l'utilisation de divers indicateurs de performance (KPI) pour suivre les progrès et les résultats. L'analyse coûts-bénéfices compare les coûts initiaux et opérationnels aux bénéfices générés pour déterminer la viabilité financière. Il est essentiel de suivre régulièrement ces indicateurs et de faire des ajustements si nécessaire pour rester sur la bonne voie et optimiser la rentabilité du projet. Cette démarche permet de garantir l'atteinte des objectifs et la maximisation des retours.</p>
-			<p>Example: Un projet de marketing digital pourrait suivre des KPI tels que le coût par acquisition et le ratio de conversion des leads en clients pour mesurer la rentabilité et ajuster les campagnes si nécessaire.</p>
+			<p>Exemple: Un projet de marketing digital pourrait suivre des KPI tels que le coût par acquisition et le ratio de conversion des leads en clients pour mesurer la rentabilité et ajuster les campagnes si nécessaire.</p>
 
 
             
@@ -249,7 +249,7 @@ window.module3Content = {
         title: "Création d'un plan de financement",
         moduleTitle: "Module 3 : Définir les besoins et la rentabilité du projet",
         content: `
-            <p><strong>🌟 Un début intrigant : Saviez-vous que...</strong></p>
+            <h2><strong>🌟 Un début intrigant : Saviez-vous que...</strong></h2>
             
             <p>👉 Saviez-vous que plus de 50% des startups échouent au cours de leurs cinq premières années, principalement en raison d'un manque de financement adéquat ? La création d'un <strong>🔑plan de financement</strong> est cruciale pour éviter ce piège et assurer la pérennité d'une entreprise. Voyons comment mettre en place un plan de financement efficace !</p>
             
@@ -358,9 +358,9 @@ window.module3Content = {
         title: "Présentation des outils de financement en partenariat avec un banquier",
         moduleTitle: "Module 3 : Définir les besoins et la rentabilité du projet",
         content: `
-            <p><strong>💡 Facteur Clé: Saviez-vous que 82% des entreprises qui échouent le font à cause de problèmes de trésorerie? Cela souligne l'importance cruciale de bien sélectionner les outils de financement pour un entrepreneur.</strong></p>
+            <h3><strong>💡 Facteur Clé: Saviez-vous que 82% des entreprises qui échouent le font à cause de problèmes de trésorerie? Cela souligne l'importance cruciale de bien sélectionner les outils de financement pour un entrepreneur.</strong></h3>
             
-            <p><strong>👉 Présentation des Outils de Financement en Partenariat avec un Banquier</strong></p>
+            <h2><strong>👉 Présentation des Outils de Financement en Partenariat avec un Banquier</strong></h2>
             
             <h2>🪙 Investissement en Capital</h2>
             
