@@ -11,31 +11,47 @@ window.module5Content = {
         
         
         <h2>📋 Les principaux régimes fiscaux</h2>
-        
-        <h3>1. Régime de la micro-entreprise</h3>
-        <div style="text-align: center; margin: 20px 0;">
-            <img src="assets/images/01_IMAGE_REGIMEMICRO.png" alt="Régime micro-entreprise" style="max-width: 100%; height: auto; border-radius: 8px;">
+        <p>Les régimes fiscaux déterminent comment les entreprises sont imposées sur leurs revenus. Il en existe plusieurs types, adaptés à différentes structures et activités. Comprendre les régimes fiscaux permet de choisir le plus avantageux pour minimiser l'imposition et respecter les obligations légales. Chaque régime aura ses propres taux et barèmes, influençant la déclaration de revenus et les modalités de paiement des taxes.</p>
+                <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_REGIMESFISCAUX.png" alt="Régime micro-entreprise" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
-        <p>Le régime de la micro-entreprise est destiné aux entrepreneurs individuels avec un chiffre d'affaires annuel limité. Il offre une comptabilité simplifiée et un versement libératoire de l'impôt sur le revenu en un pourcentage du chiffre d'affaires. Ce régime permet également de bénéficier d'exonérations et de simplifications fiscales.</p>
+        <p>Exemple: Une SARL peut choisir entre le régime de l'impôt sur les sociétés (IS) ou le régime dit de la transparence fiscale (IR), chacun avec ses avantages selon le volume d'affaires et les prévisions de profits.</p>
         
-        <h3>2. Régime réel simplifié</h3>
-        <div style="text-align: center; margin: 20px 0;">
-            <img src="assets/images/01_IMAGE_REGIMEREELSIMPL.png" alt="Régime réel simplifié" style="max-width: 100%; height: auto; border-radius: 8px;">
-        </div>
-        <p>Le régime réel simplifié concerne les entreprises avec un chiffre d'affaires au-delà du plafond micro-entreprise mais en-dessous de certains seuils. Il exige une comptabilité plus détaillée que le régime micro, mais reste allégée par rapport au régime réel normal. Les entreprises doivent verser des acomptes trimestriels d'impôt sur le revenu basé sur leurs bénéfices estimés, ajustés annuellement.</p>
-        
-        <h3>3. Régime réel normal</h3>
-        <div style="text-align: center; margin: 20px 0;">
-            <img src="assets/images/01_IMAGE_REGIMEREELNORMAL.png" alt="Régime réel normal" style="max-width: 100%; height: auto; border-radius: 8px;">
-        </div>
-        <p>Le régime réel normal s'applique aux entreprises dépassant les seuils du régime simplifié. Il impose une comptabilité complète avec bilan, compte de résultat et annexe. Les entreprises doivent tenir une comptabilité d'engagement et respecter des obligations déclaratives plus importantes.</p>
-        
-        <h3>4. Impôt sur les sociétés (IS)</h3>
+                        <h3>1. Impôt sur les sociétés (IS)</h3>
+            <p>L'impôt sur les sociétés (IS) est un régime fiscal applicable à certaines entreprises comme les SARL, SA et SAS. Le taux standard d'imposition à l'IS varie en fonction des bénéfices réalisés, avec des taux réduits pour les PME sous certaines conditions. Les entreprises doivent calculer et déclarer leur revenu imposable, en tenant compte des déductions et crédits d'impôt possibles. Le respect des obligations déclaratives est crucial pour éviter les sanctions fiscales.</p>
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_IS.png" alt="Impôt sur les sociétés" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
-        <p>L'impôt sur les sociétés s'applique aux sociétés soumises à ce régime fiscal. Exemple : Une SARL peut choisir entre le régime de l'impôt sur les sociétés (IS) ou le régime dit de la transparence fiscale (IR), chacun avec ses avantages selon le volume d'affaires et les prévisions de profits.</p>
+        <p>Exemple: Une PME déclarant 200,000 € de bénéfice net annuel devra appliquer les taux spécifiques de l'IS, après éventuelles déductions ou abattements autorisés.</p>
+
         
+        <h3>2. Régime de la micro-entreprise</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_REGIMEMICRO.png" alt="Régime micro-entreprise" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>Le régime de la micro-entreprise est destiné aux entrepreneurs individuels avec un chiffre d'affaires annuel limité. Il offre une comptabilité simplifiée et un versement libératoire de l'impôt sur le revenu en un pourcentage du chiffre d'affaires. Ce régime permet également de bénéficier d'exonérations et de simplifications fiscales, rendant la gestion administrative plus accessible aux petites entreprises débutantes.</p>
+        <p>Exemple: Un artisan en micro-entreprise avec un chiffre d'affaires annuel de 30,000 €, versera un pourcentage forfaitaire de son CA comme impôt libératoire, simplifiant ainsi ses obligations fiscales.</p>
+
+
+        <h3>3. Régime réel simplifié</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_REGIMEREELSIMPL.png" alt="Régime réel simplifié" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>Le régime réel simplifié concerne les entreprises avec un chiffre d'affaires au-delà du plafond micro-entreprise mais en-dessous de certains seuils. Il exige une comptabilité plus détaillée que le régime micro, mais reste allégée par rapport au régime réel normal. Les entreprises doivent verser des acomptes trimestriels d'impôt sur le revenu basé sur leurs bénéfices estimés, ajustés annuellement lors de la déclaration des résultats. Ce régime convient aux TPE et PME cherchant un équilibre entre simplicité et précision fiscale.</p>
+        <p>Exemple: Une petite société de conseil dépassant le plafond de la micro-entreprise adopte le régime simplifié, payant des acomptes trimestriels en fonction de ses bénéfices prévisionnels et procédant à une régularisation en fin d'année.</p>
+
+        <h3>4. Régime réel normal</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/images/01_IMAGE_REGIMEREELNORMAL.png" alt="Régime réel normal" style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+        <p>Le régime réel normal s'applique aux grandes entreprises ou celles dépassant les seuils du régime simplifié. Les obligations comptables sont complètes, incluant la tenue de livres détaillés, inventaires, et bilans. Les entreprises doivent déclarer annuellement leur résultat fiscal et payer l'impôt sur les bénéfices réalisés, structuré selon les règles d'amortissement, provisions, et charges. Ce régime assure une gestion fiscale précise mais demande des ressources administratives significatives pour répondre aux exigences réglementaires.</p>
+        <p>Exemple: Une société industrielle d'envergure nationale utilisant le régime réel normal doit préparer des états financiers annuels complets et se conformer aux nombreuses obligations déclaratives et administratives fiscales.</p>
+
+        <h2>Choisir le bon régime fiscal</h2>
+        <p>Le choix du régime fiscal est crucial pour optimiser la charge fiscale de l'entreprise. Analyser la structure juridique, prévoir les bénéfices à court et moyen terme et consulter un conseiller fiscal sont des étapes incontournables. Chaque régime présente des avantages et inconvénients spécifiques à la taille et à l'activité de l'entreprise, influençant les stratégies de gestion fiscale et de trésorerie. Une évaluation adaptée permet de minimiser les coûts fiscaux tout en restant conforme aux règlements.
+
+<br>Exemple: Un entrepreneur individuel au début de son activité peut opter pour la micro-entreprise pour sa simplicité, puis envisager une transition vers un régime simplifié en cas de croissance significative de son chiffre d'affaires.</p>
+
         <h2>🛠️ Critères de choix du régime fiscal</h2>
         
         <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
@@ -96,6 +112,14 @@ window.module5Content = {
         <h4>Modalités d'application</h4>
         <p>Le régime micro-entreprise s'applique automatiquement aux entreprises individuelles qui respectent les seuils de chiffre d'affaires. Il permet de bénéficier d'abattements forfaitaires : 71% pour les activités commerciales, 50% pour les prestations de services et 34% pour les professions libérales.</p>
         
+        <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
+        <h4>📈 Exemples pratiques :</h4>
+            <ul>
+    <li>Marie, photographe indépendante : Avec un chiffre d'affaires annuel de 50 000 €, elle bénéficie du régime micro-entrepreneur qui lui permet de focaliser son énergie sur ses projets artistiques au lieu de la bureaucratie lourde.
+    <li>Implications fiscales : Marie est soumise à une cotisation sociale forfaitaire appliquée directement sur son chiffre d’affaires.
+            </ul>
+        </div>
+
         <h3>2. Régime réel simplifié - Modalités</h3>
         <div style="background: #f3e5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h4>Seuils d'application</h4>
@@ -117,6 +141,14 @@ window.module5Content = {
         <h4>Spécificités</h4>
         <p>Le régime réel simplifié permet de déduire les charges réelles et de récupérer la TVA sur les achats. Les entreprises doivent verser des acomptes trimestriels d'impôt sur le revenu basés sur les bénéfices estimés, avec régularisation en fin d'année.</p>
         
+        <div style="background: #f3e5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
+        <h4>🔄 Exemples pratiques :</h4>
+            <ul>
+    <li>Jean, propriétaire d'un café : Avec un chiffre d'affaires annuel de 200 000 €, Jean opte pour le régime réel simplifié qui lui permet de déduire ses dépenses d'exploitation tout en gardant une comptabilité simplifiée.
+    <li>Obligations fiscales : Jean doit tenir une comptabilité d’engagement et respecter des obligations déclaratives spécifiques comme la déclaration annuelle des résultats.
+            </ul>
+        </div>
+
         <h3>3. Régime réel normal - Exigences</h3>
         <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h4>Seuils d'application</h4>
@@ -139,6 +171,14 @@ window.module5Content = {
         <h4>Caractéristiques</h4>
         <p>Le régime réel normal impose une comptabilité complète avec tenue d'un journal général, grand livre et balance. Les entreprises peuvent déduire toutes leurs charges réelles et bénéficier de tous les crédits d'impôt disponibles.</p>
         
+        <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; margin: 20px 0;">
+        <h4>📉 Exemples concrets :</h4>
+            <ul>
+    <li>L'entreprise de construction de Paul : Avec un chiffre d'affaires annuel de 1,5 million €, la société de Paul est naturellement au régime réel normal. Cette option fiscale permet une gestion précise grâce à une comptabilité détaillée.
+    <li>Aspects fiscaux : Paul peut amortir les biens durables, déduire la TVA et optimiser fiscalement les pertes.
+            </ul>
+        </div>
+
         <h3>4. Impôt sur les sociétés - Spécificités</h3>
         <div style="background: #fff3e0; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h4>Sociétés concernées</h4>
@@ -247,7 +287,7 @@ window.module5Content = {
         moduleTitle: "Module 5 : Comprendre les différents régimes fiscaux",
         content: `
                         
-        <h4>👉 𝗣𝗼𝘂𝗿𝗾𝘂𝗼𝗶 𝗹'𝗜𝗡𝗖 𝘀𝗼𝘂𝗹𝗶𝗴𝗻𝗲-𝘁-𝗶𝗹 𝗹'𝗶𝗺𝗽𝗼𝗿𝘁𝗮𝗻𝗰𝗲 𝗱𝗲 𝗯𝗶𝗲𝗻 𝗰𝗵𝗼𝗶𝘀𝗶𝗿 𝘀𝗼𝗻 𝗿𝗲́𝗴𝗶𝗺𝗲 𝗳𝗶𝘀𝗰𝗮𝗹 ? L’INSEE rapporte qu'une mauvaise gestion fiscale peut mener à des défaillances d’entreprises. Analysons de plus près les avantages et limites de divers régimes fiscaux.</h4>
+        <h3>👉 𝗣𝗼𝘂𝗿𝗾𝘂𝗼𝗶 𝗹'𝗜𝗡𝗖 𝘀𝗼𝘂𝗹𝗶𝗴𝗻𝗲-𝘁-𝗶𝗹 𝗹'𝗶𝗺𝗽𝗼𝗿𝘁𝗮𝗻𝗰𝗲 𝗱𝗲 𝗯𝗶𝗲𝗻 𝗰𝗵𝗼𝗶𝘀𝗶𝗿 𝘀𝗼𝗻 𝗿𝗲́𝗴𝗶𝗺𝗲 𝗳𝗶𝘀𝗰𝗮𝗹 ? L’INSEE rapporte qu'une mauvaise gestion fiscale peut mener à des défaillances d’entreprises. Analysons de plus près les avantages et limites de divers régimes fiscaux.</h3>
 
         <h2>📊 Analyse comparative des régimes</h2>
         
@@ -492,7 +532,15 @@ window.module5Content = {
 
         <h2>🔍 Méthode de sélection du régime fiscal</h2>
         
-        <h3>Étape 1 : Analyse de votre situation</h3>
+        <h3>Étape 1 : Identification de la nature de l'entreprise</h3>
+        <p>La première étape consiste à bien comprendre la nature de votre activité 🏭. Chaque type de structure peut avoir des obligations fiscales différentes :</p>
+            <ul>
+                <li>Entreprises individuelles : souvent plus appropriées pour de petites entreprises avec peu de salariés.
+                <li>Sociétés à responsabilité limitée (SARL) : peuvent bénéficier de certains avantages fiscaux mais supportent des contraintes administratives plus lourdes.
+                <li>Sociétés par actions simplifiées (SAS) : offrent une plus grande flexibilité en matière de gestion et de transmission.
+            </ul>
+
+        <h3>Étape 2 : Analyse de votre situation</h3>
         
         <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h4>Questions essentielles</h4>
@@ -507,8 +555,16 @@ window.module5Content = {
                 <li><strong>Croissance prévue :</strong> Quelle évolution envisagez-vous ?</li>
             </ul>
         </div>
+
+        <h3>Étape 3 : Évaluation des objectifs à long terme</h3>
+        <p>Il est aussi essentiel de prendre en compte les objectifs à long terme 🌟 de l'entrepreneur. Par exemple :</p>
+            <ul>
+                <li>Envisagez-vous une croissance rapide et significative?
+                <li>Prévoyez-vous d'embaucher beaucoup de salariés?
+                <li>Anticipez-vous des investissements importants à réaliser dans les années à venir?
+            </ul>
         
-        <h3>Étape 2 : Grille de décision</h3>
+        <h3>Étape 4 : Grille de décision</h3>
         
         <div style="overflow-x: auto; margin: 20px 0;">
             <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
@@ -561,7 +617,7 @@ window.module5Content = {
             </table>
         </div>
         
-        <h3>Étape 3 : Cas pratiques détaillés</h3>
+        <h3>Cas pratiques détaillés</h3>
         
         <div style="background: #f3e5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h4>Cas 1 : Consultant indépendant</h4>
@@ -662,6 +718,19 @@ window.module5Content = {
             <li>Considérer les implications sociales</li>
             <li>Évaluer les risques de contrôle fiscal</li>
         </ul>
+
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+        <h3>Processus pour changer de régime fiscal</h3>
+        <p>Il arrive que le régime fiscal initialement choisi ne soit plus adapté avec le temps. Dans ce cas, il est essentiel de connaître les procédures pour transitionner entre régimes fiscaux sans pénalités.
+        <br> Exemple:</p>
+        <p>Imaginez la start-up "InnovTech", initialement créée sous le régime de la micro-entreprise pour profiter de sa simplicité fiscale et administrative. Après deux ans de croissance rapide et une augmentation significative de son chiffre d'affaires, elle dépasse les seuils de la micro-entreprise et doit passer au régime réel simplifié.</p>
+        <p>La procédure à suivre pour ce changement comprend :</p>
+            <ul>
+                <li><strong>Notification à l'Administration Fiscale 📃 :</strong> Ajuster les acomptes provisionnels en fonction du nouveau régime afin d'éviter les pénalités de retard et les intérêts.
+                <li><strong>Adaptation des pratiques comptables 📚 :</strong> Passer d'une comptabilité simplifiée à une comptabilité d'engagement, impliquant des obligations plus strictes en matière de tenue des livres comptables.
+                <li><strong>Re-calcul des acomptes provisionnels 💶 :</strong> Ajuster les acomptes provisionnels en fonction du nouveau régime afin d'éviter les pénalités de retard et les intérêts.
+            </ul>
+        </div>
         
         <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h3>💡 Conclusion</h3>
