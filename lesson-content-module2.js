@@ -222,7 +222,8 @@ prédictif?</h2>
             
             <h2>📈 Croissance et performance</h2>
             <p>En utilisant ces stratégies jalonnées par une connaissance pointue du marché, vous pouvez <strong>augmenter vos ventes et favoriser la croissance de votre entreprise</strong>. Il est important de continuellement réévaluer et ajuster vos stratégies en fonction des changements du marché pour rester pertinent et compétitif.</p>
-                        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
+
+            <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
             <h2>🚀 Conclusion</h2>
             <p>Le véritable art des affaires réside dans la capacité à transformer des insights en actions concrètes. Que ce soit par le biais du <strong>ciblage des campagnes marketing</strong>, de la <strong>détermination des prix</strong> ou du <strong>positionnement produit</strong>, une compréhension approfondie du marché permet de concevoir des stratégies qui portent réellement leurs fruits. En fin de compte, c'est cette capacité à s'adapter et à innover en fonction des évolutions du marché qui différencie les leaders des suiveurs.</p>
             </div>
@@ -285,7 +286,13 @@ Identifier des indicateurs de performance clés pour suivre la croissance des ve
                 <li><strong>Professionnalisme :</strong> Utilisez un design soigné et évitez les fautes d'orthographe ou de grammaire.</li>
                 <li><strong>Clarté :</strong> Facilitez la lecture et la compréhension avec une mise en page claire et des sections bien définies.</li>
             </ul>
-                        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
+                        
+                        <div style="background: #d1ecf1; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #17a2b8;">
+            <h2>🏆 Exemple de réussite</h2>
+            <p>Prenons l'exemple de la société ABC, une PME spécialisée dans les solutions informatiques. En 2022, ils ont modifié leur format standard de proposition de vente pour y inclure une section dédiée aux témoignages clients et aux études de cas. Résultat ? Le taux de conversion a augmenté de 25%. De plus, en s'assurant que leurs contrats incluaient des clauses de garantie de satisfaction et des délais de paiement flexibles, ils ont pu réduire les litiges et augmenter la satisfaction client.</p>
+            </div>
+
+            <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
                 <h3>💡 Conclusion</h3>
                 <p>Les documents commerciaux sont bien plus que de simples outils administratifs. Ils sont des instruments puissants de communication et de persuasion qui peuvent faire la différence entre une vente réussie et une opportunité manquée. En investissant du temps et de l'effort dans la création de documents commerciaux de qualité, vous pouvez considérablement améliorer vos chances de succès commercial.</p>
             </div>

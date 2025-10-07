@@ -480,18 +480,11 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
                 <li><strong>Réseautage :</strong> Échanger avec d'autres professionnels</li>
             </ul>
             
-            <h2>🚀 Prochaines étapes</h2>
-            <p>Dans le module suivant, nous aborderons l'analyse de marché et la connaissance de vos clients. Ces compétences vous permettront de mieux comprendre votre environnement concurrentiel et d'adapter votre offre aux besoins réels du marché.</p>
-            
             <div style="background: #d1ecf1; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #17a2b8;">
                 <h3>💡 Action recommandée</h3>
                 <p>Prenez le temps de réfléchir à vos propres compétences actuelles et identifiez les domaines que vous souhaitez développer en priorité. Cette réflexion vous aidera à tirer le meilleur parti des modules suivants.</p>
             </div>
             
-            <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-                <h3>🎯 Objectif du module suivant</h3>
-                <p>Le module 2 vous permettra d'appliquer ces compétences dans l'analyse de votre marché et la compréhension de vos clients, créant ainsi un pont entre vos compétences personnelles et les besoins du marché.</p>
-            </div>
         `
     },
     8: {

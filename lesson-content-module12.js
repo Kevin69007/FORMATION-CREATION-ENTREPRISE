@@ -7,9 +7,7 @@ window.module12Content = {
         <div style="text-align: center; margin: 30px 0;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/xyo4JGMyvTA" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
         </div>
-        
-        <h2>📋 Comprendre ses clients</h2>
-        
+                
         <h3>1. Comprendre ses clients</h3>
         <div style="text-align: center; margin: 20px 0;">
             <img src="assets/images/01_IMAGE_COMPRENDRECLIENTS.png" alt="Comprendre ses clients" style="max-width: 100%; height: auto; border-radius: 8px;">
