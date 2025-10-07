@@ -436,6 +436,97 @@ ces offres renforceront la fidélisation des clients cibles.
         
     `
     },
+    5: {
+        title: "Fiches Complémentaires",
+        moduleTitle: "Module 12 : Éviter les erreurs courantes en marketing",
+        type: "pdf",
+        content: `
+            <p>Voici les documents complémentaires pour vous aider à éviter les erreurs courantes en marketing.</p>
+            
+            <div class="pdf-grid">
+                <div class="pdf-card">
+                    <div class="pdf-preview">⚠️</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Guide des Erreurs à Éviter</h3>
+                        <p class="pdf-description">Liste complète des erreurs courantes en marketing</p>
+                        <a href="assets/pdfs/guide-erreurs-marketing.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📋</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Checklist Marketing</h3>
+                        <p class="pdf-description">Liste de vérification avant chaque campagne</p>
+                        <a href="assets/pdfs/checklist-marketing.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📊</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">KPIs Marketing</h3>
+                        <p class="pdf-description">Indicateurs clés pour mesurer vos performances</p>
+                        <a href="assets/pdfs/kpis-marketing.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🎯</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Segmentation Client</h3>
+                        <p class="pdf-description">Guide pour bien segmenter votre audience</p>
+                        <a href="assets/pdfs/segmentation-client-marketing.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📱</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Marketing Digital</h3>
+                        <p class="pdf-description">Bonnes pratiques pour le marketing en ligne</p>
+                        <a href="assets/pdfs/marketing-digital.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📈</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Stratégies de Test</h3>
+                        <p class="pdf-description">Méthodes pour tester vos campagnes marketing</p>
+                        <a href="assets/pdfs/strategies-test-marketing.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🔄</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Optimisation Continue</h3>
+                        <p class="pdf-description">Guide pour améliorer vos campagnes</p>
+                        <a href="assets/pdfs/optimisation-continue.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📚</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Lexique Marketing</h3>
+                        <p class="pdf-description">Définitions des termes marketing essentiels</p>
+                        <a href="assets/pdfs/lexique-marketing.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="background: #e2e3e5; padding: 20px; border-radius: 8px; margin: 30px 0;">
+                <h3>📚 Ressources supplémentaires</h3>
+                <ul>
+                    <li><strong>Outils :</strong> Google Analytics, Facebook Ads Manager</li>
+                    <li><strong>Livres :</strong> "Marketing 4.0" de Philip Kotler</li>
+                    <li><strong>Formation :</strong> Cours en ligne sur le marketing digital</li>
+                </ul>
+            </div>
+        `
+    }
 };
 
 // Export pour utilisation dans d'autres fichiers

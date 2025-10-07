@@ -753,6 +753,97 @@ window.module5Content = {
 
             </div>    `
     },
+    5: {
+        title: "Fiches Complémentaires",
+        moduleTitle: "Module 5 : Comprendre les différents régimes fiscaux",
+        type: "pdf",
+        content: `
+            <p>Voici les documents complémentaires pour approfondir votre compréhension des régimes fiscaux et optimiser vos choix fiscaux.</p>
+            
+            <div class="pdf-grid">
+                <div class="pdf-card">
+                    <div class="pdf-preview">📊</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Guide des Régimes Fiscaux</h3>
+                        <p class="pdf-description">Comparatif détaillé des différents régimes fiscaux et leurs implications</p>
+                        <a href="assets/pdfs/guide-regimes-fiscaux.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">💰</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Simulateur Fiscal</h3>
+                        <p class="pdf-description">Outil de calcul pour comparer les différents régimes</p>
+                        <a href="assets/pdfs/simulateur-fiscal.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📋</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Checklist Choix Régime</h3>
+                        <p class="pdf-description">Liste de vérification pour choisir votre régime fiscal</p>
+                        <a href="assets/pdfs/checklist-choix-regime.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">⚖️</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Obligations Déclaratives</h3>
+                        <p class="pdf-description">Calendrier et procédures des déclarations fiscales</p>
+                        <a href="assets/pdfs/obligations-declaratives.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🔄</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Transition entre Régimes</h3>
+                        <p class="pdf-description">Guide pour changer de régime fiscal en cours d'exercice</p>
+                        <a href="assets/pdfs/transition-regimes.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📈</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Optimisation Fiscale</h3>
+                        <p class="pdf-description">Stratégies légales pour optimiser votre fiscalité</p>
+                        <a href="assets/pdfs/optimisation-fiscale.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🎯</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Tableau Comparatif</h3>
+                        <p class="pdf-description">Grille de comparaison des avantages et inconvénients</p>
+                        <a href="assets/pdfs/tableau-comparatif-regimes.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📚</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Lexique Fiscal</h3>
+                        <p class="pdf-description">Définitions des termes techniques de la fiscalité</p>
+                        <a href="assets/pdfs/lexique-fiscal.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="background: #e2e3e5; padding: 20px; border-radius: 8px; margin: 30px 0;">
+                <h3>📚 Ressources supplémentaires</h3>
+                <ul>
+                    <li><strong>Site officiel :</strong> impots.gouv.fr pour les dernières actualités fiscales</li>
+                    <li><strong>Outils en ligne :</strong> Simulateurs officiels de l'administration fiscale</li>
+                    <li><strong>Professionnels :</strong> Expert-comptable pour un conseil personnalisé</li>
+                </ul>
+            </div>
+        `
+    }
 };
 
 // Export pour utilisation dans d'autres fichiers
