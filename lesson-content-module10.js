@@ -548,6 +548,97 @@ window.module10Content = {
         
     `
     },
+    6: {
+        title: "Fiches Complémentaires",
+        moduleTitle: "Module 10 : Développer une proposition de valeur unique",
+        type: "pdf",
+        content: `
+            <p>Voici les documents complémentaires pour vous aider à développer et affiner votre proposition de valeur.</p>
+            
+            <div class="pdf-grid">
+                <div class="pdf-card">
+                    <div class="pdf-preview">🎯</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Template Value Proposition Canvas</h3>
+                        <p class="pdf-description">Modèle vierge pour créer votre proposition de valeur</p>
+                        <a href="assets/pdfs/template-value-proposition-canvas.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📊</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Guide d'Analyse Client</h3>
+                        <p class="pdf-description">Méthodologie pour analyser vos clients cibles</p>
+                        <a href="assets/pdfs/guide-analyse-client.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">💡</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Techniques de Créativité</h3>
+                        <p class="pdf-description">Méthodes pour générer des idées innovantes</p>
+                        <a href="assets/pdfs/techniques-creativite.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🔍</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Études de Cas</h3>
+                        <p class="pdf-description">Exemples de propositions de valeur réussies</p>
+                        <a href="assets/pdfs/etudes-cas-proposition-valeur.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📋</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Checklist Validation</h3>
+                        <p class="pdf-description">Liste de vérification pour valider votre proposition</p>
+                        <a href="assets/pdfs/checklist-validation-proposition.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🎨</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Outils de Design</h3>
+                        <p class="pdf-description">Ressources pour visualiser votre proposition</p>
+                        <a href="assets/pdfs/outils-design-proposition.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📈</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Mesure de Performance</h3>
+                        <p class="pdf-description">KPIs pour évaluer votre proposition de valeur</p>
+                        <a href="assets/pdfs/mesure-performance-proposition.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🔄</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Processus d'Itération</h3>
+                        <p class="pdf-description">Guide pour améliorer continuellement votre proposition</p>
+                        <a href="assets/pdfs/processus-iteration.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="background: #e2e3e5; padding: 20px; border-radius: 8px; margin: 30px 0;">
+                <h3>📚 Ressources supplémentaires</h3>
+                <ul>
+                    <li><strong>Outils en ligne :</strong> Strategyzer.com pour les templates officiels</li>
+                    <li><strong>Livres :</strong> "Value Proposition Design" d'Alex Osterwalder</li>
+                    <li><strong>Formation :</strong> Cours en ligne sur la proposition de valeur</li>
+                </ul>
+            </div>
+        `
+    }
 };
 
 // Export pour utilisation dans d'autres fichiers

@@ -427,6 +427,97 @@ window.module11Content = {
         </div>
             `
     },
+    5: {
+        title: "Fiches Complémentaires",
+        moduleTitle: "Module 11 : Définir une stratégie tarifaire efficace",
+        type: "pdf",
+        content: `
+            <p>Voici les documents complémentaires pour vous aider à définir et optimiser votre stratégie tarifaire.</p>
+            
+            <div class="pdf-grid">
+                <div class="pdf-card">
+                    <div class="pdf-preview">💰</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Guide Stratégie Tarifaire</h3>
+                        <p class="pdf-description">Méthodologie complète pour définir vos prix</p>
+                        <a href="assets/pdfs/guide-strategie-tarifaire.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📊</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Calcul Seuil de Rentabilité</h3>
+                        <p class="pdf-description">Outil de calcul pour déterminer votre point mort</p>
+                        <a href="assets/pdfs/calcul-seuil-rentabilite.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🔍</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Analyse Concurrentielle</h3>
+                        <p class="pdf-description">Template pour analyser les prix de la concurrence</p>
+                        <a href="assets/pdfs/analyse-concurrentielle-prix.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📈</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Modèles de Pricing</h3>
+                        <p class="pdf-description">Différentes stratégies de tarification</p>
+                        <a href="assets/pdfs/modeles-pricing.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🎯</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Psychologie des Prix</h3>
+                        <p class="pdf-description">Comment les prix influencent la perception client</p>
+                        <a href="assets/pdfs/psychologie-prix.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📋</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Checklist Tarification</h3>
+                        <p class="pdf-description">Liste de vérification pour valider vos prix</p>
+                        <a href="assets/pdfs/checklist-tarification.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🔄</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Ajustement des Prix</h3>
+                        <p class="pdf-description">Guide pour ajuster vos prix selon le marché</p>
+                        <a href="assets/pdfs/ajustement-prix.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📚</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Lexique Tarifaire</h3>
+                        <p class="pdf-description">Définitions des termes de la tarification</p>
+                        <a href="assets/pdfs/lexique-tarifaire.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="background: #e2e3e5; padding: 20px; border-radius: 8px; margin: 30px 0;">
+                <h3>📚 Ressources supplémentaires</h3>
+                <ul>
+                    <li><strong>Outils :</strong> Calculateurs de prix en ligne</li>
+                    <li><strong>Livres :</strong> "Pricing Strategy" de Tim Smith</li>
+                    <li><strong>Formation :</strong> Cours sur la stratégie tarifaire</li>
+                </ul>
+            </div>
+        `
+    }
 };
 
 // Export pour utilisation dans d'autres fichiers

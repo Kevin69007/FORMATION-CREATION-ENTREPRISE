@@ -323,6 +323,97 @@ incluant des processus améliorés et des tâches clés.
 
     `
     },
+    5: {
+        title: "Fiches Complémentaires",
+        moduleTitle: "Module 9 : Maîtriser le calendrier des déclarations et des télédéclarations",
+        type: "pdf",
+        content: `
+            <p>Voici les documents complémentaires pour vous accompagner dans vos déclarations et télédéclarations.</p>
+            
+            <div class="pdf-grid">
+                <div class="pdf-card">
+                    <div class="pdf-preview">📅</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Calendrier Fiscal Complet</h3>
+                        <p class="pdf-description">Planning détaillé de toutes les échéances fiscales</p>
+                        <a href="assets/pdfs/calendrier-fiscal-complet.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">💻</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Guide Télédéclaration</h3>
+                        <p class="pdf-description">Tutoriel pas à pas pour les télédéclarations</p>
+                        <a href="assets/pdfs/guide-teledeclaration.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📋</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Checklist Déclarations</h3>
+                        <p class="pdf-description">Liste de vérification avant chaque déclaration</p>
+                        <a href="assets/pdfs/checklist-declarations.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📊</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Modèles de Déclarations</h3>
+                        <p class="pdf-description">Templates pour les principales déclarations</p>
+                        <a href="assets/pdfs/modeles-declarations.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">⚠️</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Sanctions et Pénalités</h3>
+                        <p class="pdf-description">Guide des sanctions en cas de retard ou d'erreur</p>
+                        <a href="assets/pdfs/sanctions-penalites.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🛠️</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Outils de Gestion</h3>
+                        <p class="pdf-description">Logiciels et applications pour gérer vos déclarations</p>
+                        <a href="assets/pdfs/outils-gestion-declarations.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📞</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Contacts Utiles</h3>
+                        <p class="pdf-description">Numéros et contacts des services fiscaux</p>
+                        <a href="assets/pdfs/contacts-services-fiscaux.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📚</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Lexique Fiscal</h3>
+                        <p class="pdf-description">Définitions des termes techniques de la fiscalité</p>
+                        <a href="assets/pdfs/lexique-fiscal-declarations.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="background: #e2e3e5; padding: 20px; border-radius: 8px; margin: 30px 0;">
+                <h3>📚 Ressources supplémentaires</h3>
+                <ul>
+                    <li><strong>Site officiel :</strong> impots.gouv.fr pour les télédéclarations</li>
+                    <li><strong>Outils :</strong> Mon-entreprise.fr pour la gestion simplifiée</li>
+                    <li><strong>Professionnels :</strong> Expert-comptable pour l'accompagnement</li>
+                </ul>
+            </div>
+        `
+    }
 };
 
 // Export pour utilisation dans d'autres fichiers

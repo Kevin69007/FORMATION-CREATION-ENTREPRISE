@@ -416,6 +416,97 @@ quantitatives et qualitatives pour étayer vos conclusions.</li>
             </div>
 
             `
+    },
+    5: {
+        title: "Fiches Complémentaires",
+        moduleTitle: "Module 8 : Comprendre les avantages de la reprise d'entreprise",
+        type: "pdf",
+        content: `
+            <p>Voici les documents complémentaires pour vous accompagner dans votre réflexion sur la reprise d'entreprise.</p>
+            
+            <div class="pdf-grid">
+                <div class="pdf-card">
+                    <div class="pdf-preview">🔍</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Guide d'Évaluation d'Entreprise</h3>
+                        <p class="pdf-description">Méthodologie pour évaluer une entreprise à reprendre</p>
+                        <a href="assets/pdfs/guide-evaluation-entreprise.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📊</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Checklist Due Diligence</h3>
+                        <p class="pdf-description">Liste de vérification complète avant reprise</p>
+                        <a href="assets/pdfs/checklist-due-diligence.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">💰</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Financement de Reprise</h3>
+                        <p class="pdf-description">Guide des solutions de financement pour la reprise</p>
+                        <a href="assets/pdfs/financement-reprise.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">⚖️</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Aspects Juridiques</h3>
+                        <p class="pdf-description">Contrats et obligations légales de la reprise</p>
+                        <a href="assets/pdfs/aspects-juridiques-reprise.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">👥</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Gestion des Ressources Humaines</h3>
+                        <p class="pdf-description">Enjeux RH lors de la reprise d'entreprise</p>
+                        <a href="assets/pdfs/rh-reprise-entreprise.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📈</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Plan de Transition</h3>
+                        <p class="pdf-description">Template pour planifier la transition post-reprise</p>
+                        <a href="assets/pdfs/plan-transition.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🎯</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Études de Cas</h3>
+                        <p class="pdf-description">Exemples concrets de reprises réussies</p>
+                        <a href="assets/pdfs/etudes-cas-reprise.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📞</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Réseaux et Contacts</h3>
+                        <p class="pdf-description">Organismes spécialisés dans la reprise d'entreprise</p>
+                        <a href="assets/pdfs/reseaux-reprise.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="background: #e2e3e5; padding: 20px; border-radius: 8px; margin: 30px 0;">
+                <h3>📚 Ressources supplémentaires</h3>
+                <ul>
+                    <li><strong>Plateformes :</strong> CessionPME, Transentreprise pour trouver des entreprises</li>
+                    <li><strong>Organismes :</strong> CCI, CMA, BPI France pour l'accompagnement</li>
+                    <li><strong>Professionnels :</strong> Avocat, expert-comptable, conseil en transmission</li>
+                </ul>
+            </div>
+        `
     }
 };
 

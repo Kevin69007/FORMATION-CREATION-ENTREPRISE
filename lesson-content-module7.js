@@ -381,6 +381,97 @@ fiscales, sociales et comptables.
                 </div>
 
             `
+    },
+    5: {
+        title: "Fiches Complémentaires",
+        moduleTitle: "Module 7 : Connaître les obligations légales et administratives",
+        type: "pdf",
+        content: `
+            <p>Voici les documents complémentaires pour vous accompagner dans vos démarches administratives et légales.</p>
+            
+            <div class="pdf-grid">
+                <div class="pdf-card">
+                    <div class="pdf-preview">📋</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Checklist Immatriculation</h3>
+                        <p class="pdf-description">Liste de vérification complète pour l'immatriculation</p>
+                        <a href="assets/pdfs/checklist-immatriculation.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📅</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Calendrier des Obligations</h3>
+                        <p class="pdf-description">Planning annuel des déclarations et échéances</p>
+                        <a href="assets/pdfs/calendrier-obligations.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">⚖️</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Guide Légal</h3>
+                        <p class="pdf-description">Récapitulatif des obligations légales par type d'entreprise</p>
+                        <a href="assets/pdfs/guide-legal.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📊</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Modèles de Documents</h3>
+                        <p class="pdf-description">Templates pour les déclarations et registres obligatoires</p>
+                        <a href="assets/pdfs/modeles-documents.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🔍</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Contrôles et Sanctions</h3>
+                        <p class="pdf-description">Guide sur les contrôles administratifs et les sanctions</p>
+                        <a href="assets/pdfs/controles-sanctions.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🛠️</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Outils de Gestion</h3>
+                        <p class="pdf-description">Logiciels et applications pour gérer vos obligations</p>
+                        <a href="assets/pdfs/outils-gestion.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📞</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Contacts Utiles</h3>
+                        <p class="pdf-description">Liste des organismes et contacts pour vos démarches</p>
+                        <a href="assets/pdfs/contacts-utiles.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📚</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Lexique Administratif</h3>
+                        <p class="pdf-description">Définitions des termes administratifs et légaux</p>
+                        <a href="assets/pdfs/lexique-administratif.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="background: #e2e3e5; padding: 20px; border-radius: 8px; margin: 30px 0;">
+                <h3>📚 Ressources supplémentaires</h3>
+                <ul>
+                    <li><strong>Site officiel :</strong> service-public.fr pour les démarches en ligne</li>
+                    <li><strong>Outils :</strong> Mon-entreprise.fr pour la gestion simplifiée</li>
+                    <li><strong>Professionnels :</strong> CCI, CMA, expert-comptable pour l'accompagnement</li>
+                </ul>
+            </div>
+        `
     }
 };
 

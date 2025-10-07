@@ -216,22 +216,14 @@
         function previousLesson() {
             const prevLesson = getPreviousLesson(currentModule, currentLesson);
             if (prevLesson) {
-                if (prevLesson.isPDF) {
-                    window.location.href = `pdf-downloads.html?module=${prevLesson.module}&lesson=${prevLesson.lesson}`;
-                } else {
-                    window.location.href = `lesson.html?module=${prevLesson.module}&lesson=${prevLesson.lesson}`;
-                }
+                window.location.href = `lesson.html?module=${prevLesson.module}&lesson=${prevLesson.lesson}`;
             }
         }
         
         function nextLesson() {
             const nextLesson = getNextLesson(currentModule, currentLesson);
             if (nextLesson) {
-                if (nextLesson.isPDF) {
-                    window.location.href = `pdf-downloads.html?module=${nextLesson.module}&lesson=${nextLesson.lesson}`;
-                } else {
-                    window.location.href = `lesson.html?module=${nextLesson.module}&lesson=${nextLesson.lesson}`;
-                }
+                window.location.href = `lesson.html?module=${nextLesson.module}&lesson=${nextLesson.lesson}`;
             }
         }
         

@@ -126,6 +126,97 @@ window.module13Content = {
         <p>Félicitations ! Vous avez terminé tous les modules de cette formation. Vous disposez maintenant de toutes les connaissances nécessaires pour réussir votre projet entrepreneurial. Bonne chance !</p>
     `
     },
+    5: {
+        title: "Fiches Complémentaires",
+        moduleTitle: "Module 13 : Analyser des études de cas d'entrepreneurs",
+        type: "pdf",
+        content: `
+            <p>Voici les documents complémentaires pour approfondir votre analyse des études de cas d'entrepreneurs.</p>
+            
+            <div class="pdf-grid">
+                <div class="pdf-card">
+                    <div class="pdf-preview">📊</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Méthodologie d'Analyse</h3>
+                        <p class="pdf-description">Guide pour analyser efficacement les études de cas</p>
+                        <a href="assets/pdfs/methodologie-analyse-cas.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🎯</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Template d'Analyse</h3>
+                        <p class="pdf-description">Modèle structuré pour analyser les cas d'entrepreneurs</p>
+                        <a href="assets/pdfs/template-analyse-cas.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📈</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Facteurs de Succès</h3>
+                        <p class="pdf-description">Analyse des éléments clés du succès entrepreneurial</p>
+                        <a href="assets/pdfs/facteurs-succes-entrepreneurial.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">⚠️</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Pièges à Éviter</h3>
+                        <p class="pdf-description">Erreurs courantes identifiées dans les études de cas</p>
+                        <a href="assets/pdfs/pieges-eviter-entrepreneuriat.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🔍</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Questions d'Analyse</h3>
+                        <p class="pdf-description">Liste de questions pour approfondir votre analyse</p>
+                        <a href="assets/pdfs/questions-analyse-cas.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📚</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Bibliographie</h3>
+                        <p class="pdf-description">Ressources pour approfondir vos connaissances</p>
+                        <a href="assets/pdfs/bibliographie-entrepreneuriat.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🎨</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Outils de Visualisation</h3>
+                        <p class="pdf-description">Ressources pour présenter vos analyses</p>
+                        <a href="assets/pdfs/outils-visualisation-cas.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🚀</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Plan d'Action</h3>
+                        <p class="pdf-description">Template pour créer votre plan d'action personnel</p>
+                        <a href="assets/pdfs/plan-action-personnel.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="background: #e2e3e5; padding: 20px; border-radius: 8px; margin: 30px 0;">
+                <h3>📚 Ressources supplémentaires</h3>
+                <ul>
+                    <li><strong>Livres :</strong> "The Lean Startup" d'Eric Ries, "Zero to One" de Peter Thiel</li>
+                    <li><strong>Podcasts :</strong> "How I Built This" de NPR, "Masters of Scale"</li>
+                    <li><strong>Formation :</strong> Cours en ligne sur l'entrepreneuriat</li>
+                </ul>
+            </div>
+        `
+    }
 };
 
 // Export pour utilisation dans d'autres fichiers

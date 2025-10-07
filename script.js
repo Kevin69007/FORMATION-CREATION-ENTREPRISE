@@ -205,9 +205,7 @@ function generateNavigation() {
             const isCompleted = progress[lessonKey] && progress[lessonKey].completed;
             const isCurrentLesson = isCurrentLessonActive(module.id, lesson.id);
             
-            const lessonUrl = lesson.type === 'pdf' ? 
-                `pdf-downloads.html?module=${module.id}&lesson=${lesson.id}` :
-                `lesson.html?module=${module.id}&lesson=${lesson.id}`;
+            const lessonUrl = `lesson.html?module=${module.id}&lesson=${lesson.id}`;
             
             navigationHTML += `
                 <a href="${lessonUrl}" class="nav-item ${isCurrentLesson ? 'active' : ''} ${isCompleted ? 'completed' : ''}">
