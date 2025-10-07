@@ -101,7 +101,11 @@ window.module4Content = {
             <h2>👤⭐ Entreprise Individuelle (EI)</h2>
             
             <p>L'entreprise individuelle (EI) est l'une des formes les plus simples pour démarrer une affaire. Voici ses caractéristiques principales :</p>
-            
+            <ul>
+    <li>📝 Création et gestion simplifiées : Peu de formalités administratives.
+    <li>⚖️ Responsabilité illimitée : Le propriétaire est responsable des dettes sur ses biens personnels.
+    <li>💵 Fiscalité : Le revenu de l'entreprise est imposé au nom de l'entrepreneur.
+            </ul>
             <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;">
                 <h4>📝 Exemple concret</h4>
                 <p>Marie a ouvert une petite boutique de fleurs en tant qu'EI. Elle gère facilement ses affaires car les démarches administratives sont simples. Toutefois, si son entreprise rencontre des difficultés financières, son patrimoine personnel peut être mis en jeu.</p>
@@ -110,7 +114,11 @@ window.module4Content = {
             <h2>👥🔗 Société en Nom Collectif (SNC)</h2>
             
             <p>La société en nom collectif (SNC) est une forme de partenariat où tous les associés sont solidairement responsables des dettes de l'entreprise.</p>
-            
+            <ul>
+    <li>👫 Nombre d’associés : Minimum deux associés.
+    <li>🎯 Responsabilité solidaire et illimitée : Chaque associé est responsable des dettes sur ses biens personnels.
+    <li>📘 Fiscalité : Les bénéfices sont répartis et imposés au nom des associés.
+            </ul>
             <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;">
                 <h4>📝 Exemple concret</h4>
                 <p>Luc et Paul décident de lancer une agence de marketing. En optant pour une SNC, ils partagent les responsabilités et les profits. Cependant, ils savent qu'ils devront répondre solidairement des dettes de l'entreprise, ce qui les incite à une gestion prudente.</p>
@@ -119,7 +127,12 @@ window.module4Content = {
             <h2>🛡️⛑️ Société à Responsabilité Limitée (SARL)</h2>
             
             <p>La société à responsabilité limitée (SARL) combine une certaine simplicité de gestion avec une protection limitée des associés contre les dettes de l'entreprise.</p>
-            
+            <ul>
+    <li>👥 Associés : Minimum un (EURL) ou plusieurs associés.
+    <li>🛡️ Responsabilité limitée : Les associés ne perdent que leur apport initial en cas de difficulté financière.
+    <li>📚 Formalités : Les formalités de création sont plus complexes qu’une EI mais offrent une protection accrue.
+    <li>💼 Gestion : Peut être gérée par un ou plusieurs gérants.
+            </ul>
             <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;">
                 <h4>📝 Exemple concret</h4>
                 <p>Sophie lance une start-up de développement web en choisissant la forme SARL. Grâce à cette structure, elle protège son patrimoine personnel tout en attirant plus d'investisseurs potentiels qui apprécient la responsabilité limitée.</p>
@@ -128,7 +141,13 @@ window.module4Content = {
             <h2>🏢💼 Société Anonyme (SA)</h2>
             
             <p>La société anonyme (SA) est généralement utilisée pour les grandes entreprises nécessitant des capitaux importants.</p>
-            
+            <ul>
+    <li>💰 Capital social minimum : Généralement élevé (37 000 € en France).
+    <li>👥 Associés : Minimum sept actionnaires.
+    <li>🛡️ Responsabilité limitée : Les actionnaires ne sont responsables que jusqu’à concurrence de leurs apports.
+    <li>🎯 Gouvernance : Structure de gestion complexe avec un conseil d'administration.
+    <li>📊 Cotation en bourse : Possibilité de lever des fonds en étant cotée.
+            </ul>
             <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;">
                 <h4>📝 Exemple concret</h4>
                 <p>LVMH, géant de l'industrie du luxe, est structuré en SA. Cette forme permet d'attirer des investisseurs majeurs par l'intermédiaire de la bourse, tout en offrant une structure de gouvernance rigoureuse.</p>
@@ -137,7 +156,13 @@ window.module4Content = {
             <h2>🔍🔑 Facteurs déterminants de choix</h2>
             
             <p>Il existe plusieurs facteurs à prendre en compte pour choisir la forme juridique de votre entreprise :</p>
-            
+            <ul>
+    <li>🌍 Taille et nature de l'activité
+    <li>📈 Perspectives de croissance
+    <li>👫 Nombre d'associés et répartition des rôles
+    <li>⚖️ Exposition aux risques et responsabilités
+    <li>💰 Besoin en capitaux et levée de fonds
+            </ul>
             <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;">
                 <h4>📝 Exemple concret</h4>
                 <p>Par exemple, une entreprise de conseil individuel peut préférer l'EI pour la simplicité alors qu'une start-up en technologie pourrait opter pour une SARL pour attirer des investissements.</p>
@@ -294,11 +319,26 @@ window.module4Content = {
             </div>
             
             <p>Cela dit, la première étape dans le choix de la structure juridique appropriée consiste à analyser les 🛠️ besoins de l'entreprise. Voici quelques éléments à considérer :</p>
-            
+            <ul>
+
+    <li><strong>📈 Les Objectifs à Long Terme:</strong> Où voyez-vous votre entreprise dans cinq ou dix ans? Une entreprise avec des ambitions de croissance rapide pourrait bénéficier d'une structure telle qu'une SA (Société Anonyme), qui permet des levées de fonds importantes à travers des actions.
+
+
+    <li><strong>💰 Ressources Financières:</strong> Le coût initial et les implications fiscales varient selon la structure. Par exemple, une EI (Entreprise Individuelle) a des frais initiaux plus bas mais une responsabilité illimitée.
+
+
+    <li><strong>👥 Structure de Gouvernance:</strong> Envisagez-vous de travailler seul ou avec des partenaires? Une SARL (Société à Responsabilité Limitée) ou une SAS (Société par Actions Simplifiée) peut offrir plus de flexibilité pour la gestion partagée.
+            </ul>
+
             <h2>⚖️ Évaluation des Risques</h2>
             
             <p>La risque est un facteur incontournable. Prenons l'exemple d'une entreprise de construction. Les risques y sont élevés, ce qui rend une structure limitant la responsabilité des propriétaires plus appropriée. Voici comment différentes structures gèrent le risque :</p>
-            
+            <ul>
+
+    <li><strong>🔒 Responsabilité Limitée:</strong> Les SARL et SAS sont idéales pour limiter la responsabilité personnelle des actionnaires.
+    <li><strong>🔓 Responsabilité Illimitée:</strong> Dans une EI, le propriétaire est personnellement responsable de toutes les dettes de l'entreprise, ce qui peut être risqué.
+            </ul>
+
             <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;">
                 <h4>📝 Exemples de gestion des risques</h4>
                 <ul>
