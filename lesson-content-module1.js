@@ -496,11 +496,74 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
             
             <div class="pdf-grid">
                 <div class="pdf-card">
+                    <div class="pdf-preview">🚀</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Comment lancer son projet d'entreprise sans se louper</h3>
+                        <p class="pdf-description">Guide pratique pour bien démarrer votre projet entrepreneurial avec les étapes essentielles et les pièges à éviter</p>
+                        <a href="assets/pdfs/05_PDF_Commentlancersonprojetdentreprisesansselouper.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">⚠️</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Les Causes d'échec dans la création d'entreprise</h3>
+                        <p class="pdf-description">Analyse des principales causes d'échec entrepreneurial pour mieux anticiper et éviter les erreurs courantes</p>
+                        <a href="assets/pdfs/05_PDF_LesCausedechecdanslacreationdentreprise.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🏗️</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Les Étapes de la Création d'Entreprise - Structure et Création</h3>
+                        <p class="pdf-description">Guide complet sur les aspects juridiques et structurels de la création d'entreprise</p>
+                        <a href="assets/pdfs/05_PDF_Lesetapesdelacreationdentreprise-StructureetCreation.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📈</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Les Étapes de la Création d'Entreprise - Le Marché</h3>
+                        <p class="pdf-description">Analyse approfondie du marché et des stratégies commerciales pour votre entreprise</p>
+                        <a href="assets/pdfs/06_PDF_Lesetapesdelacreationdentreprise-Lemarche.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">💡</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Les Étapes de la Création d'Entreprise - L'Idée</h3>
+                        <p class="pdf-description">Méthodes pour développer, valider et affiner votre idée d'entreprise</p>
+                        <a href="assets/pdfs/07_PDF_Lesetapesdelacreationdentreprise-Lidee.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">💰</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Les Étapes de la Création d'Entreprise - Chiffres et Financements</h3>
+                        <p class="pdf-description">Guide complet sur la gestion financière et les sources de financement</p>
+                        <a href="assets/pdfs/07_PDF_Lesetapesdelacreationdentreprise-ChiffresetFinancements.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📋</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">La Création d'Entreprise en 6 Étapes</h3>
+                        <p class="pdf-description">Méthode structurée en 6 étapes pour créer votre entreprise de A à Z</p>
+                        <a href="assets/pdfs/07_PDF_Lacreationdentrepriseen6etapes.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
                     <div class="pdf-preview">📋</div>
                     <div class="pdf-info">
                         <h3 class="pdf-title">Guide des Compétences Entrepreneuriales</h3>
                         <p class="pdf-description">Un guide détaillé des compétences essentielles pour réussir en entrepreneuriat</p>
-                        <button class="download-button" onclick="downloadPDF('guide-competences.pdf')">Télécharger</button>
+                        <a href="assets/pdfs/guide-competences.pdf" download class="download-button">Télécharger</a>
                     </div>
                 </div>
                 
@@ -509,7 +572,7 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
                     <div class="pdf-info">
                         <h3 class="pdf-title">Template Objectifs SMART</h3>
                         <p class="pdf-description">Modèle pour définir vos objectifs selon la méthode SMART</p>
-                        <button class="download-button" onclick="downloadPDF('template-smart.pdf')">Télécharger</button>
+                        <a href="assets/pdfs/template-smart.pdf" download class="download-button">Télécharger</a>
                     </div>
                 </div>
                 
@@ -518,7 +581,7 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
                     <div class="pdf-info">
                         <h3 class="pdf-title">Auto-évaluation des Compétences</h3>
                         <p class="pdf-description">Questionnaire pour évaluer vos compétences actuelles</p>
-                        <button class="download-button" onclick="downloadPDF('auto-evaluation.pdf')">Télécharger</button>
+                        <a href="assets/pdfs/auto-evaluation.pdf" download class="download-button">Télécharger</a>
                     </div>
                 </div>
             </div>
