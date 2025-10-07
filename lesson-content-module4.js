@@ -413,7 +413,7 @@ window.module4Content = {
                     <div class="pdf-info">
                         <h3 class="pdf-title">Les étapes de la création d'entreprise - Structure et Création</h3>
                         <p class="pdf-description">Guide complet sur les structures juridiques et leur création</p>
-                        <button class="download-button" onclick="downloadPDF('05_PDF_Lesetapesdelacreationdentreprise-StructureetCreation.pdf')">Télécharger</button>
+                        <button class="download-button" onclick="downloadPDF('04-05_Lesetapesdelacreationdentreprise-StructureetCreation.pdf')">Télécharger</button>
                     </div>
                 </div>
                 

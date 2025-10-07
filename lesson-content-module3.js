@@ -577,7 +577,7 @@ window.module3Content = {
                     <div class="pdf-info">
                         <h3 class="pdf-title">Plan Financier</h3>
                         <p class="pdf-description">Template pour créer votre plan financier détaillé</p>
-                        <button class="download-button" onclick="downloadPDF('06_PDF_PLANFINANCIER.pdf')">Télécharger</button>
+                        <button class="download-button" onclick="downloadPDF('03-06_planfinancierA2TA2L.pdf')">Télécharger</button>
                     </div>
                 </div>
                 
@@ -586,7 +586,7 @@ window.module3Content = {
                     <div class="pdf-info">
                         <h3 class="pdf-title">Lean Canvas</h3>
                         <p class="pdf-description">Modèle Lean Canvas pour structurer votre projet</p>
-                        <button class="download-button" onclick="downloadPDF('06_PDF_LEANCANVAS.pdf')">Télécharger</button>
+                        <button class="download-button" onclick="downloadPDF('03-06_leancanvasA2TA2L.pdf')">Télécharger</button>
                     </div>
                 </div>
                 
@@ -595,7 +595,7 @@ window.module3Content = {
                     <div class="pdf-info">
                         <h3 class="pdf-title">Value Proposition Canvas</h3>
                         <p class="pdf-description">Outil pour définir votre proposition de valeur</p>
-                        <button class="download-button" onclick="downloadPDF('02_PDF_ValuePropositionCanvasA2TA2L.pdf')">Télécharger</button>
+                        <button class="download-button" onclick="downloadPDF('10-05_ValuePropositionCanvasA2TA2L.pdf')">Télécharger</button>
                     </div>
                 </div>
                 
@@ -604,7 +604,7 @@ window.module3Content = {
                     <div class="pdf-info">
                         <h3 class="pdf-title">Business Plan - Les étapes essentielles</h3>
                         <p class="pdf-description">Guide pour rédiger un business plan efficace</p>
-                        <button class="download-button" onclick="downloadPDF('07_PDF_Lesetapesessentiellespourredigerunbusinessplan.pdf')">Télécharger</button>
+                        <button class="download-button" onclick="downloadPDF('03-07_Lesetapesessentiellespourredigerunbusinessplan.pdf')">Télécharger</button>
                     </div>
                 </div>
                 
@@ -613,7 +613,7 @@ window.module3Content = {
                     <div class="pdf-info">
                         <h3 class="pdf-title">Les étapes de la création d'entreprise - L'idée</h3>
                         <p class="pdf-description">Guide pour développer et valider votre idée d'entreprise</p>
-                        <button class="download-button" onclick="downloadPDF('07_PDF_Lesetapesdelacreationdentreprise-Lidee.pdf')">Télécharger</button>
+                        <button class="download-button" onclick="downloadPDF('03-07_Lesetapesdelacreationdentreprise-Lidee.pdf')">Télécharger</button>
                     </div>
                 </div>
                 
@@ -622,7 +622,7 @@ window.module3Content = {
                     <div class="pdf-info">
                         <h3 class="pdf-title">Les étapes de la création d'entreprise - Chiffres et Financements</h3>
                         <p class="pdf-description">Guide complet sur les aspects financiers</p>
-                        <button class="download-button" onclick="downloadPDF('07_PDF_Lesetapesdelacreationdentreprise-ChiffresetFinancements.pdf')">Télécharger</button>
+                        <button class="download-button" onclick="downloadPDF('03-07_Lesetapesdelacreationdentreprise-ChiffresetFinancements.pdf')">Télécharger</button>
                     </div>
                 </div>
                 
@@ -631,7 +631,7 @@ window.module3Content = {
                     <div class="pdf-info">
                         <h3 class="pdf-title">La création d'entreprise en 6 étapes</h3>
                         <p class="pdf-description">Méthodologie complète en 6 étapes</p>
-                        <button class="download-button" onclick="downloadPDF('07_PDF_Lacreationdentrepriseen6etapes.pdf')">Télécharger</button>
+                        <button class="download-button" onclick="downloadPDF('03-07_Lacreationdentrepriseen6etapes.pdf')">Télécharger</button>
                     </div>
                 </div>
             </div>

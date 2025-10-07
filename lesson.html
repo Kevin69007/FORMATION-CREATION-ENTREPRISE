@@ -317,7 +317,7 @@
         function downloadPDF(filename) {
             // Créer le téléchargement de PDF
             const link = document.createElement('a');
-            link.href = `assets/pdf/${filename}`;
+            link.href = `assets/pdfs/${filename}`;
             link.download = filename;
             link.target = '_blank';
             document.body.appendChild(link);

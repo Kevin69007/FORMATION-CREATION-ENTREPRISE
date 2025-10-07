@@ -492,7 +492,7 @@ Identifier des indicateurs de performance clés pour suivre la croissance des ve
                     <div class="pdf-info">
                         <h3 class="pdf-title">Customer Journey Mapping A2TA2L</h3>
                         <p class="pdf-description">Guide complet pour créer votre carte de parcours client</p>
-                        <button class="download-button" onclick="downloadPDF('06_PDF_customerjourneymappingA2TA2L.pdf')">Télécharger</button>
+                        <button class="download-button" onclick="downloadPDF('02-05_customerjourneymappingA2TA2L.pdf')">Télécharger</button>
                     </div>
                 </div>
                 
@@ -501,7 +501,7 @@ Identifier des indicateurs de performance clés pour suivre la croissance des ve
                     <div class="pdf-info">
                         <h3 class="pdf-title">Les Étapes de la Création d'Entreprise - Le Marché</h3>
                         <p class="pdf-description">Guide détaillé sur l'analyse de marché pour les créateurs d'entreprise</p>
-                        <button class="download-button" onclick="downloadPDF('06_PDF_Lesetapesdelacreationdentreprise-Lemarche.pdf')">Télécharger</button>
+                        <button class="download-button" onclick="downloadPDF('02-06_Lesetapesdelacreationdentreprise-Lemarche.pdf')">Télécharger</button>
                     </div>
                 </div>
                 
