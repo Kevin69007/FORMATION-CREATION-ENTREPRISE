@@ -11,7 +11,7 @@
         <!-- Sidebar -->
         <div class="sidebar" id="sidebar">
             <div class="sidebar-header">
-                <div class="user-info">
+                <div class="user-info" onclick="goToProfile()" style="cursor: pointer;">
                     <div class="user-avatar" id="userAvatar">KJ</div>
                     <div class="user-details">
                         <h3 id="userName">Kevin JEAN</h3>
@@ -113,6 +113,10 @@
             localStorage.removeItem('username');
             localStorage.removeItem('loginTime');
             window.location.href = 'index.html';
+        }
+        
+        function goToProfile() {
+            window.location.href = 'profile.html';
         }
     </script>
 </body>

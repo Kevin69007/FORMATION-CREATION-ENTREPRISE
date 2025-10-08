@@ -162,6 +162,8 @@ $stats = getProgressStats($userData);
                 <thead>
                     <tr>
                         <th>Utilisateur</th>
+                        <th>Nom complet</th>
+                        <th>Email</th>
                         <th>Progression</th>
                         <th>Leçons terminées</th>
                         <th>Dernière activité</th>
@@ -177,9 +179,15 @@ $stats = getProgressStats($userData);
                         }));
                         $completionRate = $stats['completion_rates'][$username] ?? 0;
                         $lastActivity = $data['last_activity'] ?? 'Jamais';
+                        $firstName = $data['firstName'] ?? '';
+                        $lastName = $data['lastName'] ?? '';
+                        $email = $data['email'] ?? '';
+                        $fullName = trim($firstName . ' ' . $lastName);
                         ?>
                         <tr>
                             <td><?php echo htmlspecialchars($username); ?></td>
+                            <td><?php echo htmlspecialchars($fullName ?: 'Non renseigné'); ?></td>
+                            <td><?php echo htmlspecialchars($email ?: 'Non renseigné'); ?></td>
                             <td>
                                 <div class="progress-bar">
                                     <div class="progress-fill" style="width: <?php echo $completionRate; ?>%"></div>
@@ -216,7 +224,15 @@ $stats = getProgressStats($userData);
 
             document.getElementById('modalTitle').textContent = `Progression de ${username}`;
             
-            let content = `<p><strong>Dernière connexion:</strong> ${new Date(user.last_activity).toLocaleString()}</p>`;
+            let content = `<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">`;
+            content += `<div><strong>Prénom:</strong> ${user.firstName || 'Non renseigné'}</div>`;
+            content += `<div><strong>Nom:</strong> ${user.lastName || 'Non renseigné'}</div>`;
+            content += `<div><strong>Email:</strong> ${user.email || 'Non renseigné'}</div>`;
+            content += `<div><strong>Première connexion:</strong> ${user.first_login ? new Date(user.first_login).toLocaleDateString() : 'N/A'}</div>`;
+            content += `<div><strong>Dernière activité:</strong> ${user.last_activity ? new Date(user.last_activity).toLocaleString() : 'N/A'}</div>`;
+            content += `<div><strong>Nombre de sessions:</strong> ${user.session_count || 0}</div>`;
+            content += `</div>`;
+            
             content += `<h3>Progression par leçon:</h3>`;
             content += `<div class="lesson-grid">`;
 
@@ -246,28 +262,8 @@ $stats = getProgressStats($userData);
         }
 
         function exportData() {
-            // Créer et télécharger un fichier CSV
-            let csv = 'Utilisateur,Progression,Lecons_Terminees,Derniere_Activite\n';
-            
-            Object.keys(userData).forEach(username => {
-                const user = userData[username];
-                const progress = user.progress || {};
-                const completedCount = Object.values(progress).filter(lesson => lesson.completed).length;
-                const completionRate = Math.round((completedCount / 77) * 100);
-                const lastActivity = user.last_activity || 'Jamais';
-                
-                csv += `"${username}","${completionRate}%","${completedCount}/77","${lastActivity}"\n`;
-            });
-
-            const blob = new Blob([csv], { type: 'text/csv' });
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'formation_progress_' + new Date().toISOString().split('T')[0] + '.csv';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            window.URL.revokeObjectURL(url);
+            // Utiliser l'API backend pour l'export
+            window.open('api.php?action=export_csv', '_blank');
         }
 
         function getModuleLessons(moduleId) {

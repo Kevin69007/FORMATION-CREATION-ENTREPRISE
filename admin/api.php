@@ -120,7 +120,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $userData[$username] = [
                     'first_login' => $timestamp,
                     'progress' => [],
-                    'session_count' => 0
+                    'session_count' => 0,
+                    'firstName' => '',
+                    'lastName' => '',
+                    'email' => ''
                 ];
                 logActivity("New user registered: $username");
             }
@@ -136,6 +139,52 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'message' => 'Login recorded',
                 'user_data' => $userData[$username]
             ]);
+            break;
+            
+        case 'update_profile':
+            $username = $data['username'] ?? '';
+            $userData = $data['userData'] ?? [];
+            $timestamp = $data['timestamp'] ?? date('c');
+            
+            if (!$username) {
+                http_response_code(400);
+                echo json_encode(['error' => 'Username required']);
+                exit;
+            }
+            
+            $allUserData = loadUserData();
+            
+            if (!isset($allUserData[$username])) {
+                $allUserData[$username] = [
+                    'first_login' => $timestamp,
+                    'progress' => [],
+                    'session_count' => 0
+                ];
+            }
+            
+            // Mettre à jour les informations du profil
+            if (isset($userData['firstName'])) {
+                $allUserData[$username]['firstName'] = $userData['firstName'];
+            }
+            if (isset($userData['lastName'])) {
+                $allUserData[$username]['lastName'] = $userData['lastName'];
+            }
+            if (isset($userData['email'])) {
+                $allUserData[$username]['email'] = $userData['email'];
+            }
+            
+            $allUserData[$username]['last_activity'] = $timestamp;
+            
+            if (saveUserData($allUserData)) {
+                logActivity("Profile updated for user: $username");
+                echo json_encode([
+                    'success' => true,
+                    'message' => 'Profile updated successfully'
+                ]);
+            } else {
+                http_response_code(500);
+                echo json_encode(['error' => 'Failed to save profile data']);
+            }
             break;
             
         default:
@@ -203,11 +252,14 @@ elseif ($_SERVER['REQUEST_METHOD'] === 'GET') {
             header('Content-Disposition: attachment; filename="formation_progress_' . date('Y-m-d') . '.csv"');
             
             $output = fopen('php://output', 'w');
-            fputcsv($output, ['Utilisateur', 'Premiere_Connexion', 'Derniere_Activite', 'Sessions', 'Lecons_Terminees', 'Pourcentage_Completion']);
+            fputcsv($output, ['Utilisateur', 'Prenom', 'Nom', 'Email', 'Premiere_Connexion', 'Derniere_Activite', 'Sessions', 'Lecons_Terminees', 'Pourcentage_Completion']);
             
             foreach ($userData as $username => $data) {
                 fputcsv($output, [
                     $username,
+                    $data['firstName'] ?? '',
+                    $data['lastName'] ?? '',
+                    $data['email'] ?? '',
                     $data['first_login'] ?? '',
                     $data['last_activity'] ?? '',
                     $data['session_count'] ?? 0,
