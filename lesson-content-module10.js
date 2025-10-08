@@ -477,6 +477,15 @@ window.module10Content = {
         </div>
         <p>Le Value Proposition Canvas est un outil stratégique qui permet de comprendre et concevoir des propositions de valeur qui correspondent parfaitement aux besoins des clients. Il se compose de deux parties : le profil client et la carte de proposition de valeur.</p>
         
+                                              <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 12px; margin: 30px 0; color: white; text-align: center; box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);">
+                <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                    <div style="background: rgba(255,255,255,0.2); padding: 12px; border-radius: 50%; margin-right: 15px; font-size: 24px;">📋</div>
+                    <h3 style="margin: 0; font-size: 24px; font-weight: 600;">Value Proposition Canvas</h3>
+                </div>
+                <p style="margin: 10px 0 20px 0; font-size: 16px; opacity: 0.9;">Modèle pratique pour remplir votre Value Proposition Canvas</p>
+                <a href="assets/pdfs/10-05_ValuePropositionCanvasA2TA2L.pdf" download style="background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">📥 Télécharger le Template</a>
+            </div>
+
         <h3>2. Profil client - Jobs</h3>
         <p>Les jobs représentent les tâches que les clients essaient d'accomplir, les problèmes qu'ils tentent de résoudre ou les besoins qu'ils cherchent à satisfaire. Il existe trois types de jobs : fonctionnels, émotionnels et sociaux.</p>
         

@@ -441,6 +441,10 @@ ces offres renforceront la fidélisation des clients cibles.
         moduleTitle: "Module 12 : Éviter les erreurs courantes en marketing",
         type: "pdf",
         content: `
+                    <div style="text-align: center; margin: 30px 0;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/A2U5pHPwSR0" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+            </div>
+
             <p>Voici les documents complémentaires pour vous aider à éviter les erreurs courantes en marketing.</p>
             
             <div class="pdf-grid">
