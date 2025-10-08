@@ -418,47 +418,38 @@ window.module4Content = {
                 </div>
                 
                 <div class="pdf-card">
-                    <div class="pdf-preview">⚖️</div>
+                    <div class="pdf-preview">👤</div>
                     <div class="pdf-info">
-                        <h3 class="pdf-title">Guide des Structures Juridiques</h3>
-                        <p class="pdf-description">Comparatif détaillé des différentes formes juridiques</p>
-                        <button class="download-button" onclick="downloadPDF('guide-structures-juridiques.pdf')">Télécharger</button>
+                        <h3 class="pdf-title">Statuts - Auto-Entrepreneur / Indépendant</h3>
+                        <p class="pdf-description">Modèle de statuts pour l'entreprise individuelle et l'auto-entrepreneur</p>
+                        <button class="download-button" onclick="downloadPDF('04-05_Statuts-AUTO-INDIV.pdf')">Télécharger</button>
                     </div>
                 </div>
                 
                 <div class="pdf-card">
-                    <div class="pdf-preview">📊</div>
+                    <div class="pdf-preview">🛡️</div>
                     <div class="pdf-info">
-                        <h3 class="pdf-title">Tableau Comparatif des Structures</h3>
-                        <p class="pdf-description">Grille de comparaison des avantages et inconvénients</p>
-                        <button class="download-button" onclick="downloadPDF('tableau-comparatif-structures.pdf')">Télécharger</button>
+                        <h3 class="pdf-title">Statuts - EIRL (Entreprise Individuelle à Responsabilité Limitée)</h3>
+                        <p class="pdf-description">Modèle de statuts pour l'EIRL avec protection du patrimoine personnel</p>
+                        <button class="download-button" onclick="downloadPDF('04-05_Statuts-EIRL.pdf')">Télécharger</button>
                     </div>
                 </div>
                 
                 <div class="pdf-card">
-                    <div class="pdf-preview">🎯</div>
+                    <div class="pdf-preview">🏢</div>
                     <div class="pdf-info">
-                        <h3 class="pdf-title">Checklist de Choix</h3>
-                        <p class="pdf-description">Liste de vérification pour choisir votre structure</p>
-                        <button class="download-button" onclick="downloadPDF('checklist-choix-structure.pdf')">Télécharger</button>
+                        <h3 class="pdf-title">Statuts - EURL / SARL</h3>
+                        <p class="pdf-description">Modèle de statuts pour l'EURL (unipersonnelle) et la SARL (pluripersonnelle)</p>
+                        <button class="download-button" onclick="downloadPDF('04-05_Statuts-EURL-SARL.pdf')">Télécharger</button>
                     </div>
                 </div>
                 
                 <div class="pdf-card">
-                    <div class="pdf-preview">💰</div>
+                    <div class="pdf-preview">🚀</div>
                     <div class="pdf-info">
-                        <h3 class="pdf-title">Impact Fiscal des Structures</h3>
-                        <p class="pdf-description">Analyse de l'impact fiscal de chaque structure</p>
-                        <button class="download-button" onclick="downloadPDF('impact-fiscal-structures.pdf')">Télécharger</button>
-                    </div>
-                </div>
-                
-                <div class="pdf-card">
-                    <div class="pdf-preview">🔄</div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">Évolution des Structures</h3>
-                        <p class="pdf-description">Guide pour évoluer d'une structure à une autre</p>
-                        <button class="download-button" onclick="downloadPDF('evolution-structures.pdf')">Télécharger</button>
+                        <h3 class="pdf-title">Statuts - SAS / SASU</h3>
+                        <p class="pdf-description">Modèle de statuts pour la SAS (pluripersonnelle) et la SASU (unipersonnelle)</p>
+                        <button class="download-button" onclick="downloadPDF('04-05_Statuts-SAS-SASU.pdf')">Télécharger</button>
                     </div>
                 </div>
             </div>
