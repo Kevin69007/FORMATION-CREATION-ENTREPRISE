@@ -522,69 +522,6 @@ window.module6Content = {
                     </div>
                 </div>
                 
-                <div class="pdf-card">
-                    <div class="pdf-preview">📋</div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">Guide des Aides à la Création d'Entreprise</h3>
-                        <p class="pdf-description">Panorama complet des aides nationales, régionales et locales pour les créateurs d'entreprise</p>
-                        <a href="assets/pdfs/06-05_GuideAidesCreationEntreprise.pdf" download class="download-button">Télécharger</a>
-                    </div>
-                </div>
-                
-                <div class="pdf-card">
-                    <div class="pdf-preview">🎯</div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">ARCE - Aide à la Reprise ou Création d'Entreprise</h3>
-                        <p class="pdf-description">Fiche détaillée sur l'ARCE : conditions, montants, démarches et conseils pratiques</p>
-                        <a href="assets/pdfs/06-05_FicheARCE.pdf" download class="download-button">Télécharger</a>
-                    </div>
-                </div>
-                
-                <div class="pdf-card">
-                    <div class="pdf-preview">🤝</div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">NACRE - Nouvel Accompagnement Création d'Entreprise</h3>
-                        <p class="pdf-description">Guide complet sur le dispositif NACRE : accompagnement, formation et suivi personnalisé</p>
-                        <a href="assets/pdfs/06-05_FicheNACRE.pdf" download class="download-button">Télécharger</a>
-                    </div>
-                </div>
-                
-                <div class="pdf-card">
-                    <div class="pdf-preview">🏦</div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">Prêts d'Honneur et Garanties Bancaires</h3>
-                        <p class="pdf-description">Guide pratique sur les prêts d'honneur, garanties bancaires et autres dispositifs de financement</p>
-                        <a href="assets/pdfs/06-05_PretsHonneurGaranties.pdf" download class="download-button">Télécharger</a>
-                    </div>
-                </div>
-                
-                <div class="pdf-card">
-                    <div class="pdf-preview">🌍</div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">Aides Régionales et Territoriales</h3>
-                        <p class="pdf-description">Répertoire des aides spécifiques par région et territoire pour les créateurs d'entreprise</p>
-                        <a href="assets/pdfs/06-05_AidesRegionalesTerritoriales.pdf" download class="download-button">Télécharger</a>
-                    </div>
-                </div>
-                
-                <div class="pdf-card">
-                    <div class="pdf-preview">👩</div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">Aides Spécifiques aux Femmes Entrepreneures</h3>
-                        <p class="pdf-description">Guide des dispositifs dédiés aux femmes créatrices d'entreprise : FGIF, formations, accompagnement</p>
-                        <a href="assets/pdfs/06-05_AidesFemmesEntrepreneures.pdf" download class="download-button">Télécharger</a>
-                    </div>
-                </div>
-                
-                <div class="pdf-card">
-                    <div class="pdf-preview">📊</div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">Tableau de Bord des Aides</h3>
-                        <p class="pdf-description">Outil pratique pour suivre vos demandes d'aides et optimiser votre stratégie de financement</p>
-                        <a href="assets/pdfs/06-05_TableauBordAides.pdf" download class="download-button">Télécharger</a>
-                    </div>
-                </div>
-                
             </div>
             
             <div style="background: #e2e3e5; padding: 20px; border-radius: 8px; margin: 30px 0;">
@@ -602,10 +539,6 @@ window.module6Content = {
                 <div style="margin: 15px 0;">
                     <h4>Les Aides à la Création d'Entreprise</h4>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/F7MvS6Ga1js" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-                </div>
-                <div style="margin: 15px 0;">
-                    <h4>Comment Optimiser ses Aides</h4>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/example-video-id" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
                 </div>
             </div>
             
