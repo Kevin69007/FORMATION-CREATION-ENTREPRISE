@@ -421,7 +421,7 @@ window.module4Content = {
                     <div class="pdf-preview">👤</div>
                     <div class="pdf-info">
                         <h3 class="pdf-title">Statuts - Auto-Entrepreneur / Indépendant</h3>
-                        <p class="pdf-description">Modèle de statuts pour l'entreprise individuelle et l'auto-entrepreneur</p>
+                        <p class="pdf-description">Guide pour l'entreprise individuelle et l'auto-entrepreneur</p>
                         <button class="download-button" onclick="downloadPDF('04-05_Statuts-AUTO-INDIV.pdf')">Télécharger</button>
                     </div>
                 </div>
@@ -430,7 +430,7 @@ window.module4Content = {
                     <div class="pdf-preview">🛡️</div>
                     <div class="pdf-info">
                         <h3 class="pdf-title">Statuts - EIRL (Entreprise Individuelle à Responsabilité Limitée)</h3>
-                        <p class="pdf-description">Modèle de statuts pour l'EIRL avec protection du patrimoine personnel</p>
+                        <p class="pdf-description">Guide pour l'EIRL avec protection du patrimoine personnel</p>
                         <button class="download-button" onclick="downloadPDF('04-05_Statuts-EIRL.pdf')">Télécharger</button>
                     </div>
                 </div>
@@ -439,7 +439,7 @@ window.module4Content = {
                     <div class="pdf-preview">🏢</div>
                     <div class="pdf-info">
                         <h3 class="pdf-title">Statuts - EURL / SARL</h3>
-                        <p class="pdf-description">Modèle de statuts pour l'EURL (unipersonnelle) et la SARL (pluripersonnelle)</p>
+                        <p class="pdf-description">Guide pour l'EURL (unipersonnelle) et la SARL (pluripersonnelle)</p>
                         <button class="download-button" onclick="downloadPDF('04-05_Statuts-EURL-SARL.pdf')">Télécharger</button>
                     </div>
                 </div>
@@ -448,7 +448,7 @@ window.module4Content = {
                     <div class="pdf-preview">🚀</div>
                     <div class="pdf-info">
                         <h3 class="pdf-title">Statuts - SAS / SASU</h3>
-                        <p class="pdf-description">Modèle de statuts pour la SAS (pluripersonnelle) et la SASU (unipersonnelle)</p>
+                        <p class="pdf-description">Guide pour la SAS (pluripersonnelle) et la SASU (unipersonnelle)</p>
                         <button class="download-button" onclick="downloadPDF('04-05_Statuts-SAS-SASU.pdf')">Télécharger</button>
                     </div>
                 </div>
