@@ -543,7 +543,7 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
                     <div class="pdf-info">
                         <h3 class="pdf-title">Guide des Compétences clés d'un Chef d'entreprise 1/2</h3>
                         <p class="pdf-description">Un guide détaillé des compétences clés pour réussir en entrepreneuriat</p>
-                        <a href="assets/pdfs/guide-competences.pdf" download class="download-button">Télécharger</a>
+                        <a href="assets/pdfs/01-08_LesCompetencesClesdunChefdEntreprise1.pdf" download class="download-button">Télécharger</a>
                     </div>
                 </div>
 
@@ -552,7 +552,7 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
                     <div class="pdf-info">
                         <h3 class="pdf-title">Guide des Compétences clés d'un Chef d'entreprise 2/2</h3>
                         <p class="pdf-description">Un guide détaillé des compétences clés pour réussir en entrepreneuriat</p>
-                        <a href="assets/pdfs/guide-competences.pdf" download class="download-button">Télécharger</a>
+                        <a href="assets/pdfs/01-08_LesCompetencesClesdunChefdEntreprise2.pdf" download class="download-button">Télécharger</a>
                     </div>
                 </div>    
                 
@@ -561,7 +561,7 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
                     <div class="pdf-info">
                         <h3 class="pdf-title">Les Compétences Essentielles d'un Chef d'Entreprise</h3>
                         <p class="pdf-description">Un guide détaillé des compétences essentielles d'un bon Chef d'Entreprise</p>
-                        <a href="assets/pdfs/auto-evaluation.pdf" download class="download-button">Télécharger</a>
+                        <a href="assets/pdfs/01-08_LesCompetencesEssentiellesdunChefdEntreprise.pdf" download class="download-button">Télécharger</a>
                     </div>
                 </div>
 
@@ -570,7 +570,7 @@ Décrivez comment la gestion des ressources humaines peut contribuer à la crois
                     <div class="pdf-info">
                         <h3 class="pdf-title">Template Objectifs SMART</h3>
                         <p class="pdf-description">Modèle pour définir vos objectifs selon la méthode SMART</p>
-                        <a href="assets/pdfs/template-smart.pdf" download class="download-button">Télécharger</a>
+                        <a href="assets/pdfs/01-07_SMARTGoalsA2TA2L.pdf" download class="download-button">Télécharger</a>
                     </div>
                 </div>
                 
