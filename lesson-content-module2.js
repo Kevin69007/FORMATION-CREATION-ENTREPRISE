@@ -322,6 +322,15 @@ Identifier des indicateurs de performance clés pour suivre la croissance des ve
             <div style="text-align: center; margin: 30px 0;">
                 <img src="assets/images/05_IMAGE_CustomerJourneyMapping.png" alt="Customer Journey Mapping" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
             </div>
+
+                        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 12px; margin: 30px 0; color: white; text-align: center; box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);">
+                <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                    <div style="background: rgba(255,255,255,0.2); padding: 12px; border-radius: 50%; margin-right: 15px; font-size: 24px;">📋</div>
+                    <h3 style="margin: 0; font-size: 24px; font-weight: 600;">Template Customer Journey Mapping</h3>
+                </div>
+                <p style="margin: 10px 0 20px 0; font-size: 16px; opacity: 0.9;">Modèle pratique pour remplir votre Customer Journey Mapping</p>
+                <a href="assets/pdfs/02-05_customerjourneymappingA2TA2L.pdf" download style="background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">📥 Télécharger le Template</a>
+            </div>
             
             <h2>🎯 Qu'est-ce que le Customer Journey ?</h2>
             <p>C'est l'ensemble des interactions qu'un client a avec votre marque, depuis la prise de conscience de son besoin jusqu'à la fidélisation.</p>
@@ -460,37 +469,11 @@ Identifier des indicateurs de performance clés pour suivre la croissance des ve
             <p>Voici les documents complémentaires pour approfondir l'analyse de marché et les stratégies commerciales.</p>
             
             <div class="pdf-grid">
-                <div class="pdf-card">
-                    <div class="pdf-preview">📊</div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">Guide d'Analyse de Marché</h3>
-                        <p class="pdf-description">Méthodologie complète pour analyser votre marché et identifier les opportunités</p>
-                        <button class="download-button" onclick="downloadPDF('guide-analyse-marche.pdf')">Télécharger</button>
-                    </div>
-                </div>
-                
-                <div class="pdf-card">
-                    <div class="pdf-preview">🎯</div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">Template Customer Journey</h3>
-                        <p class="pdf-description">Modèle pour cartographier le parcours client de votre entreprise</p>
-                        <button class="download-button" onclick="downloadPDF('template-customer-journey.pdf')">Télécharger</button>
-                    </div>
-                </div>
-                
-                <div class="pdf-card">
-                    <div class="pdf-preview">📋</div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">Argumentaire Commercial</h3>
-                        <p class="pdf-description">Structure et exemples d'argumentaires commerciaux efficaces</p>
-                        <button class="download-button" onclick="downloadPDF('argumentaire-commercial.pdf')">Télécharger</button>
-                    </div>
-                </div>
                 
                 <div class="pdf-card">
                     <div class="pdf-preview">🗺️</div>
                     <div class="pdf-info">
-                        <h3 class="pdf-title">Customer Journey Mapping A2TA2L</h3>
+                        <h3 class="pdf-title">Customer Journey Mapping</h3>
                         <p class="pdf-description">Guide complet pour créer votre carte de parcours client</p>
                         <button class="download-button" onclick="downloadPDF('02-05_customerjourneymappingA2TA2L.pdf')">Télécharger</button>
                     </div>
@@ -505,32 +488,6 @@ Identifier des indicateurs de performance clés pour suivre la croissance des ve
                     </div>
                 </div>
                 
-                <div class="pdf-card">
-                    <div class="pdf-preview">🏢</div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">Analyse Concurrentielle</h3>
-                        <p class="pdf-description">Framework pour analyser vos concurrents et identifier vos avantages</p>
-                        <button class="download-button" onclick="downloadPDF('analyse-concurrentielle.pdf')">Télécharger</button>
-                    </div>
-                </div>
-                
-                <div class="pdf-card">
-                    <div class="pdf-preview">👥</div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">Segmentation Client</h3>
-                        <p class="pdf-description">Méthodes et outils pour segmenter efficacement votre clientèle</p>
-                        <button class="download-button" onclick="downloadPDF('segmentation-client.pdf')">Télécharger</button>
-                    </div>
-                </div>
-                
-                <div class="pdf-card">
-                    <div class="pdf-preview">📈</div>
-                    <div class="pdf-info">
-                        <h3 class="pdf-title">KPIs Commerciaux</h3>
-                        <p class="pdf-description">Indicateurs clés pour mesurer la performance commerciale</p>
-                        <button class="download-button" onclick="downloadPDF('kpis-commerciaux.pdf')">Télécharger</button>
-                    </div>
-                </div>
             </div>
             
             <div style="background: #e2e3e5; padding: 20px; border-radius: 8px; margin: 30px 0;">
