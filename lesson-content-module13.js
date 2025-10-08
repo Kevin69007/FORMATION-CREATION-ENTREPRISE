@@ -4,13 +4,8 @@ window.module13Content = {
         title: "Études de Cas",
         moduleTitle: "Module 13 : Études de cas",
         content: `
-        <p>Cette leçon fait partie du Module 13 : Études de cas. Vous allez découvrir des études de cas pratiques pour consolider vos acquis et voir l'application concrète des concepts abordés.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
         <h2>🎯 Objectifs de cette leçon</h2>
+        <p>👉 Vous allez découvrir des études de cas pratiques pour consolider vos acquis et voir l'application concrète des concepts abordés.</p>    
         <ul>
             <li>Analyser des cas pratiques</li>
             <li>Appliquer les concepts appris</li>
@@ -122,8 +117,6 @@ window.module13Content = {
             <p>Les études de cas sont des outils précieux pour apprendre des expériences d'autres entrepreneurs. Analysez-les avec attention, identifiez les patterns de succès et d'échec, et adaptez les leçons à votre propre projet.</p>
         </div>
         
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Félicitations ! Vous avez terminé tous les modules de cette formation. Vous disposez maintenant de toutes les connaissances nécessaires pour réussir votre projet entrepreneurial. Bonne chance !</p>
     `
     },
     5: {
