@@ -509,187 +509,111 @@ window.module6Content = {
         moduleTitle: "Module 6 : Connaître les principales aides à la création d'entreprise",
         type: "pdf",
         content: `
-        
-        <p>Cette leçon complète le module 6 avec des ressources supplémentaires et des fiches pratiques pour approfondir vos connaissances sur les aides à la création d'entreprise.</p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/F7MvS6Ga1js" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
-        </div>
-        
-        <h2>🎯 Objectifs de cette leçon</h2>
-        <ul>
-            <li>Consolider les acquis du module</li>
-            <li>Accéder aux ressources complémentaires</li>
-            <li>Utiliser les outils pratiques</li>
-            <li>Approfondir certains aspects</li>
-        </ul>
-        
-        <h2>📋 Ressources complémentaires</h2>
-        
-        <h3>1. Fiches pratiques</h3>
-        <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Fiches disponibles</h4>
-            <ul>
-                <li><strong>Fiche ARCE :</strong> Guide complet de l'aide</li>
-                <li><strong>Fiche NACRE :</strong> Accompagnement détaillé</li>
-                <li><strong>Fiche prêt d'honneur :</strong> Conditions et démarches</li>
-                <li><strong>Fiche subventions :</strong> Panorama des aides</li>
-            </ul>
-        </div>
-        
-        <h3>2. Outils de simulation</h3>
-        <div style="background: #f3e5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Simulateurs disponibles</h4>
-            <ul>
-                <li><strong>Simulateur ARCE :</strong> Calculer vos droits</li>
-                <li><strong>Simulateur prêt :</strong> Évaluer vos besoins</li>
-                <li><strong>Simulateur subvention :</strong> Identifier les aides</li>
-                <li><strong>Simulateur cumul :</strong> Optimiser vos droits</li>
-            </ul>
-        </div>
-        
-        <h3>3. Guides méthodologiques</h3>
-        <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Guides pratiques</h4>
-            <ul>
-                <li><strong>Guide de création :</strong> Étapes détaillées</li>
-                <li><strong>Guide financier :</strong> Gestion des aides</li>
-                <li><strong>Guide administratif :</strong> Démarches</li>
-                <li><strong>Guide juridique :</strong> Aspects légaux</li>
-            </ul>
-        </div>
-        
-        <h2>📊 Tableaux de synthèse</h2>
-        
-        <h3>Tableau récapitulatif des aides</h3>
-        <div style="overflow-x: auto; margin: 20px 0;">
-            <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
-                <thead>
-                    <tr style="background: #f8f9fa;">
-                        <th style="border: 1px solid #ddd; padding: 12px;">Aide</th>
-                        <th style="border: 1px solid #ddd; padding: 12px;">Organisme</th>
-                        <th style="border: 1px solid #ddd; padding: 12px;">Montant</th>
-                        <th style="border: 1px solid #ddd; padding: 12px;">Conditions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">ARCE</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Pôle Emploi</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">2 000 €</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Demandeur d'emploi</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">NACRE</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Pôle Emploi</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Accompagnement</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Tous statuts</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Prêt d'honneur</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">France Active</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">50 000 €</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Projet viable</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Subvention</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Région/CCI</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Variable</td>
-                        <td style="border: 1px solid #ddd; padding: 12px;">Secteur/Zone</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-        <h2>🛠️ Outils pratiques</h2>
-        
-        <h3>1. Checklist de démarrage</h3>
-        <div style="background: #fff3e0; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Étapes à suivre</h4>
-            <ul>
-                <li>✓ Identifier votre statut</li>
-                <li>✓ Lister les aides éligibles</li>
-                <li>✓ Calculer les montants</li>
-                <li>✓ Préparer les dossiers</li>
-                <li>✓ Déposer les demandes</li>
-                <li>✓ Suivre les dossiers</li>
-            </ul>
-        </div>
-        
-        <h3>2. Calendrier des démarches</h3>
-        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Échéances importantes</h4>
-            <ul>
-                <li><strong>ARCE :</strong> Avant la création</li>
-                <li><strong>NACRE :</strong> Dès le projet</li>
-                <li><strong>Prêt d'honneur :</strong> 2 mois avant</li>
-                <li><strong>Subvention :</strong> Selon appel</li>
-            </ul>
-        </div>
-        
-        <h3>3. Contacts utiles</h3>
-        <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Organismes clés</h4>
-            <ul>
-                <li><strong>Pôle Emploi :</strong> ARCE, NACRE</li>
-                <li><strong>France Active :</strong> Prêts d'honneur</li>
-                <li><strong>CCI :</strong> Accompagnement</li>
-                <li><strong>Région :</strong> Subventions</li>
-            </ul>
-        </div>
-        
-        <h2>📚 Ressources documentaires</h2>
-        
-        <h3>1. Documentation officielle</h3>
-        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Sources officielles</h4>
-            <ul>
-                <li><strong>Service-public.fr :</strong> Informations officielles</li>
-                <li><strong>Pôle Emploi :</strong> Guides ARCE/NACRE</li>
-                <li><strong>BPI France :</strong> Documentation financement</li>
-                <li><strong>CCI :</strong> Guides création</li>
-            </ul>
-        </div>
-        
-        <h3>2. Formations complémentaires</h3>
-        <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h4>Modules disponibles</h4>
-            <ul>
-                <li><strong>Module financement :</strong> Approfondir</li>
-                <li><strong>Module juridique :</strong> Aspects légaux</li>
-                <li><strong>Module commercial :</strong> Vente et marketing</li>
-                <li><strong>Module gestion :</strong> Comptabilité</li>
-            </ul>
-        </div>
-        
-        <h2>🔗 Liens utiles</h2>
-        
-        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3>Ressources en ligne</h3>
-            <ul>
-                <li><strong>Service-public.fr :</strong> <a href="https://www.service-public.fr" target="_blank">www.service-public.fr</a></li>
-                <li><strong>Pôle Emploi :</strong> <a href="https://www.pole-emploi.fr" target="_blank">www.pole-emploi.fr</a></li>
-                <li><strong>BPI France :</strong> <a href="https://www.bpifrance.fr" target="_blank">www.bpifrance.fr</a></li>
-                <li><strong>CCI France :</strong> <a href="https://www.cci.fr" target="_blank">www.cci.fr</a></li>
-            </ul>
-        </div>
-        
-        <h2>⚠️ Points d'attention</h2>
-        <ul>
-            <li>Vérifier la validité des informations</li>
-            <li>Consulter les sources officielles</li>
-            <li>Adapter les conseils à votre situation</li>
-            <li>Demander conseil si nécessaire</li>
-        </ul>
-        
-        <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
-            <h3>💡 Conseil pratique</h3>
-            <p>Ces fiches complémentaires sont des ressources précieuses pour approfondir vos connaissances. Conservez-les et consultez-les régulièrement tout au long de votre projet.</p>
-        </div>
-        
-        <h2>🚀 Prochaines étapes</h2>
-        <p>Vous avez maintenant toutes les clés pour comprendre et optimiser les aides à la création d'entreprise. Le module suivant vous guidera dans les démarches de déclaration de votre entreprise.</p>
-    `
+            <p>Voici les documents complémentaires pour approfondir vos connaissances sur les aides à la création d'entreprise et optimiser votre stratégie de financement.</p>
+            
+            <div class="pdf-grid">
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">💰</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Les Coûts de Création d'Entreprise - Les Aides</h3>
+                        <p class="pdf-description">Guide complet sur les coûts de création d'entreprise et les principales aides disponibles pour les financer</p>
+                        <a href="assets/pdfs/06-05_Lescoutscreationdentreprise-LesAides.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📋</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Guide des Aides à la Création d'Entreprise</h3>
+                        <p class="pdf-description">Panorama complet des aides nationales, régionales et locales pour les créateurs d'entreprise</p>
+                        <a href="assets/pdfs/06-05_GuideAidesCreationEntreprise.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🎯</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">ARCE - Aide à la Reprise ou Création d'Entreprise</h3>
+                        <p class="pdf-description">Fiche détaillée sur l'ARCE : conditions, montants, démarches et conseils pratiques</p>
+                        <a href="assets/pdfs/06-05_FicheARCE.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🤝</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">NACRE - Nouvel Accompagnement Création d'Entreprise</h3>
+                        <p class="pdf-description">Guide complet sur le dispositif NACRE : accompagnement, formation et suivi personnalisé</p>
+                        <a href="assets/pdfs/06-05_FicheNACRE.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🏦</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Prêts d'Honneur et Garanties Bancaires</h3>
+                        <p class="pdf-description">Guide pratique sur les prêts d'honneur, garanties bancaires et autres dispositifs de financement</p>
+                        <a href="assets/pdfs/06-05_PretsHonneurGaranties.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">🌍</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Aides Régionales et Territoriales</h3>
+                        <p class="pdf-description">Répertoire des aides spécifiques par région et territoire pour les créateurs d'entreprise</p>
+                        <a href="assets/pdfs/06-05_AidesRegionalesTerritoriales.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">👩</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Aides Spécifiques aux Femmes Entrepreneures</h3>
+                        <p class="pdf-description">Guide des dispositifs dédiés aux femmes créatrices d'entreprise : FGIF, formations, accompagnement</p>
+                        <a href="assets/pdfs/06-05_AidesFemmesEntrepreneures.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+                <div class="pdf-card">
+                    <div class="pdf-preview">📊</div>
+                    <div class="pdf-info">
+                        <h3 class="pdf-title">Tableau de Bord des Aides</h3>
+                        <p class="pdf-description">Outil pratique pour suivre vos demandes d'aides et optimiser votre stratégie de financement</p>
+                        <a href="assets/pdfs/06-05_TableauBordAides.pdf" download class="download-button">Télécharger</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div style="background: #e2e3e5; padding: 20px; border-radius: 8px; margin: 30px 0;">
+                <h3>📚 Ressources supplémentaires</h3>
+                <ul>
+                    <li><strong>Simulateurs en ligne :</strong> Simulateur ARCE (Pôle Emploi), Simulateur prêt d'honneur (France Active)</li>
+                    <li><strong>Outils de recherche :</strong> Aides-entreprises.fr, Mes-aides.fr, Bpifrance.fr</li>
+                    <li><strong>Conseillers spécialisés :</strong> CCI, BGE, France Active, Pôle Emploi</li>
+                    <li><strong>Formations :</strong> Modules de formation entrepreneuriat, ateliers création d'entreprise</li>
+                </ul>
+            </div>
+            
+            <div style="background: #d1ecf1; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #17a2b8;">
+                <h3>🎥 Vidéos complémentaires</h3>
+                <div style="margin: 15px 0;">
+                    <h4>Les Aides à la Création d'Entreprise</h4>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/F7MvS6Ga1js" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+                </div>
+                <div style="margin: 15px 0;">
+                    <h4>Comment Optimiser ses Aides</h4>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/example-video-id" frameborder="0" allowfullscreen style="max-width: 100%; border-radius: 8px;"></iframe>
+                </div>
+            </div>
+            
+            <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745;">
+                <h3>💡 Conseil pratique</h3>
+                <p>Ces fiches complémentaires sont des ressources précieuses pour approfondir vos connaissances sur les aides à la création d'entreprise. Conservez-les et consultez-les régulièrement tout au long de votre projet. N'hésitez pas à contacter les organismes spécialisés pour obtenir des conseils personnalisés adaptés à votre situation.</p>
+            </div>
+        `
     },
 };
 
