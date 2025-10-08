@@ -443,6 +443,52 @@ function sendProgressToServer() {
     }
 }
 
+// Fonction pour marquer une leçon comme terminée avec timestamp
+function markLessonAsCompleted(moduleId, lessonId) {
+    const lessonKey = `module_${moduleId}_lesson_${lessonId}`;
+    const progress = JSON.parse(localStorage.getItem('lessonProgress') || '{}');
+    
+    if (!progress[lessonKey]) {
+        progress[lessonKey] = {};
+    }
+    
+    progress[lessonKey].completed = true;
+    progress[lessonKey].completedAt = new Date().toISOString();
+    
+    localStorage.setItem('lessonProgress', JSON.stringify(progress));
+    
+    // Mettre à jour l'affichage
+    updateProgress();
+    generateNavigation();
+    
+    // Sauvegarder sur le serveur
+    sendProgressToServer();
+    
+    showNotification('Leçon marquée comme terminée !', 'success');
+}
+
+// Fonction pour marquer une leçon comme non terminée
+function markLessonAsIncomplete(moduleId, lessonId) {
+    const lessonKey = `module_${moduleId}_lesson_${lessonId}`;
+    const progress = JSON.parse(localStorage.getItem('lessonProgress') || '{}');
+    
+    if (progress[lessonKey]) {
+        progress[lessonKey].completed = false;
+        delete progress[lessonKey].completedAt;
+    }
+    
+    localStorage.setItem('lessonProgress', JSON.stringify(progress));
+    
+    // Mettre à jour l'affichage
+    updateProgress();
+    generateNavigation();
+    
+    // Sauvegarder sur le serveur
+    sendProgressToServer();
+    
+    showNotification('Leçon marquée comme non terminée', 'success');
+}
+
 function showNotification(message, type = 'success') {
     const notification = document.createElement('div');
     const bgColor = type === 'error' ? '#dc3545' : '#28a745';
