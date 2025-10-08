@@ -82,7 +82,16 @@ window.module3Content = {
             <div style="text-align: center; margin: 30px 0;">
                 <img src="assets/images/02_IMAGE_BusinessModelCanvas.png" alt="Business Model Canvas" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
             </div>
-            
+
+                        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 12px; margin: 30px 0; color: white; text-align: center; box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);">
+                <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                    <div style="background: rgba(255,255,255,0.2); padding: 12px; border-radius: 50%; margin-right: 15px; font-size: 24px;">📋</div>
+                    <h3 style="margin: 0; font-size: 24px; font-weight: 600;">Template Business Model Canvas</h3>
+                </div>
+                <p style="margin: 10px 0 20px 0; font-size: 16px; opacity: 0.9;">Modèle pratique pour remplir votre Business Model Canvas</p>
+                <a href="assets/pdfs/03-02_BusinessanvasA2TA2L.pdf" download style="background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">📥 Télécharger le Template</a>
+            </div>
+
             <h2>🔍 Les 9 blocs du Business Model Canvas</h2>
             
             <h3>1. Segments de clientèle</h3>
@@ -468,7 +477,16 @@ window.module3Content = {
             <div style="text-align: center; margin: 30px 0;">
                 <img src="assets/images/06_IMAGE_LEANCANVAS.png" alt="Lean Canvas" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
             </div>
-            
+
+                                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 12px; margin: 30px 0; color: white; text-align: center; box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);">
+                <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                    <div style="background: rgba(255,255,255,0.2); padding: 12px; border-radius: 50%; margin-right: 15px; font-size: 24px;">📋</div>
+                    <h3 style="margin: 0; font-size: 24px; font-weight: 600;">Template Business Model Canvas</h3>
+                </div>
+                <p style="margin: 10px 0 20px 0; font-size: 16px; opacity: 0.9;">Modèle pratique pour remplir votre Lean Canvas</p>
+                <a href="assets/pdfs/03-06_leancanvasA2TA2L.pdf" download style="background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">📥 Télécharger le Template</a>
+            </div>
+
             <h2>🔍 Les 9 blocs du Lean Canvas</h2>
             
             <h3>1. Problème</h3>
@@ -504,6 +522,15 @@ window.module3Content = {
                 <img src="assets/images/06_IMAGE_PLANFINANCIER.png" alt="Plan Financier" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
             </div>
             
+                                      <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 12px; margin: 30px 0; color: white; text-align: center; box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);">
+                <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                    <div style="background: rgba(255,255,255,0.2); padding: 12px; border-radius: 50%; margin-right: 15px; font-size: 24px;">📋</div>
+                    <h3 style="margin: 0; font-size: 24px; font-weight: 600;">Template Plan Financier</h3>
+                </div>
+                <p style="margin: 10px 0 20px 0; font-size: 16px; opacity: 0.9;">Modèle pratique pour remplir votre Plan Financier</p>
+                <a href="assets/pdfs/03-06_planfinancierA2TA2L.pdf" download style="background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">📥 Télécharger le Template</a>
+            </div>
+
             <h3>Composants du plan financier</h3>
             
             <h4>1. Prévisions de ventes</h4>
@@ -593,9 +620,9 @@ window.module3Content = {
                 <div class="pdf-card">
                     <div class="pdf-preview">📋</div>
                     <div class="pdf-info">
-                        <h3 class="pdf-title">Value Proposition Canvas</h3>
-                        <p class="pdf-description">Outil pour définir votre proposition de valeur</p>
-                        <button class="download-button" onclick="downloadPDF('10-05_ValuePropositionCanvasA2TA2L.pdf')">Télécharger</button>
+                        <h3 class="pdf-title">Business Model Canvas</h3>
+                        <p class="pdf-description">Outil pour remplir votre Business Model Canvas</p>
+                        <button class="download-button" onclick="downloadPDF('03-02_BusinessanvasA2TA2L.pdf')">Télécharger</button>
                     </div>
                 </div>
                 
