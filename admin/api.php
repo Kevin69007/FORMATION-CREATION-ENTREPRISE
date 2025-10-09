@@ -213,6 +213,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'email' => $studentData['email'],
                 'password' => password_hash($studentData['password'], PASSWORD_DEFAULT),
                 'created_at' => $timestamp,
+                'enrollment_date' => $studentData['enrollmentDate'] ?? $timestamp,
                 'first_login' => null,
                 'last_activity' => null,
                 'progress' => [],
@@ -267,6 +268,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
             if (isset($studentData['email'])) {
                 $allUserData[$username]['email'] = $studentData['email'];
+            }
+            if (isset($studentData['enrollmentDate'])) {
+                $allUserData[$username]['enrollment_date'] = $studentData['enrollmentDate'];
             }
             
             $allUserData[$username]['last_activity'] = $timestamp;
