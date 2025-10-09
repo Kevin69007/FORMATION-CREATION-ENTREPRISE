@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Connexion Admin</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; }
+        .test-section { background: #f8f9fa; padding: 20px; margin: 20px 0; border-radius: 8px; }
+        .test-button { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; margin: 10px 5px; }
+        .test-button:hover { background: #0056b3; }
+        .result { background: #e9ecef; padding: 10px; margin: 10px 0; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Test de Connexion Admin</h1>
+    
+    <div class="test-section">
+        <h2>Test 1: Connexion Admin</h2>
+        <p>Testez la connexion avec les identifiants admin</p>
+        <button class="test-button" onclick="testAdminLogin()">Se connecter en tant qu'admin</button>
+        <div id="loginResult" class="result" style="display: none;"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 2: Redirection vers Dashboard</h2>
+        <p>Testez la redirection vers le dashboard admin</p>
+        <button class="test-button" onclick="testAdminRedirect()">Aller au dashboard admin</button>
+        <div id="redirectResult" class="result" style="display: none;"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 3: Vérification des données</h2>
+        <p>Vérifiez que les données des étudiants sont chargées</p>
+        <button class="test-button" onclick="testDataLoading()">Charger les données</button>
+        <div id="dataResult" class="result" style="display: none;"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>État actuel</h2>
+        <div id="currentState" class="result"></div>
+        <button class="test-button" onclick="checkCurrentState()">Vérifier l'état</button>
+    </div>
+
+    <script>
+        function testAdminLogin() {
+            // Simuler la connexion admin
+            localStorage.setItem('isLoggedIn', 'true');
+            localStorage.setItem('username', 'admin');
+            localStorage.setItem('loginTime', new Date().toISOString());
+            
+            document.getElementById('loginResult').style.display = 'block';
+            document.getElementById('loginResult').innerHTML = '✅ Connexion admin simulée avec succès<br>Username: admin<br>Login time: ' + new Date().toISOString();
+        }
+        
+        function testAdminRedirect() {
+            const username = localStorage.getItem('username');
+            if (username === 'admin') {
+                document.getElementById('redirectResult').style.display = 'block';
+                document.getElementById('redirectResult').innerHTML = '✅ Redirection vers admin/index.html<br><a href="admin/index.html" target="_blank">Ouvrir le dashboard admin</a>';
+            } else {
+                document.getElementById('redirectResult').style.display = 'block';
+                document.getElementById('redirectResult').innerHTML = '❌ Vous devez d\'abord vous connecter en tant qu\'admin';
+            }
+        }
+        
+        async function testDataLoading() {
+            try {
+                const response = await fetch('admin/api.php?action=get_all_users');
+                if (response.ok) {
+                    const data = await response.json();
+                    document.getElementById('dataResult').style.display = 'block';
+                    document.getElementById('dataResult').innerHTML = '✅ Données chargées avec succès<br>Nombre d\'utilisateurs: ' + Object.keys(data).length;
+                } else {
+                    document.getElementById('dataResult').style.display = 'block';
+                    document.getElementById('dataResult').innerHTML = '⚠️ API PHP non disponible, utilisation des données d\'exemple';
+                }
+            } catch (error) {
+                document.getElementById('dataResult').style.display = 'block';
+                document.getElementById('dataResult').innerHTML = '⚠️ Erreur lors du chargement: ' + error.message;
+            }
+        }
+        
+        function checkCurrentState() {
+            const isLoggedIn = localStorage.getItem('isLoggedIn');
+            const username = localStorage.getItem('username');
+            const loginTime = localStorage.getItem('loginTime');
+            
+            document.getElementById('currentState').innerHTML = 
+                'État de connexion: ' + (isLoggedIn === 'true' ? '✅ Connecté' : '❌ Non connecté') + '<br>' +
+                'Nom d\'utilisateur: ' + (username || 'Non défini') + '<br>' +
+                'Heure de connexion: ' + (loginTime || 'Non définie');
+        }
+        
+        // Vérifier l'état au chargement
+        window.addEventListener('load', checkCurrentState);
+    </script>
+</body>
+</html>

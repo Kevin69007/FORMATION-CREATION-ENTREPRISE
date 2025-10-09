@@ -55,7 +55,7 @@
                 
                 // Rediriger vers le dashboard
                 if (username === 'admin') {
-                    window.location.href = 'admin/index.php?admin_check=true';
+                    window.location.href = 'admin/index.html';
                 } else {
                     window.location.href = 'dashboard.html';
                 }
@@ -70,7 +70,7 @@
             if (localStorage.getItem('isLoggedIn') === 'true') {
                 const username = localStorage.getItem('username');
                 if (username === 'admin') {
-                    window.location.href = 'admin/index.php?admin_check=true';
+                    window.location.href = 'admin/index.html';
                 } else {
                     window.location.href = 'dashboard.html';
                 }
