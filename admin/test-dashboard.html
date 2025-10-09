@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Dashboard Admin</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .test-container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .test-section { margin-bottom: 30px; padding: 20px; border: 1px solid #ddd; border-radius: 6px; }
+        .test-section h3 { color: #2c3e50; margin-bottom: 15px; }
+        .test-button { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; margin: 5px; }
+        .test-button:hover { background: #0056b3; }
+        .result { margin-top: 10px; padding: 10px; border-radius: 4px; }
+        .success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .info { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🧪 Test du Dashboard Admin</h1>
+        <p>Cette page permet de tester les fonctionnalités du dashboard admin amélioré.</p>
+
+        <div class="test-section">
+            <h3>1. Test de l'API - Création d'étudiant</h3>
+            <button class="test-button" onclick="testCreateStudent()">Créer un étudiant de test</button>
+            <div id="createResult" class="result" style="display: none;"></div>
+        </div>
+
+        <div class="test-section">
+            <h3>2. Test de l'API - Récupération des étudiants</h3>
+            <button class="test-button" onclick="testGetStudents()">Récupérer la liste des étudiants</button>
+            <div id="getStudentsResult" class="result" style="display: none;"></div>
+        </div>
+
+        <div class="test-section">
+            <h3>3. Test de l'API - Mise à jour d'étudiant</h3>
+            <button class="test-button" onclick="testUpdateStudent()">Mettre à jour un étudiant</button>
+            <div id="updateResult" class="result" style="display: none;"></div>
+        </div>
+
+        <div class="test-section">
+            <h3>4. Test de l'API - Suppression d'étudiant</h3>
+            <button class="test-button" onclick="testDeleteStudent()">Supprimer un étudiant</button>
+            <div id="deleteResult" class="result" style="display: none;"></div>
+        </div>
+
+        <div class="test-section">
+            <h3>5. Accès au Dashboard Admin</h3>
+            <p>Cliquez sur le bouton ci-dessous pour accéder au dashboard admin complet :</p>
+            <a href="index.php" class="test-button" style="text-decoration: none; display: inline-block;">Accéder au Dashboard Admin</a>
+        </div>
+    </div>
+
+    <script>
+        function showResult(elementId, message, type = 'info') {
+            const element = document.getElementById(elementId);
+            element.style.display = 'block';
+            element.className = `result ${type}`;
+            element.innerHTML = message;
+        }
+
+        async function testCreateStudent() {
+            try {
+                const response = await fetch('api.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        action: 'create_student',
+                        studentData: {
+                            username: 'test_student_' + Date.now(),
+                            firstName: 'Jean',
+                            lastName: 'Dupont',
+                            email: 'jean.dupont@test.com',
+                            password: 'test123456'
+                        }
+                    })
+                });
+
+                const data = await response.json();
+                
+                if (data.success) {
+                    showResult('createResult', `✅ Succès: ${data.message}<br>Étudiant créé: ${data.student.username}`, 'success');
+                } else {
+                    showResult('createResult', `❌ Erreur: ${data.error}`, 'error');
+                }
+            } catch (error) {
+                showResult('createResult', `❌ Erreur de connexion: ${error.message}`, 'error');
+            }
+        }
+
+        async function testGetStudents() {
+            try {
+                const response = await fetch('api.php?action=get_all_users');
+                const data = await response.json();
+                
+                if (Array.isArray(data) || typeof data === 'object') {
+                    const students = Object.keys(data);
+                    showResult('getStudentsResult', `✅ Succès: ${students.length} étudiant(s) trouvé(s)<br>Liste: ${students.join(', ')}`, 'success');
+                } else {
+                    showResult('getStudentsResult', `❌ Erreur: ${data.error || 'Format de données invalide'}`, 'error');
+                }
+            } catch (error) {
+                showResult('getStudentsResult', `❌ Erreur de connexion: ${error.message}`, 'error');
+            }
+        }
+
+        async function testUpdateStudent() {
+            try {
+                // D'abord, récupérer la liste des étudiants
+                const getResponse = await fetch('api.php?action=get_all_users');
+                const students = await getResponse.json();
+                const studentUsernames = Object.keys(students);
+                
+                if (studentUsernames.length === 0) {
+                    showResult('updateResult', '❌ Aucun étudiant trouvé pour le test', 'error');
+                    return;
+                }
+
+                const username = studentUsernames[0];
+                
+                const response = await fetch('api.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        action: 'update_student',
+                        username: username,
+                        studentData: {
+                            firstName: 'Jean Modifié',
+                            lastName: 'Dupont Modifié',
+                            email: 'jean.modifie@test.com'
+                        }
+                    })
+                });
+
+                const data = await response.json();
+                
+                if (data.success) {
+                    showResult('updateResult', `✅ Succès: ${data.message}<br>Étudiant modifié: ${username}`, 'success');
+                } else {
+                    showResult('updateResult', `❌ Erreur: ${data.error}`, 'error');
+                }
+            } catch (error) {
+                showResult('updateResult', `❌ Erreur de connexion: ${error.message}`, 'error');
+            }
+        }
+
+        async function testDeleteStudent() {
+            try {
+                // D'abord, récupérer la liste des étudiants
+                const getResponse = await fetch('api.php?action=get_all_users');
+                const students = await getResponse.json();
+                const studentUsernames = Object.keys(students);
+                
+                if (studentUsernames.length === 0) {
+                    showResult('deleteResult', '❌ Aucun étudiant trouvé pour le test', 'error');
+                    return;
+                }
+
+                // Trouver un étudiant de test
+                const testStudent = studentUsernames.find(name => name.startsWith('test_student_'));
+                const username = testStudent || studentUsernames[0];
+                
+                const response = await fetch('api.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        action: 'delete_student',
+                        username: username
+                    })
+                });
+
+                const data = await response.json();
+                
+                if (data.success) {
+                    showResult('deleteResult', `✅ Succès: ${data.message}<br>Étudiant supprimé: ${username}`, 'success');
+                } else {
+                    showResult('deleteResult', `❌ Erreur: ${data.error}`, 'error');
+                }
+            } catch (error) {
+                showResult('deleteResult', `❌ Erreur de connexion: ${error.message}`, 'error');
+            }
+        }
+    </script>
+</body>
+</html>
