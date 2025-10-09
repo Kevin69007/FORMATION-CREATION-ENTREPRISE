@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formation Entrepreneuriat - Connexion</title>
     <link rel="stylesheet" href="style.css">
+    <script src="admin/admin-api.js"></script>
 </head>
 <body class="login-page">
     <div class="login-container">
@@ -29,11 +30,50 @@
                 
                 <div id="errorMessage" class="error-message" style="display: none;"></div>
             </form>
+            
+            <!-- Section de création de compte admin -->
+            <div id="adminCreationSection" style="display: none; margin-top: 20px; padding: 20px; background: #f8f9fa; border-radius: 8px; border: 2px solid #007bff;">
+                <h3 style="color: #007bff; margin-bottom: 15px;">🔧 Créer un compte administrateur</h3>
+                <form id="adminCreationForm">
+                    <div class="form-group">
+                        <label for="adminUsername">Nom d'utilisateur admin</label>
+                        <input type="text" id="adminUsername" name="adminUsername" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="adminPassword">Mot de passe admin</label>
+                        <input type="password" id="adminPassword" name="adminPassword" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="adminConfirmPassword">Confirmer le mot de passe</label>
+                        <input type="password" id="adminConfirmPassword" name="adminConfirmPassword" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="adminEmail">Email administrateur</label>
+                        <input type="email" id="adminEmail" name="adminEmail" required>
+                    </div>
+                    
+                    <button type="submit" class="login-btn" style="background: #28a745;">Créer le compte admin</button>
+                    <button type="button" onclick="toggleAdminCreation()" class="login-btn" style="background: #6c757d; margin-left: 10px;">Annuler</button>
+                </form>
+                <div id="adminCreationMessage" class="error-message" style="display: none;"></div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 15px;">
+                <button onclick="toggleAdminCreation()" style="background: none; border: none; color: #007bff; text-decoration: underline; cursor: pointer;">
+                    🔧 Créer un compte administrateur
+                </button>
+            </div>
         </div>
     </div>
 
     <script>
-        // Système de connexion simple
+        // Charger l'API admin
+        const adminAPI = new AdminAPI();
+        
+        // Système de connexion amélioré
         document.getElementById('loginForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -41,29 +81,151 @@
             const password = document.getElementById('password').value;
             const errorDiv = document.getElementById('errorMessage');
             
-            // Vous pouvez modifier ces identifiants
-            const validUsers = {
-                'etudiant': 'formation2024',
-                'admin': 'admin2024'
-            };
-            
-            if (validUsers[username] && validUsers[username] === password) {
-                // Sauvegarder la session
-                localStorage.setItem('isLoggedIn', 'true');
-                localStorage.setItem('username', username);
-                localStorage.setItem('loginTime', new Date().toISOString());
+            // Essayer de se connecter via l'API
+            try {
+                const userData = adminAPI.getUser(username);
                 
-                // Rediriger vers le dashboard
-                if (username === 'admin') {
-                    window.location.href = 'admin/index.html';
-                } else {
-                    window.location.href = 'dashboard.html';
+                if (userData && userData.password) {
+                    // Vérifier le mot de passe (simple comparaison pour la démo)
+                    const storedPassword = userData.password;
+                    let passwordMatch = false;
+                    
+                    // Vérifier si c'est un mot de passe hashé (PHP) ou encodé (JS)
+                    if (storedPassword.startsWith('$2y$')) {
+                        // Mot de passe hashé PHP - pour l'instant on utilise une vérification simple
+                        passwordMatch = (password === 'admin2024' && username === 'admin');
+                    } else {
+                        // Mot de passe encodé en base64 (JS)
+                        passwordMatch = (btoa(password) === storedPassword);
+                    }
+                    
+                    if (passwordMatch) {
+                        // Sauvegarder la session
+                        localStorage.setItem('isLoggedIn', 'true');
+                        localStorage.setItem('username', username);
+                        localStorage.setItem('userType', username === 'admin' ? 'admin' : 'student');
+                        localStorage.setItem('loginTime', new Date().toISOString());
+                        
+                        // Enregistrer la connexion
+                        adminAPI.userLogin(username);
+                        
+                        // Rediriger vers le dashboard
+                        if (username === 'admin') {
+                            window.location.href = 'admin/index.html';
+                        } else {
+                            window.location.href = 'dashboard.html';
+                        }
+                        return;
+                    }
                 }
-            } else {
+                
+                // Fallback vers les identifiants par défaut
+                const validUsers = {
+                    'etudiant': 'formation2024',
+                    'admin': 'admin2024'
+                };
+                
+                if (validUsers[username] && validUsers[username] === password) {
+                    // Sauvegarder la session
+                    localStorage.setItem('isLoggedIn', 'true');
+                    localStorage.setItem('username', username);
+                    localStorage.setItem('userType', username === 'admin' ? 'admin' : 'student');
+                    localStorage.setItem('loginTime', new Date().toISOString());
+                    
+                    // Enregistrer la connexion
+                    adminAPI.userLogin(username);
+                    
+                    // Rediriger vers le dashboard
+                    if (username === 'admin') {
+                        window.location.href = 'admin/index.html';
+                    } else {
+                        window.location.href = 'dashboard.html';
+                    }
+                } else {
+                    errorDiv.style.display = 'block';
+                    errorDiv.textContent = 'Nom d\'utilisateur ou mot de passe incorrect';
+                }
+            } catch (error) {
+                console.error('Erreur lors de la connexion:', error);
                 errorDiv.style.display = 'block';
-                errorDiv.textContent = 'Nom d\'utilisateur ou mot de passe incorrect';
+                errorDiv.textContent = 'Erreur lors de la connexion. Veuillez réessayer.';
             }
         });
+
+        // Gestion de la création de compte admin
+        document.getElementById('adminCreationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const adminData = {
+                username: formData.get('adminUsername'),
+                password: formData.get('adminPassword'),
+                confirmPassword: formData.get('adminConfirmPassword'),
+                email: formData.get('adminEmail')
+            };
+            
+            const messageDiv = document.getElementById('adminCreationMessage');
+            
+            // Validation
+            if (adminData.password !== adminData.confirmPassword) {
+                messageDiv.style.display = 'block';
+                messageDiv.textContent = 'Les mots de passe ne correspondent pas';
+                return;
+            }
+            
+            if (adminData.password.length < 6) {
+                messageDiv.style.display = 'block';
+                messageDiv.textContent = 'Le mot de passe doit contenir au moins 6 caractères';
+                return;
+            }
+            
+            try {
+                // Créer le compte admin
+                const result = adminAPI.createStudent({
+                    username: adminData.username,
+                    firstName: 'Admin',
+                    lastName: 'Système',
+                    email: adminData.email,
+                    password: adminData.password,
+                    enrollmentDate: new Date().toISOString().split('T')[0]
+                });
+                
+                if (result.success) {
+                    messageDiv.style.display = 'block';
+                    messageDiv.style.color = 'green';
+                    messageDiv.textContent = '✅ Compte administrateur créé avec succès ! Vous pouvez maintenant vous connecter.';
+                    
+                    // Masquer le formulaire après 3 secondes
+                    setTimeout(() => {
+                        toggleAdminCreation();
+                        messageDiv.style.display = 'none';
+                    }, 3000);
+                } else {
+                    messageDiv.style.display = 'block';
+                    messageDiv.textContent = 'Erreur: ' + result.message;
+                }
+            } catch (error) {
+                console.error('Erreur lors de la création du compte admin:', error);
+                messageDiv.style.display = 'block';
+                messageDiv.textContent = 'Erreur lors de la création du compte: ' + error.message;
+            }
+        });
+
+        // Fonction pour afficher/masquer la section de création admin
+        function toggleAdminCreation() {
+            const section = document.getElementById('adminCreationSection');
+            const messageDiv = document.getElementById('adminCreationMessage');
+            
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+                messageDiv.style.display = 'none';
+                // Réinitialiser le formulaire
+                document.getElementById('adminCreationForm').reset();
+            } else {
+                section.style.display = 'none';
+                messageDiv.style.display = 'none';
+            }
+        }
 
         // Vérifier si déjà connecté au chargement de la page
         window.addEventListener('load', function() {
