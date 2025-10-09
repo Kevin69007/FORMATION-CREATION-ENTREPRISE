@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Admin Redirect</title>
+</head>
+<body>
+    <h1>Test de redirection admin</h1>
+    <p>Ce fichier teste la redirection vers le dashboard admin.</p>
+    
+    <button onclick="testAdminRedirect()">Tester la redirection admin</button>
+    
+    <script>
+        function testAdminRedirect() {
+            // Simuler la connexion admin
+            localStorage.setItem('isLoggedIn', 'true');
+            localStorage.setItem('username', 'admin');
+            localStorage.setItem('loginTime', new Date().toISOString());
+            
+            // Rediriger vers le dashboard admin
+            window.location.href = 'admin/index.html';
+        }
+    </script>
+</body>
+</html>
