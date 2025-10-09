@@ -599,28 +599,39 @@
                 enrollmentDate: formData.get('enrollmentDate')
             };
 
-            // Validation
+            // Créer le compte étudiant (la validation est maintenant dans createStudentAccount)
+            createStudentAccount(studentData);
+        });
+
+        function createStudentAccount(studentData) {
+            // Validation côté client
+            if (!studentData.firstName || !studentData.lastName || !studentData.email || !studentData.username || !studentData.password) {
+                alert('Tous les champs sont requis');
+                return;
+            }
+            
             if (studentData.password !== studentData.confirmPassword) {
                 alert('Les mots de passe ne correspondent pas');
                 return;
             }
-
+            
             if (studentData.password.length < 6) {
                 alert('Le mot de passe doit contenir au moins 6 caractères');
                 return;
             }
-
+            
             // Vérifier si l'utilisateur existe déjà
             if (userData[studentData.username]) {
                 alert('Ce nom d\'utilisateur existe déjà');
                 return;
             }
-
-            // Créer le compte étudiant
-            createStudentAccount(studentData);
-        });
-
-        function createStudentAccount(studentData) {
+            
+            // Afficher un indicateur de chargement
+            const submitBtn = document.querySelector('#studentForm button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Création en cours...';
+            submitBtn.disabled = true;
+            
             fetch('api.php', {
                 method: 'POST',
                 headers: {
@@ -631,7 +642,12 @@
                     studentData: studentData
                 })
             })
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
             .then(data => {
                 if (data.success) {
                     alert('Compte étudiant créé avec succès !');
@@ -643,7 +659,12 @@
             })
             .catch(error => {
                 console.error('Erreur:', error);
-                alert('Erreur lors de la création du compte');
+                alert('Erreur lors de la création du compte: ' + error.message);
+            })
+            .finally(() => {
+                // Restaurer le bouton
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
             });
         }
 
