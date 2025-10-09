@@ -187,6 +187,134 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
             break;
             
+        case 'create_student':
+            $studentData = $data['studentData'] ?? [];
+            $timestamp = date('c');
+            
+            if (empty($studentData['username']) || empty($studentData['firstName']) || empty($studentData['lastName']) || empty($studentData['email']) || empty($studentData['password'])) {
+                http_response_code(400);
+                echo json_encode(['error' => 'Tous les champs sont requis']);
+                exit;
+            }
+            
+            $allUserData = loadUserData();
+            
+            // Vérifier si l'utilisateur existe déjà
+            if (isset($allUserData[$studentData['username']])) {
+                http_response_code(400);
+                echo json_encode(['error' => 'Ce nom d\'utilisateur existe déjà']);
+                exit;
+            }
+            
+            // Créer le nouvel étudiant
+            $allUserData[$studentData['username']] = [
+                'firstName' => $studentData['firstName'],
+                'lastName' => $studentData['lastName'],
+                'email' => $studentData['email'],
+                'password' => password_hash($studentData['password'], PASSWORD_DEFAULT),
+                'created_at' => $timestamp,
+                'first_login' => null,
+                'last_activity' => null,
+                'progress' => [],
+                'session_count' => 0,
+                'completed_lessons' => 0,
+                'completion_rate' => 0
+            ];
+            
+            if (saveUserData($allUserData)) {
+                logActivity("New student created: {$studentData['username']} ({$studentData['firstName']} {$studentData['lastName']})");
+                echo json_encode([
+                    'success' => true,
+                    'message' => 'Compte étudiant créé avec succès',
+                    'student' => [
+                        'username' => $studentData['username'],
+                        'firstName' => $studentData['firstName'],
+                        'lastName' => $studentData['lastName'],
+                        'email' => $studentData['email']
+                    ]
+                ]);
+            } else {
+                http_response_code(500);
+                echo json_encode(['error' => 'Erreur lors de la création du compte']);
+            }
+            break;
+            
+        case 'update_student':
+            $username = $data['username'] ?? '';
+            $studentData = $data['studentData'] ?? [];
+            $timestamp = date('c');
+            
+            if (!$username) {
+                http_response_code(400);
+                echo json_encode(['error' => 'Nom d\'utilisateur requis']);
+                exit;
+            }
+            
+            $allUserData = loadUserData();
+            
+            if (!isset($allUserData[$username])) {
+                http_response_code(404);
+                echo json_encode(['error' => 'Étudiant non trouvé']);
+                exit;
+            }
+            
+            // Mettre à jour les informations de l'étudiant
+            if (isset($studentData['firstName'])) {
+                $allUserData[$username]['firstName'] = $studentData['firstName'];
+            }
+            if (isset($studentData['lastName'])) {
+                $allUserData[$username]['lastName'] = $studentData['lastName'];
+            }
+            if (isset($studentData['email'])) {
+                $allUserData[$username]['email'] = $studentData['email'];
+            }
+            
+            $allUserData[$username]['last_activity'] = $timestamp;
+            
+            if (saveUserData($allUserData)) {
+                logActivity("Student updated: $username");
+                echo json_encode([
+                    'success' => true,
+                    'message' => 'Étudiant mis à jour avec succès'
+                ]);
+            } else {
+                http_response_code(500);
+                echo json_encode(['error' => 'Erreur lors de la mise à jour']);
+            }
+            break;
+            
+        case 'delete_student':
+            $username = $data['username'] ?? '';
+            
+            if (!$username) {
+                http_response_code(400);
+                echo json_encode(['error' => 'Nom d\'utilisateur requis']);
+                exit;
+            }
+            
+            $allUserData = loadUserData();
+            
+            if (!isset($allUserData[$username])) {
+                http_response_code(404);
+                echo json_encode(['error' => 'Étudiant non trouvé']);
+                exit;
+            }
+            
+            // Supprimer l'étudiant
+            unset($allUserData[$username]);
+            
+            if (saveUserData($allUserData)) {
+                logActivity("Student deleted: $username");
+                echo json_encode([
+                    'success' => true,
+                    'message' => 'Étudiant supprimé avec succès'
+                ]);
+            } else {
+                http_response_code(500);
+                echo json_encode(['error' => 'Erreur lors de la suppression']);
+            }
+            break;
+            
         default:
             http_response_code(400);
             echo json_encode(['error' => 'Invalid action']);
