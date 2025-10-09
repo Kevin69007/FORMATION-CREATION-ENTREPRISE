@@ -559,3 +559,9 @@ body {
         font-size: 28px;
     }
 }
+
+/* Style pour le lien profil */
+.profile-link:hover {
+    background-color: #f8f9fa !important;
+    color: #5a6fd8 !important;
+}

@@ -191,9 +191,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $studentData = $data['studentData'] ?? [];
             $timestamp = date('c');
             
-            if (empty($studentData['username']) || empty($studentData['firstName']) || empty($studentData['lastName']) || empty($studentData['email']) || empty($studentData['password'])) {
+            // Validation des champs requis
+            $requiredFields = ['username', 'firstName', 'lastName', 'email', 'password'];
+            $missingFields = [];
+            foreach ($requiredFields as $field) {
+                if (empty($studentData[$field])) {
+                    $missingFields[] = $field;
+                }
+            }
+            
+            if (!empty($missingFields)) {
                 http_response_code(400);
-                echo json_encode(['error' => 'Tous les champs sont requis']);
+                echo json_encode(['error' => 'Champs manquants: ' . implode(', ', $missingFields)]);
+                exit;
+            }
+            
+            // Validation de l'email
+            if (!filter_var($studentData['email'], FILTER_VALIDATE_EMAIL)) {
+                http_response_code(400);
+                echo json_encode(['error' => 'Adresse email invalide']);
+                exit;
+            }
+            
+            // Validation du mot de passe
+            if (strlen($studentData['password']) < 6) {
+                http_response_code(400);
+                echo json_encode(['error' => 'Le mot de passe doit contenir au moins 6 caractères']);
                 exit;
             }
             
@@ -206,11 +229,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 exit;
             }
             
+            // Vérifier si l'email existe déjà
+            foreach ($allUserData as $user) {
+                if (isset($user['email']) && $user['email'] === $studentData['email']) {
+                    http_response_code(400);
+                    echo json_encode(['error' => 'Cette adresse email est déjà utilisée']);
+                    exit;
+                }
+            }
+            
             // Créer le nouvel étudiant
             $allUserData[$studentData['username']] = [
-                'firstName' => $studentData['firstName'],
-                'lastName' => $studentData['lastName'],
-                'email' => $studentData['email'],
+                'firstName' => trim($studentData['firstName']),
+                'lastName' => trim($studentData['lastName']),
+                'email' => trim($studentData['email']),
                 'password' => password_hash($studentData['password'], PASSWORD_DEFAULT),
                 'created_at' => $timestamp,
                 'enrollment_date' => $studentData['enrollmentDate'] ?? $timestamp,
@@ -236,7 +268,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 ]);
             } else {
                 http_response_code(500);
-                echo json_encode(['error' => 'Erreur lors de la création du compte']);
+                echo json_encode(['error' => 'Erreur lors de la sauvegarde des données. Vérifiez les permissions du dossier data/']);
             }
             break;
             
