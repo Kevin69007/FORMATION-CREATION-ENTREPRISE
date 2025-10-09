@@ -1,0 +1,67 @@
+{
+  "admin": {
+    "firstName": "Admin",
+    "lastName": "Système",
+    "email": "admin@formation.com",
+    "first_login": "2024-01-01T00:00:00Z",
+    "last_activity": "2024-01-20T10:30:00Z",
+    "session_count": 15,
+    "progress": {},
+    "completed_lessons": 0,
+    "completion_rate": 0,
+    "enrollment_date": "2024-01-01"
+  },
+  "etudiant1": {
+    "firstName": "Jean",
+    "lastName": "Dupont",
+    "email": "jean.dupont@email.com",
+    "first_login": "2024-01-15T10:30:00Z",
+    "last_activity": "2024-01-20T14:30:00Z",
+    "session_count": 5,
+    "progress": {
+      "module_1_lesson_1": {"completed": true, "completedAt": "2024-01-15T11:00:00Z"},
+      "module_1_lesson_2": {"completed": true, "completedAt": "2024-01-15T12:00:00Z"},
+      "module_1_lesson_3": {"completed": true, "completedAt": "2024-01-16T09:00:00Z"},
+      "module_2_lesson_1": {"completed": true, "completedAt": "2024-01-16T10:30:00Z"},
+      "module_2_lesson_2": {"completed": true, "completedAt": "2024-01-17T14:00:00Z"}
+    },
+    "completed_lessons": 5,
+    "completion_rate": 6.5,
+    "enrollment_date": "2024-01-15"
+  },
+  "etudiant2": {
+    "firstName": "Marie",
+    "lastName": "Martin",
+    "email": "marie.martin@email.com",
+    "first_login": "2024-01-20T14:00:00Z",
+    "last_activity": "2024-01-20T16:45:00Z",
+    "session_count": 3,
+    "progress": {
+      "module_1_lesson_1": {"completed": true, "completedAt": "2024-01-20T15:00:00Z"},
+      "module_1_lesson_2": {"completed": true, "completedAt": "2024-01-20T16:00:00Z"}
+    },
+    "completed_lessons": 2,
+    "completion_rate": 2.6,
+    "enrollment_date": "2024-01-20"
+  },
+  "etudiant3": {
+    "firstName": "Pierre",
+    "lastName": "Durand",
+    "email": "pierre.durand@email.com",
+    "first_login": "2024-01-18T09:15:00Z",
+    "last_activity": "2024-01-19T17:20:00Z",
+    "session_count": 4,
+    "progress": {
+      "module_1_lesson_1": {"completed": true, "completedAt": "2024-01-18T10:00:00Z"},
+      "module_1_lesson_2": {"completed": true, "completedAt": "2024-01-18T11:30:00Z"},
+      "module_1_lesson_3": {"completed": true, "completedAt": "2024-01-18T14:00:00Z"},
+      "module_1_lesson_4": {"completed": true, "completedAt": "2024-01-19T09:00:00Z"},
+      "module_1_lesson_5": {"completed": true, "completedAt": "2024-01-19T11:00:00Z"},
+      "module_2_lesson_1": {"completed": true, "completedAt": "2024-01-19T15:00:00Z"},
+      "module_3_lesson_1": {"completed": true, "completedAt": "2024-01-19T16:30:00Z"}
+    },
+    "completed_lessons": 7,
+    "completion_rate": 9.1,
+    "enrollment_date": "2024-01-18"
+  }
+}
