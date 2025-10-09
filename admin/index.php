@@ -5,8 +5,26 @@ session_start();
 // Vérification de l'authentification admin
 $admin_password = 'admin2024'; // Changez ce mot de passe
 
+// Vérifier si l'utilisateur est connecté via localStorage (pour la compatibilité)
 if (!isset($_SESSION['admin_logged_in'])) {
-    if (isset($_POST['password']) && $_POST['password'] === $admin_password) {
+    // Vérifier si l'utilisateur est admin via localStorage (fallback)
+    if (isset($_GET['admin_check']) && $_GET['admin_check'] === 'true') {
+        // Vérifier via JavaScript que l'utilisateur est admin
+        echo '<script>
+            if (localStorage.getItem("username") === "admin") {
+                // Rediriger vers la page admin avec authentification
+                window.location.href = "index.php?admin_auth=true";
+            } else {
+                alert("Accès refusé. Seuls les administrateurs peuvent accéder à cette page.");
+                window.location.href = "../index.html";
+            }
+        </script>';
+        exit;
+    }
+    
+    if (isset($_GET['admin_auth']) && $_GET['admin_auth'] === 'true') {
+        $_SESSION['admin_logged_in'] = true;
+    } elseif (isset($_POST['password']) && $_POST['password'] === $admin_password) {
         $_SESSION['admin_logged_in'] = true;
     } else {
         // Afficher le formulaire de connexion admin
@@ -48,6 +66,17 @@ if (!isset($_SESSION['admin_logged_in'])) {
         <?php
         exit;
     }
+}
+
+// Vérification supplémentaire de sécurité
+if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in']) {
+    // Vérifier que l'utilisateur est bien admin via localStorage (double vérification)
+    echo '<script>
+        if (localStorage.getItem("username") !== "admin") {
+            alert("Accès refusé. Seuls les administrateurs peuvent accéder à cette page.");
+            window.location.href = "../index.html";
+        }
+    </script>';
 }
 
 // Fonctions utilitaires
