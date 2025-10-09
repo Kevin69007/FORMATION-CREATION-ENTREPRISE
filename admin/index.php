@@ -121,6 +121,8 @@ $stats = getProgressStats($userData);
         .lesson-item { padding: 10px; border-radius: 6px; font-size: 14px; }
         .lesson-completed { background: #d4edda; color: #155724; }
         .lesson-pending { background: #f8d7da; color: #721c24; }
+        .create-student-btn { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px; font-weight: 600; }
+        .create-student-btn:hover { background: #0056b3; }
         .export-btn { background: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; margin-left: 10px; }
         
         /* Styles pour le formulaire de création d'étudiant */
@@ -202,13 +204,13 @@ $stats = getProgressStats($userData);
     </div>
 
     <div class="admin-container">
-        <!-- Formulaire de création d'étudiant -->
-        <div class="create-student-section">
+        <!-- Formulaire de création d'étudiant (masqué par défaut) -->
+        <div class="create-student-section" id="createStudentSection" style="display: none;">
             <div class="section-header">
                 <h2>👨‍🎓 Créer un nouveau compte étudiant</h2>
-                <button class="toggle-form-btn" onclick="toggleCreateForm()">+ Nouvel étudiant</button>
+                <button class="toggle-form-btn" onclick="toggleCreateForm()">− Masquer</button>
             </div>
-            <div class="create-form" id="createForm" style="display: none;">
+            <div class="create-form" id="createForm">
                 <form id="studentForm">
                     <div class="form-row">
                         <div class="form-group">
@@ -238,6 +240,15 @@ $stats = getProgressStats($userData);
                         <div class="form-group">
                             <label for="confirmPassword">Confirmer le mot de passe *</label>
                             <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="enrollmentDate">Date d'inscription *</label>
+                            <input type="date" id="enrollmentDate" name="enrollmentDate" required>
+                        </div>
+                        <div class="form-group">
+                            <!-- Champ vide pour l'alignement -->
                         </div>
                     </div>
                     <div class="form-actions">
@@ -273,6 +284,7 @@ $stats = getProgressStats($userData);
             <div class="table-header">
                 <h2>📊 Liste des étudiants</h2>
                 <div class="table-actions">
+                    <button class="create-student-btn" onclick="toggleCreateForm()">👨‍🎓 Nouvel étudiant</button>
                     <button class="refresh-btn" onclick="refreshStudents()">🔄 Actualiser</button>
                     <button class="export-btn" onclick="exportData()">📥 Exporter CSV</button>
                 </div>
@@ -304,7 +316,7 @@ $stats = getProgressStats($userData);
                             $lastName = $data['lastName'] ?? '';
                             $email = $data['email'] ?? '';
                             $fullName = trim($firstName . ' ' . $lastName);
-                            $creationDate = $data['first_login'] ?? $data['created_at'] ?? 'N/A';
+                            $creationDate = $data['enrollment_date'] ?? $data['first_login'] ?? $data['created_at'] ?? 'N/A';
                             ?>
                             <tr class="student-row" data-username="<?php echo htmlspecialchars($username); ?>">
                                 <td><strong><?php echo htmlspecialchars($username); ?></strong></td>
@@ -455,21 +467,29 @@ $stats = getProgressStats($userData);
 
         // Fonctions pour le formulaire de création d'étudiant
         function toggleCreateForm() {
-            const form = document.getElementById('createForm');
-            const btn = document.querySelector('.toggle-form-btn');
-            if (form.style.display === 'none') {
-                form.style.display = 'block';
+            const section = document.getElementById('createStudentSection');
+            const btn = document.querySelector('.create-student-btn');
+            const toggleBtn = document.querySelector('.toggle-form-btn');
+            
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
                 btn.textContent = '− Masquer';
+                if (toggleBtn) toggleBtn.textContent = '− Masquer';
+                // Définir la date d'aujourd'hui par défaut
+                document.getElementById('enrollmentDate').value = new Date().toISOString().split('T')[0];
             } else {
-                form.style.display = 'none';
-                btn.textContent = '+ Nouvel étudiant';
+                section.style.display = 'none';
+                btn.textContent = '👨‍🎓 Nouvel étudiant';
+                if (toggleBtn) toggleBtn.textContent = '+ Nouvel étudiant';
             }
         }
 
         function resetForm() {
             document.getElementById('studentForm').reset();
-            document.getElementById('createForm').style.display = 'none';
-            document.querySelector('.toggle-form-btn').textContent = '+ Nouvel étudiant';
+            document.getElementById('createStudentSection').style.display = 'none';
+            document.querySelector('.create-student-btn').textContent = '👨‍🎓 Nouvel étudiant';
+            const toggleBtn = document.querySelector('.toggle-form-btn');
+            if (toggleBtn) toggleBtn.textContent = '+ Nouvel étudiant';
         }
 
         // Gestion du formulaire de création d'étudiant
@@ -483,7 +503,8 @@ $stats = getProgressStats($userData);
                 email: formData.get('email'),
                 username: formData.get('username'),
                 password: formData.get('password'),
-                confirmPassword: formData.get('confirmPassword')
+                confirmPassword: formData.get('confirmPassword'),
+                enrollmentDate: formData.get('enrollmentDate')
             };
 
             // Validation
@@ -702,10 +723,13 @@ $stats = getProgressStats($userData);
             document.getElementById('email').value = user.email || '';
             document.getElementById('username').value = username;
             document.getElementById('username').readOnly = true;
+            document.getElementById('enrollmentDate').value = user.enrollment_date ? user.enrollment_date.split('T')[0] : '';
             
             // Afficher le formulaire
-            document.getElementById('createForm').style.display = 'block';
-            document.querySelector('.toggle-form-btn').textContent = '− Masquer';
+            document.getElementById('createStudentSection').style.display = 'block';
+            document.querySelector('.create-student-btn').textContent = '− Masquer';
+            const toggleBtn = document.querySelector('.toggle-form-btn');
+            if (toggleBtn) toggleBtn.textContent = '− Masquer';
             
             // Changer le bouton de soumission
             const submitBtn = document.querySelector('#studentForm button[type="submit"]');
@@ -722,7 +746,8 @@ $stats = getProgressStats($userData);
                 firstName: formData.get('firstName'),
                 lastName: formData.get('lastName'),
                 email: formData.get('email'),
-                username: formData.get('username')
+                username: formData.get('username'),
+                enrollmentDate: formData.get('enrollmentDate')
             };
 
             fetch('api.php', {
