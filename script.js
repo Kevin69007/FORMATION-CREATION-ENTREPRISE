@@ -538,5 +538,14 @@ function initializeFormation() {
     }
 }
 
+// Fonction de déconnexion globale
+function logout() {
+    localStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('username');
+    localStorage.removeItem('loginTime');
+    localStorage.removeItem('lessonProgress'); // Nettoyer aussi la progression
+    window.location.href = 'index.html';
+}
+
 // Initialiser au chargement de la page
 document.addEventListener('DOMContentLoaded', initializeFormation);
