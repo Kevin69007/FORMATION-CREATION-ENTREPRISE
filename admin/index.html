@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration - Formation Entrepreneuriat</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8f9fa; }
+        .admin-header { background: #2c3e50; color: white; padding: 20px; }
+        .admin-header h1 { font-size: 24px; }
+        .admin-header .logout { float: right; background: #dc3545; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; text-decoration: none; font-size: 14px; font-weight: 600; transition: background-color 0.3s ease; }
+        .admin-header .logout:hover { background: #c82333; }
+        .admin-container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .stat-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-align: center; }
+        .stat-number { font-size: 36px; font-weight: bold; color: #007bff; margin-bottom: 5px; }
+        .stat-label { color: #6c757d; font-size: 14px; }
+        .users-table { background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden; }
+        .table-header { background: #f8f9fa; padding: 20px; border-bottom: 1px solid #dee2e6; }
+        .table-header h2 { color: #2c3e50; }
+        table { width: 100%; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #dee2e6; }
+        th { background: #f8f9fa; font-weight: 600; color: #2c3e50; }
+        .progress-bar { width: 100px; height: 20px; background: #e9ecef; border-radius: 10px; overflow: hidden; }
+        .progress-fill { height: 100%; background: linear-gradient(90deg, #dc3545 0%, #ffc107 50%, #28a745 100%); transition: width 0.3s ease; }
+        .user-detail { cursor: pointer; color: #007bff; }
+        .user-detail:hover { text-decoration: underline; }
+        .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); }
+        .modal-content { background: white; margin: 5% auto; padding: 20px; width: 80%; max-width: 800px; border-radius: 8px; max-height: 80vh; overflow-y: auto; }
+        .close { float: right; font-size: 28px; font-weight: bold; cursor: pointer; }
+        .close:hover { color: #dc3545; }
+        .lesson-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px; margin-top: 20px; }
+        .lesson-item { padding: 10px; border-radius: 6px; font-size: 14px; }
+        .lesson-completed { background: #d4edda; color: #155724; }
+        .lesson-pending { background: #f8d7da; color: #721c24; }
+        .create-student-btn { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px; font-weight: 600; }
+        .create-student-btn:hover { background: #0056b3; }
+        .export-btn { background: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; margin-left: 10px; }
+        .refresh-btn { background: #17a2b8; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+        .refresh-btn:hover { background: #138496; }
+        .table-actions { display: flex; gap: 10px; }
+        .table-container { overflow-x: auto; }
+        .student-row:hover { background-color: #f8f9fa; }
+        .progress-container { display: flex; align-items: center; gap: 10px; }
+        .progress-text { font-weight: 600; color: #2c3e50; }
+        .lesson-count { font-weight: 600; color: #28a745; }
+        .action-buttons { display: flex; gap: 5px; flex-wrap: wrap; }
+        .btn-view, .btn-detail, .btn-edit, .btn-delete { padding: 6px 12px; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600; }
+        .btn-view { background: #007bff; color: white; }
+        .btn-detail { background: #6c757d; color: white; }
+        .btn-edit { background: #ffc107; color: #212529; }
+        .btn-delete { background: #dc3545; color: white; }
+        .btn-view:hover, .btn-detail:hover, .btn-edit:hover, .btn-delete:hover { opacity: 0.8; }
+        .no-data { text-align: center; padding: 40px; color: #6c757d; }
+        .no-data h3 { margin-bottom: 10px; }
+        .no-data p { font-size: 14px; }
+        
+        /* Styles pour le formulaire de création d'étudiant */
+        .create-student-section { background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 30px; overflow: hidden; }
+        .section-header { background: #f8f9fa; padding: 20px; border-bottom: 1px solid #dee2e6; display: flex; justify-content: space-between; align-items: center; }
+        .section-header h2 { color: #2c3e50; margin: 0; }
+        .toggle-form-btn { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: 600; }
+        .toggle-form-btn:hover { background: #0056b3; }
+        .create-form { padding: 30px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+        .form-group { display: flex; flex-direction: column; }
+        .form-group label { font-weight: 600; color: #2c3e50; margin-bottom: 5px; }
+        .form-group input { padding: 12px; border: 2px solid #e1e5e9; border-radius: 6px; font-size: 16px; transition: border-color 0.3s ease; }
+        .form-group input:focus { outline: none; border-color: #007bff; }
+        .form-actions { display: flex; gap: 15px; justify-content: flex-end; margin-top: 30px; }
+        .btn-primary { background: #007bff; color: white; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; }
+        .btn-primary:hover { background: #0056b3; }
+        .btn-secondary { background: #6c757d; color: white; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; }
+        .btn-secondary:hover { background: #545b62; }
+        .create-student-btn { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px; font-weight: 600; }
+        .create-student-btn:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="admin-header">
+        <h1>Administration - Formation Entrepreneuriat</h1>
+        <button onclick="logout()" class="logout">🚪 Déconnexion</button>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="admin-container">
+        <!-- Statistiques globales -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" id="totalUsers">0</div>
+                <div class="stat-label">Utilisateurs inscrits</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="activeUsers">0</div>
+                <div class="stat-label">Utilisateurs actifs</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="avgProgress">0%</div>
+                <div class="stat-label">Progression moyenne</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">13</div>
+                <div class="stat-label">Modules disponibles</div>
+            </div>
+        </div>
+
+        <!-- Formulaire de création d'étudiant (masqué par défaut) -->
+        <div class="create-student-section" id="createStudentSection" style="display: none;">
+            <div class="section-header">
+                <h2>👨‍🎓 Créer un nouveau compte étudiant</h2>
+                <button class="toggle-form-btn" onclick="toggleCreateForm()">− Masquer</button>
+            </div>
+            <div class="create-form" id="createForm">
+                <form id="studentForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Prénom *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Nom *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Nom d'utilisateur *</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="password">Mot de passe *</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirmer le mot de passe *</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="enrollmentDate">Date d'inscription *</label>
+                            <input type="date" id="enrollmentDate" name="enrollmentDate" required>
+                        </div>
+                        <div class="form-group">
+                            <!-- Champ vide pour l'alignement -->
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" onclick="resetForm()" class="btn-secondary">Annuler</button>
+                        <button type="submit" class="btn-primary">Créer le compte</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Tableau des utilisateurs -->
+        <div class="users-table">
+            <div class="table-header">
+                <h2>📊 Liste des étudiants</h2>
+                <div class="table-actions">
+                    <button class="create-student-btn" onclick="toggleCreateForm()">👨‍🎓 Nouvel étudiant</button>
+                    <button class="refresh-btn" onclick="refreshStudents()">🔄 Actualiser</button>
+                    <button class="export-btn" onclick="exportData()">📥 Exporter CSV</button>
+                </div>
+            </div>
+            <div class="table-container">
+                <div id="studentsTableBody">
+                    <div class="no-data">
+                        <h3>Chargement des données...</h3>
+                        <p>Veuillez patienter pendant le chargement des informations des étudiants.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal pour les détails utilisateur -->
+    <div id="userModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Détails utilisateur</h2>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script>
+        let userData = {};
+
+        // Charger les données au démarrage
+        document.addEventListener('DOMContentLoaded', function() {
+            // Vérifier que l'utilisateur est bien admin
+            const username = localStorage.getItem('username');
+            if (username !== 'admin') {
+                alert('Accès refusé. Seuls les administrateurs peuvent accéder à cette page.');
+                window.location.href = '../index.html';
+                return;
+            }
+            
+            loadUserData();
+        });
+
+        async function loadUserData() {
+            try {
+                // Charger les données depuis l'API PHP
+                const response = await fetch('api.php?action=get_all_users');
+                if (response.ok) {
+                    userData = await response.json();
+                } else {
+                    // Si l'API ne fonctionne pas, essayer le fichier JSON
+                    const jsonResponse = await fetch('data/user_progress.json');
+                    if (jsonResponse.ok) {
+                        userData = await jsonResponse.json();
+                    } else {
+                        // Si le fichier n'existe pas, créer des données d'exemple
+                        userData = createSampleData();
+                    }
+                }
+                updateDisplay();
+            } catch (error) {
+                console.error('Erreur lors du chargement des données:', error);
+                userData = createSampleData();
+                updateDisplay();
+            }
+        }
+
+        function createSampleData() {
+            return {
+                "admin": {
+                    "firstName": "Admin",
+                    "lastName": "Système",
+                    "email": "admin@formation.com",
+                    "first_login": "2024-01-01T00:00:00Z",
+                    "last_activity": new Date().toISOString(),
+                    "session_count": 1,
+                    "progress": {},
+                    "completed_lessons": 0,
+                    "completion_rate": 0,
+                    "enrollment_date": "2024-01-01"
+                },
+                "etudiant1": {
+                    "firstName": "Jean",
+                    "lastName": "Dupont",
+                    "email": "jean.dupont@email.com",
+                    "first_login": "2024-01-15T10:30:00Z",
+                    "last_activity": new Date().toISOString(),
+                    "session_count": 5,
+                    "progress": {
+                        "module_1_lesson_1": {"completed": true, "completedAt": "2024-01-15T11:00:00Z"},
+                        "module_1_lesson_2": {"completed": true, "completedAt": "2024-01-15T12:00:00Z"},
+                        "module_2_lesson_1": {"completed": true, "completedAt": "2024-01-16T09:00:00Z"}
+                    },
+                    "completed_lessons": 3,
+                    "completion_rate": 3.9,
+                    "enrollment_date": "2024-01-15"
+                },
+                "etudiant2": {
+                    "firstName": "Marie",
+                    "lastName": "Martin",
+                    "email": "marie.martin@email.com",
+                    "first_login": "2024-01-20T14:00:00Z",
+                    "last_activity": new Date().toISOString(),
+                    "session_count": 3,
+                    "progress": {
+                        "module_1_lesson_1": {"completed": true, "completedAt": "2024-01-20T15:00:00Z"}
+                    },
+                    "completed_lessons": 1,
+                    "completion_rate": 1.3,
+                    "enrollment_date": "2024-01-20"
+                }
+            };
+        }
+
+        function updateDisplay() {
+            updateStats();
+            updateTable();
+        }
+
+        function updateStats() {
+            const totalUsers = Object.keys(userData).length;
+            let activeUsers = 0;
+            let totalCompletion = 0;
+
+            Object.values(userData).forEach(user => {
+                const completedLessons = user.completed_lessons || 0;
+                if (completedLessons > 0) {
+                    activeUsers++;
+                }
+                totalCompletion += user.completion_rate || 0;
+            });
+
+            const avgProgress = totalUsers > 0 ? Math.round(totalCompletion / totalUsers) : 0;
+
+            document.getElementById('totalUsers').textContent = totalUsers;
+            document.getElementById('activeUsers').textContent = activeUsers;
+            document.getElementById('avgProgress').textContent = avgProgress + '%';
+        }
+
+        function updateTable() {
+            const tbody = document.getElementById('studentsTableBody');
+            
+            if (Object.keys(userData).length === 0) {
+                tbody.innerHTML = `
+                    <div class="no-data">
+                        <h3>Aucun étudiant trouvé</h3>
+                        <p>Il n'y a actuellement aucun étudiant inscrit dans le système.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            let tableHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom d'utilisateur</th>
+                            <th>Nom complet</th>
+                            <th>Email</th>
+                            <th>Date de création</th>
+                            <th>Progression</th>
+                            <th>Leçons terminées</th>
+                            <th>Dernière activité</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+
+            Object.entries(userData).forEach(([username, data]) => {
+                const fullName = `${data.firstName || ''} ${data.lastName || ''}`.trim() || 'Non renseigné';
+                const email = data.email || 'Non renseigné';
+                const creationDate = data.enrollment_date ? new Date(data.enrollment_date).toLocaleDateString('fr-FR') : 'N/A';
+                const lastActivity = data.last_activity ? new Date(data.last_activity).toLocaleDateString('fr-FR') : 'Jamais';
+                const completionRate = data.completion_rate || 0;
+                const completedLessons = data.completed_lessons || 0;
+
+                tableHTML += `
+                    <tr class="student-row" data-username="${username}">
+                        <td><strong>${username}</strong></td>
+                        <td>${fullName}</td>
+                        <td>${email}</td>
+                        <td>${creationDate}</td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: ${completionRate}%"></div>
+                                </div>
+                                <small class="progress-text">${completionRate}%</small>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="lesson-count">${completedLessons} / 77</span>
+                        </td>
+                        <td>${lastActivity}</td>
+                        <td>
+                            <div class="action-buttons">
+                                <button class="btn-view" onclick="viewStudentDashboard('${username}')" title="Voir le dashboard">
+                                    👁️ Dashboard
+                                </button>
+                                <button class="btn-detail" onclick="showUserDetail('${username}')" title="Détails">
+                                    📋 Détails
+                                </button>
+                                <button class="btn-edit" onclick="editStudent('${username}')" title="Modifier">
+                                    ✏️ Modifier
+                                </button>
+                                <button class="btn-delete" onclick="deleteStudent('${username}')" title="Supprimer">
+                                    🗑️ Supprimer
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+            });
+
+            tableHTML += `
+                    </tbody>
+                </table>
+            `;
+
+            tbody.innerHTML = tableHTML;
+        }
+
+        function showUserDetail(username) {
+            const user = userData[username];
+            if (!user) return;
+
+            document.getElementById('modalTitle').textContent = `Progression de ${username}`;
+            
+            let content = `<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">`;
+            content += `<div><strong>Prénom:</strong> ${user.firstName || 'Non renseigné'}</div>`;
+            content += `<div><strong>Nom:</strong> ${user.lastName || 'Non renseigné'}</div>`;
+            content += `<div><strong>Email:</strong> ${user.email || 'Non renseigné'}</div>`;
+            content += `<div><strong>Première connexion:</strong> ${user.first_login ? new Date(user.first_login).toLocaleDateString('fr-FR') : 'N/A'}</div>`;
+            content += `<div><strong>Dernière activité:</strong> ${user.last_activity ? new Date(user.last_activity).toLocaleString('fr-FR') : 'N/A'}</div>`;
+            content += `<div><strong>Nombre de sessions:</strong> ${user.session_count || 0}</div>`;
+            content += `</div>`;
+            
+            content += `<h3>Progression par leçon:</h3>`;
+            content += `<div class="lesson-grid">`;
+
+            const progress = user.progress || {};
+            for (let moduleId = 1; moduleId <= 13; moduleId++) {
+                const moduleLessons = getModuleLessons(moduleId);
+                moduleLessons.forEach(lessonId => {
+                    const lessonKey = `module_${moduleId}_lesson_${lessonId}`;
+                    const isCompleted = progress[lessonKey] && progress[lessonKey].completed;
+                    const completedDate = isCompleted ? new Date(progress[lessonKey].completedAt).toLocaleDateString('fr-FR') : '';
+                    
+                    content += `<div class="lesson-item ${isCompleted ? 'lesson-completed' : 'lesson-pending'}">
+                        Module ${moduleId} - Leçon ${lessonId}
+                        ${isCompleted ? `<br><small>Terminé le ${completedDate}</small>` : '<br><small>Non terminé</small>'}
+                    </div>`;
+                });
+            }
+
+            content += `</div>`;
+            document.getElementById('modalContent').innerHTML = content;
+            document.getElementById('userModal').style.display = 'block';
+        }
+
+        function getModuleLessons(moduleId) {
+            const moduleLessons = {
+                1: [1, 2, 3, 4, 5, 6, 7, 8],
+                2: [1, 2, 3, 4, 5, 6],
+                3: [1, 2, 3, 4, 5, 6, 7],
+                4: [1, 2, 3, 4, 5],
+                5: [1, 2, 3, 4],
+                6: [1, 2, 3, 4, 5],
+                7: [1, 2, 3, 4],
+                8: [1, 2, 3, 4],
+                9: [1, 2, 3, 4],
+                10: [1, 2, 3, 4, 5],
+                11: [1, 2, 3, 4],
+                12: [1, 2, 3, 4, 5],
+                13: [1]
+            };
+            return moduleLessons[moduleId] || [];
+        }
+
+        function closeModal() {
+            document.getElementById('userModal').style.display = 'none';
+        }
+
+        function viewStudentDashboard(username) {
+            const user = userData[username];
+            if (!user) {
+                alert('Utilisateur non trouvé');
+                return;
+            }
+            alert(`Dashboard de ${username}\n\nProgression: ${user.completion_rate || 0}%\nLeçons terminées: ${user.completed_lessons || 0}/77\n\nNote: Cette fonctionnalité nécessite PHP pour fonctionner complètement.`);
+        }
+
+        function editStudent(username) {
+            const user = userData[username];
+            if (!user) return;
+            
+            // Remplir le formulaire avec les données existantes
+            document.getElementById('firstName').value = user.firstName || '';
+            document.getElementById('lastName').value = user.lastName || '';
+            document.getElementById('email').value = user.email || '';
+            document.getElementById('username').value = username;
+            document.getElementById('username').readOnly = true;
+            document.getElementById('enrollmentDate').value = user.enrollment_date ? user.enrollment_date.split('T')[0] : '';
+            
+            // Afficher le formulaire
+            document.getElementById('createStudentSection').style.display = 'block';
+            document.querySelector('.create-student-btn').textContent = '− Masquer';
+            const toggleBtn = document.querySelector('.toggle-form-btn');
+            if (toggleBtn) toggleBtn.textContent = '− Masquer';
+            
+            // Changer le bouton de soumission
+            const submitBtn = document.querySelector('#studentForm button[type="submit"]');
+            submitBtn.textContent = 'Mettre à jour';
+            submitBtn.onclick = function(e) {
+                e.preventDefault();
+                updateStudent(username);
+            };
+        }
+
+        function updateStudent(username) {
+            const formData = new FormData(document.getElementById('studentForm'));
+            const studentData = {
+                firstName: formData.get('firstName'),
+                lastName: formData.get('lastName'),
+                email: formData.get('email'),
+                username: formData.get('username'),
+                enrollmentDate: formData.get('enrollmentDate')
+            };
+
+            fetch('api.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    action: 'update_student',
+                    username: username,
+                    studentData: studentData
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Étudiant mis à jour avec succès !');
+                    resetForm();
+                    refreshStudents();
+                } else {
+                    alert('Erreur lors de la mise à jour: ' + (data.error || 'Erreur inconnue'));
+                }
+            })
+            .catch(error => {
+                console.error('Erreur:', error);
+                alert('Erreur lors de la mise à jour');
+            });
+        }
+
+        function deleteStudent(username) {
+            if (confirm(`Êtes-vous sûr de vouloir supprimer l'étudiant "${username}" ?`)) {
+                fetch('api.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        action: 'delete_student',
+                        username: username
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Étudiant supprimé avec succès !');
+                        refreshStudents();
+                    } else {
+                        alert('Erreur lors de la suppression: ' + (data.error || 'Erreur inconnue'));
+                    }
+                })
+                .catch(error => {
+                    console.error('Erreur:', error);
+                    alert('Erreur lors de la suppression');
+                });
+            }
+        }
+
+        function refreshStudents() {
+            loadUserData();
+        }
+
+        function exportData() {
+            // Utiliser l'API backend pour l'export
+            window.open('api.php?action=export_csv', '_blank');
+        }
+
+        // Fonctions pour le formulaire de création d'étudiant
+        function toggleCreateForm() {
+            const section = document.getElementById('createStudentSection');
+            const btn = document.querySelector('.create-student-btn');
+            const toggleBtn = document.querySelector('.toggle-form-btn');
+            
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+                btn.textContent = '− Masquer';
+                if (toggleBtn) toggleBtn.textContent = '− Masquer';
+                // Définir la date d'aujourd'hui par défaut
+                document.getElementById('enrollmentDate').value = new Date().toISOString().split('T')[0];
+            } else {
+                section.style.display = 'none';
+                btn.textContent = '👨‍🎓 Nouvel étudiant';
+                if (toggleBtn) toggleBtn.textContent = '+ Nouvel étudiant';
+            }
+        }
+
+        function resetForm() {
+            document.getElementById('studentForm').reset();
+            document.getElementById('createStudentSection').style.display = 'none';
+            document.querySelector('.create-student-btn').textContent = '👨‍🎓 Nouvel étudiant';
+            const toggleBtn = document.querySelector('.toggle-form-btn');
+            if (toggleBtn) toggleBtn.textContent = '+ Nouvel étudiant';
+        }
+
+        // Gestion du formulaire de création d'étudiant
+        document.getElementById('studentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const studentData = {
+                firstName: formData.get('firstName'),
+                lastName: formData.get('lastName'),
+                email: formData.get('email'),
+                username: formData.get('username'),
+                password: formData.get('password'),
+                confirmPassword: formData.get('confirmPassword'),
+                enrollmentDate: formData.get('enrollmentDate')
+            };
+
+            // Créer le compte étudiant (la validation est maintenant dans createStudentAccount)
+            createStudentAccount(studentData);
+        });
+
+        function createStudentAccount(studentData) {
+            // Validation côté client
+            if (!studentData.firstName || !studentData.lastName || !studentData.email || !studentData.username || !studentData.password) {
+                alert('Tous les champs sont requis');
+                return;
+            }
+            
+            if (studentData.password !== studentData.confirmPassword) {
+                alert('Les mots de passe ne correspondent pas');
+                return;
+            }
+            
+            if (studentData.password.length < 6) {
+                alert('Le mot de passe doit contenir au moins 6 caractères');
+                return;
+            }
+            
+            // Vérifier si l'utilisateur existe déjà
+            if (userData[studentData.username]) {
+                alert('Ce nom d\'utilisateur existe déjà');
+                return;
+            }
+            
+            // Afficher un indicateur de chargement
+            const submitBtn = document.querySelector('#studentForm button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Création en cours...';
+            submitBtn.disabled = true;
+            
+            fetch('api.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    action: 'create_student',
+                    studentData: studentData
+                })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.success) {
+                    alert('Compte étudiant créé avec succès !');
+                    resetForm();
+                    refreshStudents();
+                } else {
+                    alert('Erreur lors de la création du compte: ' + (data.error || 'Erreur inconnue'));
+                }
+            })
+            .catch(error => {
+                console.error('Erreur:', error);
+                alert('Erreur lors de la création du compte: ' + error.message);
+            })
+            .finally(() => {
+                // Restaurer le bouton
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            });
+        }
+
+        // Fonction de déconnexion
+        function logout() {
+            if (confirm('Êtes-vous sûr de vouloir vous déconnecter ?')) {
+                // Effacer les données de session du localStorage
+                localStorage.removeItem('username');
+                localStorage.removeItem('isLoggedIn');
+                localStorage.removeItem('userType');
+                
+                // Rediriger vers la page de connexion
+                window.location.href = '../index.html';
+            }
+        }
+
+        // Fermer le modal en cliquant en dehors
+        window.onclick = function(event) {
+            const modal = document.getElementById('userModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

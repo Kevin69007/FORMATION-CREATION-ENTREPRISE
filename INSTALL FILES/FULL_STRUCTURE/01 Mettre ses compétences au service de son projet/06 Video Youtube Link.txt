@@ -1,0 +1,11 @@
+Tous mes modules sont correctement intégré jusqu'au 8 inclus. 
+A parti du 9 les textes et images et liens Youtube ne sont plus les bons. 
+Pour remplir les textes correctements des modules 9 à 13 il faut se référer au dossier INSTALL FILES/FULL_STRUCTURE dedans se trouvent tous les contenus. 
+
+Par exemple pour le module 09 Obtenir les premières informations sur les structures juridiques dans son dossier correspondant il y a toutes les parties. Pour la partie 01 Comprendre les statuts juridiques dans 01 Comprendre les statuts juridiques.html il y a tout le texte a recopier et intégrer
+Dans 01 Video Youtube Link.txt il y a le lien de la vidéo Youtube à intégrer 
+Et chaque image par exemple 01_IMAGE_CHOIXSTATUT.png correspond dans le titre à une partie du paragraphe ici "Le choix du statut juridique adapté"
+Cela correpond de cette façon pour chaque image de chaque paragraphe de chaque partie de chaque module. 
+
+Si tu peux intégrer cela corrctement pour les modules 9 à 13 en suivant cette logique
+EN exemple les modules 5 à 8 sont très bien fait. 

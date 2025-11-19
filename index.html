@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="HandheldFriendly" content="true" />
+	
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<meta name="keywords" content="Onlineformapro" >
+	<title>Jak COMPANY </title>
+    
+<script type="text/javascript">
+	var phpvars = {"pfversion":"1.7.0","baseurl":"\/php5\/manager\/","lang":"fr","trad_cbErrorLoadingMessage":"Le contenu n'a pas pu \u00eatre charg\u00e9 ou n'est pas support\u00e9.<br>Veuillez r\u00e9essayer dans quelques instants","langues_right":false};
+</script>
+ 
+    
+<script  type="text/javascript" src="/io/rw/cache/asset/lib_82f048afdf48e20534d873ac62d8d7dc.js"></script>
+<link href="/io/rw/cache/asset/lib_fd61e0001f4168e799c58fb40a87a93f.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/io/rw/cache/asset/c6604b9263857f13d06c47f02fc07973.js"></script>
+<link href="/io/rw/cache/asset/c1724db3725ded81b732b22f0053f190.css" rel="stylesheet" type="text/css" />
+ 
+</head>
+<body data-role='page' ><script type="text/javascript">
+            
+            </script>
+<form name="form1" method="post" action="/php5/manager/" target="_top" id="Form1">
+    
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Style personnalisé -->
+  <link rel="stylesheet" type="text/css" href="login-style.css" />
+
+  <!--[if !IE | !(IE 9)]><!-->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Admin API pour l'enregistrement des connexions -->
+  <script src="admin/admin-api.js" onerror="console.log('Admin API not loaded, will use localStorage only')"></script>
+
+  <style type="text/css">
+    .alertbox .titre {
+      background-color: #000000;
+      text-transform: none;
+      padding: 15px;
+      font-size: 1.2rem;
+      font-family: "Montserrat", 'Arial', sans-serif;
+      letter-spacing: 0.05rem;
+      color: #877241;
+    }
+
+    .alertbox .corps {
+      font-family: "Montserrat", 'Arial', sans-serif !important;
+      color: #000000;
+
+    }
+
+    .alertbox .corps ul {
+      padding: 0;
+      font-size: 1.2rem;
+    }
+
+    .alertbox .bouton {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Montserrat", 'Arial', sans-serif;
+      font-weight: bold;
+      text-transform: none;
+      background-color: #877241 !important;
+      background-image: linear-gradient(to right, #bc923f, #e0b147, #fff5bd, #bc923f, #bc923f, #fff5bd, #e0b147, #bc923f);
+      background-size: 250% 100%;
+      border: solid 0 transparent;
+      color: #000000 !important;
+      border-radius: 0;
+      height: 3.8rem;
+      width: 13rem;
+      margin: 10px 0;
+      font-size: 1.2rem;
+      transition: all 0.3s ease-in-out, color 0.3s ease-in-out;
+      letter-spacing: 0.15rem;
+      text-transform: uppercase;
+    }
+
+    .alertbox A.bouton:hover {
+      border: solid 6px #bc923f !important;
+      background-color: #000000 !important;
+      color: #877241 !important;
+    }
+  </style>
+
+  <!--<![endif]-->
+  <!--[if lte IE 9]>
+<link rel="stylesheet" type="text/css" href="/io/r/res_perso/manager/jak.cloudelearning.org/tpl/login//css/style-ie9.min.css"/>
+<![endif]-->
+
+
+<div id="page">
+
+  <div class="contenu">
+
+ <div id="logo">
+        <img src="assets/images/logo.png" alt="JakCOMPANY">
+      </div>
+
+    <div id="bg-border"> 
+    <header>
+
+      <h2>CONNECTEZ-VOUS</h2>
+      <h3>à votre <span><span class="sub1">plateforme</span> <span class="sub2">de&nbsp;formation</span></span></h3>
+
+
+      <span class="separateur-2"></span>
+      <div class="instructions">Saisissez votre <span>identifiant</span> et votre <span>mot de&nbsp;passe</span><br>
+        pour vous connecter.
+      </div>
+    </header>
+    <span class="separateur"></span>
+    <main>
+      
+      <div id="fields">
+        <div class="field">
+          <label id="login_label" for="login"><i class="fas fa-user"></i></label>
+          <input type="text" name="login" id="login" required="required" autocomplete="off"
+            placeholder="Votre identifiant" />
+          </div>
+
+        <div class="field">
+          <label id="password_label" for="password"><i class="fas fa-lock"></i></label>
+          <input type="password" name="password" id="password" required="required" autocomplete="off"
+            placeholder="Votre mot de passe" />
+        </div>
+      </div>
+
+      <div class="dbl-btn">
+        <div id="oubli_form">
+          <a id="linkRecupId" href="#" class="modal-trigger">Mot de passe oublié ?</a>
+        </div>
+
+        <a href="#" class="button-submit button_form" id="btn_valide_connexion">
+          <span class="valid">Connexion</span>
+        </a>
+      </div>
+      
+      <div id="errorMessage" class="error-message" style="display: none;"></div>
+    </main>
+    </div>
+  </div>
+  <div class="bg"></div>
+</div>
+
+<div id="modalRecupId" class="modal">
+  <div class="modal-content">
+    <iframe src="/manager/recup_all_identifiants.php?v=mod"></iframe>
+  </div>
+</div>
+
+
+  <script type="text/javascript">
+    var isIEOld = (navigator.userAgent.indexOf('MSIE 6.') > -1 || navigator.userAgent.indexOf('MSIE 7.') > -1);
+    var isIE8 = (navigator.userAgent.indexOf('MSIE 8.') > -1);
+    var isIE9 = (navigator.userAgent.indexOf('MSIE 9.') > -1);
+    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+
+    var jQuery = jQuery.noConflict();
+
+    var resizeTimer;
+
+    labelInput = function(input) {
+      var identifiant = jQuery(input).val();
+      var label = jQuery(input).next('span.label');
+
+      if (identifiant === '') {
+        jQuery(label).removeClass('active');
+      } else {
+        jQuery(label).addClass('active');
+      }
+    };
+
+    jQuery(function() {
+      if (isChrome || isSafari) {
+        jQuery('#login').attr('autocomplete', 'off');
+        jQuery('#password').attr('autocomplete', 'off');
+      }
+      if (!isIEOld && !isIE8 && !isIE9) {
+        jQuery('.modal-trigger').leanModal({
+          complete: function() {
+            console.log('open');
+            jQuery('#modalRecupId iframe').attr('src', "/manager/recup_all_identifiants.php?v=mod");
+          }
+        });
+        // setTimeout(Materialize.updateTextFields, 1000);
+      } else {
+        var elt = document.getElementById('linkRecupId');
+        elt.href = '';
+        elt.onclick = function() {
+          ouvre('/manager/recup_all_identifiants.php');
+          return false;
+        };
+      }
+
+      jQuery('#login').focus();
+    });
+
+    (function($) {
+      $.fn.leanModal = function(options) {
+        if ($('.modal').length > 0) {
+          $('.modal').modal(options);
+        }
+      };
+
+      $.fn.openModal = function(options) {
+        $(this).modal(options);
+        $(this).modal('open');
+      };
+
+      $.fn.closeModal = function() {
+        $(this).modal('close');
+      };
+
+      $('input').each(function(i, el) {
+        labelInput(el);
+      });
+
+      $('input').on('focus', function(evt) {
+        $(evt.currentTarget).next('span.label').addClass('active');
+      });
+
+      $('input').on('blur', function(evt) {
+        labelInput(evt.currentTarget);
+      });
+    })(jQuery);
+
+
+    // Système de connexion
+    function valide_connexion() {
+      const username = document.getElementById('login').value.trim();
+      const password = document.getElementById('password').value;
+      const errorDiv = document.getElementById('errorMessage');
+      
+      if (!errorDiv) {
+        const main = document.querySelector('main');
+        const div = document.createElement('div');
+        div.id = 'errorMessage';
+        div.className = 'error-message';
+        main.appendChild(div);
+      }
+      
+      const errorMessage = document.getElementById('errorMessage');
+      errorMessage.style.display = 'none';
+      errorMessage.textContent = '';
+      
+      // Validation des champs
+      if (!username || !password) {
+        errorMessage.style.display = 'block';
+        errorMessage.textContent = 'Veuillez remplir tous les champs';
+        return;
+      }
+      
+      // Vous pouvez modifier ces identifiants
+      const validUsers = {
+        'etudiant': 'formation2024',
+        'admin': 'admin2024'
+      };
+      
+      if (validUsers[username] && validUsers[username] === password) {
+        // Sauvegarder la session
+        const loginTime = new Date().toISOString();
+        localStorage.setItem('isLoggedIn', 'true');
+        localStorage.setItem('username', username);
+        localStorage.setItem('loginTime', loginTime);
+        
+        // Enregistrer la connexion via l'API si disponible (pour les étudiants)
+        if (username !== 'admin' && typeof AdminAPI !== 'undefined') {
+          try {
+            const api = new AdminAPI();
+            api.userLogin(username, loginTime).catch(err => {
+              console.log('API login not available, using localStorage only');
+            });
+          } catch (e) {
+            console.log('API not available, using localStorage only');
+          }
+        }
+        
+        // Rediriger vers le dashboard
+        if (username === 'admin') {
+          window.location.href = 'admin/index.html';
+        } else {
+          window.location.href = 'dashboard.html';
+        }
+      } else {
+        errorMessage.style.display = 'block';
+        errorMessage.textContent = 'Nom d\'utilisateur ou mot de passe incorrect';
+      }
+    }
+
+    // Gestion du formulaire
+    jQuery(document).ready(function() {
+      jQuery('#btn_valide_connexion').on('click', function(e) {
+        e.preventDefault();
+        valide_connexion();
+      });
+
+      jQuery('#Form1').on('submit', function(e) {
+        e.preventDefault();
+        valide_connexion();
+      });
+
+      // Vérifier si déjà connecté
+      if (localStorage.getItem('isLoggedIn') === 'true') {
+        const username = localStorage.getItem('username');
+        if (username === 'admin') {
+          window.location.href = 'admin/index.html';
+        } else {
+          window.location.href = 'dashboard.html';
+        }
+      }
+    });
+  </script>
+</form>
+<script type="text/javascript">
+	var tagVars = '';
+</script>
+</body>
+</html>

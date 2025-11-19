@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Création Étudiant</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+        button { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        .result { margin-top: 20px; padding: 10px; border-radius: 4px; }
+        .success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+    </style>
+</head>
+<body>
+    <h1>Test de Création d'Étudiant</h1>
+    
+    <form id="testForm">
+        <div class="form-group">
+            <label for="firstName">Prénom:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="lastName">Nom:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="username">Nom d'utilisateur:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="confirmPassword">Confirmer le mot de passe:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="enrollmentDate">Date d'inscription:</label>
+            <input type="date" id="enrollmentDate" name="enrollmentDate" required>
+        </div>
+        
+        <button type="submit">Créer l'étudiant</button>
+    </form>
+    
+    <div id="result"></div>
+    
+    <script>
+        document.getElementById('testForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const studentData = {
+                firstName: formData.get('firstName'),
+                lastName: formData.get('lastName'),
+                email: formData.get('email'),
+                username: formData.get('username'),
+                password: formData.get('password'),
+                confirmPassword: formData.get('confirmPassword'),
+                enrollmentDate: formData.get('enrollmentDate')
+            };
+            
+            // Test de validation côté client
+            if (!studentData.firstName || !studentData.lastName || !studentData.email || !studentData.username || !studentData.password) {
+                showResult('Tous les champs sont requis', 'error');
+                return;
+            }
+            
+            if (studentData.password !== studentData.confirmPassword) {
+                showResult('Les mots de passe ne correspondent pas', 'error');
+                return;
+            }
+            
+            if (studentData.password.length < 6) {
+                showResult('Le mot de passe doit contenir au moins 6 caractères', 'error');
+                return;
+            }
+            
+            // Test de l'API
+            showResult('Test de l\'API en cours...', 'info');
+            
+            fetch('admin/api.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    action: 'create_student',
+                    studentData: studentData
+                })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.success) {
+                    showResult('✅ Compte étudiant créé avec succès !', 'success');
+                } else {
+                    showResult('❌ Erreur: ' + (data.error || 'Erreur inconnue'), 'error');
+                }
+            })
+            .catch(error => {
+                showResult('❌ Erreur de connexion: ' + error.message, 'error');
+            });
+        });
+        
+        function showResult(message, type) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.textContent = message;
+            resultDiv.className = 'result ' + type;
+        }
+        
+        // Définir la date d'aujourd'hui par défaut
+        document.getElementById('enrollmentDate').value = new Date().toISOString().split('T')[0];
+    </script>
+</body>
+</html>

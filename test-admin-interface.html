@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - Administration - Formation Entrepreneuriat</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8f9fa; }
+        .admin-header { background: #2c3e50; color: white; padding: 20px; }
+        .admin-header h1 { font-size: 24px; }
+        .admin-header .logout { float: right; background: #dc3545; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; text-decoration: none; }
+        .admin-container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .stat-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-align: center; }
+        .stat-number { font-size: 36px; font-weight: bold; color: #007bff; margin-bottom: 5px; }
+        .stat-label { color: #6c757d; font-size: 14px; }
+        .users-table { background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden; }
+        .table-header { background: #f8f9fa; padding: 20px; border-bottom: 1px solid #dee2e6; }
+        .table-header h2 { color: #2c3e50; }
+        table { width: 100%; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #dee2e6; }
+        th { background: #f8f9fa; font-weight: 600; color: #2c3e50; }
+        .progress-bar { width: 100px; height: 20px; background: #e9ecef; border-radius: 10px; overflow: hidden; }
+        .progress-fill { height: 100%; background: linear-gradient(90deg, #dc3545 0%, #ffc107 50%, #28a745 100%); transition: width 0.3s ease; }
+        .user-detail { cursor: pointer; color: #007bff; }
+        .user-detail:hover { text-decoration: underline; }
+        .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); }
+        .modal-content { background: white; margin: 5% auto; padding: 20px; width: 80%; max-width: 800px; border-radius: 8px; max-height: 80vh; overflow-y: auto; }
+        .close { float: right; font-size: 28px; font-weight: bold; cursor: pointer; }
+        .close:hover { color: #dc3545; }
+        .lesson-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px; margin-top: 20px; }
+        .lesson-item { padding: 10px; border-radius: 6px; font-size: 14px; }
+        .lesson-completed { background: #d4edda; color: #155724; }
+        .lesson-pending { background: #f8d7da; color: #721c24; }
+        .create-student-btn { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px; font-weight: 600; }
+        .create-student-btn:hover { background: #0056b3; }
+        .refresh-btn { background: #17a2b8; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+        .refresh-btn:hover { background: #138496; }
+        .export-btn { background: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; margin-left: 10px; }
+        
+        /* Styles pour le formulaire de création d'étudiant */
+        .create-student-section { background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 30px; overflow: hidden; }
+        .section-header { background: #f8f9fa; padding: 20px; border-bottom: 1px solid #dee2e6; display: flex; justify-content: space-between; align-items: center; }
+        .section-header h2 { color: #2c3e50; margin: 0; }
+        .toggle-form-btn { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: 600; }
+        .toggle-form-btn:hover { background: #0056b3; }
+        .create-form { padding: 30px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+        .form-group { display: flex; flex-direction: column; }
+        .form-group label { font-weight: 600; color: #2c3e50; margin-bottom: 5px; }
+        .form-group input { padding: 12px; border: 2px solid #e1e5e9; border-radius: 6px; font-size: 16px; transition: border-color 0.3s ease; }
+        .form-group input:focus { outline: none; border-color: #007bff; }
+        .form-actions { display: flex; gap: 15px; justify-content: flex-end; margin-top: 30px; }
+        .btn-primary { background: #007bff; color: white; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; }
+        .btn-primary:hover { background: #0056b3; }
+        .btn-secondary { background: #6c757d; color: white; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; }
+        .btn-secondary:hover { background: #545b62; }
+        
+        /* Styles pour le tableau amélioré */
+        .table-actions { display: flex; gap: 10px; }
+        .table-container { overflow-x: auto; }
+        .student-row:hover { background-color: #f8f9fa; }
+        .progress-container { display: flex; align-items: center; gap: 10px; }
+        .progress-text { font-weight: 600; color: #2c3e50; }
+        .lesson-count { font-weight: 600; color: #28a745; }
+        .action-buttons { display: flex; gap: 5px; flex-wrap: wrap; }
+        .btn-view, .btn-detail, .btn-edit, .btn-delete { padding: 6px 12px; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600; }
+        .btn-view { background: #007bff; color: white; }
+        .btn-detail { background: #6c757d; color: white; }
+        .btn-edit { background: #ffc107; color: #212529; }
+        .btn-delete { background: #dc3545; color: white; }
+        .btn-view:hover, .btn-detail:hover, .btn-edit:hover, .btn-delete:hover { opacity: 0.8; }
+    </style>
+</head>
+<body>
+    <div class="admin-header">
+        <h1>Administration - Formation Entrepreneuriat</h1>
+        <a href="#" class="logout">Déconnexion</a>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="admin-container">
+        <!-- Formulaire de création d'étudiant (masqué par défaut) -->
+        <div class="create-student-section" id="createStudentSection" style="display: none;">
+            <div class="section-header">
+                <h2>👨‍🎓 Créer un nouveau compte étudiant</h2>
+                <button class="toggle-form-btn" onclick="toggleCreateForm()">− Masquer</button>
+            </div>
+            <div class="create-form" id="createForm">
+                <form id="studentForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Prénom *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Nom *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Nom d'utilisateur *</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="password">Mot de passe *</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirmer le mot de passe *</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="enrollmentDate">Date d'inscription *</label>
+                            <input type="date" id="enrollmentDate" name="enrollmentDate" required>
+                        </div>
+                        <div class="form-group">
+                            <!-- Champ vide pour l'alignement -->
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" onclick="resetForm()" class="btn-secondary">Annuler</button>
+                        <button type="submit" class="btn-primary">Créer le compte</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Statistiques globales -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Utilisateurs inscrits</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2</div>
+                <div class="stat-label">Utilisateurs actifs</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">45.2%</div>
+                <div class="stat-label">Progression moyenne</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">13</div>
+                <div class="stat-label">Modules disponibles</div>
+            </div>
+        </div>
+
+        <!-- Tableau des utilisateurs -->
+        <div class="users-table">
+            <div class="table-header">
+                <h2>📊 Liste des étudiants</h2>
+                <div class="table-actions">
+                    <button class="create-student-btn" onclick="toggleCreateForm()">👨‍🎓 Nouvel étudiant</button>
+                    <button class="refresh-btn" onclick="refreshStudents()">🔄 Actualiser</button>
+                    <button class="export-btn" onclick="exportData()">📥 Exporter CSV</button>
+                </div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom d'utilisateur</th>
+                            <th>Nom complet</th>
+                            <th>Email</th>
+                            <th>Date de création</th>
+                            <th>Progression</th>
+                            <th>Leçons terminées</th>
+                            <th>Dernière activité</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentsTableBody">
+                        <tr class="student-row" data-username="etudiant1">
+                            <td><strong>etudiant1</strong></td>
+                            <td>Jean Dupont</td>
+                            <td>jean.dupont@email.com</td>
+                            <td>15/09/2024</td>
+                            <td>
+                                <div class="progress-container">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 65%"></div>
+                                    </div>
+                                    <small class="progress-text">65%</small>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="lesson-count">50 / 77</span>
+                            </td>
+                            <td>08/10/2024 14:30</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="btn-view" onclick="viewStudentDashboard('etudiant1')" title="Voir le dashboard">
+                                        👁️ Dashboard
+                                    </button>
+                                    <button class="btn-detail" onclick="showUserDetail('etudiant1')" title="Détails">
+                                        📋 Détails
+                                    </button>
+                                    <button class="btn-edit" onclick="editStudent('etudiant1')" title="Modifier">
+                                        ✏️ Modifier
+                                    </button>
+                                    <button class="btn-delete" onclick="deleteStudent('etudiant1')" title="Supprimer">
+                                        🗑️ Supprimer
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="student-row" data-username="etudiant2">
+                            <td><strong>etudiant2</strong></td>
+                            <td>Marie Martin</td>
+                            <td>marie.martin@email.com</td>
+                            <td>20/09/2024</td>
+                            <td>
+                                <div class="progress-container">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 25%"></div>
+                                    </div>
+                                    <small class="progress-text">25%</small>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="lesson-count">19 / 77</span>
+                            </td>
+                            <td>07/10/2024 09:15</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="btn-view" onclick="viewStudentDashboard('etudiant2')" title="Voir le dashboard">
+                                        👁️ Dashboard
+                                    </button>
+                                    <button class="btn-detail" onclick="showUserDetail('etudiant2')" title="Détails">
+                                        📋 Détails
+                                    </button>
+                                    <button class="btn-edit" onclick="editStudent('etudiant2')" title="Modifier">
+                                        ✏️ Modifier
+                                    </button>
+                                    <button class="btn-delete" onclick="deleteStudent('etudiant2')" title="Supprimer">
+                                        🗑️ Supprimer
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Fonctions pour le formulaire de création d'étudiant
+        function toggleCreateForm() {
+            const section = document.getElementById('createStudentSection');
+            const btn = document.querySelector('.create-student-btn');
+            const toggleBtn = document.querySelector('.toggle-form-btn');
+            
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+                btn.textContent = '− Masquer';
+                if (toggleBtn) toggleBtn.textContent = '− Masquer';
+                // Définir la date d'aujourd'hui par défaut
+                document.getElementById('enrollmentDate').value = new Date().toISOString().split('T')[0];
+            } else {
+                section.style.display = 'none';
+                btn.textContent = '👨‍🎓 Nouvel étudiant';
+                if (toggleBtn) toggleBtn.textContent = '+ Nouvel étudiant';
+            }
+        }
+
+        function resetForm() {
+            document.getElementById('studentForm').reset();
+            document.getElementById('createStudentSection').style.display = 'none';
+            document.querySelector('.create-student-btn').textContent = '👨‍🎓 Nouvel étudiant';
+            const toggleBtn = document.querySelector('.toggle-form-btn');
+            if (toggleBtn) toggleBtn.textContent = '+ Nouvel étudiant';
+        }
+
+        // Gestion du formulaire de création d'étudiant
+        document.getElementById('studentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const studentData = {
+                firstName: formData.get('firstName'),
+                lastName: formData.get('lastName'),
+                email: formData.get('email'),
+                username: formData.get('username'),
+                password: formData.get('password'),
+                confirmPassword: formData.get('confirmPassword'),
+                enrollmentDate: formData.get('enrollmentDate')
+            };
+
+            // Validation
+            if (studentData.password !== studentData.confirmPassword) {
+                alert('Les mots de passe ne correspondent pas');
+                return;
+            }
+
+            if (studentData.password.length < 6) {
+                alert('Le mot de passe doit contenir au moins 6 caractères');
+                return;
+            }
+
+            // Simulation de la création
+            alert('Compte étudiant créé avec succès !\n\n' + 
+                  'Prénom: ' + studentData.firstName + '\n' +
+                  'Nom: ' + studentData.lastName + '\n' +
+                  'Email: ' + studentData.email + '\n' +
+                  'Nom d\'utilisateur: ' + studentData.username + '\n' +
+                  'Date d\'inscription: ' + studentData.enrollmentDate);
+            
+            resetForm();
+        });
+
+        function refreshStudents() {
+            alert('Liste des étudiants actualisée !');
+        }
+
+        function exportData() {
+            alert('Export CSV en cours...');
+        }
+
+        function viewStudentDashboard(username) {
+            alert('Ouverture du dashboard de ' + username);
+        }
+
+        function showUserDetail(username) {
+            alert('Détails de ' + username);
+        }
+
+        function editStudent(username) {
+            alert('Modification de ' + username);
+            // Simuler l'ouverture du formulaire en mode édition
+            toggleCreateForm();
+        }
+
+        function deleteStudent(username) {
+            if (confirm('Êtes-vous sûr de vouloir supprimer l\'étudiant "' + username + '" ?')) {
+                alert('Étudiant ' + username + ' supprimé !');
+            }
+        }
+    </script>
+</body>
+</html>

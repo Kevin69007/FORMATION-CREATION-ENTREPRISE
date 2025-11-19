@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Admin - Formation Entrepreneuriat</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .test-section { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .test-section h3 { color: #2c3e50; margin-top: 0; }
+        .test-result { margin: 10px 0; padding: 10px; border-radius: 4px; }
+        .success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .info { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+        button { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; margin: 5px; }
+        button:hover { background: #0056b3; }
+        .links { margin: 20px 0; }
+        .links a { display: inline-block; margin: 10px; padding: 10px 20px; background: #28a745; color: white; text-decoration: none; border-radius: 4px; }
+        .links a:hover { background: #218838; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Test de l'Interface Admin</h1>
+        <p>Cette page teste les fonctionnalités de l'interface d'administration convertie de PHP vers HTML/JavaScript.</p>
+        
+        <div class="links">
+            <a href="index.html" target="_blank">🏠 Page de connexion principale</a>
+            <a href="admin/index.html" target="_blank">👨‍💼 Interface Admin</a>
+            <a href="dashboard.html" target="_blank">📊 Dashboard Étudiant</a>
+        </div>
+
+        <div class="test-section">
+            <h3>1. Test de l'API JavaScript</h3>
+            <div id="apiTestResult"></div>
+            <button onclick="testAPI()">Tester l'API</button>
+        </div>
+
+        <div class="test-section">
+            <h3>2. Test de création d'utilisateur</h3>
+            <div id="userTestResult"></div>
+            <button onclick="testUserCreation()">Créer un utilisateur test</button>
+        </div>
+
+        <div class="test-section">
+            <h3>3. Test des statistiques</h3>
+            <div id="statsTestResult"></div>
+            <button onclick="testStats()">Afficher les statistiques</button>
+        </div>
+
+        <div class="test-section">
+            <h3>4. Test d'export CSV</h3>
+            <div id="exportTestResult"></div>
+            <button onclick="testExport()">Tester l'export CSV</button>
+        </div>
+
+        <div class="test-section">
+            <h3>5. Instructions de test</h3>
+            <div class="info">
+                <h4>Pour tester l'interface admin complète :</h4>
+                <ol>
+                    <li>Cliquez sur "Interface Admin" ci-dessus</li>
+                    <li>Connectez-vous avec le mot de passe : <strong>admin2024</strong></li>
+                    <li>Testez les fonctionnalités suivantes :
+                        <ul>
+                            <li>Création d'un nouvel étudiant</li>
+                            <li>Visualisation des statistiques</li>
+                            <li>Modification d'un étudiant</li>
+                            <li>Suppression d'un étudiant</li>
+                            <li>Export des données en CSV</li>
+                            <li>Visualisation du dashboard étudiant</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin/admin-api.js"></script>
+    <script>
+        function addResult(containerId, message, type = 'info') {
+            const container = document.getElementById(containerId);
+            const div = document.createElement('div');
+            div.className = `test-result ${type}`;
+            div.innerHTML = message;
+            container.appendChild(div);
+        }
+
+        function clearResults(containerId) {
+            document.getElementById(containerId).innerHTML = '';
+        }
+
+        function testAPI() {
+            clearResults('apiTestResult');
+            
+            try {
+                // Test de l'API
+                addResult('apiTestResult', '✅ API JavaScript chargée avec succès', 'success');
+                
+                // Test de création d'un utilisateur de test
+                const testUser = {
+                    username: 'test_user',
+                    firstName: 'Test',
+                    lastName: 'User',
+                    email: 'test@example.com',
+                    password: 'test123'
+                };
+                
+                try {
+                    const result = adminAPI.createStudent(testUser);
+                    addResult('apiTestResult', `✅ Création d'utilisateur test réussie: ${result.message}`, 'success');
+                } catch (error) {
+                    if (error.message.includes('existe déjà')) {
+                        addResult('apiTestResult', 'ℹ️ Utilisateur test existe déjà (normal)', 'info');
+                    } else {
+                        addResult('apiTestResult', `❌ Erreur lors de la création: ${error.message}`, 'error');
+                    }
+                }
+                
+                // Test de chargement des données
+                const userData = adminAPI.loadUserData();
+                addResult('apiTestResult', `✅ Données chargées: ${Object.keys(userData).length} utilisateurs trouvés`, 'success');
+                
+            } catch (error) {
+                addResult('apiTestResult', `❌ Erreur API: ${error.message}`, 'error');
+            }
+        }
+
+        function testUserCreation() {
+            clearResults('userTestResult');
+            
+            const testUsers = [
+                {
+                    username: 'etudiant1',
+                    firstName: 'Jean',
+                    lastName: 'Dupont',
+                    email: 'jean.dupont@example.com',
+                    password: 'password123'
+                },
+                {
+                    username: 'etudiant2',
+                    firstName: 'Marie',
+                    lastName: 'Martin',
+                    email: 'marie.martin@example.com',
+                    password: 'password123'
+                }
+            ];
+            
+            testUsers.forEach((user, index) => {
+                try {
+                    const result = adminAPI.createStudent(user);
+                    addResult('userTestResult', `✅ Utilisateur ${index + 1} créé: ${user.username}`, 'success');
+                } catch (error) {
+                    if (error.message.includes('existe déjà')) {
+                        addResult('userTestResult', `ℹ️ Utilisateur ${index + 1} existe déjà: ${user.username}`, 'info');
+                    } else {
+                        addResult('userTestResult', `❌ Erreur utilisateur ${index + 1}: ${error.message}`, 'error');
+                    }
+                }
+            });
+        }
+
+        function testStats() {
+            clearResults('statsTestResult');
+            
+            try {
+                const stats = adminAPI.getStats();
+                addResult('statsTestResult', `📊 Statistiques actuelles:`, 'info');
+                addResult('statsTestResult', `• Total utilisateurs: ${stats.total_users}`, 'info');
+                addResult('statsTestResult', `• Utilisateurs actifs: ${stats.active_users}`, 'info');
+                addResult('statsTestResult', `• Progression moyenne: ${stats.average_completion}%`, 'info');
+                addResult('statsTestResult', `• Total leçons: ${stats.total_lessons}`, 'info');
+            } catch (error) {
+                addResult('statsTestResult', `❌ Erreur statistiques: ${error.message}`, 'error');
+            }
+        }
+
+        function testExport() {
+            clearResults('exportTestResult');
+            
+            try {
+                const csvData = adminAPI.exportCSV();
+                addResult('exportTestResult', `✅ Export CSV généré avec succès (${csvData.length} caractères)`, 'success');
+                
+                // Créer un lien de téléchargement
+                const blob = new Blob([csvData], { type: 'text/csv' });
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'test_export.csv';
+                a.textContent = '📥 Télécharger le fichier CSV de test';
+                a.style.display = 'block';
+                a.style.margin = '10px 0';
+                a.style.padding = '10px';
+                a.style.background = '#28a745';
+                a.style.color = 'white';
+                a.style.textDecoration = 'none';
+                a.style.borderRadius = '4px';
+                
+                const container = document.getElementById('exportTestResult');
+                container.appendChild(a);
+                
+            } catch (error) {
+                addResult('exportTestResult', `❌ Erreur export: ${error.message}`, 'error');
+            }
+        }
+
+        // Test automatique au chargement
+        window.addEventListener('load', function() {
+            addResult('apiTestResult', '🔄 Tests automatiques en cours...', 'info');
+            setTimeout(() => {
+                testAPI();
+            }, 500);
+        });
+    </script>
+</body>
+</html>
