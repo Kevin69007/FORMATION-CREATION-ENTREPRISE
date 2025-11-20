@@ -92,6 +92,7 @@
         </div>
     </div>
 
+    <script src="api-client.js"></script>
     <script src="script.js"></script>
     <script src="lesson-content-module1.js"></script>
     <script src="lesson-content-module2.js"></script>
@@ -142,8 +143,11 @@
             initializeLesson();
         });
         
-        function initializeLesson() {
+        async function initializeLesson() {
             console.log(`Initialisation leçon: Module ${currentModule}, Leçon ${currentLesson}`);
+            
+            // Enregistrer la visite de la leçon dans la progression
+            await recordLessonVisit(currentModule, currentLesson);
             
             // Charger la navigation
             generateNavigation();
@@ -156,6 +160,44 @@
             
             // Mettre à jour la progression
             updateProgress();
+        }
+        
+        // Fonction pour enregistrer la visite d'une leçon
+        async function recordLessonVisit(moduleId, lessonId) {
+            const lessonKey = `module_${moduleId}_lesson_${lessonId}`;
+            let progress = JSON.parse(localStorage.getItem('lessonProgress') || '{}');
+            
+            // Si la leçon n'a pas encore été visitée, l'enregistrer
+            if (!progress[lessonKey]) {
+                progress[lessonKey] = {
+                    started: true,
+                    startedAt: new Date().toISOString(),
+                    completed: false,
+                    timeSpent: 0
+                };
+                localStorage.setItem('lessonProgress', JSON.stringify(progress));
+                
+                // Synchroniser avec l'API externe si disponible
+                if (window.apiClient) {
+                    try {
+                        await window.apiClient.updateProgress({
+                            moduleId: `module${moduleId}`,
+                            lessonId: `lesson${lessonId}`,
+                            completed: false,
+                            timeSpent: 0
+                        });
+                        console.log('✅ Visite de la leçon enregistrée dans l\'API');
+                    } catch (error) {
+                        console.warn('⚠️ Impossible de synchroniser la visite avec l\'API:', error);
+                    }
+                }
+            } else {
+                // Mettre à jour le timestamp de dernière visite
+                if (!progress[lessonKey].lastVisited) {
+                    progress[lessonKey].lastVisited = new Date().toISOString();
+                    localStorage.setItem('lessonProgress', JSON.stringify(progress));
+                }
+            }
         }
         
         function loadLessonContent() {
@@ -188,7 +230,7 @@
             }
         }
         
-        function markAsCompleted() {
+        async function markAsCompleted() {
             const lessonKey = `module_${currentModule}_lesson_${currentLesson}`;
             
             // Marquer comme terminé dans le localStorage
@@ -199,26 +241,53 @@
             };
             localStorage.setItem('lessonProgress', JSON.stringify(progress));
             
-            // Envoyer les données au serveur
-            sendProgressToServer();
+            // Synchroniser avec l'API externe si disponible
+            if (window.apiClient) {
+                try {
+                    await window.apiClient.updateProgress({
+                        moduleId: `module${currentModule}`,
+                        lessonId: `lesson${currentLesson}`,
+                        completed: true,
+                        timeSpent: 0
+                    });
+                    console.log('Progression synchronisée avec l\'API externe');
+                } catch (error) {
+                    console.error('Erreur lors de la synchronisation:', error);
+                    // Continuer même en cas d'erreur
+                }
+            } else {
+                // Fallback : envoyer les données au serveur (ancienne méthode)
+                if (typeof sendProgressToServer === 'function') {
+                    sendProgressToServer();
+                }
+            }
             
             // Mettre à jour l'interface
-            updateProgress();
-            generateNavigation();
+            if (typeof updateProgress === 'function') {
+                updateProgress();
+            }
+            if (typeof generateNavigation === 'function') {
+                generateNavigation();
+            }
             
             // Changer les boutons
             const completeButton = document.getElementById('completeButton');
             const completeButtonBottom = document.getElementById('completeButtonBottom');
-            completeButton.textContent = '✓ Terminé';
-            completeButton.style.background = '#28a745';
-            completeButton.disabled = true;
-            
-            completeButtonBottom.textContent = '✓ Terminé';
-            completeButtonBottom.style.background = '#28a745';
-            completeButtonBottom.disabled = true;
+            if (completeButton) {
+                completeButton.textContent = '✓ Terminé';
+                completeButton.style.background = '#28a745';
+                completeButton.disabled = true;
+            }
+            if (completeButtonBottom) {
+                completeButtonBottom.textContent = '✓ Terminé';
+                completeButtonBottom.style.background = '#28a745';
+                completeButtonBottom.disabled = true;
+            }
             
             // Notification
-            showNotification('Leçon marquée comme terminée !');
+            if (typeof showNotification === 'function') {
+                showNotification('Leçon marquée comme terminée !');
+            }
         }
         
         function previousLesson() {

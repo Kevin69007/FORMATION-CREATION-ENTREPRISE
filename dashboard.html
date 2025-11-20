@@ -80,7 +80,7 @@
                 </div>
 
                 <div class="start-formation">
-                    <a href="#" onclick="startFirstLesson()" class="start-button">
+                    <a href="#" id="startFormationBtn" class="start-button">
                         Commencer la formation
                     </a>
                 </div>
@@ -103,34 +103,148 @@
         </div>
     </div>
 
+    <script src="api-client.js"></script>
     <script src="script.js"></script>
     <script src="admin/admin-api.js"></script>
     <script>
-        // Vérifier l'authentification
-        checkAuth();
+        // Fonction pour démarrer la première leçon (définie en premier pour être disponible)
+        window.startFirstLesson = async function() {
+            try {
+                console.log('🚀 Démarrage de la formation...');
+                
+                // Initialiser la progression si elle n'existe pas
+                let progress = JSON.parse(localStorage.getItem('lessonProgress') || '{}');
+                const username = localStorage.getItem('username');
+                
+                // Vérifier si c'est la première fois que l'utilisateur commence
+                const firstLessonKey = 'module_1_lesson_1';
+                const isFirstTime = !progress[firstLessonKey];
+                
+                if (isFirstTime) {
+                    console.log('📝 Première visite - Initialisation de la progression');
+                    // Initialiser la première leçon comme commencée (mais pas terminée)
+                    progress[firstLessonKey] = {
+                        started: true,
+                        startedAt: new Date().toISOString(),
+                        completed: false,
+                        timeSpent: 0
+                    };
+                    localStorage.setItem('lessonProgress', JSON.stringify(progress));
+                    
+                    // Synchroniser avec l'API externe si disponible
+                    if (window.apiClient) {
+                        try {
+                            await window.apiClient.updateProgress({
+                                moduleId: 'module1',
+                                lessonId: 'lesson1',
+                                completed: false,
+                                timeSpent: 0
+                            });
+                            console.log('✅ Progression initialisée et synchronisée avec l\'API');
+                        } catch (error) {
+                            console.warn('⚠️ Impossible de synchroniser avec l\'API:', error);
+                        }
+                    }
+                }
+                
+                // Mettre à jour les statistiques avant de rediriger
+                if (typeof updateProgress === 'function') {
+                    updateProgress();
+                }
+                
+                // Rediriger vers la première leçon
+                console.log('➡️ Redirection vers la première leçon...');
+                window.location.href = 'lesson.html?module=1&lesson=1';
+            } catch (error) {
+                console.error('❌ Erreur lors du démarrage de la formation:', error);
+                alert('Erreur lors du démarrage de la formation. Veuillez réessayer.');
+            }
+        };
         
-        // Vérifier si l'utilisateur est admin et rediriger vers l'interface admin
-        if (localStorage.getItem('username') === 'admin') {
-<<<<<<< HEAD
-            window.location.href = 'admin/index.html';
-=======
-            window.location.href = 'admin/index.php';
->>>>>>> 3b2eee4f3ff01f75d9ffc6e2a29ae373b7db80d9
-            return;
+        // Charger la progression depuis l'API si disponible
+        async function loadProgressFromAPI() {
+            if (window.apiClient) {
+                try {
+                    const progressData = await window.apiClient.getProgress();
+                    if (progressData && progressData.progress) {
+                        // Convertir la progression de l'API au format localStorage
+                        const localProgress = {};
+                        for (const moduleId in progressData.progress) {
+                            for (const lessonId in progressData.progress[moduleId]) {
+                                const lesson = progressData.progress[moduleId][lessonId];
+                                // Extraire les IDs numériques (module1 -> 1, lesson1 -> 1)
+                                const moduleNum = moduleId.replace('module', '');
+                                const lessonNum = lessonId.replace('lesson', '');
+                                const lessonKey = `module_${moduleNum}_lesson_${lessonNum}`;
+                                localProgress[lessonKey] = {
+                                    completed: lesson.completed || false,
+                                    timeSpent: lesson.timeSpent || 0,
+                                    completedAt: lesson.lastAccessed || null
+                                };
+                            }
+                        }
+                        // Fusionner avec la progression locale (la locale a priorité)
+                        const existingProgress = JSON.parse(localStorage.getItem('lessonProgress') || '{}');
+                        const mergedProgress = { ...localProgress, ...existingProgress };
+                        localStorage.setItem('lessonProgress', JSON.stringify(mergedProgress));
+                        
+                        // Mettre à jour l'affichage
+                        if (typeof updateProgress === 'function') {
+                            updateProgress();
+                        }
+                        if (typeof generateNavigation === 'function') {
+                            generateNavigation();
+                        }
+                    }
+                } catch (error) {
+                    console.warn('Impossible de charger la progression depuis l\'API:', error);
+                }
+            }
         }
         
-        // Initialiser le dashboard étudiant
-        initializeDashboard();
-        
-        function startFirstLesson() {
-            // Rediriger vers la première leçon
-            window.location.href = 'lesson.html?module=1&lesson=1';
-        }
-        
+        // Attendre que le DOM soit complètement chargé
+        document.addEventListener('DOMContentLoaded', function() {
+            // Vérifier l'authentification
+            checkAuth();
+            
+            // Vérifier si l'utilisateur est admin et rediriger vers l'interface admin
+            const userType = localStorage.getItem('userType');
+            if (userType === 'ADMIN' || userType === 'admin') {
+                window.location.href = 'admin/index.html';
+                return;
+            }
+            
+            // Initialiser le dashboard étudiant
+            initializeDashboard();
+            
+            // Charger la progression au démarrage
+            loadProgressFromAPI();
+            
+            // Attacher l'événement au bouton "Commencer la formation"
+            const startBtn = document.getElementById('startFormationBtn');
+            if (startBtn) {
+                startBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('🖱️ Clic sur le bouton "Commencer la formation"');
+                    if (typeof window.startFirstLesson === 'function') {
+                        window.startFirstLesson();
+                    } else {
+                        console.error('❌ Fonction startFirstLesson non disponible');
+                        // Fallback : redirection directe
+                        window.location.href = 'lesson.html?module=1&lesson=1';
+                    }
+                });
+                console.log('✅ Bouton "Commencer la formation" initialisé');
+            } else {
+                console.error('❌ Bouton "Commencer la formation" non trouvé');
+            }
+        });
         
         function goToProfile() {
             window.location.href = 'profile.html';
         }
+        
+        window.goToProfile = goToProfile;
         
     </script>
 </body>

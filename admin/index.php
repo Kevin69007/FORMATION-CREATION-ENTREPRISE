@@ -9,9 +9,10 @@ $admin_password = 'admin2024'; // Changez ce mot de passe
 if (!isset($_SESSION['admin_logged_in'])) {
     // Vérifier si l'utilisateur est admin via localStorage (fallback)
     if (isset($_GET['admin_check']) && $_GET['admin_check'] === 'true') {
-        // Vérifier via JavaScript que l'utilisateur est admin
+        // Vérifier via JavaScript que l'utilisateur est admin (vérifier le rôle)
         echo '<script>
-            if (localStorage.getItem("username") === "admin") {
+            const userType = localStorage.getItem("userType");
+            if (userType === "ADMIN" || userType === "admin") {
                 // Rediriger vers la page admin avec authentification
                 window.location.href = "index.php?admin_auth=true";
             } else {
@@ -71,8 +72,10 @@ if (!isset($_SESSION['admin_logged_in'])) {
 // Vérification supplémentaire de sécurité
 if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in']) {
     // Vérifier que l'utilisateur est bien admin via localStorage (double vérification)
+    // Vérifier le rôle plutôt que le username
     echo '<script>
-        if (localStorage.getItem("username") !== "admin") {
+        const userType = localStorage.getItem("userType");
+        if (userType !== "ADMIN" && userType !== "admin") {
             alert("Accès refusé. Seuls les administrateurs peuvent accéder à cette page.");
             window.location.href = "../index.html";
         }

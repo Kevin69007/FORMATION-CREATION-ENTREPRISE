@@ -326,14 +326,31 @@ header h3 span .sub2 {
 /* Message d'erreur */
 .error-message {
     color: #dc3545;
-    padding: 12px;
+    padding: 15px;
     background-color: rgba(220, 53, 69, 0.1);
     border: 1px solid #dc3545;
-    border-radius: 0;
+    border-radius: 6px;
     margin-top: 20px;
     font-size: 14px;
-    text-align: center;
+    text-align: left;
     font-family: "Montserrat", 'Arial', sans-serif;
+    line-height: 1.6;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.error-message strong {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.error-message small {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #666;
+    font-style: italic;
 }
 
 /* Image de fond droite */

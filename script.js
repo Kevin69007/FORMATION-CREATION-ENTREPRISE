@@ -398,6 +398,30 @@ function getNextLesson(currentModule, currentLesson) {
     return null;
 }
 
+// Fonction pour synchroniser une leçon avec l'API externe
+async function syncLessonToAPI(moduleId, lessonId, completed, timeSpent = 0) {
+    if (!window.apiClient) {
+        console.warn('API Client not available');
+        return;
+    }
+
+    try {
+        const result = await window.apiClient.updateProgress({
+            moduleId: `module${moduleId}`,
+            lessonId: `lesson${lessonId}`,
+            completed: completed,
+            timeSpent: timeSpent
+        });
+        
+        console.log('Progression synchronisée avec succès:', result);
+        return result;
+    } catch (error) {
+        console.error('Erreur lors de la synchronisation:', error);
+        throw error;
+    }
+}
+
+// Fonction pour envoyer la progression au serveur (compatibilité)
 function sendProgressToServer() {
     const progress = localStorage.getItem('lessonProgress');
     const username = localStorage.getItem('username');
@@ -407,44 +431,83 @@ function sendProgressToServer() {
         return;
     }
     
-    try {
-        const progressData = JSON.parse(progress);
-        
-        fetch('admin/api.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                action: 'update_progress',
-                username: username,
-                progress: progressData,
-                timestamp: new Date().toISOString()
+    // Si l'API externe est disponible, on synchronise toutes les leçons
+    if (window.apiClient) {
+        try {
+            const progressData = JSON.parse(progress);
+            const syncPromises = [];
+            
+            // Parser chaque leçon et créer une promesse de synchronisation
+            for (const lessonKey in progressData) {
+                const match = lessonKey.match(/module_(\d+)_lesson_(\d+)/);
+                if (match) {
+                    const moduleId = match[1];
+                    const lessonId = match[2];
+                    const lessonData = progressData[lessonKey];
+                    const completed = lessonData.completed || false;
+                    const timeSpent = lessonData.timeSpent || 0;
+                    
+                    syncPromises.push(
+                        syncLessonToAPI(moduleId, lessonId, completed, timeSpent)
+                            .catch(err => {
+                                console.error(`Erreur pour ${lessonKey}:`, err);
+                            })
+                    );
+                }
+            }
+            
+            // Attendre que toutes les synchronisations soient terminées
+            Promise.all(syncPromises)
+                .then(() => {
+                    console.log('Toutes les leçons ont été synchronisées');
+                })
+                .catch(error => {
+                    console.error('Erreur lors de la synchronisation globale:', error);
+                });
+        } catch (error) {
+            console.error('Erreur lors du parsing de la progression:', error);
+        }
+    } else {
+        // Fallback vers l'ancienne API PHP si l'API externe n'est pas disponible
+        try {
+            const progressData = JSON.parse(progress);
+            
+            fetch('admin/api.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    action: 'update_progress',
+                    username: username,
+                    progress: progressData,
+                    timestamp: new Date().toISOString()
+                })
             })
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log('Progression sauvegardée avec succès:', data);
-            if (data.success) {
-                console.log(`Leçons terminées: ${data.stats?.completed_lessons || 'N/A'}, Taux: ${data.stats?.completion_rate || 'N/A'}%`);
-            }
-        })
-        .catch(error => {
-            console.error('Erreur lors de la sauvegarde:', error);
-            showNotification('Erreur lors de la sauvegarde de la progression', 'error');
-        });
-    } catch (error) {
-        console.error('Erreur lors du parsing de la progression:', error);
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Progression sauvegardée avec succès:', data);
+                if (data.success) {
+                    console.log(`Leçons terminées: ${data.stats?.completed_lessons || 'N/A'}, Taux: ${data.stats?.completion_rate || 'N/A'}%`);
+                }
+            })
+            .catch(error => {
+                console.error('Erreur lors de la sauvegarde:', error);
+                showNotification('Erreur lors de la sauvegarde de la progression', 'error');
+            });
+        } catch (error) {
+            console.error('Erreur lors du parsing de la progression:', error);
+        }
     }
 }
 
 // Fonction pour marquer une leçon comme terminée avec timestamp
-function markLessonAsCompleted(moduleId, lessonId) {
+async function markLessonAsCompleted(moduleId, lessonId) {
     const lessonKey = `module_${moduleId}_lesson_${lessonId}`;
     const progress = JSON.parse(localStorage.getItem('lessonProgress') || '{}');
     
@@ -461,14 +524,24 @@ function markLessonAsCompleted(moduleId, lessonId) {
     updateProgress();
     generateNavigation();
     
-    // Sauvegarder sur le serveur
-    sendProgressToServer();
+    // Synchroniser avec l'API externe si disponible
+    if (window.apiClient) {
+        try {
+            await syncLessonToAPI(moduleId, lessonId, true, 0);
+        } catch (error) {
+            console.error('Erreur lors de la synchronisation:', error);
+            // Continuer même en cas d'erreur
+        }
+    } else {
+        // Fallback : sauvegarder sur le serveur (ancienne méthode)
+        sendProgressToServer();
+    }
     
     showNotification('Leçon marquée comme terminée !', 'success');
 }
 
 // Fonction pour marquer une leçon comme non terminée
-function markLessonAsIncomplete(moduleId, lessonId) {
+async function markLessonAsIncomplete(moduleId, lessonId) {
     const lessonKey = `module_${moduleId}_lesson_${lessonId}`;
     const progress = JSON.parse(localStorage.getItem('lessonProgress') || '{}');
     
@@ -483,8 +556,18 @@ function markLessonAsIncomplete(moduleId, lessonId) {
     updateProgress();
     generateNavigation();
     
-    // Sauvegarder sur le serveur
-    sendProgressToServer();
+    // Synchroniser avec l'API externe si disponible
+    if (window.apiClient) {
+        try {
+            await syncLessonToAPI(moduleId, lessonId, false, 0);
+        } catch (error) {
+            console.error('Erreur lors de la synchronisation:', error);
+            // Continuer même en cas d'erreur
+        }
+    } else {
+        // Fallback : sauvegarder sur le serveur (ancienne méthode)
+        sendProgressToServer();
+    }
     
     showNotification('Leçon marquée comme non terminée', 'success');
 }

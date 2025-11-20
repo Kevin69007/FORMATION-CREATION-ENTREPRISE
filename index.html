@@ -44,6 +44,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <!-- Admin API pour l'enregistrement des connexions -->
   <script src="admin/admin-api.js" onerror="console.log('Admin API not loaded, will use localStorage only')"></script>
+  <!-- API Client pour l'API externe Node.js -->
+  <script src="api-client.js"></script>
 
   <style type="text/css">
     .alertbox .titre {
@@ -241,7 +243,7 @@
 
 
     // Système de connexion
-    function valide_connexion() {
+    async function valide_connexion() {
       const username = document.getElementById('login').value.trim();
       const password = document.getElementById('password').value;
       const errorDiv = document.getElementById('errorMessage');
@@ -265,40 +267,74 @@
         return;
       }
       
-      // Vous pouvez modifier ces identifiants
-      const validUsers = {
-        'etudiant': 'formation2024',
-        'admin': 'admin2024'
-      };
+      // Désactiver le bouton de connexion pendant la requête
+      const submitBtn = document.getElementById('btn_valide_connexion');
+      const validSpan = submitBtn.querySelector('.valid');
+      const originalText = validSpan ? validSpan.textContent : 'Connexion';
+      if (validSpan) {
+        validSpan.textContent = 'Connexion...';
+      }
+      submitBtn.style.pointerEvents = 'none';
+      submitBtn.style.opacity = '0.6';
       
-      if (validUsers[username] && validUsers[username] === password) {
-        // Sauvegarder la session
-        const loginTime = new Date().toISOString();
-        localStorage.setItem('isLoggedIn', 'true');
-        localStorage.setItem('username', username);
-        localStorage.setItem('loginTime', loginTime);
+      try {
+        // Utiliser l'API externe pour authentifier
+        const data = await window.apiClient.login(username, password);
         
-        // Enregistrer la connexion via l'API si disponible (pour les étudiants)
-        if (username !== 'admin' && typeof AdminAPI !== 'undefined') {
-          try {
-            const api = new AdminAPI();
-            api.userLogin(username, loginTime).catch(err => {
-              console.log('API login not available, using localStorage only');
-            });
-          } catch (e) {
-            console.log('API not available, using localStorage only');
+        if (data.success) {
+          // Authentification réussie
+          const loginTime = new Date().toISOString();
+          localStorage.setItem('isLoggedIn', 'true');
+          localStorage.setItem('username', username);
+          localStorage.setItem('loginTime', loginTime);
+          localStorage.setItem('token', data.token); // Sauvegarder le token JWT
+          localStorage.setItem('userType', data.user.role === 'ADMIN' ? 'ADMIN' : 'student');
+          localStorage.setItem('userEmail', data.user.email || '');
+          localStorage.setItem('userFirstName', data.user.firstName || '');
+          localStorage.setItem('userLastName', data.user.lastName || '');
+          
+          // Rediriger vers le dashboard selon le rôle
+          if (data.user.role === 'ADMIN') {
+            window.location.href = 'admin/index.html';
+          } else {
+            window.location.href = 'dashboard.html';
           }
+        } else {
+          // Erreur d'authentification
+          errorMessage.style.display = 'block';
+          errorMessage.textContent = data.error || 'Nom d\'utilisateur ou mot de passe incorrect';
+          
+          // Réactiver le bouton
+          if (validSpan) {
+            validSpan.textContent = originalText;
+          }
+          submitBtn.style.pointerEvents = 'auto';
+          submitBtn.style.opacity = '1';
+        }
+      } catch (error) {
+        console.error('Erreur lors de l\'authentification:', error);
+        errorMessage.style.display = 'block';
+        
+        // Message d'erreur spécifique pour CORS
+        if (error.name === 'CORSError' || error.message.includes('CORS') || error.message.includes('Failed to fetch')) {
+          errorMessage.innerHTML = `
+            <strong>Erreur de connexion à l'API externe</strong><br>
+            Vérifiez que :<br>
+            1. L'API est démarrée sur http://localhost:3000<br>
+            2. Le front-end est servi via HTTP (utilisez start-server.bat)<br>
+            3. L'API accepte les requêtes CORS<br><br>
+            <small>Erreur technique : ${error.message}</small>
+          `;
+        } else {
+          errorMessage.textContent = error.message || 'Erreur de connexion au serveur. Veuillez réessayer.';
         }
         
-        // Rediriger vers le dashboard
-        if (username === 'admin') {
-          window.location.href = 'admin/index.html';
-        } else {
-          window.location.href = 'dashboard.html';
+        // Réactiver le bouton
+        if (validSpan) {
+          validSpan.textContent = originalText;
         }
-      } else {
-        errorMessage.style.display = 'block';
-        errorMessage.textContent = 'Nom d\'utilisateur ou mot de passe incorrect';
+        submitBtn.style.pointerEvents = 'auto';
+        submitBtn.style.opacity = '1';
       }
     }
 
@@ -316,8 +352,9 @@
 
       // Vérifier si déjà connecté
       if (localStorage.getItem('isLoggedIn') === 'true') {
-        const username = localStorage.getItem('username');
-        if (username === 'admin') {
+        const userType = localStorage.getItem('userType');
+        // Vérifier le rôle plutôt que le username
+        if (userType === 'ADMIN' || userType === 'admin') {
           window.location.href = 'admin/index.html';
         } else {
           window.location.href = 'dashboard.html';

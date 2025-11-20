@@ -75,6 +75,121 @@
         .btn-secondary:hover { background: #545b62; }
         .create-student-btn { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px; font-weight: 600; }
         .create-student-btn:hover { background: #0056b3; }
+        
+        /* Material Design Alert Styles */
+        .material-alert-overlay {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .material-alert-overlay.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .material-alert {
+            background: white;
+            border-radius: 4px;
+            box-shadow: 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12), 0 5px 5px -3px rgba(0,0,0,.2);
+            min-width: 300px;
+            max-width: 500px;
+            animation: slideUp 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .material-alert-header {
+            padding: 24px 24px 0;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        
+        .material-alert-icon {
+            width: 24px;
+            height: 24px;
+            font-size: 24px;
+            line-height: 24px;
+        }
+        
+        .material-alert-icon.success { color: #4caf50; }
+        .material-alert-icon.error { color: #f44336; }
+        .material-alert-icon.warning { color: #ff9800; }
+        .material-alert-icon.info { color: #2196f3; }
+        
+        .material-alert-title {
+            font-size: 20px;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.87);
+            margin: 0;
+        }
+        
+        .material-alert-content {
+            padding: 20px 24px;
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .material-alert-actions {
+            padding: 8px 8px 8px 24px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 8px;
+        }
+        
+        .material-alert-btn {
+            min-width: 64px;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.2s ease;
+        }
+        
+        .material-alert-btn.primary {
+            background: #2196f3;
+            color: white;
+        }
+        
+        .material-alert-btn.primary:hover {
+            background: #1976d2;
+        }
+        
+        .material-alert-btn.secondary {
+            background: transparent;
+            color: #2196f3;
+        }
+        
+        .material-alert-btn.secondary:hover {
+            background: rgba(33, 150, 243, 0.1);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 <body>
@@ -190,41 +305,366 @@
         </div>
     </div>
 
+    <!-- Material Design Alert Overlay -->
+    <div id="materialAlertOverlay" class="material-alert-overlay">
+        <div class="material-alert">
+            <div class="material-alert-header">
+                <span class="material-alert-icon" id="materialAlertIcon"></span>
+                <h3 class="material-alert-title" id="materialAlertTitle"></h3>
+            </div>
+            <div class="material-alert-content" id="materialAlertContent"></div>
+            <div class="material-alert-actions" id="materialAlertActions"></div>
+        </div>
+    </div>
+
     <script>
+        /**
+         * Affiche une alerte Material Design
+         * @param {string} title - Titre de l'alerte
+         * @param {string} message - Message de l'alerte
+         * @param {string} type - Type d'alerte: 'success', 'error', 'warning', 'info'
+         * @param {Function} onConfirm - Callback appelé lors de la confirmation
+         */
+        function showMaterialAlert(title, message, type = 'info', onConfirm = null) {
+            const overlay = document.getElementById('materialAlertOverlay');
+            const icon = document.getElementById('materialAlertIcon');
+            const titleEl = document.getElementById('materialAlertTitle');
+            const content = document.getElementById('materialAlertContent');
+            const actions = document.getElementById('materialAlertActions');
+            
+            // Définir l'icône selon le type
+            const icons = {
+                success: '✓',
+                error: '✕',
+                warning: '⚠',
+                info: 'ℹ'
+            };
+            
+            icon.textContent = icons[type] || icons.info;
+            icon.className = `material-alert-icon ${type}`;
+            titleEl.textContent = title;
+            content.textContent = message;
+            
+            // Créer les boutons
+            actions.innerHTML = '';
+            const confirmBtn = document.createElement('button');
+            confirmBtn.className = 'material-alert-btn primary';
+            confirmBtn.textContent = 'OK';
+            confirmBtn.onclick = () => {
+                overlay.classList.remove('show');
+                if (onConfirm) onConfirm();
+            };
+            actions.appendChild(confirmBtn);
+            
+            // Afficher l'overlay
+            overlay.classList.add('show');
+        }
+        
+        /**
+         * Affiche une confirmation Material Design
+         * @param {string} title - Titre de la confirmation
+         * @param {string} message - Message de la confirmation
+         * @param {Function} onConfirm - Callback appelé lors de la confirmation
+         * @param {Function} onCancel - Callback appelé lors de l'annulation
+         */
+        function showMaterialConfirm(title, message, onConfirm, onCancel = null) {
+            const overlay = document.getElementById('materialAlertOverlay');
+            const icon = document.getElementById('materialAlertIcon');
+            const titleEl = document.getElementById('materialAlertTitle');
+            const content = document.getElementById('materialAlertContent');
+            const actions = document.getElementById('materialAlertActions');
+            
+            icon.textContent = '?';
+            icon.className = 'material-alert-icon warning';
+            titleEl.textContent = title;
+            content.textContent = message;
+            
+            // Créer les boutons
+            actions.innerHTML = '';
+            
+            const cancelBtn = document.createElement('button');
+            cancelBtn.className = 'material-alert-btn secondary';
+            cancelBtn.textContent = 'Annuler';
+            cancelBtn.onclick = () => {
+                overlay.classList.remove('show');
+                if (onCancel) onCancel();
+            };
+            actions.appendChild(cancelBtn);
+            
+            const confirmBtn = document.createElement('button');
+            confirmBtn.className = 'material-alert-btn primary';
+            confirmBtn.textContent = 'Confirmer';
+            confirmBtn.onclick = () => {
+                overlay.classList.remove('show');
+                if (onConfirm) onConfirm();
+            };
+            actions.appendChild(confirmBtn);
+            
+            // Afficher l'overlay
+            overlay.classList.add('show');
+        }
+        
+        // Fermer l'alerte en cliquant sur l'overlay
+        document.addEventListener('DOMContentLoaded', function() {
+            const overlay = document.getElementById('materialAlertOverlay');
+            if (overlay) {
+                overlay.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        this.classList.remove('show');
+                    }
+                });
+            }
+        });
+
         let userData = {};
 
         // Charger les données au démarrage
         document.addEventListener('DOMContentLoaded', function() {
-            // Vérifier que l'utilisateur est bien admin
-            const username = localStorage.getItem('username');
-            if (username !== 'admin') {
-                alert('Accès refusé. Seuls les administrateurs peuvent accéder à cette page.');
-                window.location.href = '../index.html';
+            // Vérifier que l'utilisateur est bien admin (vérifier le rôle plutôt que le username)
+            const userType = localStorage.getItem('userType');
+            const isLoggedIn = localStorage.getItem('isLoggedIn');
+            
+            if (!isLoggedIn || (userType !== 'ADMIN' && userType !== 'admin')) {
+                showMaterialAlert(
+                    'Accès refusé',
+                    'Seuls les administrateurs peuvent accéder à cette page.',
+                    'error',
+                    () => window.location.href = '../index.html'
+                );
                 return;
             }
             
             loadUserData();
         });
 
+        /**
+         * Récupère la progression de tous les utilisateurs depuis l'API
+         * Calcule les statistiques (completed_lessons, completion_rate) pour chaque utilisateur
+         * 
+         * @async
+         * @function loadProgressForAllUsers
+         * @returns {Promise<void>}
+         */
+        async function loadProgressForAllUsers() {
+            if (!window.apiClient) {
+                console.warn('⚠️ API Client non disponible, impossible de charger la progression');
+                return;
+            }
+            
+            // Récupérer la progression pour chaque utilisateur en parallèle
+            const progressPromises = Object.keys(userData).map(async (username) => {
+                try {
+                    // Appel à GET /api/progress?username=...
+                    const progressData = await window.apiClient.getProgress(username);
+                    console.log(`📊 Progression récupérée pour ${username}:`, progressData);
+                    
+                    // Calculer les statistiques à partir de la progression
+                    // L'API peut retourner la progression dans différents formats
+                    let progress = null;
+                    
+                    if (progressData) {
+                        // Format 1: { progress: { module1: { lesson1: {...}, ... }, ... } }
+                        if (progressData.progress) {
+                            progress = progressData.progress;
+                        }
+                        // Format 2: La progression est directement dans progressData
+                        else if (typeof progressData === 'object' && !progressData.error) {
+                            progress = progressData;
+                        }
+                    }
+                    
+                    if (progress && typeof progress === 'object') {
+                        let completedLessons = 0;
+                        
+                        // Parcourir tous les modules et leçons pour compter les leçons terminées
+                        for (const moduleId in progress) {
+                            if (progress[moduleId] && typeof progress[moduleId] === 'object') {
+                                for (const lessonId in progress[moduleId]) {
+                                    const lesson = progress[moduleId][lessonId];
+                                    // Vérifier si la leçon est terminée
+                                    if (lesson && (lesson.completed === true || lesson.completed === 'true')) {
+                                        completedLessons++;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        // Calculer le taux de complétion (77 leçons au total)
+                        const totalLessons = 77;
+                        const completionRate = totalLessons > 0 ? Math.round((completedLessons / totalLessons) * 100 * 10) / 10 : 0;
+                        
+                        // Mettre à jour les données utilisateur avec la progression
+                        if (userData[username]) {
+                            userData[username].completed_lessons = completedLessons;
+                            userData[username].completion_rate = completionRate;
+                            userData[username].progress = progress;
+                            
+                            console.log(`✅ Statistiques mises à jour pour ${username}:`, {
+                                completed_lessons: completedLessons,
+                                completion_rate: completionRate + '%',
+                                total_lessons: totalLessons
+                            });
+                        }
+                    } else {
+                        // Pas de progression pour cet utilisateur
+                        if (userData[username]) {
+                            userData[username].completed_lessons = 0;
+                            userData[username].completion_rate = 0;
+                            userData[username].progress = {};
+                        }
+                        console.log(`ℹ️ Aucune progression trouvée pour ${username}`);
+                    }
+                } catch (error) {
+                    console.warn(`⚠️ Impossible de charger la progression pour ${username}:`, error);
+                    // En cas d'erreur, garder les valeurs par défaut (0)
+                    if (userData[username]) {
+                        userData[username].completed_lessons = 0;
+                        userData[username].completion_rate = 0;
+                    }
+                }
+            });
+            
+            // Attendre que toutes les progressions soient chargées
+            await Promise.all(progressPromises);
+            console.log('✅ Progression chargée pour tous les utilisateurs');
+        }
+
+        /**
+         * Charge les données utilisateurs depuis l'API externe ou en fallback depuis l'API PHP locale
+         * Priorité : API externe GET /api/users > API PHP locale > Fichier JSON > Données d'exemple
+         * 
+         * @async
+         * @function loadUserData
+         * @returns {Promise<void>}
+         */
         async function loadUserData() {
             try {
-                // Charger les données depuis l'API PHP
+                // ==========================================
+                // ÉTAPE 1 : Tentative de chargement depuis l'API externe
+                // ==========================================
+                // Utiliser l'API externe GET /api/users si disponible
+                if (window.apiClient) {
+                    try {
+                        console.log('📡 Chargement des utilisateurs depuis l\'API externe...');
+                        
+                        // Appel à l'API externe via le client API
+                        const response = await window.apiClient.getAllUsers();
+                        console.log('✅ Données reçues de l\'API externe:', response);
+                        
+                        // Extraire le tableau users de la réponse
+                        // L'API peut retourner { users: [...] } ou directement [...]
+                        let users = Array.isArray(response) ? response : (response.users || response);
+                        
+                        // Vérifier que nous avons bien un tableau
+                        if (!Array.isArray(users)) {
+                            console.error('❌ Format de données inattendu:', response);
+                            throw new Error('Format de données inattendu de l\'API');
+                        }
+                        
+                        console.log('✅ Nombre d\'utilisateurs trouvés:', users.length);
+                        
+                        // Convertir le tableau en objet pour compatibilité avec le format attendu
+                        userData = {};
+                        
+                        // Parcourir chaque utilisateur et normaliser les données
+                        users.forEach(user => {
+                            // Normaliser les données pour compatibilité avec le format attendu
+                            // L'API externe utilise camelCase (firstLogin, lastLogin, etc.)
+                            // On les convertit en snake_case pour compatibilité
+                            userData[user.username] = {
+                                username: user.username,
+                                firstName: user.firstName || '',
+                                lastName: user.lastName || '',
+                                email: user.email || '',
+                                // Gestion des différentes propriétés de date
+                                // L'API retourne enrollmentDate, createdAt, etc.
+                                enrollmentDate: user.enrollmentDate || null,
+                                enrollment_date: user.enrollmentDate || user.enrollment_date || null,
+                                createdAt: user.createdAt || null,
+                                created_at: user.createdAt || user.created_at || null,
+                                // Conversion camelCase → snake_case
+                                first_login: user.firstLogin || user.first_login || null,
+                                // Gestion des différentes propriétés d'activité
+                                last_activity: user.lastActivity || user.last_activity || user.lastLogin || user.last_login || null,
+                                last_login: user.lastLogin || user.last_login || null,
+                                // Conversion camelCase → snake_case pour sessionCount
+                                session_count: user.sessionCount || user.session_count || 0,
+                                // Statistiques de progression (peuvent ne pas être dans la réponse de GET /api/users)
+                                // Ces valeurs seront à 0 par défaut si elles ne sont pas dans la réponse
+                                // Pour obtenir la progression réelle, il faudrait appeler GET /api/progress?username=...
+                                completed_lessons: user.completed_lessons || user.completedLessons || 0,
+                                completion_rate: user.completion_rate || user.completionRate || 0,
+                                progress: user.progress || {},
+                                role: user.role || 'STUDENT'
+                            };
+                            
+                            // Log de débogage pour chaque utilisateur normalisé
+                            console.log(`✅ Utilisateur normalisé: ${user.username}`, {
+                                firstName: userData[user.username].firstName,
+                                lastName: userData[user.username].lastName,
+                                email: userData[user.username].email,
+                                enrollmentDate: userData[user.username].enrollmentDate,
+                                lastActivity: userData[user.username].last_activity,
+                                sessionCount: userData[user.username].session_count
+                            });
+                        });
+                        
+                        console.log('✅ Données normalisées:', userData);
+                        console.log('✅ Nombre d\'utilisateurs normalisés:', Object.keys(userData).length);
+                        
+                        // ==========================================
+                        // RÉCUPÉRATION DE LA PROGRESSION POUR CHAQUE UTILISATEUR
+                        // ==========================================
+                        console.log('📊 Récupération de la progression depuis la base de données...');
+                        await loadProgressForAllUsers();
+                        
+                        // Mettre à jour l'affichage avec les données chargées
+                        updateDisplay();
+                        return; // Sortir de la fonction si l'API externe a fonctionné
+                        
+                    } catch (apiError) {
+                        // En cas d'erreur avec l'API externe, passer au fallback
+                        console.error('❌ Erreur API externe, fallback vers API PHP:', apiError);
+                        console.error('Détails de l\'erreur:', apiError.message);
+                    }
+                }
+                
+                // ==========================================
+                // ÉTAPE 2 : Fallback vers l'API PHP locale
+                // ==========================================
+                console.log('📡 Chargement des utilisateurs depuis l\'API PHP locale...');
                 const response = await fetch('api.php?action=get_all_users');
+                
                 if (response.ok) {
                     userData = await response.json();
+                    console.log('✅ Données chargées depuis l\'API PHP:', userData);
+                    
+                    // La progression est déjà incluse dans les données PHP
+                    // Les statistiques sont calculées côté serveur
+                    console.log('✅ Progression incluse dans les données PHP');
                 } else {
-                    // Si l'API ne fonctionne pas, essayer le fichier JSON
+                    // ==========================================
+                    // ÉTAPE 3 : Fallback vers le fichier JSON local
+                    // ==========================================
                     const jsonResponse = await fetch('data/user_progress.json');
                     if (jsonResponse.ok) {
                         userData = await jsonResponse.json();
+                        console.log('✅ Données chargées depuis le fichier JSON');
                     } else {
-                        // Si le fichier n'existe pas, créer des données d'exemple
+                        // ==========================================
+                        // ÉTAPE 4 : Dernier recours - Données d'exemple
+                        // ==========================================
+                        console.warn('⚠️ Aucune donnée trouvée, utilisation de données d\'exemple');
                         userData = createSampleData();
                     }
                 }
+                
+                // Mettre à jour l'affichage avec les données chargées
                 updateDisplay();
+                
             } catch (error) {
-                console.error('Erreur lors du chargement des données:', error);
+                // Gestion des erreurs globales
+                console.error('❌ Erreur lors du chargement des données:', error);
                 userData = createSampleData();
                 updateDisplay();
             }
@@ -277,44 +717,87 @@
             };
         }
 
+        /**
+         * Met à jour l'affichage complet : statistiques et tableau des utilisateurs
+         * @function updateDisplay
+         */
         function updateDisplay() {
+            // Mettre à jour les statistiques en haut de la page
             updateStats();
+            // Mettre à jour le tableau des utilisateurs
             updateTable();
+            console.log('✅ Affichage mis à jour avec', Object.keys(userData).length, 'utilisateurs');
         }
 
+        /**
+         * Calcule et affiche les statistiques globales des utilisateurs
+         * - Nombre total d'utilisateurs
+         * - Nombre d'utilisateurs actifs (ayant au moins une leçon terminée)
+         * - Progression moyenne en pourcentage
+         * 
+         * @function updateStats
+         */
         function updateStats() {
+            // Compter le nombre total d'utilisateurs
             const totalUsers = Object.keys(userData).length;
-            let activeUsers = 0;
-            let totalCompletion = 0;
+            let activeUsers = 0; // Utilisateurs ayant au moins une leçon terminée
+            let totalCompletion = 0; // Somme des taux de complétion pour calculer la moyenne
 
+            // Parcourir tous les utilisateurs pour calculer les statistiques
             Object.values(userData).forEach(user => {
                 const completedLessons = user.completed_lessons || 0;
+                // Un utilisateur est actif s'il a terminé au moins une leçon
                 if (completedLessons > 0) {
                     activeUsers++;
                 }
+                // Ajouter le taux de complétion pour calculer la moyenne
                 totalCompletion += user.completion_rate || 0;
             });
 
+            // Calculer la progression moyenne (arrondie)
             const avgProgress = totalUsers > 0 ? Math.round(totalCompletion / totalUsers) : 0;
 
+            // Mettre à jour les éléments HTML avec les statistiques calculées
             document.getElementById('totalUsers').textContent = totalUsers;
             document.getElementById('activeUsers').textContent = activeUsers;
             document.getElementById('avgProgress').textContent = avgProgress + '%';
         }
 
+        /**
+         * Met à jour le tableau HTML avec les données des utilisateurs
+         * Gère l'affichage des informations utilisateur avec normalisation des dates
+         * 
+         * @function updateTable
+         */
         function updateTable() {
+            // Récupérer l'élément tbody du tableau
             const tbody = document.getElementById('studentsTableBody');
             
+            // Vérifier que l'élément existe
+            if (!tbody) {
+                console.error('❌ Élément studentsTableBody non trouvé');
+                return;
+            }
+            
+            // Si aucun utilisateur, afficher un message
             if (Object.keys(userData).length === 0) {
                 tbody.innerHTML = `
-                    <div class="no-data">
-                        <h3>Aucun étudiant trouvé</h3>
-                        <p>Il n'y a actuellement aucun étudiant inscrit dans le système.</p>
-                    </div>
+                    <tr>
+                        <td colspan="8" style="text-align: center; padding: 40px;">
+                            <div class="no-data">
+                                <h3>Aucun utilisateur trouvé</h3>
+                                <p>Il n'y a actuellement aucun utilisateur inscrit dans le système.</p>
+                                <p style="margin-top: 10px; color: #6c757d; font-size: 14px;">
+                                    Les données sont chargées depuis l'API externe GET /api/users
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
                 `;
                 return;
             }
 
+            // Construire le HTML du tableau
             let tableHTML = `
                 <table>
                     <thead>
@@ -332,11 +815,54 @@
                     <tbody>
             `;
 
+            // Parcourir chaque utilisateur et générer une ligne du tableau
             Object.entries(userData).forEach(([username, data]) => {
-                const fullName = `${data.firstName || ''} ${data.lastName || ''}`.trim() || 'Non renseigné';
+                // ==========================================
+                // NORMALISATION DES DONNÉES
+                // ==========================================
+                
+                // Construire le nom complet à partir du prénom et nom
+                const firstName = data.firstName || '';
+                const lastName = data.lastName || '';
+                const fullName = (firstName + ' ' + lastName).trim() || username;
+                
+                // Email ou valeur par défaut
                 const email = data.email || 'Non renseigné';
-                const creationDate = data.enrollment_date ? new Date(data.enrollment_date).toLocaleDateString('fr-FR') : 'N/A';
-                const lastActivity = data.last_activity ? new Date(data.last_activity).toLocaleDateString('fr-FR') : 'Jamais';
+                
+                // ==========================================
+                // GESTION DES DATES DE CRÉATION
+                // ==========================================
+                // L'API externe peut utiliser différents noms de propriétés pour les dates
+                // On essaie plusieurs variantes pour assurer la compatibilité
+                // Gérer aussi les valeurs null retournées par l'API
+                const creationDate = data.enrollmentDate || data.enrollment_date || data.createdAt || data.created_at || data.first_login || null;
+                let formattedCreationDate = 'N/A';
+                if (creationDate && creationDate !== null && creationDate !== 'null') {
+                    try {
+                        // Formater la date au format français (JJ/MM/AAAA)
+                        formattedCreationDate = new Date(creationDate).toLocaleDateString('fr-FR');
+                    } catch (e) {
+                        // En cas d'erreur de parsing, utiliser la valeur brute
+                        formattedCreationDate = creationDate;
+                    }
+                }
+                
+                // ==========================================
+                // GESTION DES DATES D'ACTIVITÉ
+                // ==========================================
+                // Même logique pour la dernière activité
+                // Gérer aussi les valeurs null retournées par l'API
+                const lastActivity = data.last_activity || data.last_login || data.lastActivity || null;
+                let formattedLastActivity = 'Jamais';
+                if (lastActivity && lastActivity !== null && lastActivity !== 'null') {
+                    try {
+                        formattedLastActivity = new Date(lastActivity).toLocaleDateString('fr-FR');
+                    } catch (e) {
+                        formattedLastActivity = lastActivity;
+                    }
+                }
+                
+                // Statistiques de progression
                 const completionRate = data.completion_rate || 0;
                 const completedLessons = data.completed_lessons || 0;
 
@@ -345,7 +871,7 @@
                         <td><strong>${username}</strong></td>
                         <td>${fullName}</td>
                         <td>${email}</td>
-                        <td>${creationDate}</td>
+                        <td>${formattedCreationDate}</td>
                         <td>
                             <div class="progress-container">
                                 <div class="progress-bar">
@@ -357,7 +883,7 @@
                         <td>
                             <span class="lesson-count">${completedLessons} / 77</span>
                         </td>
-                        <td>${lastActivity}</td>
+                        <td>${formattedLastActivity}</td>
                         <td>
                             <div class="action-buttons">
                                 <button class="btn-view" onclick="viewStudentDashboard('${username}')" title="Voir le dashboard">
@@ -450,10 +976,14 @@
         function viewStudentDashboard(username) {
             const user = userData[username];
             if (!user) {
-                alert('Utilisateur non trouvé');
+                showMaterialAlert('Erreur', 'Utilisateur non trouvé', 'error');
                 return;
             }
-            alert(`Dashboard de ${username}\n\nProgression: ${user.completion_rate || 0}%\nLeçons terminées: ${user.completed_lessons || 0}/77\n\nNote: Cette fonctionnalité nécessite PHP pour fonctionner complètement.`);
+            showMaterialAlert(
+                `Dashboard de ${username}`,
+                `Progression: ${user.completion_rate || 0}%\nLeçons terminées: ${user.completed_lessons || 0}/77\n\nNote: Cette fonctionnalité nécessite PHP pour fonctionner complètement.`,
+                'info'
+            );
         }
 
         function editStudent(username) {
@@ -507,22 +1037,25 @@
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    alert('Étudiant mis à jour avec succès !');
+                    showMaterialAlert('Succès', 'Étudiant mis à jour avec succès !', 'success');
                     resetForm();
                     refreshStudents();
                 } else {
-                    alert('Erreur lors de la mise à jour: ' + (data.error || 'Erreur inconnue'));
+                    showMaterialAlert('Erreur', 'Erreur lors de la mise à jour: ' + (data.error || 'Erreur inconnue'), 'error');
                 }
             })
             .catch(error => {
                 console.error('Erreur:', error);
-                alert('Erreur lors de la mise à jour');
+                showMaterialAlert('Erreur', 'Erreur lors de la mise à jour', 'error');
             });
         }
 
         function deleteStudent(username) {
-            if (confirm(`Êtes-vous sûr de vouloir supprimer l'étudiant "${username}" ?`)) {
-                fetch('api.php', {
+            showMaterialConfirm(
+                'Confirmer la suppression',
+                `Êtes-vous sûr de vouloir supprimer l'étudiant "${username}" ?`,
+                () => {
+                    fetch('api.php', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -535,26 +1068,159 @@
                 .then(response => response.json())
                 .then(data => {
                     if (data.success) {
-                        alert('Étudiant supprimé avec succès !');
+                        showMaterialAlert('Succès', 'Étudiant supprimé avec succès !', 'success');
                         refreshStudents();
                     } else {
-                        alert('Erreur lors de la suppression: ' + (data.error || 'Erreur inconnue'));
+                        showMaterialAlert('Erreur', 'Erreur lors de la suppression: ' + (data.error || 'Erreur inconnue'), 'error');
                     }
                 })
                 .catch(error => {
                     console.error('Erreur:', error);
-                    alert('Erreur lors de la suppression');
+                    showMaterialAlert('Erreur', 'Erreur lors de la suppression', 'error');
                 });
+                }
+            );
+        }
+
+        /**
+         * Rafraîchit la liste des utilisateurs en rechargeant les données depuis l'API
+         * Affiche un indicateur de chargement pendant le rafraîchissement
+         * 
+         * @async
+         * @function refreshStudents
+         * @returns {Promise<void>}
+         */
+        async function refreshStudents() {
+            console.log('🔄 Actualisation des données utilisateurs depuis l\'API...');
+            
+            // Afficher un indicateur de chargement dans le tableau
+            const tbody = document.getElementById('studentsTableBody');
+            if (tbody) {
+                tbody.innerHTML = '<tr><td colspan="8" style="text-align: center; padding: 20px;">🔄 Chargement des données...</td></tr>';
             }
+            
+            // Recharger les données depuis l'API (externe en priorité, puis PHP en fallback)
+            await loadUserData();
         }
 
-        function refreshStudents() {
-            loadUserData();
-        }
-
+        /**
+         * Exporte les données utilisateurs au format CSV
+         * Génère le fichier CSV côté client à partir des données chargées depuis l'API
+         * Fonctionne avec les données de l'API externe ou PHP
+         * 
+         * @function exportData
+         */
         function exportData() {
-            // Utiliser l'API backend pour l'export
-            window.open('api.php?action=export_csv', '_blank');
+            try {
+                console.log('📥 Début de l\'export CSV...');
+                
+                // Vérifier qu'il y a des données à exporter
+                if (!userData || Object.keys(userData).length === 0) {
+                    showMaterialConfirm(
+                        'Aucune donnée',
+                        'Aucune donnée à exporter. Veuillez d\'abord charger les utilisateurs.\n\nVoulez-vous recharger les données depuis l\'API ?',
+                        () => {
+                            loadUserData().then(() => {
+                                // Réessayer l'export après le chargement
+                                setTimeout(() => exportData(), 1000);
+                            });
+                        }
+                    );
+                    return;
+                }
+                
+                // Créer les en-têtes CSV
+                const headers = [
+                    'Utilisateur',
+                    'Prénom',
+                    'Nom',
+                    'Email',
+                    'Rôle',
+                    'Date d\'inscription',
+                    'Première connexion',
+                    'Dernière activité',
+                    'Nombre de sessions',
+                    'Leçons terminées',
+                    'Pourcentage de complétion'
+                ];
+                
+                // Créer les lignes de données
+                const rows = [];
+                
+                // Parcourir tous les utilisateurs
+                Object.entries(userData).forEach(([username, data]) => {
+                    // Formater les dates
+                    const enrollmentDate = data.enrollmentDate || data.enrollment_date || data.createdAt || data.created_at || '';
+                    const formattedEnrollmentDate = enrollmentDate ? new Date(enrollmentDate).toLocaleDateString('fr-FR') : '';
+                    
+                    const firstLogin = data.first_login || data.firstLogin || '';
+                    const formattedFirstLogin = firstLogin ? new Date(firstLogin).toLocaleDateString('fr-FR') : '';
+                    
+                    const lastActivity = data.last_activity || data.lastActivity || data.last_login || data.lastLogin || '';
+                    const formattedLastActivity = lastActivity ? new Date(lastActivity).toLocaleDateString('fr-FR') : '';
+                    
+                    // Créer une ligne pour cet utilisateur
+                    rows.push([
+                        username || '',
+                        data.firstName || '',
+                        data.lastName || '',
+                        data.email || '',
+                        data.role || 'STUDENT',
+                        formattedEnrollmentDate,
+                        formattedFirstLogin,
+                        formattedLastActivity,
+                        data.session_count || data.sessionCount || 0,
+                        data.completed_lessons || 0,
+                        (data.completion_rate || 0) + '%'
+                    ]);
+                });
+                
+                // Convertir en CSV
+                const csvContent = [
+                    headers.join(','),
+                    ...rows.map(row => row.map(cell => {
+                        // Échapper les cellules contenant des virgules ou des guillemets
+                        const cellStr = String(cell || '');
+                        if (cellStr.includes(',') || cellStr.includes('"') || cellStr.includes('\n')) {
+                            return '"' + cellStr.replace(/"/g, '""') + '"';
+                        }
+                        return cellStr;
+                    }).join(','))
+                ].join('\n');
+                
+                // Créer un blob et télécharger le fichier
+                const blob = new Blob(['\ufeff' + csvContent], { type: 'text/csv;charset=utf-8;' }); // BOM UTF-8 pour Excel
+                const link = document.createElement('a');
+                const url = URL.createObjectURL(blob);
+                
+                // Nom du fichier avec la date actuelle
+                const date = new Date().toISOString().split('T')[0];
+                link.setAttribute('href', url);
+                link.setAttribute('download', `formation_progress_${date}.csv`);
+                link.style.visibility = 'hidden';
+                
+                // Déclencher le téléchargement
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                
+                // Libérer l'URL
+                URL.revokeObjectURL(url);
+                
+                console.log('✅ Export CSV réussi');
+                console.log(`📊 ${rows.length} utilisateurs exportés`);
+                
+                // Afficher une notification de succès
+                showMaterialAlert(
+                    'Export réussi',
+                    `${rows.length} utilisateur(s) exporté(s) dans le fichier formation_progress_${date}.csv`,
+                    'success'
+                );
+                
+            } catch (error) {
+                console.error('❌ Erreur lors de l\'export CSV:', error);
+                showMaterialAlert('Erreur', 'Erreur lors de l\'export CSV. Veuillez réessayer.\n\nErreur: ' + error.message, 'error');
+            }
         }
 
         // Fonctions pour le formulaire de création d'étudiant
@@ -584,10 +1250,15 @@
             if (toggleBtn) toggleBtn.textContent = '+ Nouvel étudiant';
         }
 
-        // Gestion du formulaire de création d'étudiant
+        /**
+         * Gestionnaire d'événement pour le formulaire de création d'étudiant
+         * Récupère les données du formulaire et appelle createStudentAccount()
+         */
         document.getElementById('studentForm').addEventListener('submit', function(e) {
+            // Empêcher le comportement par défaut du formulaire (rechargement de page)
             e.preventDefault();
             
+            // Récupérer les données du formulaire
             const formData = new FormData(this);
             const studentData = {
                 firstName: formData.get('firstName'),
@@ -599,86 +1270,153 @@
                 enrollmentDate: formData.get('enrollmentDate')
             };
 
-            // Créer le compte étudiant (la validation est maintenant dans createStudentAccount)
+            // Créer le compte étudiant (la validation est effectuée dans createStudentAccount)
             createStudentAccount(studentData);
         });
 
+        /**
+         * Crée un nouveau compte étudiant via l'API externe ou PHP
+         * Effectue la validation côté client avant l'envoi
+         * 
+         * @function createStudentAccount
+         * @param {Object} studentData - Données de l'étudiant à créer
+         * @param {string} studentData.firstName - Prénom de l'étudiant
+         * @param {string} studentData.lastName - Nom de l'étudiant
+         * @param {string} studentData.email - Email de l'étudiant
+         * @param {string} studentData.username - Nom d'utilisateur
+         * @param {string} studentData.password - Mot de passe
+         * @param {string} studentData.confirmPassword - Confirmation du mot de passe
+         */
         function createStudentAccount(studentData) {
-            // Validation côté client
+            // ==========================================
+            // VALIDATION CÔTÉ CLIENT
+            // ==========================================
+            
+            // Vérifier que tous les champs requis sont remplis
             if (!studentData.firstName || !studentData.lastName || !studentData.email || !studentData.username || !studentData.password) {
-                alert('Tous les champs sont requis');
+                showMaterialAlert('Validation', 'Tous les champs sont requis', 'warning');
                 return;
             }
             
+            // Vérifier que les mots de passe correspondent
             if (studentData.password !== studentData.confirmPassword) {
-                alert('Les mots de passe ne correspondent pas');
+                showMaterialAlert('Validation', 'Les mots de passe ne correspondent pas', 'warning');
                 return;
             }
             
+            // Vérifier la longueur minimale du mot de passe
             if (studentData.password.length < 6) {
-                alert('Le mot de passe doit contenir au moins 6 caractères');
+                showMaterialAlert('Validation', 'Le mot de passe doit contenir au moins 6 caractères', 'warning');
                 return;
             }
             
-            // Vérifier si l'utilisateur existe déjà
+            // Vérifier si l'utilisateur existe déjà dans les données locales
             if (userData[studentData.username]) {
-                alert('Ce nom d\'utilisateur existe déjà');
+                showMaterialAlert('Validation', 'Ce nom d\'utilisateur existe déjà', 'warning');
                 return;
             }
             
-            // Afficher un indicateur de chargement
+            // ==========================================
+            // INDICATEUR DE CHARGEMENT
+            // ==========================================
+            // Afficher un indicateur de chargement pendant la création
             const submitBtn = document.querySelector('#studentForm button[type="submit"]');
             const originalText = submitBtn.textContent;
             submitBtn.textContent = 'Création en cours...';
             submitBtn.disabled = true;
             
-            fetch('api.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    action: 'create_student',
-                    studentData: studentData
+            // ==========================================
+            // CRÉATION VIA L'API EXTERNE (PRIORITÉ)
+            // ==========================================
+            // Utiliser l'API externe POST /api/auth/register si disponible
+            if (window.apiClient) {
+                window.apiClient.register({
+                    username: studentData.username,
+                    email: studentData.email,
+                    password: studentData.password,
+                    firstName: studentData.firstName,
+                    lastName: studentData.lastName
                 })
-            })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then(data => {
-                if (data.success) {
-                    alert('Compte étudiant créé avec succès !');
-                    resetForm();
-                    refreshStudents();
-                } else {
-                    alert('Erreur lors de la création du compte: ' + (data.error || 'Erreur inconnue'));
-                }
-            })
-            .catch(error => {
-                console.error('Erreur:', error);
-                alert('Erreur lors de la création du compte: ' + error.message);
-            })
-            .finally(() => {
-                // Restaurer le bouton
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            });
+                .then(data => {
+                    if (data.success) {
+                        showMaterialAlert('Succès', 'Compte étudiant créé avec succès !', 'success');
+                        resetForm();
+                        refreshStudents();
+                    } else {
+                        showMaterialAlert('Erreur', 'Erreur lors de la création du compte: ' + (data.error || 'Erreur inconnue'), 'error');
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+                    }
+                })
+                .catch(error => {
+                    console.error('Erreur:', error);
+                    let errorMessage = 'Erreur lors de la création du compte';
+                    if (error.message.includes('CORS') || error.message.includes('Failed to fetch')) {
+                        errorMessage = 'Erreur de connexion à l\'API externe. Vérifiez que l\'API est démarrée sur http://localhost:3000';
+                    } else if (error.message) {
+                        errorMessage += ': ' + error.message;
+                    }
+                    showMaterialAlert('Erreur', errorMessage, 'error');
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                });
+            } else {
+                // ==========================================
+                // FALLBACK VERS L'API PHP LOCALE
+                // ==========================================
+                // Si l'API externe n'est pas disponible, utiliser l'API PHP locale
+                fetch('api.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        action: 'create_student',
+                        studentData: studentData
+                    })
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.success) {
+                        showMaterialAlert('Succès', 'Compte étudiant créé avec succès !', 'success');
+                        resetForm();
+                        refreshStudents();
+                    } else {
+                        showMaterialAlert('Erreur', 'Erreur lors de la création du compte: ' + (data.error || 'Erreur inconnue'), 'error');
+                    }
+                })
+                .catch(error => {
+                    console.error('Erreur:', error);
+                    showMaterialAlert('Erreur', 'Erreur lors de la création du compte: ' + error.message, 'error');
+                })
+                .finally(() => {
+                    // Restaurer le bouton
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                });
+            }
         }
 
         // Fonction de déconnexion
         function logout() {
-            if (confirm('Êtes-vous sûr de vouloir vous déconnecter ?')) {
-                // Effacer les données de session du localStorage
-                localStorage.removeItem('username');
-                localStorage.removeItem('isLoggedIn');
-                localStorage.removeItem('userType');
-                
-                // Rediriger vers la page de connexion
-                window.location.href = '../index.html';
-            }
+            showMaterialConfirm(
+                'Confirmer la déconnexion',
+                'Êtes-vous sûr de vouloir vous déconnecter ?',
+                () => {
+                    // Effacer les données de session du localStorage
+                    localStorage.removeItem('username');
+                    localStorage.removeItem('isLoggedIn');
+                    localStorage.removeItem('userType');
+                    
+                    // Rediriger vers la page de connexion
+                    window.location.href = '../index.html';
+                }
+            );
         }
 
         // Fermer le modal en cliquant en dehors
@@ -689,5 +1427,7 @@
             }
         }
     </script>
+    <!-- API Client pour l'API externe Node.js -->
+    <script src="../api-client.js"></script>
 </body>
 </html>

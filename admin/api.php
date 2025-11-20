@@ -53,6 +53,99 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $action = $data['action'] ?? '';
     
     switch ($action) {
+        case 'authenticate':
+            $username = $data['username'] ?? '';
+            $password = $data['password'] ?? '';
+            
+            if (!$username || !$password) {
+                http_response_code(400);
+                echo json_encode(['error' => 'Nom d\'utilisateur et mot de passe requis']);
+                exit;
+            }
+            
+            // Vérifier si c'est l'admin
+            $admin_password = 'admin2024';
+            if ($username === 'admin' && $password === $admin_password) {
+                echo json_encode([
+                    'success' => true,
+                    'message' => 'Authentification réussie',
+                    'user_type' => 'admin',
+                    'username' => $username
+                ]);
+                exit;
+            }
+            
+            // Vérifier si c'est un étudiant
+            $userData = loadUserData();
+            
+            if (isset($userData[$username])) {
+                // Vérifier le mot de passe hashé
+                if (isset($userData[$username]['password'])) {
+                    if (password_verify($password, $userData[$username]['password'])) {
+                        // Authentification réussie
+                        $timestamp = date('c');
+                        $userData[$username]['last_login'] = $timestamp;
+                        $userData[$username]['session_count'] = ($userData[$username]['session_count'] ?? 0) + 1;
+                        
+                        if (!isset($userData[$username]['first_login'])) {
+                            $userData[$username]['first_login'] = $timestamp;
+                            logActivity("New user registered: $username");
+                        }
+                        
+                        saveUserData($userData);
+                        logActivity("User login: $username");
+                        
+                        echo json_encode([
+                            'success' => true,
+                            'message' => 'Authentification réussie',
+                            'user_type' => 'student',
+                            'username' => $username,
+                            'user_data' => $userData[$username]
+                        ]);
+                        exit;
+                    } else {
+                        http_response_code(401);
+                        echo json_encode(['error' => 'Nom d\'utilisateur ou mot de passe incorrect']);
+                        exit;
+                    }
+                } else {
+                    // Ancien système sans mot de passe hashé - vérifier le mot de passe par défaut
+                    if ($username === 'etudiant' && $password === 'formation2024') {
+                        // Mettre à jour avec un mot de passe hashé
+                        $timestamp = date('c');
+                        $userData[$username]['password'] = password_hash('formation2024', PASSWORD_DEFAULT);
+                        $userData[$username]['last_login'] = $timestamp;
+                        $userData[$username]['session_count'] = ($userData[$username]['session_count'] ?? 0) + 1;
+                        
+                        if (!isset($userData[$username]['first_login'])) {
+                            $userData[$username]['first_login'] = $timestamp;
+                        }
+                        
+                        saveUserData($userData);
+                        logActivity("User login: $username");
+                        
+                        echo json_encode([
+                            'success' => true,
+                            'message' => 'Authentification réussie',
+                            'user_type' => 'student',
+                            'username' => $username,
+                            'user_data' => $userData[$username]
+                        ]);
+                        exit;
+                    } else {
+                        http_response_code(401);
+                        echo json_encode(['error' => 'Nom d\'utilisateur ou mot de passe incorrect']);
+                        exit;
+                    }
+                }
+            } else {
+                // Utilisateur non trouvé
+                http_response_code(401);
+                echo json_encode(['error' => 'Nom d\'utilisateur ou mot de passe incorrect']);
+                exit;
+            }
+            break;
+            
         case 'update_progress':
             $username = $data['username'] ?? '';
             $progress = $data['progress'] ?? [];
