@@ -11,7 +11,7 @@ Access to fetch at 'http://localhost:3000/api/auth/login' from origin 'null' has
 
 ### En production :
 ```
-Access to fetch at 'https://formations-creation-entreprise-admi.vercel.app/api/auth/login' 
+Access to fetch at 'https://formations-creation-entreprise-admin-m0awuogka.vercel.app/api/auth/login' 
 from origin 'https://formation-entreprise.kevin-attallah.com' has been blocked by CORS policy: 
 Response to preflight request doesn't pass access control check: 
 No 'Access-Control-Allow-Origin' header is present on the requested resource.
@@ -70,7 +70,7 @@ const cors = require('cors');
 app.use(cors({
   origin: [
     'https://formation-entreprise.kevin-attallah.com',  // Front-end en production
-    'https://formations-creation-entreprise-admi.vercel.app',  // API elle-même si nécessaire
+    'https://formations-creation-entreprise-admin-m0awuogka.vercel.app',  // API elle-même si nécessaire
     'http://localhost:8000',  // Pour le développement local
     'http://localhost:3000'   // Pour le développement local
   ],
@@ -140,7 +140,7 @@ const cors = require('cors');
 const allowedOrigins = [
   // Production
   'https://formation-entreprise.kevin-attallah.com',
-  'https://formations-creation-entreprise-admi.vercel.app',
+  'https://formations-creation-entreprise-admin-m0awuogka.vercel.app',
   // Développement local
   'http://localhost:8000',
   'http://localhost:8080',
@@ -200,7 +200,7 @@ curl -X OPTIONS \
   -H "Origin: https://formation-entreprise.kevin-attallah.com" \
   -H "Access-Control-Request-Method: POST" \
   -H "Access-Control-Request-Headers: Content-Type,Authorization" \
-  -v https://formations-creation-entreprise-admi.vercel.app/api/auth/login
+  -v https://formations-creation-entreprise-admin-m0awuogka.vercel.app/api/auth/login
 
 # Vous devriez voir dans la réponse :
 # Access-Control-Allow-Origin: https://formation-entreprise.kevin-attallah.com
@@ -213,7 +213,7 @@ curl -X OPTIONS \
 ### URLs de production
 
 - **Front-end :** `https://formation-entreprise.kevin-attallah.com`
-- **API :** `https://formations-creation-entreprise-admi.vercel.app/api`
+- **API :** `https://formations-creation-entreprise-admin-m0awuogka.vercel.app/api`
 
 ### Étapes pour résoudre CORS en production
 
@@ -227,7 +227,7 @@ curl -X OPTIONS \
 Ouvrez la console du navigateur (F12) et testez :
 
 ```javascript
-fetch('https://formations-creation-entreprise-admi.vercel.app/api/health')
+fetch('https://formations-creation-entreprise-admin-m0awuogka.vercel.app/api/health')
   .then(r => {
     console.log('Headers CORS:', {
       'Access-Control-Allow-Origin': r.headers.get('Access-Control-Allow-Origin'),
