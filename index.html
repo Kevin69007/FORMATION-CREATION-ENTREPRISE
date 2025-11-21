@@ -303,13 +303,18 @@
           }
           
           // Gérer les différents formats de réponse pour les informations utilisateur
+          // Format API: { token, user: { id, email, username, firstName, lastName, role, status, enrollmentDate, lastActivity, createdAt, updatedAt } }
           const user = data.user || data;
           const role = user.role || data.role || (data.user_type === 'admin' ? 'ADMIN' : 'STUDENT');
           
+          // Sauvegarder toutes les informations utilisateur
           localStorage.setItem('userType', role === 'ADMIN' || role === 'admin' ? 'ADMIN' : 'student');
           localStorage.setItem('userEmail', user.email || data.email || '');
           localStorage.setItem('userFirstName', user.firstName || data.firstName || '');
           localStorage.setItem('userLastName', user.lastName || data.lastName || '');
+          if (user.id) localStorage.setItem('userId', user.id);
+          if (user.status !== undefined) localStorage.setItem('userStatus', user.status);
+          if (user.enrollmentDate) localStorage.setItem('userEnrollmentDate', user.enrollmentDate);
           
           // Rediriger vers le dashboard selon le rôle
           if (role === 'ADMIN' || role === 'admin' || data.user_type === 'admin') {

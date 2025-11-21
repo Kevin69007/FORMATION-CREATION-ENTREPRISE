@@ -572,33 +572,39 @@
                         // Parcourir chaque utilisateur et normaliser les données
                         users.forEach(user => {
                             // Normaliser les données pour compatibilité avec le format attendu
-                            // L'API externe utilise camelCase (firstLogin, lastLogin, etc.)
-                            // On les convertit en snake_case pour compatibilité
+                            // Format API: { id, email, username, firstName, lastName, role, status, enrollmentDate, lastActivity, createdAt, updatedAt }
                             userData[user.username] = {
+                                // Identifiants
+                                id: user.id || null,
                                 username: user.username,
+                                email: user.email || '',
+                                
+                                // Informations personnelles
                                 firstName: user.firstName || '',
                                 lastName: user.lastName || '',
-                                email: user.email || '',
-                                // Gestion des différentes propriétés de date
-                                // L'API retourne enrollmentDate, createdAt, etc.
+                                
+                                // Rôle et statut
+                                role: user.role || 'STUDENT',
+                                status: user.status !== undefined ? user.status : true,
+                                
+                                // Dates (format ISO de l'API)
                                 enrollmentDate: user.enrollmentDate || null,
                                 enrollment_date: user.enrollmentDate || user.enrollment_date || null,
                                 createdAt: user.createdAt || null,
                                 created_at: user.createdAt || user.created_at || null,
-                                // Conversion camelCase → snake_case
-                                first_login: user.firstLogin || user.first_login || null,
-                                // Gestion des différentes propriétés d'activité
+                                updatedAt: user.updatedAt || null,
+                                updated_at: user.updatedAt || user.updated_at || null,
+                                
+                                // Activité (l'API utilise lastActivity)
                                 last_activity: user.lastActivity || user.last_activity || user.lastLogin || user.last_login || null,
-                                last_login: user.lastLogin || user.last_login || null,
-                                // Conversion camelCase → snake_case pour sessionCount
+                                last_login: user.lastActivity || user.lastLogin || user.last_login || null,
+                                first_login: user.firstLogin || user.first_login || user.createdAt || null,
+                                
+                                // Statistiques (peuvent ne pas être dans la réponse de GET /api/users)
                                 session_count: user.sessionCount || user.session_count || 0,
-                                // Statistiques de progression (peuvent ne pas être dans la réponse de GET /api/users)
-                                // Ces valeurs seront à 0 par défaut si elles ne sont pas dans la réponse
-                                // Pour obtenir la progression réelle, il faudrait appeler GET /api/progress?username=...
                                 completed_lessons: user.completed_lessons || user.completedLessons || 0,
                                 completion_rate: user.completion_rate || user.completionRate || 0,
-                                progress: user.progress || {},
-                                role: user.role || 'STUDENT'
+                                progress: user.progress || {}
                             };
                             
                             // Log de débogage pour chaque utilisateur normalisé
@@ -854,8 +860,9 @@
                 // GESTION DES DATES D'ACTIVITÉ
                 // ==========================================
                 // Même logique pour la dernière activité
+                // L'API utilise lastActivity (format ISO)
                 // Gérer aussi les valeurs null retournées par l'API
-                const lastActivity = data.last_activity || data.last_login || data.lastActivity || null;
+                const lastActivity = data.lastActivity || data.last_activity || data.last_login || null;
                 let formattedLastActivity = 'Jamais';
                 if (lastActivity && lastActivity !== null && lastActivity !== 'null') {
                     try {
@@ -999,7 +1006,9 @@
             document.getElementById('email').value = user.email || '';
             document.getElementById('username').value = username;
             document.getElementById('username').readOnly = true;
-            document.getElementById('enrollmentDate').value = user.enrollment_date ? user.enrollment_date.split('T')[0] : '';
+            // Gérer enrollmentDate (format ISO de l'API: enrollmentDate ou enrollment_date)
+            const enrollmentDate = user.enrollmentDate || user.enrollment_date;
+            document.getElementById('enrollmentDate').value = enrollmentDate ? enrollmentDate.split('T')[0] : '';
             
             // Afficher le formulaire
             document.getElementById('createStudentSection').style.display = 'block';
@@ -1018,14 +1027,65 @@
 
         function updateStudent(username) {
             const formData = new FormData(document.getElementById('studentForm'));
+            const enrollmentDate = formData.get('enrollmentDate');
+            
+            // Préparer les données pour l'API externe
             const studentData = {
                 firstName: formData.get('firstName'),
                 lastName: formData.get('lastName'),
-                email: formData.get('email'),
-                username: formData.get('username'),
-                enrollmentDate: formData.get('enrollmentDate')
+                email: formData.get('email')
             };
+            
+            // Ajouter enrollmentDate si présent
+            if (enrollmentDate) {
+                studentData.enrollmentDate = enrollmentDate;
+            }
+            
+            console.log('Données à envoyer pour mise à jour:', { username, studentData });
 
+            // ==========================================
+            // MISE À JOUR VIA L'API EXTERNE (PRIORITÉ)
+            // ==========================================
+            if (window.apiClient) {
+                window.apiClient.updateProfile(username, studentData)
+                .then(data => {
+                    // Normaliser la réponse
+                    const normalized = window.apiClient.normalizeResponse(data);
+                    console.log('Réponse API updateStudent (externe):', normalized);
+                    
+                    if (normalized.success !== false) {
+                        showMaterialAlert('Succès', 'Étudiant mis à jour avec succès !', 'success');
+                        resetForm();
+                        refreshStudents();
+                    } else {
+                        showMaterialAlert('Erreur', 'Erreur lors de la mise à jour: ' + (normalized.error || normalized.message || 'Erreur inconnue'), 'error');
+                    }
+                })
+                .catch(error => {
+                    console.error('Erreur API externe:', error);
+                    // Fallback vers API PHP
+                    updateStudentPHP(username, {
+                        firstName: studentData.firstName,
+                        lastName: studentData.lastName,
+                        email: studentData.email,
+                        enrollmentDate: enrollmentDate
+                    });
+                });
+            } else {
+                // Utiliser directement l'API PHP
+                updateStudentPHP(username, {
+                    firstName: studentData.firstName,
+                    lastName: studentData.lastName,
+                    email: studentData.email,
+                    enrollmentDate: enrollmentDate
+                });
+            }
+        }
+        
+        /**
+         * Mise à jour via l'API PHP (fallback)
+         */
+        function updateStudentPHP(username, studentData) {
             fetch('api.php', {
                 method: 'POST',
                 headers: {
@@ -1037,11 +1097,25 @@
                     studentData: studentData
                 })
             })
-            .then(response => response.json())
-            .then(data => {
-                // Normaliser la réponse pour gérer différents formats
+            .then(async response => {
+                // Vérifier si la réponse est vide avant de parser
+                const text = await response.text();
+                let data;
+                
+                if (text.trim() === '') {
+                    throw new Error('Réponse vide du serveur');
+                }
+                
+                try {
+                    data = JSON.parse(text);
+                } catch (e) {
+                    console.error('Erreur parsing JSON:', e, 'Réponse:', text);
+                    throw new Error('Réponse invalide du serveur');
+                }
+                
+                // Normaliser la réponse
                 const normalized = window.apiClient ? window.apiClient.normalizeResponse(data) : { success: data.success !== false, ...data };
-                console.log('Réponse API updateStudent:', normalized);
+                console.log('Réponse API updateStudent (PHP):', normalized);
                 
                 if (normalized.success !== false) {
                     showMaterialAlert('Succès', 'Étudiant mis à jour avec succès !', 'success');
@@ -1053,7 +1127,7 @@
             })
             .catch(error => {
                 console.error('Erreur:', error);
-                showMaterialAlert('Erreur', 'Erreur lors de la mise à jour', 'error');
+                showMaterialAlert('Erreur', 'Erreur lors de la mise à jour: ' + error.message, 'error');
             });
         }
 
