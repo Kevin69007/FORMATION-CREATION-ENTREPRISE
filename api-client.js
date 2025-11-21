@@ -102,15 +102,38 @@ class APIClient {
 
       // Vérifier si la réponse est OK avant de parser le JSON
       let data;
-      try {
-        data = await response.json();
-      } catch (e) {
-        // Si le parsing JSON échoue, créer un objet d'erreur
-        throw new Error(`Erreur serveur (${response.status}): ${response.statusText}`);
-      }
-
+      
+      // Vérifier si la réponse est vide (204 No Content ou réponse vide)
+      const contentType = response.headers.get('content-type');
+      const text = await response.text();
+      
       if (!response.ok) {
+        // Si la réponse n'est pas OK, essayer de parser l'erreur
+        try {
+          data = text ? JSON.parse(text) : { error: `Erreur ${response.status}: ${response.statusText}` };
+        } catch (e) {
+          data = { error: `Erreur ${response.status}: ${response.statusText}` };
+        }
         throw new Error(data.error || data.message || `Erreur ${response.status}: ${response.statusText}`);
+      }
+      
+      // Si la réponse est vide (204 No Content ou DELETE réussi sans contenu)
+      if (!text || text.trim() === '') {
+        // Pour les méthodes DELETE, une réponse vide est un succès
+        if (options.method === 'DELETE') {
+          return this.normalizeResponse({ success: true, message: 'Suppression réussie' });
+        }
+        // Pour les autres méthodes, une réponse vide peut être un succès aussi
+        return this.normalizeResponse({ success: true });
+      }
+      
+      // Parser le JSON
+      try {
+        data = JSON.parse(text);
+      } catch (e) {
+        // Si le parsing JSON échoue mais que la réponse est OK, considérer comme succès
+        console.warn('Réponse non-JSON reçue, considérée comme succès:', text);
+        return this.normalizeResponse({ success: true, message: text });
       }
 
       // Normaliser la réponse pour gérer différents formats
@@ -212,6 +235,17 @@ class APIClient {
     return this.request(`/users/${username}/profile`, {
       method: 'PUT',
       body: JSON.stringify(profileData)
+    });
+  }
+
+  /**
+   * Supprimer un utilisateur (Admin uniquement)
+   * @param {string} username - Nom d'utilisateur
+   * @returns {Promise} Réponse de suppression
+   */
+  async deleteUser(username) {
+    return this.request(`/users/${username}`, {
+      method: 'DELETE'
     });
   }
 

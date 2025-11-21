@@ -1062,35 +1062,82 @@
                 'Confirmer la suppression',
                 `Êtes-vous sûr de vouloir supprimer l'étudiant "${username}" ?`,
                 () => {
-                    fetch('api.php', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        action: 'delete_student',
-                        username: username
-                    })
-                })
-                .then(response => response.json())
-                .then(data => {
-                    // Normaliser la réponse pour gérer différents formats
-                    const normalized = window.apiClient ? window.apiClient.normalizeResponse(data) : { success: data.success !== false, ...data };
-                    console.log('Réponse API deleteStudent:', normalized);
-                    
-                    if (normalized.success !== false) {
-                        showMaterialAlert('Succès', 'Étudiant supprimé avec succès !', 'success');
-                        refreshStudents();
+                    // ==========================================
+                    // SUPPRESSION VIA L'API EXTERNE (PRIORITÉ)
+                    // ==========================================
+                    if (window.apiClient) {
+                        window.apiClient.deleteUser(username)
+                        .then(data => {
+                            // Normaliser la réponse
+                            const normalized = window.apiClient.normalizeResponse(data);
+                            console.log('Réponse API deleteStudent (externe):', normalized);
+                            
+                            if (normalized.success !== false) {
+                                showMaterialAlert('Succès', 'Étudiant supprimé avec succès !', 'success');
+                                refreshStudents();
+                            } else {
+                                showMaterialAlert('Erreur', 'Erreur lors de la suppression: ' + (normalized.error || normalized.message || 'Erreur inconnue'), 'error');
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Erreur API externe:', error);
+                            // Fallback vers API PHP
+                            deleteStudentPHP(username);
+                        });
                     } else {
-                        showMaterialAlert('Erreur', 'Erreur lors de la suppression: ' + (normalized.error || normalized.message || 'Erreur inconnue'), 'error');
+                        // Utiliser directement l'API PHP
+                        deleteStudentPHP(username);
                     }
-                })
-                .catch(error => {
-                    console.error('Erreur:', error);
-                    showMaterialAlert('Erreur', 'Erreur lors de la suppression', 'error');
-                });
                 }
             );
+        }
+        
+        /**
+         * Suppression via l'API PHP (fallback)
+         */
+        function deleteStudentPHP(username) {
+            fetch('api.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    action: 'delete_student',
+                    username: username
+                })
+            })
+            .then(async response => {
+                // Vérifier si la réponse est vide avant de parser
+                const text = await response.text();
+                let data;
+                
+                if (text.trim() === '') {
+                    // Réponse vide = erreur
+                    throw new Error('Réponse vide du serveur');
+                }
+                
+                try {
+                    data = JSON.parse(text);
+                } catch (e) {
+                    console.error('Erreur parsing JSON:', e, 'Réponse:', text);
+                    throw new Error('Réponse invalide du serveur');
+                }
+                
+                // Normaliser la réponse
+                const normalized = window.apiClient ? window.apiClient.normalizeResponse(data) : { success: data.success !== false, ...data };
+                console.log('Réponse API deleteStudent (PHP):', normalized);
+                
+                if (normalized.success !== false) {
+                    showMaterialAlert('Succès', 'Étudiant supprimé avec succès !', 'success');
+                    refreshStudents();
+                } else {
+                    showMaterialAlert('Erreur', 'Erreur lors de la suppression: ' + (normalized.error || normalized.message || 'Erreur inconnue'), 'error');
+                }
+            })
+            .catch(error => {
+                console.error('Erreur:', error);
+                showMaterialAlert('Erreur', 'Erreur lors de la suppression: ' + error.message, 'error');
+            });
         }
 
         /**
