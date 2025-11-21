@@ -70,14 +70,16 @@ class APIClient {
 
   /**
    * Connexion d'un utilisateur
-   * @param {string} username - Nom d'utilisateur
+   * @param {string} username - Nom d'utilisateur ou email
    * @param {string} password - Mot de passe
    * @returns {Promise} Réponse avec token et informations utilisateur
    */
   async login(username, password) {
+    // L'API attend 'email' et 'password', on envoie le username comme email
+    // (l'API peut accepter soit un email soit un username selon sa configuration)
     return this.request('/auth/login', {
       method: 'POST',
-      body: JSON.stringify({ username, password })
+      body: JSON.stringify({ email: username, password })
     });
   }
 
