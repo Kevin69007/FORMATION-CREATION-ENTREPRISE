@@ -1,6 +1,6 @@
 // API Client pour communiquer avec l'API externe Node.js
 // Base URL de l'API externe
-const API_BASE_URL = 'http://localhost:3000/api';
+const API_BASE_URL = 'https://formations-creation-entreprise-admi.vercel.app/api';
 
 class APIClient {
   constructor() {
@@ -49,7 +49,7 @@ class APIClient {
     } catch (error) {
       // Gestion spécifique des erreurs CORS
       if (error.message.includes('Failed to fetch') || error.message.includes('CORS')) {
-        const corsError = new Error('Erreur CORS: L\'API externe n\'est pas accessible. Vérifiez que:\n1. L\'API est démarrée sur http://localhost:3000\n2. Le front-end est servi via HTTP (pas file://)\n3. L\'API accepte les requêtes CORS depuis votre origine');
+        const corsError = new Error('Erreur CORS: L\'API externe n\'est pas accessible. Vérifiez que:\n1. L\'API est accessible sur https://formations-creation-entreprise-admi.vercel.app\n2. Le front-end est servi via HTTP (pas file://)\n3. L\'API accepte les requêtes CORS depuis votre origine');
         corsError.name = 'CORSError';
         throw corsError;
       }
