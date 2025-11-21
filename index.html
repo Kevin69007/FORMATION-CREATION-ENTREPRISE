@@ -281,20 +281,38 @@
         // Utiliser l'API externe pour authentifier
         const data = await window.apiClient.login(username, password);
         
-        if (data.success) {
+        // Log pour déboguer la réponse de l'API
+        console.log('Réponse API login:', data);
+        
+        // L'API peut retourner différents formats :
+        // Format 1: { success: true, token: ..., user: ... }
+        // Format 2: { token: ..., user: ... } (sans success)
+        // Format 3: { token: ..., email: ..., role: ... }
+        const isSuccess = data.success === true || data.token !== undefined;
+        
+        if (isSuccess) {
           // Authentification réussie
           const loginTime = new Date().toISOString();
           localStorage.setItem('isLoggedIn', 'true');
           localStorage.setItem('username', username);
           localStorage.setItem('loginTime', loginTime);
-          localStorage.setItem('token', data.token); // Sauvegarder le token JWT
-          localStorage.setItem('userType', data.user.role === 'ADMIN' ? 'ADMIN' : 'student');
-          localStorage.setItem('userEmail', data.user.email || '');
-          localStorage.setItem('userFirstName', data.user.firstName || '');
-          localStorage.setItem('userLastName', data.user.lastName || '');
+          
+          // Sauvegarder le token JWT
+          if (data.token) {
+            localStorage.setItem('token', data.token);
+          }
+          
+          // Gérer les différents formats de réponse pour les informations utilisateur
+          const user = data.user || data;
+          const role = user.role || data.role || (data.user_type === 'admin' ? 'ADMIN' : 'STUDENT');
+          
+          localStorage.setItem('userType', role === 'ADMIN' || role === 'admin' ? 'ADMIN' : 'student');
+          localStorage.setItem('userEmail', user.email || data.email || '');
+          localStorage.setItem('userFirstName', user.firstName || data.firstName || '');
+          localStorage.setItem('userLastName', user.lastName || data.lastName || '');
           
           // Rediriger vers le dashboard selon le rôle
-          if (data.user.role === 'ADMIN') {
+          if (role === 'ADMIN' || role === 'admin' || data.user_type === 'admin') {
             window.location.href = 'admin/index.html';
           } else {
             window.location.href = 'dashboard.html';
@@ -302,7 +320,7 @@
         } else {
           // Erreur d'authentification
           errorMessage.style.display = 'block';
-          errorMessage.textContent = data.error || 'Nom d\'utilisateur ou mot de passe incorrect';
+          errorMessage.textContent = data.error || data.message || 'Nom d\'utilisateur ou mot de passe incorrect';
           
           // Réactiver le bouton
           if (validSpan) {
