@@ -48,8 +48,9 @@ class APIClient {
       return data;
     } catch (error) {
       // Gestion spécifique des erreurs CORS
-      if (error.message.includes('Failed to fetch') || error.message.includes('CORS')) {
-        const corsError = new Error('Erreur CORS: L\'API externe n\'est pas accessible. Vérifiez que:\n1. L\'API est accessible sur https://formations-creation-entreprise-admi.vercel.app\n2. Le front-end est servi via HTTP (pas file://)\n3. L\'API accepte les requêtes CORS depuis votre origine');
+      if (error.message.includes('Failed to fetch') || error.message.includes('CORS') || error.message.includes('Access-Control-Allow-Origin')) {
+        const currentOrigin = window.location.origin;
+        const corsError = new Error(`Erreur CORS: L'API externe n'est pas accessible depuis ${currentOrigin}.\n\nVérifiez que:\n1. L'API est accessible sur https://formations-creation-entreprise-admi.vercel.app\n2. L'API accepte les requêtes CORS depuis votre origine: ${currentOrigin}\n3. La configuration CORS côté serveur inclut votre domaine dans les origines autorisées`);
         corsError.name = 'CORSError';
         throw corsError;
       }

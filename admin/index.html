@@ -1351,8 +1351,9 @@
                 .catch(error => {
                     console.error('Erreur:', error);
                     let errorMessage = 'Erreur lors de la création du compte';
-                    if (error.message.includes('CORS') || error.message.includes('Failed to fetch')) {
-                        errorMessage = 'Erreur de connexion à l\'API externe. Vérifiez que l\'API est accessible sur https://formations-creation-entreprise-admi.vercel.app';
+                    if (error.message.includes('CORS') || error.message.includes('Failed to fetch') || error.message.includes('Access-Control-Allow-Origin')) {
+                        const currentOrigin = window.location.origin;
+                        errorMessage = `Erreur CORS: L'API n'accepte pas les requêtes depuis ${currentOrigin}. Vérifiez que la configuration CORS de l'API inclut votre domaine dans les origines autorisées.`;
                     } else if (error.message) {
                         errorMessage += ': ' + error.message;
                     }
