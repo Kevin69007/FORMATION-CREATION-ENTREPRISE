@@ -553,7 +553,10 @@
                         
                         // Extraire le tableau users de la réponse
                         // L'API peut retourner { users: [...] } ou directement [...]
-                        let users = Array.isArray(response) ? response : (response.users || response);
+                        // La réponse est déjà normalisée par api-client.js
+                        let users = Array.isArray(response) ? response : 
+                                   (Array.isArray(response.data) ? response.data : 
+                                   (response.users || (response.data && Array.isArray(response.data) ? response.data : [])));
                         
                         // Vérifier que nous avons bien un tableau
                         if (!Array.isArray(users)) {
@@ -1036,12 +1039,16 @@
             })
             .then(response => response.json())
             .then(data => {
-                if (data.success) {
+                // Normaliser la réponse pour gérer différents formats
+                const normalized = window.apiClient ? window.apiClient.normalizeResponse(data) : { success: data.success !== false, ...data };
+                console.log('Réponse API updateStudent:', normalized);
+                
+                if (normalized.success !== false) {
                     showMaterialAlert('Succès', 'Étudiant mis à jour avec succès !', 'success');
                     resetForm();
                     refreshStudents();
                 } else {
-                    showMaterialAlert('Erreur', 'Erreur lors de la mise à jour: ' + (data.error || 'Erreur inconnue'), 'error');
+                    showMaterialAlert('Erreur', 'Erreur lors de la mise à jour: ' + (normalized.error || normalized.message || 'Erreur inconnue'), 'error');
                 }
             })
             .catch(error => {
@@ -1067,11 +1074,15 @@
                 })
                 .then(response => response.json())
                 .then(data => {
-                    if (data.success) {
+                    // Normaliser la réponse pour gérer différents formats
+                    const normalized = window.apiClient ? window.apiClient.normalizeResponse(data) : { success: data.success !== false, ...data };
+                    console.log('Réponse API deleteStudent:', normalized);
+                    
+                    if (normalized.success !== false) {
                         showMaterialAlert('Succès', 'Étudiant supprimé avec succès !', 'success');
                         refreshStudents();
                     } else {
-                        showMaterialAlert('Erreur', 'Erreur lors de la suppression: ' + (data.error || 'Erreur inconnue'), 'error');
+                        showMaterialAlert('Erreur', 'Erreur lors de la suppression: ' + (normalized.error || normalized.message || 'Erreur inconnue'), 'error');
                     }
                 })
                 .catch(error => {
@@ -1338,12 +1349,16 @@
                     lastName: studentData.lastName
                 })
                 .then(data => {
-                    if (data.success) {
+                    // Normaliser la réponse pour gérer différents formats
+                    const normalized = window.apiClient ? window.apiClient.normalizeResponse(data) : { success: data.success !== false, ...data };
+                    console.log('Réponse API createStudent (externe):', normalized);
+                    
+                    if (normalized.success !== false) {
                         showMaterialAlert('Succès', 'Compte étudiant créé avec succès !', 'success');
                         resetForm();
                         refreshStudents();
                     } else {
-                        showMaterialAlert('Erreur', 'Erreur lors de la création du compte: ' + (data.error || 'Erreur inconnue'), 'error');
+                        showMaterialAlert('Erreur', 'Erreur lors de la création du compte: ' + (normalized.error || normalized.message || 'Erreur inconnue'), 'error');
                         submitBtn.textContent = originalText;
                         submitBtn.disabled = false;
                     }
@@ -1383,12 +1398,16 @@
                     return response.json();
                 })
                 .then(data => {
-                    if (data.success) {
+                    // Normaliser la réponse pour gérer différents formats
+                    const normalized = { success: data.success !== false, ...data };
+                    console.log('Réponse API createStudent (PHP):', normalized);
+                    
+                    if (normalized.success !== false) {
                         showMaterialAlert('Succès', 'Compte étudiant créé avec succès !', 'success');
                         resetForm();
                         refreshStudents();
                     } else {
-                        showMaterialAlert('Erreur', 'Erreur lors de la création du compte: ' + (data.error || 'Erreur inconnue'), 'error');
+                        showMaterialAlert('Erreur', 'Erreur lors de la création du compte: ' + (normalized.error || normalized.message || 'Erreur inconnue'), 'error');
                     }
                 })
                 .catch(error => {

@@ -19,6 +19,67 @@ class APIClient {
     return localStorage.getItem('token');
   }
 
+  /**
+   * Normalise la réponse de l'API pour gérer différents formats
+   * @param {object} data - Données brutes de l'API
+   * @returns {object} Données normalisées avec success, error, etc.
+   */
+  normalizeResponse(data) {
+    // Si data est déjà normalisé (a un champ success)
+    if (data.success !== undefined) {
+      return data;
+    }
+
+    // Si data a un token, c'est un succès
+    if (data.token !== undefined) {
+      return {
+        success: true,
+        ...data
+      };
+    }
+
+    // Si data a un error, c'est un échec
+    if (data.error !== undefined) {
+      return {
+        success: false,
+        error: data.error,
+        ...data
+      };
+    }
+
+    // Si data est un tableau (liste d'utilisateurs par exemple), c'est un succès
+    if (Array.isArray(data)) {
+      return {
+        success: true,
+        data: data,
+        users: data // Pour compatibilité
+      };
+    }
+
+    // Si data est un objet avec des propriétés, considérer comme succès
+    if (typeof data === 'object' && data !== null && Object.keys(data).length > 0) {
+      // Vérifier si c'est une erreur (message d'erreur commun)
+      if (data.message && (data.message.toLowerCase().includes('error') || data.message.toLowerCase().includes('erreur'))) {
+        return {
+          success: false,
+          error: data.message,
+          ...data
+        };
+      }
+      // Sinon, considérer comme succès
+      return {
+        success: true,
+        ...data
+      };
+    }
+
+    // Par défaut, considérer comme succès
+    return {
+      success: true,
+      data: data
+    };
+  }
+
   // Méthode générique pour les requêtes
   async request(endpoint, options = {}) {
     const url = `${this.baseURL}${endpoint}`;
@@ -49,10 +110,11 @@ class APIClient {
       }
 
       if (!response.ok) {
-        throw new Error(data.error || `Erreur ${response.status}: ${response.statusText}`);
+        throw new Error(data.error || data.message || `Erreur ${response.status}: ${response.statusText}`);
       }
 
-      return data;
+      // Normaliser la réponse pour gérer différents formats
+      return this.normalizeResponse(data);
     } catch (error) {
       // Gestion spécifique des erreurs CORS
       if (error.message.includes('Failed to fetch') || error.message.includes('CORS') || error.message.includes('Access-Control-Allow-Origin')) {
