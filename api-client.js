@@ -1,13 +1,13 @@
 // API Client pour communiquer avec l'API externe Node.js
 // Base URL de l'API externe
-// Production: https://formations-creation-entreprise-admin-m0awuogka.vercel.app
+// Production: https://formations-creation-entreprise-admi.vercel.app
 // Développement: http://localhost:3000
 
 // Détection automatique de l'environnement
 const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
 const API_BASE_URL = isDevelopment 
   ? 'http://localhost:3000/api'  // Développement local
-  : 'https://formations-creation-entreprise-admin-m0awuogka.vercel.app/api';  // Production
+  : 'https://formations-creation-entreprise-admi.vercel.app/api';  // Production
 
 class APIClient {
   constructor() {
@@ -57,7 +57,7 @@ class APIClient {
       // Gestion spécifique des erreurs CORS
       if (error.message.includes('Failed to fetch') || error.message.includes('CORS') || error.message.includes('Access-Control-Allow-Origin')) {
         const currentOrigin = window.location.origin;
-        const corsError = new Error(`Erreur CORS: L'API externe n'est pas accessible depuis ${currentOrigin}.\n\nVérifiez que:\n1. L'API est accessible sur https://formations-creation-entreprise-admin-m0awuogka.vercel.app\n2. L'API accepte les requêtes CORS depuis votre origine: ${currentOrigin}\n3. La configuration CORS côté serveur inclut votre domaine dans les origines autorisées`);
+        const corsError = new Error(`Erreur CORS: L'API externe n'est pas accessible depuis ${currentOrigin}.\n\nVérifiez que:\n1. L'API est accessible sur https://formations-creation-entreprise-admi.vercel.app\n2. L'API accepte les requêtes CORS depuis votre origine: ${currentOrigin}\n3. La configuration CORS côté serveur inclut votre domaine dans les origines autorisées`);
         corsError.name = 'CORSError';
         throw corsError;
       }

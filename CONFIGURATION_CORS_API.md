@@ -7,7 +7,7 @@
 ## 📍 Où modifier la configuration ?
 
 Vous devez modifier le code de votre **API Node.js** déployée sur Vercel à l'adresse :
-`https://formations-creation-entreprise-admin-m0awuogka.vercel.app`
+`https://formations-creation-entreprise-admi.vercel.app`
 
 ## 🚀 Solution : Modifier la configuration CORS de l'API
 
@@ -42,7 +42,7 @@ const cors = require('cors');
 app.use(cors({
   origin: [
     'https://formation-entreprise.kevin-attallah.com',  // ⭐ VOTRE FRONT-END
-    'https://formations-creation-entreprise-admin-m0awuogka.vercel.app',  // L'API elle-même
+    'https://formations-creation-entreprise-admi.vercel.app',  // L'API elle-même
     'http://localhost:8000',  // Développement local
     'http://localhost:3000'   // Développement local
   ],
@@ -69,7 +69,7 @@ app.use(cors({
 app.use(cors({
   origin: [
     'https://formation-entreprise.kevin-attallah.com',  // ✅ AJOUTEZ CETTE LIGNE
-    'https://formations-creation-entreprise-admin-m0awuogka.vercel.app',
+    'https://formations-creation-entreprise-admi.vercel.app',
     'http://localhost:3000',
     'http://localhost:8000'
   ],
@@ -157,7 +157,7 @@ npm install cors
 2. Testez dans la console du navigateur (F12) :
 
 ```javascript
-fetch('https://formations-creation-entreprise-admin-m0awuogka.vercel.app/api/health', {
+fetch('https://formations-creation-entreprise-admi.vercel.app/api/health', {
   method: 'GET',
   headers: {
     'Content-Type': 'application/json'
@@ -186,7 +186,7 @@ curl -X OPTIONS \
   -H "Origin: https://formation-entreprise.kevin-attallah.com" \
   -H "Access-Control-Request-Method: POST" \
   -H "Access-Control-Request-Headers: Content-Type,Authorization" \
-  -v https://formations-creation-entreprise-admin-m0awuogka.vercel.app/api/auth/login
+  -v https://formations-creation-entreprise-admi.vercel.app/api/auth/login
 ```
 
 Vous devriez voir dans la réponse :
@@ -208,7 +208,7 @@ Bonjour,
 Je rencontre une erreur CORS lors de l'accès à l'API depuis mon front-end.
 
 Front-end : https://formation-entreprise.kevin-attallah.com
-API : https://formations-creation-entreprise-admin-m0awuogka.vercel.app
+API : https://formations-creation-entreprise-admi.vercel.app
 
 Pouvez-vous ajouter mon domaine dans la configuration CORS de l'API ?
 
